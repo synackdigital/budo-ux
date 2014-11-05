@@ -1,0 +1,14 @@
+{
+  "name": "bkf-ux",
+  "version": "0.0.1",
+  "description": "UX library for Svenska budo- och kampsportsförbundet",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/synackdigital/bkf-ux.git"
+  },
+  "author": "Fredrik Broman",
+  "bugs": {
+    "url": "https://github.com/synackdigital/bkf-ux/issues"
+  },
+  "homepage": "https://github.com/synackdigital/bkf-ux"
+}
