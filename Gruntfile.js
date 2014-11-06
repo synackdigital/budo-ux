@@ -8,8 +8,12 @@ module.exports = function (grunt) {
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*!\n' +
-            ' * <%= pkg.name %> <%= pkg.version %> (<%= pkg.homepage %>)\n' +
+            ' * BKF UX v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
             ' * Copyright 2014-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+            ' * \n* \n' +
+            ' * Built with Bootstrap (http://getbootstrap.com)\n' +
+            ' * Copyright 2011-<%= grunt.template.today("yyyy") %> Twitter, Inc.\n' +
+            ' * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)\n' +
             ' */\n',
 
     // Task configuration.
