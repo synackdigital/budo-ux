@@ -1,18 +1,14 @@
 {
   "name": "bkf-ux",
-  "version": "0.0.1",
   "description": "UX library for Svenska budo- och kampsportsförbundet",
-  "homepage": "https://github.com/synackdigital/bkf-ux",
-  "authors": [
-    "Fredrik Broman <frebro@gmail.com>"
-  ],
+  "version": "0.0.1",
+  "homepage": "http://budokampsport.se",
+  "author": "Svenska Budo- och Kampsportsförbundet",
   "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
   "devDependencies": {
     "bootstrap": "~3.3.0"
