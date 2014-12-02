@@ -8,7 +8,7 @@ module.exports = function (grunt) {
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*!\n' +
-            ' * BKF UX v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
+            ' * Budo UX v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
             ' * Copyright 2014-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
             ' * \n* \n' +
             ' * Built with Bootstrap (http://getbootstrap.com)\n' +

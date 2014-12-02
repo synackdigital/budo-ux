@@ -1,15 +1,15 @@
 {
-  "name": "bkf-ux",
+  "name": "budo-ux",
   "description": "UX library for Svenska budo- och Kampsportsförbundet",
   "version": "0.0.1",
   "homepage": "http://budokampsport.se",
   "author": "Svenska Budo- och Kampsportsförbundet",
   "repository": {
     "type": "git",
-    "url": "https://github.com/synackdigital/bkf-ux.git"
+    "url": "https://github.com/synackdigital/budo-ux.git"
   },
   "bugs": {
-    "url": "https://github.com/synackdigital/bkf-ux/issues"
+    "url": "https://github.com/synackdigital/budo-ux/issues"
   },
   "license": {
     "type": "MIT",
