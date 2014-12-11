@@ -11,6 +11,6 @@
     "bower_components"
   ],
   "devDependencies": {
-    "bootstrap": "~3.3.0"
+    "components-bootstrap": "3.3.1"
   }
 }
