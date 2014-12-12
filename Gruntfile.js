@@ -10,15 +10,78 @@ module.exports = function (grunt) {
     banner: '/*!\n' +
             ' * Budo UX v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
             ' * Copyright 2014-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-            ' * \n* \n' +
+            ' * \n' +
             ' * Built with Bootstrap (http://getbootstrap.com)\n' +
             ' * Copyright 2011-<%= grunt.template.today("yyyy") %> Twitter, Inc.\n' +
             ' * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)\n' +
             ' */\n',
 
+    bootstrapDir: 'bower_components/components-bootstrap',
+
     // Task configuration.
     clean: {
       dist: 'dist'
+    },
+
+    jshint: {
+      options: {
+        jshintrc: 'js/.jshintrc'
+      },
+      grunt: {
+        options: {
+          jshintrc: 'grunt/.jshintrc'
+        },
+        src: ['Gruntfile.js', 'grunt/*.js']
+      },
+      core: {
+        src: 'js/*.js'
+      }
+    },
+
+    jscs: {
+      options: {
+        config: 'js/.jscsrc'
+      },
+      grunt: {
+        src: '<%= jshint.grunt.src %>'
+      },
+      core: {
+        src: '<%= jshint.core.src %>'
+      }
+    },
+
+    concat: {
+      options: {
+        banner: '<%= banner %>\n<%= jqueryCheck %>\n<%= jqueryVersionCheck %>',
+        stripBanners: false
+      },
+      core: {
+        src: [
+          '<%= bootstrapDir %>/js/transition.js',
+          '<%= bootstrapDir %>/js/alert.js',
+          '<%= bootstrapDir %>/js/button.js',
+          '<%= bootstrapDir %>/js/carousel.js',
+          '<%= bootstrapDir %>/js/collapse.js',
+          '<%= bootstrapDir %>/js/dropdown.js',
+          '<%= bootstrapDir %>/js/modal.js',
+          '<%= bootstrapDir %>/js/tooltip.js',
+          '<%= bootstrapDir %>/js/popover.js',
+          '<%= bootstrapDir %>/js/scrollspy.js',
+          '<%= bootstrapDir %>/js/tab.js',
+          '<%= bootstrapDir %>/js/affix.js'
+        ],
+        dest: 'dist/js/<%= pkg.name %>.js'
+      }
+    },
+
+    uglify: {
+      options: {
+        preserveComments: 'some'
+      },
+      core: {
+        src: '<%= concat.core.dest %>',
+        dest: 'dist/js/<%= pkg.name %>.min.js'
+      }
     },
 
     less: {
@@ -131,6 +194,10 @@ module.exports = function (grunt) {
     },
 
     watch: {
+      src: {
+        files: '<%= jshint.core.src %>',
+        tasks: ['jshint:src', 'concat']
+      },
       less: {
         files: [
           'less/**/*.less',
@@ -146,12 +213,15 @@ module.exports = function (grunt) {
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, { scope: 'devDependencies' });
 
+  // JS distribution task.
+  grunt.registerTask('dist-js', ['concat', 'uglify:core']);
+
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore', 'less:compileTheme']);
   grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:theme', 'usebanner', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyTheme']);
 
   // Full distribution task.
-  grunt.registerTask('dist', ['clean:dist', 'dist-css']);
+  grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-js']);
 
   // Default task.
   grunt.registerTask('default', ['dist']);
