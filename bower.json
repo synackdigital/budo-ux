@@ -1,7 +1,7 @@
 {
   "name": "budo-ux",
   "description": "UX library for Svenska budo- och kampsportsförbundet",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "http://budokampsport.se",
   "author": "Svenska Budo- och Kampsportsförbundet",
   "private": true,

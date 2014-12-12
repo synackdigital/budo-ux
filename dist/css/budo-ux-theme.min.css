@@ -1,5 +1,5 @@
 /*!
- * Budo UX v0.0.1 (http://budokampsport.se)
+ * Budo UX v0.0.2 (http://budokampsport.se)
  * Copyright 2014-2014 Svenska Budo- och Kampsportsförbundet
  * 
  * Built with Bootstrap (http://getbootstrap.com)
