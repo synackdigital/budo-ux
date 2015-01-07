@@ -5,3 +5,26 @@
  * and modify the framework with docs-specific styles.
  */
 
+/* Brand
+// -------------------------------------------------- */
+
+.brand-container {
+	background-color: #444;
+	height: 113px;
+	width: 268px;
+}
+.stretch-left {
+	margin-left: -20px;
+	margin-right: -20px;
+}
+.stretch-left:before {
+	content: '';
+	background-color: inherit;
+	text-align: right;
+	height: inherit;
+	width: 999px;
+	padding-left: 20px;
+	padding-right: 20px;
+	position: absolute;
+	left: -999px;
+}
