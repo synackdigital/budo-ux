@@ -6,7 +6,30 @@
 // --------------------------------------------------
 
 
-//** Large screens layout
+// Hidari/migi containers
+// -------------------------
+
+body > .container > .row > .hidari,
+body > .container > .row > .migi {
+  padding-top: (2 * @line-height-computed);
+  padding-bottom: (2 * @line-height-computed);
+  .transition(~'width 200ms ease-in-out');
+}
+body > .container > .row > .hidari {
+  background-color: @layout-hidari-bg;
+  border-right: 1px solid @layout-hidari-border;
+  color: @layout-hidari-color;
+  padding-left: @layout-hidari-gutter-left;
+  padding-right: @layout-hidari-gutter-right;
+}
+body > .container > .row > .migi {
+  background-color: @layout-migi-bg;
+  border-left: 1px solid @layout-migi-border;
+  color: @layout-migi-color;
+  padding-left: @layout-migi-gutter-left;
+  padding-right: @layout-migi-gutter-right;
+}
+
 @media (min-width: @grid-float-breakpoint) {
 
   // Table layout full-height container
@@ -42,19 +65,30 @@
   }
 }
 
-//** Hidari/migi containers
-body > .container > .row > .hidari,
-body > .container > .row > .migi {
-  padding-top: (2 * @line-height-computed);
-  padding-bottom: (2 * @line-height-computed);
+
+// Stretching components
+// -------------------------
+
+.stretch-left {
+  position: relative;
 }
-body > .container > .row > .hidari {
-  background-color: @layout-hidari-bg;
-  border-right: 1px solid @layout-hidari-border;
-  color: @layout-hidari-color;
+.stretch-left:before {
+  content: '';
+  background-color: inherit;
+  position: absolute;
+  height: 100%;
+  width: 999px;
+  left: -999px;
 }
-body > .container > .row > .migi {
-  background-color: @layout-migi-bg;
-  border-left: 1px solid @layout-migi-border;
-  color: @layout-migi-color;
+
+.stretch-right {
+  position: relative;
+}
+.stretch-right:before {
+  content: '';
+  background-color: inherit;
+  position: absolute;
+  height: 100%;
+  width: 999px;
+  right: -999px;
 }

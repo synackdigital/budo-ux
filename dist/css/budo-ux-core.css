@@ -6649,6 +6649,28 @@ button.close {
 p {
   font-family: 'Stempel Garamond LT', Georgia, "Times New Roman", Times, serif;
 }
+body > .container > .row > .hidari,
+body > .container > .row > .migi {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  -webkit-transition: width 200ms ease-in-out;
+  -o-transition: width 200ms ease-in-out;
+  transition: width 200ms ease-in-out;
+}
+body > .container > .row > .hidari {
+  background-color: #222222;
+  border-right: 1px solid #000000;
+  color: #eeeeee;
+  padding-left: 0;
+  padding-right: 20px;
+}
+body > .container > .row > .migi {
+  background-color: #ffffff;
+  border-left: 1px solid transparent;
+  color: #333333;
+  padding-left: 80px;
+  padding-right: 0;
+}
 @media (min-width: 768px) {
   html,
   body {
@@ -6675,19 +6697,26 @@ p {
     background-image: linear-gradient(to right, #222222 0%, #222222 50%, #ffffff 50%, #ffffff 100%);
   }
 }
-body > .container > .row > .hidari,
-body > .container > .row > .migi {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.stretch-left {
+  position: relative;
 }
-body > .container > .row > .hidari {
-  background-color: #222222;
-  border-right: 1px solid #000000;
-  color: #eeeeee;
+.stretch-left:before {
+  content: '';
+  background-color: inherit;
+  position: absolute;
+  height: 100%;
+  width: 999px;
+  left: -999px;
 }
-body > .container > .row > .migi {
-  background-color: #ffffff;
-  border-left: 1px solid transparent;
-  color: #333333;
+.stretch-right {
+  position: relative;
+}
+.stretch-right:before {
+  content: '';
+  background-color: inherit;
+  position: absolute;
+  height: 100%;
+  width: 999px;
+  right: -999px;
 }
 /*# sourceMappingURL=budo-ux-core.css.map */

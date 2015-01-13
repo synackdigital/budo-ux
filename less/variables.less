@@ -33,6 +33,12 @@
 //## Define your custom responsive grid.
 
 //** Number of columns in the grid.
-@grid-columns:              18;
+@grid-columns:                18;
 //** Padding between columns. Gets divided in half for the left and right.
-@grid-gutter-width:         40px;
+@grid-gutter-width:           40px;
+
+//** Hidari/migi padding (used instead of default grid gutter width)
+@layout-hidari-gutter-left:   0;
+@layout-hidari-gutter-right:  (@grid-gutter-width / 2);
+@layout-migi-gutter-left:     (2 * @grid-gutter-width);
+@layout-migi-gutter-right:    0;
