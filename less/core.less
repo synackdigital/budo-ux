@@ -6,64 +6,10 @@
 // --------------------------------------------------
 
 
-@import 'bootstrap';    // Bootstrap framework <http://getbootstrap.com/>
-@import 'variables';    // Override default Bootstrap variables
+@import 'fonts';            // Web fonts
 
+@import 'bootstrap';        // Bootstrap framework <http://getbootstrap.com/>
+@import "variables.less";   // Core variables
 
-//== Layout
-//
-//## A responsive two-column layout that extends the Bootstrap grid system.
-//## Hidari (left) and migi (right) are the two main containers for content.
-
-//** Large screens layout
-@media (min-width: @grid-float-breakpoint) {
-
-  // Table layout full-height container
-  html, body { height: 100%; }
-  body > .container {
-    display: table;
-    min-height: 100%;
-    height: auto;
-    // Remove Bootstrap default padding
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  body > .container > .row {
-    display: table-row;
-    height: 100%;
-  }
-  body > .container > .row > .hidari,
-  body > .container > .row > .migi {
-    display: table-cell;
-    vertical-align: top;
-    float: none;
-  }
-
-  // Extend hidari/migi bg colors to fill viewport
-  body {
-    background-image: linear-gradient(
-      to right,
-      @layout-hidari-bg 0%,
-      @layout-hidari-bg 50%,
-      @layout-migi-bg 50%,
-      @layout-migi-bg 100%
-    );
-  }
-}
-
-//** Hidari/migi containers
-body > .container > .row > .hidari,
-body > .container > .row > .migi {
-  padding-top: (2 * @line-height-computed);
-  padding-bottom: (2 * @line-height-computed);
-}
-body > .container > .row > .hidari {
-  background-color: @layout-hidari-bg;
-  border-right: 1px solid @layout-hidari-border;
-  color: @layout-hidari-color;
-}
-body > .container > .row > .migi {
-  background-color: @layout-migi-bg;
-  border-left: 1px solid @layout-migi-border;
-  color: @layout-migi-color;
-}
+@import 'type';             // Typography
+@import 'layout';           // Layout
