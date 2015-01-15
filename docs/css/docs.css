@@ -4,11 +4,3 @@
  * Import after budo-ux-core and budo-ux-theme to extend
  * and modify the framework with docs-specific styles.
  */
-
-/* Brand
-// -------------------------------------------------- */
-
-.brand-container {
-	background-color: #444;
-	max-width: 288px;
-}
