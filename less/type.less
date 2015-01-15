@@ -6,16 +6,180 @@
 // Headings
 // -------------------------
 
+h1, h2, h3, h4, h5, h6,
+.h0, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: @headings-font-family;
+  font-weight: @headings-font-weight;
+  color: @headings-color;
+}
+h1, h2, h3,
+.h0, .h1, .h2, .h3 {
+  margin-top: @line-height-computed;
+  margin-bottom: @line-height-computed;
+}
+h4, h5, h6,
+.h4, .h5, .h6 {
+  margin-top: (.5 * @line-height-computed);
+  margin-bottom: (.5 * @line-height-computed);
+}
+
+.h0 { font-size: @font-size-h0; line-height: @line-height-h0; }
+h1, .h1 { font-size: @font-size-h1; line-height: @line-height-h1; }
+h2, .h2 { font-size: @font-size-h2; line-height: @line-height-h2; }
+h3, .h3 { font-size: @font-size-h3; line-height: @line-height-h3; }
+h4, .h4 { font-size: @font-size-h4; line-height: @line-height-h4; }
+h5, .h5 { font-size: @font-size-h5; line-height: @line-height-h5; }
+h6, .h6 { font-size: @font-size-h6; line-height: @line-height-h6; }
+
 
 // Body text
 // -------------------------
 
-p {
+p, cite, blockquote, ul, ol, dl {
   font-family: @paragraph-font-family;
 }
 
-abbr {
-  text-transform: uppercase;
+p {
+  margin: 0 0 (.5 * @line-height-computed);
+}
+
+.lead {
+  margin-bottom: @line-height-computed;
+  padding-bottom: @line-height-computed;
+  font-size: @font-size-large;
+  font-weight: normal;
+  line-height: @line-height-large;
+  position: relative;
+
+  &:after {
+    content: '';
+    border-bottom: (.25 * @line-height-computed) solid @brand-primary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: @grid-gutter-width;
+  }
+}
+
+
+// Emphasis & misc
+// -------------------------
+
+small,
+.small {
+  font-size: @font-size-small;
+}
+
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+// Contextual colors
+.text-muted {
+  color: @text-muted;
+}
+
+
+// Lists
+// -------------------------
+
+// Unordered and Ordered lists
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: (.5 * @line-height-computed);
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+// List options
+
+// Unstyled keeps list items block level, just removes default browser padding and list-style
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  .list-unstyled();
+  margin-left: -5px;
+
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+// Description Lists
+dl {
+  margin-top: 0; // Remove browser default
+  margin-bottom: @line-height-computed;
+}
+dt,
+dd {
+  line-height: @line-height-base;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-left: 0; // Undo browser default
+}
+
+// Horizontal description lists
+//
+// Defaults to being stacked without any of the below styles applied, until the
+// grid breakpoint is reached (default of ~768px).
+
+.dl-horizontal {
+  dd {
+    &:extend(.clearfix all); // Clear the floated `dt` if an empty `dd` is present
+  }
+
+  @media (min-width: @grid-float-breakpoint) {
+    dt {
+      float: left;
+      width: (@dl-horizontal-offset - 20);
+      clear: left;
+      text-align: right;
+      .text-overflow();
+    }
+    dd {
+      margin-left: @dl-horizontal-offset;
+    }
+  }
+}
+
+
+// Misc
+// -------------------------
+
+// Blockquotes
+blockquote {
+  padding: 0;
+  margin: 0 0 (.5 * @line-height-computed);
+
+  p {
+    font-style: italic;
+    display: inline;
+    margin-bottom: 0;
+  }
+
+  cite {
+    font-style: normal;
+  }
 }
 
 
@@ -31,13 +195,7 @@ html, body {
           font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
 }
 
-h1, h2, h3 {
-  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
-     -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
-          font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
-}
-
-abbr {
+abbr, .text-capitalize {
   -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
      -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
           font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;

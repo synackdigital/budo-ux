@@ -27,6 +27,42 @@
 @headings-font-family:    'Nimbus Novus Sans Condensed Semi Bold', "Helvetica Neue", Helvetica, Arial, sans-serif;
 @paragraph-font-family:   @font-family-serif;
 
+//** Modular typographic scale (8:15 major seventh)
+//** http://modularscale.com/scale/?px1=19&px2=14&ra1=1.875&ra2=0
+@font-scale-factor:       1.875;
+@font-size-small:         14px;
+@font-size-base:          19px;
+@font-size-large:         floor((@font-scale-factor * @font-size-small));
+@font-size-xlarge:        floor((@font-scale-factor * @font-size-base));
+@font-size-xxlarge:       floor((pow(@font-scale-factor, 2) * @font-size-small));
+@font-size-xxxlarge:      floor((pow(@font-scale-factor, 2) * @font-size-base));
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-small:       unit((20 / @font-size-small));
+@line-height-base:        unit((30 / @font-size-base));
+@line-height-large:       unit((35 / @font-size-large));
+@line-height-xlarge:      unit((45 / @font-size-xlarge));
+@line-height-xxlarge:     unit((50 / @font-size-xxlarge));
+@line-height-xxxlarge:    unit((65 / @font-size-xxxlarge));
+//** Computed "line-height" for use with `margin`, `padding`, etc.
+@line-height-computed:    unit(floor((@line-height-base * @font-size-base)), px);
+
+//** Fixed sizes for heading
+@font-size-h0:            @font-size-xxxlarge;
+@font-size-h1:            @font-size-xxlarge;
+@font-size-h2:            @font-size-xlarge;
+@font-size-h3:            @font-size-large;
+@font-size-h4:            @font-size-base;
+@font-size-h5:            @font-size-base;
+@font-size-h6:            @font-size-base;
+@line-height-h0:          @line-height-xxxlarge;
+@line-height-h1:          @line-height-xxlarge;
+@line-height-h2:          @line-height-xlarge;
+@line-height-h3:          @line-height-large;
+@line-height-h4:          @line-height-base;
+@line-height-h5:          @line-height-base;
+@line-height-h6:          @line-height-base;
+
 
 //== Grid system
 //
