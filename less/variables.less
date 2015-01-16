@@ -9,7 +9,7 @@
 
 @gray-base:                 #3a3b3b;
 @gray-darker:               darken(@gray-base, 19%);
-@gray-dark:                 darken(@gray-base, 10%); 
+@gray-dark:                 darken(@gray-base, 10%);
 @gray:                      @gray-base;
 @gray-light:                lighten(@gray-base, 62%);
 @gray-lighter:              lighten(@gray-base, 74%);
@@ -110,12 +110,14 @@
 //## Define your custom responsive grid.
 
 //** Number of columns in the grid.
-@grid-columns:                18;
+//** 36 can be evenly divided by 2, 3, 4, 6, 9, 12, 18
+@grid-columns:                36;
 //** Padding between columns. Gets divided in half for the left and right.
-@grid-gutter-width:           40px;
+@grid-gutter-width:           32px;
 
-//** Hidari/migi padding (used instead of default grid gutter width)
-@layout-hidari-gutter-left:   0;
-@layout-hidari-gutter-right:  (@grid-gutter-width / 2);
-@layout-migi-gutter-left:     (2 * @grid-gutter-width);
-@layout-migi-gutter-right:    0;
+//** Hidari (left) container
+@layout-hidari-gutter-left:   (.5 * @grid-gutter-width);
+@layout-hidari-gutter-right:  (1.5 * @grid-gutter-width);
+//** Migi (right) container
+@layout-migi-gutter-left:     (1.5 * @grid-gutter-width);
+@layout-migi-gutter-right:    (.5 * @grid-gutter-width);
