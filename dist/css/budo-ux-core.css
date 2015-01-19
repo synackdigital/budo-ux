@@ -7358,39 +7358,26 @@ body > .container > .row > .migi {
 }
 body > .container > .row > .hidari {
   background-color: #141414;
-  border-right: 8px solid #141414;
   color: #f7f7f7;
   padding-left: 16px;
-  padding-right: 48px;
+  padding-right: 16px;
 }
 body > .container > .row > .migi {
   background-color: #ffffff;
-  border-left: 8px solid #d8d9d9;
   color: #3a3b3b;
   padding-left: 48px;
-  padding-right: 16px;
+  padding-right: 48px;
 }
 @media (min-width: 768px) {
-  html,
-  body {
-    height: 100%;
+  .hidari,
+  .migi {
+    min-height: 1140px;
   }
-  body > .container {
-    display: table;
-    min-height: 100%;
-    height: auto;
-    padding-left: 0px;
-    padding-right: 0px;
+  .hidari {
+    border-right: 8px solid #141414;
   }
-  body > .container > .row {
-    display: table-row;
-    height: 100%;
-  }
-  body > .container > .row > .hidari,
-  body > .container > .row > .migi {
-    display: table-cell;
-    vertical-align: top;
-    float: none;
+  .migi {
+    border-left: 8px solid #d8d9d9;
   }
   body {
     background-image: linear-gradient(to right, #141414 0%, #141414 50%, #ffffff 50%, #ffffff 100%);

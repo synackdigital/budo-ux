@@ -17,14 +17,12 @@ body > .container > .row > .migi {
 }
 body > .container > .row > .hidari {
   background-color: @layout-hidari-bg;
-  border-right: @padding-small-horizontal solid @layout-hidari-border;
   color: @layout-hidari-color;
   padding-left: @layout-hidari-gutter-left;
   padding-right: @layout-hidari-gutter-right;
 }
 body > .container > .row > .migi {
   background-color: @layout-migi-bg;
-  border-left: @padding-small-horizontal solid @layout-migi-border;
   color: @layout-migi-color;
   padding-left: @layout-migi-gutter-left;
   padding-right: @layout-migi-gutter-right;
@@ -32,27 +30,12 @@ body > .container > .row > .migi {
 
 @media (min-width: @grid-float-breakpoint) {
 
-  // Table layout full-height container
-  html, body { height: 100%; }
-  body > .container {
-    display: table;
-    min-height: 100%;
-    height: auto;
-    // Remove Bootstrap default padding
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  body > .container > .row {
-    display: table-row;
-    height: 100%;
-  }
-  body > .container > .row > .hidari,
-  body > .container > .row > .migi {
-    display: table-cell;
-    vertical-align: top;
-    float: none;
-  }
+  // Hidari/migi containers should never be shorter than viewport
+  .hidari, .migi { min-height: 1140px; }
 
+  // Borders when displayed side-by-side
+  .hidari { border-right: @padding-small-horizontal solid @layout-hidari-border; }
+  .migi { border-left: @padding-small-horizontal solid @layout-migi-border; }
   // Extend hidari/migi bg colors to fill viewport
   body {
     background-image: linear-gradient(
