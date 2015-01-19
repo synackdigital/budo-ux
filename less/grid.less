@@ -1,0 +1,33 @@
+//
+// Grid system
+// --------------------------------------------------
+
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+  // @media (min-width: @screen-xs-min) {
+    // border-top: 10px solid cyan;
+  // }
+  // @media (min-width: @screen-md-min) {
+    // border-top: 10px solid gold;
+  // }
+  // @media (min-width: @screen-lg-min) {
+    // border-top: 10px solid salmon;
+  // }
+  @media (min-width: @screen-xl-min) {
+    width: @container-xl;
+    // border-top: 10px solid orchid;
+  }
+}
+
+
+// X-large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: @screen-xl-min) {
+  .make-grid(xl);
+}
