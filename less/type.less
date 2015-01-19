@@ -43,25 +43,6 @@ p {
   margin: 0 0 (.5 * @line-height-computed);
 }
 
-.lead {
-  margin-bottom: @line-height-computed;
-  padding-bottom: @line-height-computed;
-  font-size: @font-size-large;
-  font-weight: normal;
-  line-height: @line-height-large;
-  position: relative;
-
-  &:after {
-    content: '';
-    border-bottom: (.25 * @line-height-computed) solid @brand-primary;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: @grid-gutter-width;
-  }
-}
-
-
 // Emphasis & misc
 // -------------------------
 
@@ -134,7 +115,7 @@ ol {
 blockquote {
   padding: 0;
   margin: 0 0 (.5 * @line-height-computed);
-  
+
   p {
     display: inline;
     margin-bottom: 0;

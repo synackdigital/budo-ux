@@ -1,0 +1,43 @@
+//
+// Microformat2 h-entry
+//
+// Used for episodic or datestamped content.
+// http://microformats.org/wiki/h-entry
+// --------------------------------------------------
+
+.h-entry {
+
+}
+
+.p-name {}
+
+.p-summary {
+  margin-bottom: @line-height-computed;
+  font-size: @font-size-large;
+  font-weight: normal;
+  line-height: @line-height-large;
+}
+
+.e-content {}
+.dt-published {
+  font-family: @font-family-base;
+  font-size: @font-size-small;
+  line-height: @line-height-small;
+  color: @text-muted;
+  position: relative;
+  padding-left: (@grid-gutter-width + @padding-base-horizontal);
+  margin-bottom: @line-height-computed;
+
+  &:after {
+    content: '';
+    background-color: @brand-primary;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: @grid-gutter-width;
+    height: (@font-size-small* @line-height-small);
+  }
+}
+.dt-updated {}
+.p-author {}
+.p-category {}
