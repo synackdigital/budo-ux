@@ -845,14 +845,17 @@ a.label:focus {
 .container-fluid:before,
 .container-fluid:after,
 .row:before,
-.row:after {
+.row:after,
+.h-feed:before,
+.h-feed:after {
   content: " ";
   display: table;
 }
 .clearfix:after,
 .container:after,
 .container-fluid:after,
-.row:after {
+.row:after,
+.h-feed:after {
   clear: both;
 }
 .center-block {
@@ -1102,38 +1105,38 @@ a.label:focus {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 @media (min-width: 768px) {
   .container {
-    width: 752px;
+    width: 784px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 972px;
+    width: 1004px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1172px;
+    width: 1204px;
   }
 }
 @media (min-width: 1570px) {
   .container {
-    width: 1432px;
+    width: 1464px;
   }
 }
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .row {
-  margin-left: -16px;
-  margin-right: -16px;
+  margin-left: -32px;
+  margin-right: -32px;
 }
 .hidari,
 .migi {
@@ -1141,8 +1144,8 @@ a.label:focus {
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -1173,8 +1176,8 @@ a.label:focus {
 .layout-sm-1to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 768px) {
   .layout-sm-1to1 .hidari,
@@ -1186,8 +1189,8 @@ a.label:focus {
 .layout-sm-1to2 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 768px) {
   .layout-sm-1to2 .hidari {
@@ -1198,8 +1201,8 @@ a.label:focus {
 .layout-sm-1to2 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 768px) {
   .layout-sm-1to2 .migi {
@@ -1210,8 +1213,8 @@ a.label:focus {
 .layout-sm-1to3 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 768px) {
   .layout-sm-1to3 .hidari {
@@ -1222,8 +1225,8 @@ a.label:focus {
 .layout-sm-1to3 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 768px) {
   .layout-sm-1to3 .migi {
@@ -1231,35 +1234,11 @@ a.label:focus {
     width: 75%;
   }
 }
-.layout-sm-1to4 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 768px) {
-  .layout-sm-1to4 .hidari {
-    float: left;
-    width: 19.44444444%;
-  }
-}
-.layout-sm-1to4 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 768px) {
-  .layout-sm-1to4 .migi {
-    float: left;
-    width: 80.55555556%;
-  }
-}
 .layout-sm-2to1 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 768px) {
   .layout-sm-2to1 .hidari {
@@ -1270,8 +1249,8 @@ a.label:focus {
 .layout-sm-2to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 768px) {
   .layout-sm-2to1 .migi {
@@ -1282,8 +1261,8 @@ a.label:focus {
 .layout-sm-3to1 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 768px) {
   .layout-sm-3to1 .hidari {
@@ -1294,8 +1273,8 @@ a.label:focus {
 .layout-sm-3to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 768px) {
   .layout-sm-3to1 .migi {
@@ -1303,36 +1282,12 @@ a.label:focus {
     width: 25%;
   }
 }
-.layout-sm-3to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 768px) {
-  .layout-sm-3to1 .hidari {
-    float: left;
-    width: 80.55555556%;
-  }
-}
-.layout-sm-3to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 768px) {
-  .layout-sm-3to1 .migi {
-    float: left;
-    width: 19.44444444%;
-  }
-}
 .layout-md-1to1 .hidari,
 .layout-md-1to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 992px) {
   .layout-md-1to1 .hidari,
@@ -1344,8 +1299,8 @@ a.label:focus {
 .layout-md-1to2 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 992px) {
   .layout-md-1to2 .hidari {
@@ -1356,8 +1311,8 @@ a.label:focus {
 .layout-md-1to2 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 992px) {
   .layout-md-1to2 .migi {
@@ -1368,8 +1323,8 @@ a.label:focus {
 .layout-md-1to3 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 992px) {
   .layout-md-1to3 .hidari {
@@ -1380,8 +1335,8 @@ a.label:focus {
 .layout-md-1to3 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 992px) {
   .layout-md-1to3 .migi {
@@ -1392,8 +1347,8 @@ a.label:focus {
 .layout-md-1to4 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 992px) {
   .layout-md-1to4 .hidari {
@@ -1404,8 +1359,8 @@ a.label:focus {
 .layout-md-1to4 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 992px) {
   .layout-md-1to4 .migi {
@@ -1413,35 +1368,11 @@ a.label:focus {
     width: 80.55555556%;
   }
 }
-.layout-md-1to6 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 992px) {
-  .layout-md-1to6 .hidari {
-    float: left;
-    width: 13.88888889%;
-  }
-}
-.layout-md-1to6 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 992px) {
-  .layout-md-1to6 .migi {
-    float: left;
-    width: 86.11111111%;
-  }
-}
 .layout-md-2to1 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 992px) {
   .layout-md-2to1 .hidari {
@@ -1452,8 +1383,8 @@ a.label:focus {
 .layout-md-2to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 992px) {
   .layout-md-2to1 .migi {
@@ -1464,8 +1395,8 @@ a.label:focus {
 .layout-md-3to1 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 992px) {
   .layout-md-3to1 .hidari {
@@ -1476,8 +1407,8 @@ a.label:focus {
 .layout-md-3to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 992px) {
   .layout-md-3to1 .migi {
@@ -1488,8 +1419,8 @@ a.label:focus {
 .layout-md-4to1 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 992px) {
   .layout-md-4to1 .hidari {
@@ -1500,8 +1431,8 @@ a.label:focus {
 .layout-md-4to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 992px) {
   .layout-md-4to1 .migi {
@@ -1509,36 +1440,12 @@ a.label:focus {
     width: 19.44444444%;
   }
 }
-.layout-md-6to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 992px) {
-  .layout-md-6to1 .hidari {
-    float: left;
-    width: 86.11111111%;
-  }
-}
-.layout-md-6to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 992px) {
-  .layout-md-6to1 .migi {
-    float: left;
-    width: 13.88888889%;
-  }
-}
 .layout-lg-1to1 .hidari,
 .layout-lg-1to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-1to1 .hidari,
@@ -1550,8 +1457,8 @@ a.label:focus {
 .layout-lg-1to2 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-1to2 .hidari {
@@ -1562,8 +1469,8 @@ a.label:focus {
 .layout-lg-1to2 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-1to2 .migi {
@@ -1574,8 +1481,8 @@ a.label:focus {
 .layout-lg-1to3 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-1to3 .hidari {
@@ -1586,8 +1493,8 @@ a.label:focus {
 .layout-lg-1to3 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-1to3 .migi {
@@ -1598,8 +1505,8 @@ a.label:focus {
 .layout-lg-1to4 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-1to4 .hidari {
@@ -1610,8 +1517,8 @@ a.label:focus {
 .layout-lg-1to4 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-1to4 .migi {
@@ -1622,8 +1529,8 @@ a.label:focus {
 .layout-lg-1to6 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-1to6 .hidari {
@@ -1634,8 +1541,8 @@ a.label:focus {
 .layout-lg-1to6 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-1to6 .migi {
@@ -1643,35 +1550,11 @@ a.label:focus {
     width: 86.11111111%;
   }
 }
-.layout-lg-1to9 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-1to9 .hidari {
-    float: left;
-    width: 11.11111111%;
-  }
-}
-.layout-lg-1to9 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-1to9 .migi {
-    float: left;
-    width: 88.88888889%;
-  }
-}
 .layout-lg-2to1 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-2to1 .hidari {
@@ -1682,8 +1565,8 @@ a.label:focus {
 .layout-lg-2to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-2to1 .migi {
@@ -1694,8 +1577,8 @@ a.label:focus {
 .layout-lg-3to1 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-3to1 .hidari {
@@ -1706,8 +1589,8 @@ a.label:focus {
 .layout-lg-3to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-3to1 .migi {
@@ -1718,8 +1601,8 @@ a.label:focus {
 .layout-lg-4to1 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-4to1 .hidari {
@@ -1730,8 +1613,8 @@ a.label:focus {
 .layout-lg-4to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-4to1 .migi {
@@ -1742,8 +1625,8 @@ a.label:focus {
 .layout-lg-6to1 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-6to1 .hidari {
@@ -1754,8 +1637,8 @@ a.label:focus {
 .layout-lg-6to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1200px) {
   .layout-lg-6to1 .migi {
@@ -1763,36 +1646,12 @@ a.label:focus {
     width: 13.88888889%;
   }
 }
-.layout-lg-9to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-9to1 .hidari {
-    float: left;
-    width: 88.88888889%;
-  }
-}
-.layout-lg-9to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-9to1 .migi {
-    float: left;
-    width: 11.11111111%;
-  }
-}
 .layout-xl-1to1 .hidari,
 .layout-xl-1to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-1to1 .hidari,
@@ -1804,8 +1663,8 @@ a.label:focus {
 .layout-xl-1to2 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-1to2 .hidari {
@@ -1816,8 +1675,8 @@ a.label:focus {
 .layout-xl-1to2 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-1to2 .migi {
@@ -1828,8 +1687,8 @@ a.label:focus {
 .layout-xl-1to3 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-1to3 .hidari {
@@ -1840,8 +1699,8 @@ a.label:focus {
 .layout-xl-1to3 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-1to3 .migi {
@@ -1852,8 +1711,8 @@ a.label:focus {
 .layout-xl-1to4 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-1to4 .hidari {
@@ -1864,8 +1723,8 @@ a.label:focus {
 .layout-xl-1to4 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-1to4 .migi {
@@ -1876,8 +1735,8 @@ a.label:focus {
 .layout-xl-1to6 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-1to6 .hidari {
@@ -1888,8 +1747,8 @@ a.label:focus {
 .layout-xl-1to6 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-1to6 .migi {
@@ -1900,8 +1759,8 @@ a.label:focus {
 .layout-xl-1to9 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-1to9 .hidari {
@@ -1912,8 +1771,8 @@ a.label:focus {
 .layout-xl-1to9 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-1to9 .migi {
@@ -1921,35 +1780,11 @@ a.label:focus {
     width: 88.88888889%;
   }
 }
-.layout-xl-1to12 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-1to12 .hidari {
-    float: left;
-    width: 8.33333333%;
-  }
-}
-.layout-xl-1to12 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-1to12 .migi {
-    float: left;
-    width: 91.66666667%;
-  }
-}
 .layout-xl-2to1 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-2to1 .hidari {
@@ -1960,8 +1795,8 @@ a.label:focus {
 .layout-xl-2to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-2to1 .migi {
@@ -1972,8 +1807,8 @@ a.label:focus {
 .layout-xl-3to1 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-3to1 .hidari {
@@ -1984,8 +1819,8 @@ a.label:focus {
 .layout-xl-3to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-3to1 .migi {
@@ -1996,8 +1831,8 @@ a.label:focus {
 .layout-xl-4to1 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-4to1 .hidari {
@@ -2008,8 +1843,8 @@ a.label:focus {
 .layout-xl-4to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-4to1 .migi {
@@ -2020,8 +1855,8 @@ a.label:focus {
 .layout-xl-6to1 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-6to1 .hidari {
@@ -2032,8 +1867,8 @@ a.label:focus {
 .layout-xl-6to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-6to1 .migi {
@@ -2044,8 +1879,8 @@ a.label:focus {
 .layout-xl-9to1 .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-9to1 .hidari {
@@ -2056,37 +1891,13 @@ a.label:focus {
 .layout-xl-9to1 .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 @media (min-width: 1570px) {
   .layout-xl-9to1 .migi {
     float: left;
     width: 11.11111111%;
-  }
-}
-.layout-xl-12to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-12to1 .hidari {
-    float: left;
-    width: 91.66666667%;
-  }
-}
-.layout-xl-12to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-12to1 .migi {
-    float: left;
-    width: 8.33333333%;
   }
 }
 .stretch-left {
@@ -2111,13 +1922,10 @@ a.label:focus {
   width: 999px;
   right: -999px;
 }
-/* Brand
-// -------------------------------------------------- */
 .brand-container {
   background-color: #3a3b3b;
   max-width: 288px;
-  margin-left: -16px;
-  margin-right: -16px;
+  margin-right: -32px;
 }
 h1,
 h2,
@@ -2305,6 +2113,144 @@ caption {
   -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
   -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
   font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+}
+.h-feed {
+  margin-left: -32px;
+  margin-right: -32px;
+}
+.layout-sm-1to1 .hidari .h-feed .h-entry,
+.layout-sm-1to1 .migi .h-feed .h-entry {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 768px) {
+  .layout-sm-1to1 .hidari .h-feed .h-entry,
+  .layout-sm-1to1 .migi .h-feed .h-entry {
+    float: left;
+    width: 100%;
+  }
+}
+.layout-md-1to1 .hidari .h-feed .h-entry,
+.layout-md-2to1 .hidari .h-feed .h-entry,
+.layout-md-1to1 .migi .h-feed .h-entry,
+.layout-md-1to2 .migi .h-feed .h-entry {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 992px) {
+  .layout-md-1to1 .hidari .h-feed .h-entry,
+  .layout-md-2to1 .hidari .h-feed .h-entry,
+  .layout-md-1to1 .migi .h-feed .h-entry,
+  .layout-md-1to2 .migi .h-feed .h-entry {
+    float: left;
+    width: 100%;
+  }
+}
+.layout-md-3to1 .hidari .h-feed .h-entry,
+.layout-md-4to1 .hidari .h-feed .h-entry,
+.layout-md-1to3 .migi .h-feed .h-entry,
+.layout-md-1to4 .migi .h-feed .h-entry {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 992px) {
+  .layout-md-3to1 .hidari .h-feed .h-entry,
+  .layout-md-4to1 .hidari .h-feed .h-entry,
+  .layout-md-1to3 .migi .h-feed .h-entry,
+  .layout-md-1to4 .migi .h-feed .h-entry {
+    float: left;
+    width: 50%;
+  }
+}
+.layout-lg-1to1 .hidari .h-feed .h-entry,
+.layout-lg-2to1 .hidari .h-feed .h-entry,
+.layout-lg-1to1 .migi .h-feed .h-entry,
+.layout-lg-1to2 .migi .h-feed .h-entry {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 1200px) {
+  .layout-lg-1to1 .hidari .h-feed .h-entry,
+  .layout-lg-2to1 .hidari .h-feed .h-entry,
+  .layout-lg-1to1 .migi .h-feed .h-entry,
+  .layout-lg-1to2 .migi .h-feed .h-entry {
+    float: left;
+    width: 100%;
+  }
+}
+.layout-lg-3to1 .hidari .h-feed .h-entry,
+.layout-lg-4to1 .hidari .h-feed .h-entry,
+.layout-lg-6to1 .hidari .h-feed .h-entry,
+.layout-lg-1to3 .migi .h-feed .h-entry,
+.layout-lg-1to4 .migi .h-feed .h-entry,
+.layout-lg-1to6 .migi .h-feed .h-entry {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 1200px) {
+  .layout-lg-3to1 .hidari .h-feed .h-entry,
+  .layout-lg-4to1 .hidari .h-feed .h-entry,
+  .layout-lg-6to1 .hidari .h-feed .h-entry,
+  .layout-lg-1to3 .migi .h-feed .h-entry,
+  .layout-lg-1to4 .migi .h-feed .h-entry,
+  .layout-lg-1to6 .migi .h-feed .h-entry {
+    float: left;
+    width: 50%;
+  }
+}
+.layout-xl-1to1 .hidari .h-feed .h-entry,
+.layout-xl-1to1 .migi .h-feed .h-entry {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 1570px) {
+  .layout-xl-1to1 .hidari .h-feed .h-entry,
+  .layout-xl-1to1 .migi .h-feed .h-entry {
+    float: left;
+    width: 100%;
+  }
+}
+.layout-xl-2to1 .hidari .h-feed .h-entry,
+.layout-xl-3to1 .hidari .h-feed .h-entry,
+.layout-xl-4to1 .hidari .h-feed .h-entry,
+.layout-xl-6to1 .hidari .h-feed .h-entry,
+.layout-xl-9to1 .hidari .h-feed .h-entry,
+.layout-xl-1to2 .migi .h-feed .h-entry,
+.layout-xl-1to3 .migi .h-feed .h-entry,
+.layout-xl-1to4 .migi .h-feed .h-entry,
+.layout-xl-1to6 .migi .h-feed .h-entry,
+.layout-xl-1to9 .migi .h-feed .h-entry {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 1570px) {
+  .layout-xl-2to1 .hidari .h-feed .h-entry,
+  .layout-xl-3to1 .hidari .h-feed .h-entry,
+  .layout-xl-4to1 .hidari .h-feed .h-entry,
+  .layout-xl-6to1 .hidari .h-feed .h-entry,
+  .layout-xl-9to1 .hidari .h-feed .h-entry,
+  .layout-xl-1to2 .migi .h-feed .h-entry,
+  .layout-xl-1to3 .migi .h-feed .h-entry,
+  .layout-xl-1to4 .migi .h-feed .h-entry,
+  .layout-xl-1to6 .migi .h-feed .h-entry,
+  .layout-xl-1to9 .migi .h-feed .h-entry {
+    float: left;
+    width: 50%;
+  }
 }
 .h-entry .p-summary {
   font-size: 26px;
