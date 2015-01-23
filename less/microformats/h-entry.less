@@ -5,39 +5,89 @@
 // http://microformats.org/wiki/h-entry
 // --------------------------------------------------
 
-.h-entry {
+.h-entry {}
 
-}
+// Property: name (title)
+.h-entry .p-name {}
 
-.p-name {}
-
-.p-summary {
-  margin-bottom: @line-height-computed;
+// Property: summary
+.h-entry .p-summary {
   font-size: @font-size-large;
   font-weight: normal;
   line-height: @line-height-large;
+  margin-bottom: @line-height-sm-computed;
 }
 
-.e-content {}
-.dt-published {
+// Property: meta
+.h-entry .p-meta {
   font-family: @font-family-base;
   font-size: @font-size-small;
   line-height: @line-height-small;
-  color: @text-muted;
-  position: relative;
-  padding-left: (@grid-gutter-width + @padding-base-horizontal);
-  margin-bottom: @line-height-computed;
+  margin-bottom: @line-height-sm-computed;
 
-  &:after {
-    content: '';
-    background-color: @brand-primary;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: @grid-gutter-width;
-    height: (@font-size-small* @line-height-small);
+  &, a {
+    color: @text-muted;
   }
+
+  a {
+    text-decoration: underline;
+  }
+
+  // Draw a coloured box left of the text
+  // position: relative;
+  // padding-left: (@grid-gutter-width + @padding-base-horizontal);
+  // &:after {
+  //   content: '';
+  //   background-color: @brand-primary;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: @grid-gutter-width;
+  //   height: (@font-size-small* @line-height-small);
+  // }
 }
-.dt-updated {}
-.p-author {}
-.p-category {}
+
+// Element tree: content
+.h-entry .e-content {}
+
+// Datetime: published
+.h-entry .dt-published {}
+
+// Datetime: updated
+.h-entry .dt-updated {}
+
+// Property: author
+.h-entry .p-author {}
+
+// Property: category
+.h-entry .p-category {
+  display: inline-block;
+  background-color: @brand-primary;
+  color: @brand-primary-text;
+  padding: 0 @padding-small-horizontal;
+}
+
+
+// h-feed styling
+// -------------------------
+
+// Property: name (title)
+.h-feed .h-entry .p-name {
+  .h2;
+  margin-bottom: (@line-height-sm-computed / 2);
+}
+
+// Property: summary
+.h-feed .h-entry .p-summary {
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  margin-bottom: @padding-small-horizontal;
+}
+
+// Property: meta
+.h-feed .h-entry .p-meta {
+  // padding-left: ((@grid-gutter-width / 2) + @padding-small-horizontal);
+  // &:after {
+  //   width: (@grid-gutter-width / 2);
+  // }
+}
