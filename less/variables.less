@@ -128,7 +128,7 @@
 
 
 // X-large screen / HD desktop
-@screen-xl:                  1400px;
+@screen-xl:                  1570px;
 @screen-xl-min:              @screen-xl;
 @screen-xl-desktop:          @screen-xl-min;
 
@@ -144,6 +144,8 @@
 @grid-columns:                36;
 //** Padding between columns. Gets divided in half for the left and right.
 @grid-gutter-width:           32px;
+//** Padding outside hidari/migi containers
+@layout-gutter-width:         (@grid-gutter-width * 2);
 
 //** Hidari (left) container
 @layout-hidari-gutter-left:   (.5 * @grid-gutter-width);
@@ -158,7 +160,7 @@
 //## Define the maximum width of `.container` for different screen sizes.
 
 // Large screen / wide desktop
-@container-xlarge-desktop:     (1570px + @grid-gutter-width);
+@container-xlarge-desktop:     (1400px + @grid-gutter-width);
 //** For `@screen-xl-min` and up.
 @container-xl:                 @container-xlarge-desktop;
 

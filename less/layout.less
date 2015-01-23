@@ -9,33 +9,26 @@
 // Hidari/migi containers
 // -------------------------
 
+// Mobile-first layout
 .hidari,
 .migi {
-  padding-top: (2 * @line-height-computed);
-  padding-bottom: (2 * @line-height-computed);
-  .transition(~'width 200ms ease-in-out');
+  .make-xs-column(@grid-columns, @layout-gutter-width);
+  padding-top: @line-height-computed;
+  padding-bottom: @line-height-computed;
 }
-.hidari {
-  background-color: @layout-hidari-bg;
-  color: @layout-hidari-color;
-  padding-left: @layout-hidari-gutter-left;
-  padding-right: @layout-hidari-gutter-right;
-}
-.migi {
-  background-color: @layout-migi-bg;
-  color: @layout-migi-color;
-  padding-left: @layout-migi-gutter-left;
-  padding-right: @layout-migi-gutter-right;
-}
+.hidari { background-color: @layout-hidari-bg; color: @layout-hidari-color; }
+.migi { background-color: @layout-migi-bg; color: @layout-migi-color; }
 
+// Responsive layout
 @media (min-width: @grid-float-breakpoint) {
 
-  // Hidari/migi containers should never be shorter than viewport
-  .hidari, .migi { min-height: 1140px; }
-
-  // Borders when displayed side-by-side
+  // Borders between containers
   .hidari { border-right: @padding-small-horizontal solid @layout-hidari-border; }
   .migi { border-left: @padding-small-horizontal solid @layout-migi-border; }
+
+  // Fill viewport vertically
+  .hidari, .migi { min-height: 1140px !important; }
+
   // Extend hidari/migi bg colors to fill viewport
   body {
     background-image: linear-gradient(
@@ -46,6 +39,174 @@
       @layout-migi-bg 100%
     );
   }
+}
+
+
+// Layout variations
+// -------------------------
+
+// Small screen / tablet
+.layout-sm-1to1 {
+  .hidari, .migi { .make-sm-column((@grid-columns / 2), @layout-gutter-width); }
+}
+.layout-sm-1to2 {
+  .hidari { .make-sm-column(round((@grid-columns * .33)), @layout-gutter-width); }
+  .migi { .make-sm-column(round((@grid-columns * .66)), @layout-gutter-width); }
+}
+.layout-sm-1to3 {
+  .hidari { .make-sm-column(round((@grid-columns * .25)), @layout-gutter-width); }
+  .migi { .make-sm-column(round((@grid-columns * .75)), @layout-gutter-width); }
+}
+.layout-sm-1to4 {
+  .hidari { .make-sm-column(round((@grid-columns * .20)), @layout-gutter-width); }
+  .migi { .make-sm-column(round((@grid-columns * .80)), @layout-gutter-width); }
+}
+.layout-sm-2to1 {
+  .hidari { .make-sm-column(round((@grid-columns * .66)), @layout-gutter-width); }
+  .migi { .make-sm-column(round((@grid-columns * .33)), @layout-gutter-width); }
+}
+.layout-sm-3to1 {
+  .hidari { .make-sm-column(round((@grid-columns * .75)), @layout-gutter-width); }
+  .migi { .make-sm-column(round((@grid-columns * .25)), @layout-gutter-width); }
+}
+.layout-sm-3to1 {
+  .hidari { .make-sm-column(round((@grid-columns * .80)), @layout-gutter-width); }
+  .migi { .make-sm-column(round((@grid-columns * .20)), @layout-gutter-width); }
+}
+
+// Medium screen / desktop
+.layout-md-1to1 {
+  .hidari, .migi { .make-md-column((@grid-columns / 2), @layout-gutter-width); }
+}
+.layout-md-1to2 {
+  .hidari { .make-md-column(round((@grid-columns * .33)), @layout-gutter-width); }
+  .migi { .make-md-column(round((@grid-columns * .66)), @layout-gutter-width); }
+}
+.layout-md-1to3 {
+  .hidari { .make-md-column(round((@grid-columns * .25)), @layout-gutter-width); }
+  .migi { .make-md-column(round((@grid-columns * .75)), @layout-gutter-width); }
+}
+.layout-md-1to4 {
+  .hidari { .make-md-column(round((@grid-columns * .10)), @layout-gutter-width); }
+  .migi { .make-md-column(round((@grid-columns * .80)), @layout-gutter-width); }
+}
+.layout-md-1to6 {
+  .hidari { .make-md-column(round((@grid-columns * .15)), @layout-gutter-width); }
+  .migi { .make-md-column(round((@grid-columns * .85)), @layout-gutter-width); }
+}
+.layout-md-2to1 {
+  .hidari { .make-md-column(round((@grid-columns * .66)), @layout-gutter-width); }
+  .migi { .make-md-column(round((@grid-columns * .33)), @layout-gutter-width); }
+}
+.layout-md-3to1 {
+  .hidari { .make-md-column(round((@grid-columns * .75)), @layout-gutter-width); }
+  .migi { .make-md-column(round((@grid-columns * .25)), @layout-gutter-width); }
+}
+.layout-md-4to1 {
+  .hidari { .make-md-column(round((@grid-columns * .80)), @layout-gutter-width); }
+  .migi { .make-md-column(round((@grid-columns * .20)), @layout-gutter-width); }
+}
+.layout-md-6to1 {
+  .hidari { .make-md-column(round((@grid-columns * .85)), @layout-gutter-width); }
+  .migi { .make-md-column(round((@grid-columns * .15)), @layout-gutter-width); }
+}
+
+// Large screen / wide desktop
+.layout-lg-1to1 {
+  .hidari, .migi { .make-lg-column((@grid-columns / 2), @layout-gutter-width); }
+}
+.layout-lg-1to2 {
+  .hidari { .make-lg-column(round((@grid-columns * .33)), @layout-gutter-width); }
+  .migi { .make-lg-column(round((@grid-columns * .66)), @layout-gutter-width); }
+}
+.layout-lg-1to3 {
+  .hidari { .make-lg-column(round((@grid-columns * .25)), @layout-gutter-width); }
+  .migi { .make-lg-column(round((@grid-columns * .75)), @layout-gutter-width); }
+}
+.layout-lg-1to4 {
+  .hidari { .make-lg-column(round((@grid-columns * .20)), @layout-gutter-width); }
+  .migi { .make-lg-column(round((@grid-columns * .80)), @layout-gutter-width); }
+}
+.layout-lg-1to6 {
+  .hidari { .make-lg-column(round((@grid-columns * .15)), @layout-gutter-width); }
+  .migi { .make-lg-column(round((@grid-columns * .85)), @layout-gutter-width); }
+}
+.layout-lg-1to9 {
+  .hidari { .make-lg-column(round((@grid-columns * .10)), @layout-gutter-width); }
+  .migi { .make-lg-column(round((@grid-columns * .90)), @layout-gutter-width); }
+}
+.layout-lg-2to1 {
+  .hidari { .make-lg-column(round((@grid-columns * .66)), @layout-gutter-width); }
+  .migi { .make-lg-column(round((@grid-columns * .33)), @layout-gutter-width); }
+}
+.layout-lg-3to1 {
+  .hidari { .make-lg-column(round((@grid-columns * .75)), @layout-gutter-width); }
+  .migi { .make-lg-column(round((@grid-columns * .25)), @layout-gutter-width); }
+}
+.layout-lg-4to1 {
+  .hidari { .make-lg-column(round((@grid-columns * .80)), @layout-gutter-width); }
+  .migi { .make-lg-column(round((@grid-columns * .20)), @layout-gutter-width); }
+}
+.layout-lg-6to1 {
+  .hidari { .make-lg-column(round((@grid-columns * .85)), @layout-gutter-width); }
+  .migi { .make-lg-column(round((@grid-columns * .15)), @layout-gutter-width); }
+}
+.layout-lg-9to1 {
+  .hidari { .make-lg-column(round((@grid-columns * .90)), @layout-gutter-width); }
+  .migi { .make-lg-column(round((@grid-columns * .10)), @layout-gutter-width); }
+}
+
+// X-large screen / HD desktop
+.layout-xl-1to1 {
+  .hidari, .migi { .make-xl-column((@grid-columns / 2), @layout-gutter-width); }
+}
+.layout-xl-1to2 {
+  .hidari { .make-xl-column(round((@grid-columns * .33)), @layout-gutter-width); }
+  .migi { .make-xl-column(round((@grid-columns * .66)), @layout-gutter-width); }
+}
+.layout-xl-1to3 {
+  .hidari { .make-xl-column(round((@grid-columns * .25)), @layout-gutter-width); }
+  .migi { .make-xl-column(round((@grid-columns * .75)), @layout-gutter-width); }
+}
+.layout-xl-1to4 {
+  .hidari { .make-xl-column(round((@grid-columns * .20)), @layout-gutter-width); }
+  .migi { .make-xl-column(round((@grid-columns * .80)), @layout-gutter-width); }
+}
+.layout-xl-1to6 {
+  .hidari { .make-xl-column(round((@grid-columns * .15)), @layout-gutter-width); }
+  .migi { .make-xl-column(round((@grid-columns * .85)), @layout-gutter-width); }
+}
+.layout-xl-1to9 {
+  .hidari { .make-xl-column(round((@grid-columns * .10)), @layout-gutter-width); }
+  .migi { .make-xl-column(round((@grid-columns * .90)), @layout-gutter-width); }
+}
+.layout-xl-1to12 {
+  .hidari { .make-xl-column(round((@grid-columns * .08)), @layout-gutter-width); }
+  .migi { .make-xl-column(round((@grid-columns * .92)), @layout-gutter-width); }
+}
+.layout-xl-2to1 {
+  .hidari { .make-xl-column(round((@grid-columns * .66)), @layout-gutter-width); }
+  .migi { .make-xl-column(round((@grid-columns * .33)), @layout-gutter-width); }
+}
+.layout-xl-3to1 {
+  .hidari { .make-xl-column(round((@grid-columns * .75)), @layout-gutter-width); }
+  .migi { .make-xl-column(round((@grid-columns * .25)), @layout-gutter-width); }
+}
+.layout-xl-4to1 {
+  .hidari { .make-xl-column(round((@grid-columns * .80)), @layout-gutter-width); }
+  .migi { .make-xl-column(round((@grid-columns * .20)), @layout-gutter-width); }
+}
+.layout-xl-6to1 {
+  .hidari { .make-xl-column(round((@grid-columns * .85)), @layout-gutter-width); }
+  .migi { .make-xl-column(round((@grid-columns * .15)), @layout-gutter-width); }
+}
+.layout-xl-9to1 {
+  .hidari { .make-xl-column(round((@grid-columns * .90)), @layout-gutter-width); }
+  .migi { .make-xl-column(round((@grid-columns * .10)), @layout-gutter-width); }
+}
+.layout-xl-12to1 {
+  .hidari { .make-xl-column(round((@grid-columns * .92)), @layout-gutter-width); }
+  .migi { .make-xl-column(round((@grid-columns * .08)), @layout-gutter-width); }
 }
 
 
@@ -84,4 +245,6 @@
 .brand-container {
   background-color: @brand-bg;
   max-width: 288px; // half actual graphic width
+  margin-left: (@grid-gutter-width / -2);
+  margin-right: (@grid-gutter-width / -2);
 }

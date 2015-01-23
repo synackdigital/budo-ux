@@ -8,26 +8,37 @@
 // Set the container width, and override it for fixed navbars in media queries.
 
 .container {
-  // @media (min-width: @screen-xs-min) {
-    // border-top: 10px solid cyan;
-  // }
-  // @media (min-width: @screen-md-min) {
-    // border-top: 10px solid gold;
-  // }
-  // @media (min-width: @screen-lg-min) {
-    // border-top: 10px solid salmon;
-  // }
+  .container-fixed();
+
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
   @media (min-width: @screen-xl-min) {
     width: @container-xl;
-    // border-top: 10px solid orchid;
   }
 }
 
 
-// X-large grid
+// Fluid container
 //
-// Columns, offsets, pushes, and pulls for the large desktop device range.
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
 
-@media (min-width: @screen-xl-min) {
-  .make-grid(xl);
+.container-fluid {
+  .container-fixed();
+}
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+  .make-row();
 }
