@@ -844,8 +844,8 @@ a.label:focus {
 .container:after,
 .container-fluid:before,
 .container-fluid:after,
-.row:before,
-.row:after,
+.grid:before,
+.grid:after,
 .h-feed:before,
 .h-feed:after {
   content: " ";
@@ -854,7 +854,7 @@ a.label:focus {
 .clearfix:after,
 .container:after,
 .container-fluid:after,
-.row:after,
+.grid:after,
 .h-feed:after {
   clear: both;
 }
@@ -1134,9 +1134,14 @@ a.label:focus {
   padding-left: 32px;
   padding-right: 32px;
 }
-.row {
-  margin-left: -32px;
-  margin-right: -32px;
+.container-fluid-md {
+  max-width: 992px;
+}
+.container-fluid-lg {
+  max-width: 1200px;
+}
+.container-fluid-xl {
+  max-width: 1570px;
 }
 .hidari,
 .migi {
@@ -1144,8 +1149,8 @@ a.label:focus {
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -1164,740 +1169,146 @@ a.label:focus {
   .migi {
     border-left: 8px solid #d8d9d9;
   }
-  .hidari,
-  .migi {
-    min-height: 1140px !important;
-  }
   body {
     background-image: linear-gradient(to right, #141414 0%, #141414 50%, #ffffff 50%, #ffffff 100%);
   }
 }
-.layout-sm-1to1 .hidari,
-.layout-sm-1to1 .migi {
+.grid {
+  margin-left: -32px;
+  margin-right: -32px;
+}
+.grid-zen .hidari,
+.grid-zen .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 @media (min-width: 768px) {
-  .layout-sm-1to1 .hidari,
-  .layout-sm-1to1 .migi {
+  .grid-zen .hidari,
+  .grid-zen .migi {
     float: left;
     width: 50%;
   }
 }
-.layout-sm-1to2 .hidari {
+.grid-hidarigawa .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 @media (min-width: 768px) {
-  .layout-sm-1to2 .hidari {
+  .grid-hidarigawa .hidari {
     float: left;
     width: 33.33333333%;
   }
 }
-.layout-sm-1to2 .migi {
+@media (min-width: 992px) {
+  .grid-hidarigawa .hidari {
+    float: left;
+    width: 27.77777778%;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-hidarigawa .hidari {
+    float: left;
+    width: 22.22222222%;
+  }
+}
+@media (min-width: 1570px) {
+  .grid-hidarigawa .hidari {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.grid-hidarigawa .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 @media (min-width: 768px) {
-  .layout-sm-1to2 .migi {
+  .grid-hidarigawa .migi {
     float: left;
     width: 66.66666667%;
   }
 }
-.layout-sm-1to3 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 768px) {
-  .layout-sm-1to3 .hidari {
+@media (min-width: 992px) {
+  .grid-hidarigawa .migi {
     float: left;
-    width: 25%;
+    width: 72.22222222%;
   }
 }
-.layout-sm-1to3 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 768px) {
-  .layout-sm-1to3 .migi {
+@media (min-width: 1200px) {
+  .grid-hidarigawa .migi {
     float: left;
-    width: 75%;
+    width: 77.77777778%;
   }
 }
-.layout-sm-2to1 .hidari {
+@media (min-width: 1570px) {
+  .grid-hidarigawa .migi {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+.grid-migigawa .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 @media (min-width: 768px) {
-  .layout-sm-2to1 .hidari {
+  .grid-migigawa .hidari {
     float: left;
     width: 66.66666667%;
   }
 }
-.layout-sm-2to1 .migi {
+@media (min-width: 992px) {
+  .grid-migigawa .hidari {
+    float: left;
+    width: 72.22222222%;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-migigawa .hidari {
+    float: left;
+    width: 77.77777778%;
+  }
+}
+@media (min-width: 1570px) {
+  .grid-migigawa .hidari {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+.grid-migigawa .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 @media (min-width: 768px) {
-  .layout-sm-2to1 .migi {
+  .grid-migigawa .migi {
     float: left;
     width: 33.33333333%;
   }
 }
-.layout-sm-3to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 768px) {
-  .layout-sm-3to1 .hidari {
-    float: left;
-    width: 75%;
-  }
-}
-.layout-sm-3to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 768px) {
-  .layout-sm-3to1 .migi {
-    float: left;
-    width: 25%;
-  }
-}
-.layout-md-1to1 .hidari,
-.layout-md-1to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
 @media (min-width: 992px) {
-  .layout-md-1to1 .hidari,
-  .layout-md-1to1 .migi {
+  .grid-migigawa .migi {
     float: left;
-    width: 50%;
+    width: 27.77777778%;
   }
-}
-.layout-md-1to2 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 992px) {
-  .layout-md-1to2 .hidari {
-    float: left;
-    width: 33.33333333%;
-  }
-}
-.layout-md-1to2 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 992px) {
-  .layout-md-1to2 .migi {
-    float: left;
-    width: 66.66666667%;
-  }
-}
-.layout-md-1to3 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 992px) {
-  .layout-md-1to3 .hidari {
-    float: left;
-    width: 25%;
-  }
-}
-.layout-md-1to3 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 992px) {
-  .layout-md-1to3 .migi {
-    float: left;
-    width: 75%;
-  }
-}
-.layout-md-1to4 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 992px) {
-  .layout-md-1to4 .hidari {
-    float: left;
-    width: 11.11111111%;
-  }
-}
-.layout-md-1to4 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 992px) {
-  .layout-md-1to4 .migi {
-    float: left;
-    width: 80.55555556%;
-  }
-}
-.layout-md-2to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 992px) {
-  .layout-md-2to1 .hidari {
-    float: left;
-    width: 66.66666667%;
-  }
-}
-.layout-md-2to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 992px) {
-  .layout-md-2to1 .migi {
-    float: left;
-    width: 33.33333333%;
-  }
-}
-.layout-md-3to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 992px) {
-  .layout-md-3to1 .hidari {
-    float: left;
-    width: 75%;
-  }
-}
-.layout-md-3to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 992px) {
-  .layout-md-3to1 .migi {
-    float: left;
-    width: 25%;
-  }
-}
-.layout-md-4to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 992px) {
-  .layout-md-4to1 .hidari {
-    float: left;
-    width: 80.55555556%;
-  }
-}
-.layout-md-4to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 992px) {
-  .layout-md-4to1 .migi {
-    float: left;
-    width: 19.44444444%;
-  }
-}
-.layout-lg-1to1 .hidari,
-.layout-lg-1to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
 }
 @media (min-width: 1200px) {
-  .layout-lg-1to1 .hidari,
-  .layout-lg-1to1 .migi {
+  .grid-migigawa .migi {
     float: left;
-    width: 50%;
+    width: 22.22222222%;
   }
-}
-.layout-lg-1to2 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-1to2 .hidari {
-    float: left;
-    width: 33.33333333%;
-  }
-}
-.layout-lg-1to2 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-1to2 .migi {
-    float: left;
-    width: 66.66666667%;
-  }
-}
-.layout-lg-1to3 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-1to3 .hidari {
-    float: left;
-    width: 25%;
-  }
-}
-.layout-lg-1to3 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-1to3 .migi {
-    float: left;
-    width: 75%;
-  }
-}
-.layout-lg-1to4 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-1to4 .hidari {
-    float: left;
-    width: 19.44444444%;
-  }
-}
-.layout-lg-1to4 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-1to4 .migi {
-    float: left;
-    width: 80.55555556%;
-  }
-}
-.layout-lg-1to6 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-1to6 .hidari {
-    float: left;
-    width: 13.88888889%;
-  }
-}
-.layout-lg-1to6 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-1to6 .migi {
-    float: left;
-    width: 86.11111111%;
-  }
-}
-.layout-lg-2to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-2to1 .hidari {
-    float: left;
-    width: 66.66666667%;
-  }
-}
-.layout-lg-2to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-2to1 .migi {
-    float: left;
-    width: 33.33333333%;
-  }
-}
-.layout-lg-3to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-3to1 .hidari {
-    float: left;
-    width: 75%;
-  }
-}
-.layout-lg-3to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-3to1 .migi {
-    float: left;
-    width: 25%;
-  }
-}
-.layout-lg-4to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-4to1 .hidari {
-    float: left;
-    width: 80.55555556%;
-  }
-}
-.layout-lg-4to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-4to1 .migi {
-    float: left;
-    width: 19.44444444%;
-  }
-}
-.layout-lg-6to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-6to1 .hidari {
-    float: left;
-    width: 86.11111111%;
-  }
-}
-.layout-lg-6to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-6to1 .migi {
-    float: left;
-    width: 13.88888889%;
-  }
-}
-.layout-xl-1to1 .hidari,
-.layout-xl-1to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
 }
 @media (min-width: 1570px) {
-  .layout-xl-1to1 .hidari,
-  .layout-xl-1to1 .migi {
+  .grid-migigawa .migi {
     float: left;
-    width: 50%;
-  }
-}
-.layout-xl-1to2 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-1to2 .hidari {
-    float: left;
-    width: 33.33333333%;
-  }
-}
-.layout-xl-1to2 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-1to2 .migi {
-    float: left;
-    width: 66.66666667%;
-  }
-}
-.layout-xl-1to3 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-1to3 .hidari {
-    float: left;
-    width: 25%;
-  }
-}
-.layout-xl-1to3 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-1to3 .migi {
-    float: left;
-    width: 75%;
-  }
-}
-.layout-xl-1to4 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-1to4 .hidari {
-    float: left;
-    width: 19.44444444%;
-  }
-}
-.layout-xl-1to4 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-1to4 .migi {
-    float: left;
-    width: 80.55555556%;
-  }
-}
-.layout-xl-1to6 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-1to6 .hidari {
-    float: left;
-    width: 13.88888889%;
-  }
-}
-.layout-xl-1to6 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-1to6 .migi {
-    float: left;
-    width: 86.11111111%;
-  }
-}
-.layout-xl-1to9 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-1to9 .hidari {
-    float: left;
-    width: 11.11111111%;
-  }
-}
-.layout-xl-1to9 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-1to9 .migi {
-    float: left;
-    width: 88.88888889%;
-  }
-}
-.layout-xl-2to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-2to1 .hidari {
-    float: left;
-    width: 66.66666667%;
-  }
-}
-.layout-xl-2to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-2to1 .migi {
-    float: left;
-    width: 33.33333333%;
-  }
-}
-.layout-xl-3to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-3to1 .hidari {
-    float: left;
-    width: 75%;
-  }
-}
-.layout-xl-3to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-3to1 .migi {
-    float: left;
-    width: 25%;
-  }
-}
-.layout-xl-4to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-4to1 .hidari {
-    float: left;
-    width: 80.55555556%;
-  }
-}
-.layout-xl-4to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-4to1 .migi {
-    float: left;
-    width: 19.44444444%;
-  }
-}
-.layout-xl-6to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-6to1 .hidari {
-    float: left;
-    width: 86.11111111%;
-  }
-}
-.layout-xl-6to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-6to1 .migi {
-    float: left;
-    width: 13.88888889%;
-  }
-}
-.layout-xl-9to1 .hidari {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-9to1 .hidari {
-    float: left;
-    width: 88.88888889%;
-  }
-}
-.layout-xl-9to1 .migi {
-  position: relative;
-  min-height: 1px;
-  padding-left: 64px;
-  padding-right: 64px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-9to1 .migi {
-    float: left;
-    width: 11.11111111%;
+    width: 16.66666667%;
   }
 }
 .stretch-left {

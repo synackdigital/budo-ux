@@ -34,11 +34,131 @@
   .container-fixed();
 }
 
+// Optional max-width for fluid containers (pick one)
+.container-fluid-md {
+  max-width: @screen-md;
+}
+.container-fluid-lg {
+  max-width: @screen-lg;
+}
+.container-fluid-xl {
+  max-width: @screen-xl;
+}
 
-// Row
-//
-// Rows contain and clear the floats of your columns.
 
-.row {
+// Hidari/migi containers
+// -------------------------
+
+// Mobile-first layout
+.hidari,
+.migi {
+  .make-xs-column(@grid-columns);
+  padding-top: @line-height-computed;
+  padding-bottom: @line-height-computed;
+}
+.hidari { background-color: @layout-hidari-bg; color: @layout-hidari-color; }
+.migi { background-color: @layout-migi-bg; color: @layout-migi-color; }
+
+// Responsive layout
+@media (min-width: @grid-float-breakpoint) {
+
+  // Borders between containers
+  .hidari { border-right: @padding-small-horizontal solid @layout-hidari-border; }
+  .migi { border-left: @padding-small-horizontal solid @layout-migi-border; }
+
+  // Extend hidari/migi bg colors to fill viewport
+  body {
+    background-image: linear-gradient(
+      to right,
+      @layout-hidari-bg 0%,
+      @layout-hidari-bg 50%,
+      @layout-migi-bg 50%,
+      @layout-migi-bg 100%
+    );
+  }
+}
+
+
+// Grid base
+// -------------------------
+
+.grid {
   .make-row();
+}
+
+
+// Grid variations
+// -------------------------
+
+.grid-zen {
+  .hidari, .migi {
+    .make-sm-column( round((@grid-columns * .5)) );
+  }
+}
+.grid-hidarigawa {
+  .hidari {
+    .make-sm-column( ceil((@grid-columns * .3)) );
+    .make-md-column( ceil((@grid-columns * .25)) );
+    .make-lg-column( ceil((@grid-columns * .2)) );
+    .make-xl-column( ceil((@grid-columns * .15)) );
+  }
+  .migi {
+    .make-sm-column( floor((@grid-columns * .7)) );
+    .make-md-column( floor((@grid-columns * .75)) );
+    .make-lg-column( floor((@grid-columns * .8)) );
+    .make-xl-column( floor((@grid-columns * .85)) );
+  }
+}
+.grid-migigawa {
+  .hidari {
+    .make-sm-column( floor((@grid-columns * .7)) );
+    .make-md-column( floor((@grid-columns * .75)) );
+    .make-lg-column( floor((@grid-columns * .8)) );
+    .make-xl-column( floor((@grid-columns * .85)) );
+  }
+  .migi {
+    .make-sm-column( ceil((@grid-columns * .3)) );
+    .make-md-column( ceil((@grid-columns * .25)) );
+    .make-lg-column( ceil((@grid-columns * .2)) );
+    .make-xl-column( ceil((@grid-columns * .15)) );
+  }
+}
+
+
+// Stretching components
+// -------------------------
+
+.stretch-left {
+  position: relative;
+}
+.stretch-left:before {
+  content: '';
+  background-color: inherit;
+  position: absolute;
+  height: 100%;
+  width: 999px;
+  left: -999px;
+}
+
+.stretch-right {
+  position: relative;
+}
+.stretch-right:before {
+  content: '';
+  background-color: inherit;
+  position: absolute;
+  height: 100%;
+  width: 999px;
+  right: -999px;
+}
+
+
+// Brand container
+// -------------------------
+
+.brand-container {
+  background-color: @brand-bg;
+  max-width: 288px; // half actual graphic width
+  // margin-left: (@grid-gutter-width / -2);
+  margin-right: (@grid-gutter-width / -2);
 }

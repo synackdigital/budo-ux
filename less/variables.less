@@ -149,19 +149,10 @@
 //## Define your custom responsive grid.
 
 //** Number of columns in the grid.
-//** 36 can be evenly divided by 2, 3, 4, 6, 9, 12, 18
-@grid-columns:                36;
+//** 18 can be evenly divided by 2, 3, 6 and 9
+@grid-columns:                18;
 //** Padding between columns. Gets divided in half for the left and right.
 @grid-gutter-width:           64px;
-//** Padding outside hidari/migi containers
-@layout-gutter-width:         (@grid-gutter-width * 2);
-
-//** Hidari (left) container
-@layout-hidari-gutter-left:   (.5 * @grid-gutter-width);
-@layout-hidari-gutter-right:  (.5 * @grid-gutter-width);
-//** Migi (right) container
-@layout-migi-gutter-left:     (.5 * @grid-gutter-width);
-@layout-migi-gutter-right:    (.5 * @grid-gutter-width);
 
 
 //== Container sizes
