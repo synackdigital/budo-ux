@@ -846,8 +846,8 @@ a.label:focus {
 .container-fluid:after,
 .grid:before,
 .grid:after,
-.h-feed:before,
-.h-feed:after {
+.block:before,
+.block:after {
   content: " ";
   display: table;
 }
@@ -855,7 +855,7 @@ a.label:focus {
 .container:after,
 .container-fluid:after,
 .grid:after,
-.h-feed:after {
+.block:after {
   clear: both;
 }
 .center-block {
@@ -1177,136 +1177,136 @@ a.label:focus {
   margin-left: -32px;
   margin-right: -32px;
 }
-.grid-zen .hidari,
-.grid-zen .migi {
+.grid-center .hidari,
+.grid-center .migi {
   position: relative;
   min-height: 1px;
   padding-left: 32px;
   padding-right: 32px;
 }
 @media (min-width: 768px) {
-  .grid-zen .hidari,
-  .grid-zen .migi {
+  .grid-center .hidari,
+  .grid-center .migi {
     float: left;
     width: 50%;
   }
 }
-.grid-hidarigawa .hidari {
+.grid-farleft .hidari {
   position: relative;
   min-height: 1px;
   padding-left: 32px;
   padding-right: 32px;
 }
 @media (min-width: 768px) {
-  .grid-hidarigawa .hidari {
+  .grid-farleft .hidari {
     float: left;
     width: 33.33333333%;
   }
 }
 @media (min-width: 992px) {
-  .grid-hidarigawa .hidari {
+  .grid-farleft .hidari {
     float: left;
     width: 27.77777778%;
   }
 }
 @media (min-width: 1200px) {
-  .grid-hidarigawa .hidari {
+  .grid-farleft .hidari {
     float: left;
     width: 22.22222222%;
   }
 }
 @media (min-width: 1570px) {
-  .grid-hidarigawa .hidari {
+  .grid-farleft .hidari {
     float: left;
     width: 16.66666667%;
   }
 }
-.grid-hidarigawa .migi {
+.grid-farleft .migi {
   position: relative;
   min-height: 1px;
   padding-left: 32px;
   padding-right: 32px;
 }
 @media (min-width: 768px) {
-  .grid-hidarigawa .migi {
+  .grid-farleft .migi {
     float: left;
     width: 66.66666667%;
   }
 }
 @media (min-width: 992px) {
-  .grid-hidarigawa .migi {
+  .grid-farleft .migi {
     float: left;
     width: 72.22222222%;
   }
 }
 @media (min-width: 1200px) {
-  .grid-hidarigawa .migi {
+  .grid-farleft .migi {
     float: left;
     width: 77.77777778%;
   }
 }
 @media (min-width: 1570px) {
-  .grid-hidarigawa .migi {
+  .grid-farleft .migi {
     float: left;
     width: 83.33333333%;
   }
 }
-.grid-migigawa .hidari {
+.grid-farright .hidari {
   position: relative;
   min-height: 1px;
   padding-left: 32px;
   padding-right: 32px;
 }
 @media (min-width: 768px) {
-  .grid-migigawa .hidari {
+  .grid-farright .hidari {
     float: left;
     width: 66.66666667%;
   }
 }
 @media (min-width: 992px) {
-  .grid-migigawa .hidari {
+  .grid-farright .hidari {
     float: left;
     width: 72.22222222%;
   }
 }
 @media (min-width: 1200px) {
-  .grid-migigawa .hidari {
+  .grid-farright .hidari {
     float: left;
     width: 77.77777778%;
   }
 }
 @media (min-width: 1570px) {
-  .grid-migigawa .hidari {
+  .grid-farright .hidari {
     float: left;
     width: 83.33333333%;
   }
 }
-.grid-migigawa .migi {
+.grid-farright .migi {
   position: relative;
   min-height: 1px;
   padding-left: 32px;
   padding-right: 32px;
 }
 @media (min-width: 768px) {
-  .grid-migigawa .migi {
+  .grid-farright .migi {
     float: left;
     width: 33.33333333%;
   }
 }
 @media (min-width: 992px) {
-  .grid-migigawa .migi {
+  .grid-farright .migi {
     float: left;
     width: 27.77777778%;
   }
 }
 @media (min-width: 1200px) {
-  .grid-migigawa .migi {
+  .grid-farright .migi {
     float: left;
     width: 22.22222222%;
   }
 }
 @media (min-width: 1570px) {
-  .grid-migigawa .migi {
+  .grid-farright .migi {
     float: left;
     width: 16.66666667%;
   }
@@ -1337,6 +1337,266 @@ a.label:focus {
   background-color: #3a3b3b;
   max-width: 288px;
   margin-right: -32px;
+}
+.block {
+  margin-left: -32px;
+  margin-right: -32px;
+}
+.block-section {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 768px) {
+  .block-section {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .block-section {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .block-section {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 1570px) {
+  .block-section {
+    float: left;
+    width: 100%;
+  }
+}
+.grid-farright .hidari .block-section-sm-half,
+.grid-farleft .migi .block-section-sm-half {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 768px) {
+  .grid-farright .hidari .block-section-sm-half,
+  .grid-farleft .migi .block-section-sm-half {
+    float: left;
+    width: 50%;
+  }
+}
+.grid-farright .hidari .block-section-sm-third,
+.grid-farleft .migi .block-section-sm-third {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 768px) {
+  .grid-farright .hidari .block-section-sm-third,
+  .grid-farleft .migi .block-section-sm-third {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.grid-farright .hidari .block-section-sm-twothirds,
+.grid-farleft .migi .block-section-sm-twothirds {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 768px) {
+  .grid-farright .hidari .block-section-sm-twothirds,
+  .grid-farleft .migi .block-section-sm-twothirds {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+.grid-farright .hidari .block-section-md-half,
+.grid-farleft .migi .block-section-md-half {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 992px) {
+  .grid-farright .hidari .block-section-md-half,
+  .grid-farleft .migi .block-section-md-half {
+    float: left;
+    width: 50%;
+  }
+}
+.grid-farright .hidari .block-section-md-third,
+.grid-farleft .migi .block-section-md-third {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 992px) {
+  .grid-farright .hidari .block-section-md-third,
+  .grid-farleft .migi .block-section-md-third {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.grid-farright .hidari .block-section-md-twothirds,
+.grid-farleft .migi .block-section-md-twothirds {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 992px) {
+  .grid-farright .hidari .block-section-md-twothirds,
+  .grid-farleft .migi .block-section-md-twothirds {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+.grid-farright .hidari .block-section-lg-half,
+.grid-farleft .migi .block-section-lg-half {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 1200px) {
+  .grid-farright .hidari .block-section-lg-half,
+  .grid-farleft .migi .block-section-lg-half {
+    float: left;
+    width: 50%;
+  }
+}
+.grid-farright .hidari .block-section-lg-third,
+.grid-farleft .migi .block-section-lg-third {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 1200px) {
+  .grid-farright .hidari .block-section-lg-third,
+  .grid-farleft .migi .block-section-lg-third {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.grid-farright .hidari .block-section-lg-twothirds,
+.grid-farleft .migi .block-section-lg-twothirds {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 1200px) {
+  .grid-farright .hidari .block-section-lg-twothirds,
+  .grid-farleft .migi .block-section-lg-twothirds {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+.grid-farright .hidari .block-section-lg-sixth,
+.grid-farleft .migi .block-section-lg-sixth {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 1200px) {
+  .grid-farright .hidari .block-section-lg-sixth,
+  .grid-farleft .migi .block-section-lg-sixth {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.grid-farright .hidari .block-section-lg-fivesixths,
+.grid-farleft .migi .block-section-lg-fivesixths {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 1200px) {
+  .grid-farright .hidari .block-section-lg-fivesixths,
+  .grid-farleft .migi .block-section-lg-fivesixths {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+.grid-farright .hidari .block-section-xl-half,
+.grid-farleft .migi .block-section-xl-half {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 1570px) {
+  .grid-farright .hidari .block-section-xl-half,
+  .grid-farleft .migi .block-section-xl-half {
+    float: left;
+    width: 50%;
+  }
+}
+.grid-farright .hidari .block-section-xl-third,
+.grid-farleft .migi .block-section-xl-third {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 1570px) {
+  .grid-farright .hidari .block-section-xl-third,
+  .grid-farleft .migi .block-section-xl-third {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.grid-farright .hidari .block-section-xl-twothirds,
+.grid-farleft .migi .block-section-xl-twothirds {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 1570px) {
+  .grid-farright .hidari .block-section-xl-twothirds,
+  .grid-farleft .migi .block-section-xl-twothirds {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+.grid-farright .hidari .block-section-xl-sixth,
+.grid-farleft .migi .block-section-xl-sixth {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 1570px) {
+  .grid-farright .hidari .block-section-xl-sixth,
+  .grid-farleft .migi .block-section-xl-sixth {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+.grid-farright .hidari .block-section-xl-fivesixths,
+.grid-farleft .migi .block-section-xl-fivesixths {
+  position: relative;
+  min-height: 1px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+@media (min-width: 1570px) {
+  .grid-farright .hidari .block-section-xl-fivesixths,
+  .grid-farleft .migi .block-section-xl-fivesixths {
+    float: left;
+    width: 83.33333333%;
+  }
 }
 h1,
 h2,
@@ -1524,144 +1784,6 @@ caption {
   -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
   -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
   font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
-}
-.h-feed {
-  margin-left: -32px;
-  margin-right: -32px;
-}
-.layout-sm-1to1 .hidari .h-feed .h-entry,
-.layout-sm-1to1 .migi .h-feed .h-entry {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 768px) {
-  .layout-sm-1to1 .hidari .h-feed .h-entry,
-  .layout-sm-1to1 .migi .h-feed .h-entry {
-    float: left;
-    width: 100%;
-  }
-}
-.layout-md-1to1 .hidari .h-feed .h-entry,
-.layout-md-2to1 .hidari .h-feed .h-entry,
-.layout-md-1to1 .migi .h-feed .h-entry,
-.layout-md-1to2 .migi .h-feed .h-entry {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 992px) {
-  .layout-md-1to1 .hidari .h-feed .h-entry,
-  .layout-md-2to1 .hidari .h-feed .h-entry,
-  .layout-md-1to1 .migi .h-feed .h-entry,
-  .layout-md-1to2 .migi .h-feed .h-entry {
-    float: left;
-    width: 100%;
-  }
-}
-.layout-md-3to1 .hidari .h-feed .h-entry,
-.layout-md-4to1 .hidari .h-feed .h-entry,
-.layout-md-1to3 .migi .h-feed .h-entry,
-.layout-md-1to4 .migi .h-feed .h-entry {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 992px) {
-  .layout-md-3to1 .hidari .h-feed .h-entry,
-  .layout-md-4to1 .hidari .h-feed .h-entry,
-  .layout-md-1to3 .migi .h-feed .h-entry,
-  .layout-md-1to4 .migi .h-feed .h-entry {
-    float: left;
-    width: 50%;
-  }
-}
-.layout-lg-1to1 .hidari .h-feed .h-entry,
-.layout-lg-2to1 .hidari .h-feed .h-entry,
-.layout-lg-1to1 .migi .h-feed .h-entry,
-.layout-lg-1to2 .migi .h-feed .h-entry {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-1to1 .hidari .h-feed .h-entry,
-  .layout-lg-2to1 .hidari .h-feed .h-entry,
-  .layout-lg-1to1 .migi .h-feed .h-entry,
-  .layout-lg-1to2 .migi .h-feed .h-entry {
-    float: left;
-    width: 100%;
-  }
-}
-.layout-lg-3to1 .hidari .h-feed .h-entry,
-.layout-lg-4to1 .hidari .h-feed .h-entry,
-.layout-lg-6to1 .hidari .h-feed .h-entry,
-.layout-lg-1to3 .migi .h-feed .h-entry,
-.layout-lg-1to4 .migi .h-feed .h-entry,
-.layout-lg-1to6 .migi .h-feed .h-entry {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 1200px) {
-  .layout-lg-3to1 .hidari .h-feed .h-entry,
-  .layout-lg-4to1 .hidari .h-feed .h-entry,
-  .layout-lg-6to1 .hidari .h-feed .h-entry,
-  .layout-lg-1to3 .migi .h-feed .h-entry,
-  .layout-lg-1to4 .migi .h-feed .h-entry,
-  .layout-lg-1to6 .migi .h-feed .h-entry {
-    float: left;
-    width: 50%;
-  }
-}
-.layout-xl-1to1 .hidari .h-feed .h-entry,
-.layout-xl-1to1 .migi .h-feed .h-entry {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-1to1 .hidari .h-feed .h-entry,
-  .layout-xl-1to1 .migi .h-feed .h-entry {
-    float: left;
-    width: 100%;
-  }
-}
-.layout-xl-2to1 .hidari .h-feed .h-entry,
-.layout-xl-3to1 .hidari .h-feed .h-entry,
-.layout-xl-4to1 .hidari .h-feed .h-entry,
-.layout-xl-6to1 .hidari .h-feed .h-entry,
-.layout-xl-9to1 .hidari .h-feed .h-entry,
-.layout-xl-1to2 .migi .h-feed .h-entry,
-.layout-xl-1to3 .migi .h-feed .h-entry,
-.layout-xl-1to4 .migi .h-feed .h-entry,
-.layout-xl-1to6 .migi .h-feed .h-entry,
-.layout-xl-1to9 .migi .h-feed .h-entry {
-  position: relative;
-  min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-@media (min-width: 1570px) {
-  .layout-xl-2to1 .hidari .h-feed .h-entry,
-  .layout-xl-3to1 .hidari .h-feed .h-entry,
-  .layout-xl-4to1 .hidari .h-feed .h-entry,
-  .layout-xl-6to1 .hidari .h-feed .h-entry,
-  .layout-xl-9to1 .hidari .h-feed .h-entry,
-  .layout-xl-1to2 .migi .h-feed .h-entry,
-  .layout-xl-1to3 .migi .h-feed .h-entry,
-  .layout-xl-1to4 .migi .h-feed .h-entry,
-  .layout-xl-1to6 .migi .h-feed .h-entry,
-  .layout-xl-1to9 .migi .h-feed .h-entry {
-    float: left;
-    width: 50%;
-  }
 }
 .h-entry .p-summary {
   font-size: 26px;

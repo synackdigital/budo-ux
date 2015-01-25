@@ -1,0 +1,133 @@
+//
+// Layout blocks
+//
+// Act as layout containers for content and components
+// --------------------------------------------------
+
+
+// Block base
+// -------------------------
+
+.block {
+  .make-row();
+}
+
+
+// Block section base
+// -------------------------
+
+.block-section {
+  .make-xs-column( @grid-columns );
+  .make-sm-column( @grid-columns );
+  .make-md-column( @grid-columns );
+  .make-lg-column( @grid-columns );
+  .make-xl-column( @grid-columns );
+}
+
+
+// Block section responsiveness
+// -------------------------
+
+// Small screen / tablet
+.block-section-sm-half {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-sm-column( @grid-columns / 2 );
+  }
+}
+.block-section-sm-third {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-sm-column( @grid-columns / 3 );
+  }
+}
+.block-section-sm-twothirds {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-sm-column( @grid-columns / 1.5 );
+  }
+}
+
+// Medium screen / desktop
+.block-section-md-half {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-md-column( @grid-columns / 2 );
+  }
+}
+.block-section-md-third {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-md-column( @grid-columns / 3 );
+  }
+}
+.block-section-md-twothirds {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-md-column( @grid-columns / 1.5 );
+  }
+}
+
+// Large screen / wide desktop
+.block-section-lg-half {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-lg-column( @grid-columns / 2 );
+  }
+}
+.block-section-lg-third {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-lg-column( @grid-columns / 3 );
+  }
+}
+.block-section-lg-twothirds {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-lg-column( @grid-columns / 1.5 );
+  }
+}
+.block-section-lg-sixth {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-lg-column( @grid-columns / 6 );
+  }
+}
+.block-section-lg-fivesixths {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-lg-column( ((@grid-columns / 6) * 5) );
+  }
+}
+
+// X-large screen / HD desktop
+.block-section-xl-half {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-xl-column( @grid-columns / 2 );
+  }
+}
+.block-section-xl-third {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-xl-column( @grid-columns / 3 );
+  }
+}
+.block-section-xl-twothirds {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-xl-column( @grid-columns / 1.5 );
+  }
+}
+.block-section-xl-sixth {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-xl-column( @grid-columns / 6 );
+  }
+}
+.block-section-xl-fivesixths {
+  .grid-farright .hidari &,
+  .grid-farleft .migi & {
+    .make-xl-column( ((@grid-columns / 6) * 5) );
+  }
+}

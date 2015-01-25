@@ -5,9 +5,7 @@
 // http://microformats.org/wiki/h-feed
 // --------------------------------------------------
 
-.h-feed {
-  .make-row();
-}
+.h-feed {}
 
 // Property: name (title)
 .p-name {}
@@ -20,61 +18,3 @@
 
 // URL: photo
 .u-photo {}
-
-
-// h-entry responsiveness
-// -------------------------
-
-// Small screen / tablet
-.layout-sm-1to1 .hidari .h-feed .h-entry,
-.layout-sm-1to1 .migi .h-feed .h-entry {
-  .make-sm-column(@grid-columns);
-}
-
-// Medium screen / desktop
-.layout-md-1to1 .hidari .h-feed .h-entry,
-.layout-md-2to1 .hidari .h-feed .h-entry,
-.layout-md-1to1 .migi .h-feed .h-entry,
-.layout-md-1to2 .migi .h-feed .h-entry {
-  .make-md-column(@grid-columns);
-}
-.layout-md-3to1 .hidari .h-feed .h-entry,
-.layout-md-4to1 .hidari .h-feed .h-entry,
-.layout-md-1to3 .migi .h-feed .h-entry,
-.layout-md-1to4 .migi .h-feed .h-entry {
-  .make-md-column((@grid-columns / 2));
-}
-
-// Large screen / wide desktop
-.layout-lg-1to1 .hidari .h-feed .h-entry,
-.layout-lg-2to1 .hidari .h-feed .h-entry,
-.layout-lg-1to1 .migi .h-feed .h-entry,
-.layout-lg-1to2 .migi .h-feed .h-entry {
-  .make-lg-column(@grid-columns);
-}
-.layout-lg-3to1 .hidari .h-feed .h-entry,
-.layout-lg-4to1 .hidari .h-feed .h-entry,
-.layout-lg-6to1 .hidari .h-feed .h-entry,
-.layout-lg-1to3 .migi .h-feed .h-entry,
-.layout-lg-1to4 .migi .h-feed .h-entry,
-.layout-lg-1to6 .migi .h-feed .h-entry {
-  .make-lg-column((@grid-columns / 2));
-}
-
-// X-large screen / HD desktop
-.layout-xl-1to1 .hidari .h-feed .h-entry,
-.layout-xl-1to1 .migi .h-feed .h-entry {
-  .make-xl-column(@grid-columns);
-}
-.layout-xl-2to1 .hidari .h-feed .h-entry,
-.layout-xl-3to1 .hidari .h-feed .h-entry,
-.layout-xl-4to1 .hidari .h-feed .h-entry,
-.layout-xl-6to1 .hidari .h-feed .h-entry,
-.layout-xl-9to1 .hidari .h-feed .h-entry,
-.layout-xl-1to2 .migi .h-feed .h-entry,
-.layout-xl-1to3 .migi .h-feed .h-entry,
-.layout-xl-1to4 .migi .h-feed .h-entry,
-.layout-xl-1to6 .migi .h-feed .h-entry,
-.layout-xl-1to9 .migi .h-feed .h-entry {
-  .make-xl-column((@grid-columns / 2));
-}
