@@ -90,37 +90,71 @@
 // Grid variations
 // -------------------------
 
-.grid-center {
+// Centered grid
+.grid-chuushin {
   .hidari, .migi {
-    .make-sm-column( round((@grid-columns * .5)) );
+    .make-sm-column( 18 );
+    .make-md-column( 18 );
+    .make-lg-column( 18 );
+    .make-xl-column( 18 );
   }
 }
-.grid-farleft {
+// Left-aligned grids
+.grid-hidari {
   .hidari {
-    .make-sm-column( ceil((@grid-columns * .3)) );
-    .make-md-column( ceil((@grid-columns * .25)) );
-    .make-lg-column( ceil((@grid-columns * .2)) );
-    .make-xl-column( ceil((@grid-columns * .15)) );
+    .make-sm-column( 6 );
+    .make-md-column( 5 );
+    .make-lg-column( 4 );
+    .make-xl-column( 3 );
   }
   .migi {
-    .make-sm-column( floor((@grid-columns * .7)) );
-    .make-md-column( floor((@grid-columns * .75)) );
-    .make-lg-column( floor((@grid-columns * .8)) );
-    .make-xl-column( floor((@grid-columns * .85)) );
+    .make-sm-column( 12 );
+    .make-md-column( 13 );
+    .make-lg-column( 14 );
+    .make-xl-column( 15 );
   }
 }
-.grid-farright {
+.grid-yayahidari {
   .hidari {
-    .make-sm-column( floor((@grid-columns * .7)) );
-    .make-md-column( floor((@grid-columns * .75)) );
-    .make-lg-column( floor((@grid-columns * .8)) );
-    .make-xl-column( floor((@grid-columns * .85)) );
+    .make-sm-column( 8 );
+    .make-md-column( 7 );
+    .make-lg-column( 6 );
+    .make-xl-column( 5 );
   }
   .migi {
-    .make-sm-column( ceil((@grid-columns * .3)) );
-    .make-md-column( ceil((@grid-columns * .25)) );
-    .make-lg-column( ceil((@grid-columns * .2)) );
-    .make-xl-column( ceil((@grid-columns * .15)) );
+    .make-sm-column( 10 );
+    .make-md-column( 11 );
+    .make-lg-column( 12 );
+    .make-xl-column( 13 );
+  }
+}
+// Right-aligned grids
+.grid-migi {
+  .hidari {
+    .make-sm-column( 13 );
+    .make-md-column( 14 );
+    .make-lg-column( 15 );
+    .make-xl-column( 16 );
+  }
+  .migi {
+    .make-sm-column( 5 );
+    .make-md-column( 4 );
+    .make-lg-column( 3 );
+    .make-xl-column( 2 );
+  }
+}
+.grid-yayamigi {
+  .hidari {
+    .make-sm-column( 10 );
+    .make-md-column( 11 );
+    .make-lg-column( 12 );
+    .make-xl-column( 13 );
+  }
+  .migi {
+    .make-sm-column( 8 );
+    .make-md-column( 7 );
+    .make-lg-column( 6 );
+    .make-xl-column( 5 );
   }
 }
 
