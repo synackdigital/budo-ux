@@ -1,0 +1,256 @@
+//
+// Layout
+// --------------------------------------------------
+
+
+// Layout base
+// -------------------------
+
+// Fill viewport height on larger screens
+@media (min-width: @screen-sm-min) {
+  html, body { height: 100%; }
+  .grid { height: 100%; position: relative; overflow-y: auto; overflow-x: hidden; }
+  .hidari, .migi { position: absolute; }
+}
+
+// Hidari/migi containers
+.hidari {
+  background-color: @hidari-bg;
+  color: @hidari-color;
+  padding: @line-height-computed (@grid-gutter-width / 2);
+}
+.migi {
+  background-color: @migi-bg;
+  color: @migi-color;
+  padding: @line-height-computed (@grid-gutter-width / 2);
+}
+@media (min-width: @screen-sm-min) {
+  .hidari {
+    border-right: 6px solid @hidari-migi-border;
+    padding-right: @grid-gutter-width;
+  }
+  .migi {
+    border-left: 6px solid @hidari-migi-border;
+    margin-left: -6px; // offset to overlap container borders
+    padding-left: @grid-gutter-width;
+  }
+}
+
+// Layout variations
+// -------------------------
+
+// Centered grid
+.grid-chuushin {
+
+  @media (min-width: @screen-sm-min) {
+
+    // Extend hidari/migi bg colors to fill viewport
+    background-image: linear-gradient(
+      to right,
+      @hidari-bg 0%,
+      @hidari-bg 50%,
+      @migi-bg 50%,
+      @migi-bg 100%
+    );
+
+    // Position hidari/migi on center line
+    .hidari, .migi {
+      left: 50%;
+      width: (@container-sm / 2);
+    }
+    .hidari { margin-left: (@container-sm / -2); } // Offset hidari from center line
+  }
+
+  @media (min-width: @screen-md-min) {
+    .hidari, .migi { width: (@container-md / 2); } // Position hidari/migi on center line
+    .hidari { margin-left: (@container-md / -2); } // Offset hidari from center line
+  }
+
+  @media (min-width: @screen-lg-min) {
+    .hidari, .migi { width: (@container-lg / 2); } // Position hidari/migi on center line
+    .hidari { margin-left: (@container-lg / -2); } // Offset hidari from center line
+  }
+
+  @media (min-width: @screen-xl-min) {
+    .hidari, .migi { width: (@container-xl / 2); } // Position hidari/migi on center line
+    .hidari { margin-left: (@container-xl / -2); } // Offset hidari from center line
+  }
+}
+
+// Left-aligned grids
+.grid-hidari {
+
+  @media (min-width: @screen-sm-min) {
+
+    // Extend hidari/migi bg colors to fill viewport
+    background-image: linear-gradient(
+      to right,
+      @hidari-bg 0%,
+      @hidari-bg 30%,
+      @migi-bg 30%,
+      @migi-bg 100%
+    );
+
+    // Position hidari/migi on center line
+    .hidari, .migi { left: 30%; }
+    .hidari { width: (@container-sm * .3); margin-left: (@container-sm * -.3); } // Offset hidari from center line
+    .migi { width: (@container-sm * .7); }
+  }
+
+  @media (min-width: @screen-md-min) {
+    .hidari { width: (@container-md * .3); margin-left: (@container-md * -.3); } // Offset hidari from center line
+    .migi { width: (@container-md * .7); }
+  }
+
+  @media (min-width: @screen-lg-min) {
+    .hidari { width: (@container-lg * .3); margin-left: (@container-lg * -.3); } // Offset hidari from center line
+    .migi { width: (@container-lg * .7); }
+  }
+
+  @media (min-width: @screen-xl-min) {
+    .hidari { width: (@container-xl * .3); margin-left: (@container-xl * -.3); } // Offset hidari from center line
+    .migi { width: (@container-xl * .7); }
+  }
+}
+.grid-yayahidari {
+
+  @media (min-width: @screen-sm-min) {
+
+    // Extend hidari/migi bg colors to fill viewport
+    background-image: linear-gradient(
+      to right,
+      @hidari-bg 0%,
+      @hidari-bg 45%,
+      @migi-bg 45%,
+      @migi-bg 100%
+    );
+
+    // Position hidari/migi on center line
+    .hidari, .migi { left: 45%; }
+    .hidari { width: (@container-sm * .45); margin-left: (@container-sm * -.45); } // Offset hidari from center line
+    .migi { width: (@container-sm * .55); }
+  }
+
+  @media (min-width: @screen-md-min) {
+    .hidari { width: (@container-md * .45); margin-left: (@container-md * -.45); } // Offset hidari from center line
+    .migi { width: (@container-md * .55); }
+  }
+
+  @media (min-width: @screen-lg-min) {
+    .hidari { width: (@container-lg * .45); margin-left: (@container-lg * -.45); } // Offset hidari from center line
+    .migi { width: (@container-lg * .55); }
+  }
+
+  @media (min-width: @screen-xl-min) {
+    .hidari { width: (@container-xl * .45); margin-left: (@container-xl * -.45); } // Offset hidari from center line
+    .migi { width: (@container-xl * .55); }
+  }
+}
+
+// Right-aligned grids
+.grid-migi {
+
+  @media (min-width: @screen-sm-min) {
+
+    // Extend hidari/migi bg colors to fill viewport
+    background-image: linear-gradient(
+      to right,
+      @hidari-bg 0%,
+      @hidari-bg 75%,
+      @migi-bg 75%,
+      @migi-bg 100%
+    );
+
+    // Position hidari/migi on center line
+    .hidari, .migi { left: 75%; }
+    .hidari { width: (@container-sm * .75); margin-left: (@container-sm * -.75); } // Offset hidari from center line
+    .migi { width: (@container-sm * .25); }
+  }
+
+  @media (min-width: @screen-md-min) {
+    .hidari { width: (@container-md * .75); margin-left: (@container-md * -.75); } // Offset hidari from center line
+    .migi { width: (@container-md * .25); }
+  }
+
+  @media (min-width: @screen-lg-min) {
+    .hidari { width: (@container-lg * .75); margin-left: (@container-lg * -.75); } // Offset hidari from center line
+    .migi { width: (@container-lg * .25); }
+  }
+
+  @media (min-width: @screen-xl-min) {
+    .hidari { width: (@container-xl * .75); margin-left: (@container-xl * -.75); } // Offset hidari from center line
+    .migi { width: (@container-xl * .25); }
+  }
+}
+.grid-yayamigi {
+
+  @media (min-width: @screen-sm-min) {
+
+    // Extend hidari/migi bg colors to fill viewport
+    background-image: linear-gradient(
+      to right,
+      @hidari-bg 0%,
+      @hidari-bg 60%,
+      @migi-bg 60%,
+      @migi-bg 100%
+    );
+
+    // Position hidari/migi on center line
+    .hidari, .migi { left: 60%; }
+    .hidari { width: (@container-sm * .6); margin-left: (@container-sm * -.6); } // Offset hidari from center line
+    .migi { width: (@container-sm * .4); }
+  }
+
+  @media (min-width: @screen-md-min) {
+    .hidari { width: (@container-md * .6); margin-left: (@container-md * -.6); } // Offset hidari from center line
+    .migi { width: (@container-md * .4); }
+  }
+
+  @media (min-width: @screen-lg-min) {
+    .hidari { width: (@container-lg * .6); margin-left: (@container-lg * -.6); } // Offset hidari from center line
+    .migi { width: (@container-lg * .4); }
+  }
+
+  @media (min-width: @screen-xl-min) {
+    .hidari { width: (@container-xl * .6); margin-left: (@container-xl * -.6); } // Offset hidari from center line
+    .migi { width: (@container-xl * .4); }
+  }
+}
+
+
+// Stretching components
+// -------------------------
+
+.stretch-left {
+  position: relative;
+}
+.stretch-left:before {
+  content: '';
+  background-color: inherit;
+  position: absolute;
+  height: 100%;
+  width: 999px;
+  left: -999px;
+}
+
+.stretch-right {
+  position: relative;
+}
+.stretch-right:before {
+  content: '';
+  background-color: inherit;
+  position: absolute;
+  height: 100%;
+  width: 999px;
+  right: -999px;
+}
+
+
+// Brand container
+// -------------------------
+
+.brand-container {
+  background-color: @brand-bg;
+  max-width: (.5 * 576px); // Half actual graphic width
+  margin-left: -15px; // Align image content with grid
+}
