@@ -1233,19 +1233,19 @@ a.label:focus {
 @media (min-width: 992px) {
   .grid-hidari .hidari {
     float: left;
-    width: 27.77777778%;
+    width: 33.33333333%;
   }
 }
 @media (min-width: 1200px) {
   .grid-hidari .hidari {
     float: left;
-    width: 22.22222222%;
+    width: 27.77777778%;
   }
 }
 @media (min-width: 1570px) {
   .grid-hidari .hidari {
     float: left;
-    width: 16.66666667%;
+    width: 22.22222222%;
   }
 }
 .grid-hidari .migi {
@@ -1263,19 +1263,19 @@ a.label:focus {
 @media (min-width: 992px) {
   .grid-hidari .migi {
     float: left;
-    width: 72.22222222%;
+    width: 66.66666667%;
   }
 }
 @media (min-width: 1200px) {
   .grid-hidari .migi {
     float: left;
-    width: 77.77777778%;
+    width: 72.22222222%;
   }
 }
 @media (min-width: 1570px) {
   .grid-hidari .migi {
     float: left;
-    width: 83.33333333%;
+    width: 77.77777778%;
   }
 }
 .grid-yayahidari .hidari {
@@ -1293,19 +1293,19 @@ a.label:focus {
 @media (min-width: 992px) {
   .grid-yayahidari .hidari {
     float: left;
-    width: 38.88888889%;
+    width: 44.44444444%;
   }
 }
 @media (min-width: 1200px) {
   .grid-yayahidari .hidari {
     float: left;
-    width: 33.33333333%;
+    width: 38.88888889%;
   }
 }
 @media (min-width: 1570px) {
   .grid-yayahidari .hidari {
     float: left;
-    width: 27.77777778%;
+    width: 38.88888889%;
   }
 }
 .grid-yayahidari .migi {
@@ -1323,19 +1323,19 @@ a.label:focus {
 @media (min-width: 992px) {
   .grid-yayahidari .migi {
     float: left;
-    width: 61.11111111%;
+    width: 55.55555556%;
   }
 }
 @media (min-width: 1200px) {
   .grid-yayahidari .migi {
     float: left;
-    width: 66.66666667%;
+    width: 61.11111111%;
   }
 }
 @media (min-width: 1570px) {
   .grid-yayahidari .migi {
     float: left;
-    width: 72.22222222%;
+    width: 61.11111111%;
   }
 }
 .grid-migi .hidari {
@@ -1347,7 +1347,7 @@ a.label:focus {
 @media (min-width: 768px) {
   .grid-migi .hidari {
     float: left;
-    width: 72.22222222%;
+    width: 77.77777778%;
   }
 }
 @media (min-width: 992px) {
@@ -1365,7 +1365,7 @@ a.label:focus {
 @media (min-width: 1570px) {
   .grid-migi .hidari {
     float: left;
-    width: 88.88888889%;
+    width: 83.33333333%;
   }
 }
 .grid-migi .migi {
@@ -1377,7 +1377,7 @@ a.label:focus {
 @media (min-width: 768px) {
   .grid-migi .migi {
     float: left;
-    width: 27.77777778%;
+    width: 22.22222222%;
   }
 }
 @media (min-width: 992px) {
@@ -1395,7 +1395,7 @@ a.label:focus {
 @media (min-width: 1570px) {
   .grid-migi .migi {
     float: left;
-    width: 11.11111111%;
+    width: 16.66666667%;
   }
 }
 .grid-yayamigi .hidari {
@@ -1407,7 +1407,7 @@ a.label:focus {
 @media (min-width: 768px) {
   .grid-yayamigi .hidari {
     float: left;
-    width: 55.55555556%;
+    width: 66.66666667%;
   }
 }
 @media (min-width: 992px) {
@@ -1419,13 +1419,13 @@ a.label:focus {
 @media (min-width: 1200px) {
   .grid-yayamigi .hidari {
     float: left;
-    width: 66.66666667%;
+    width: 61.11111111%;
   }
 }
 @media (min-width: 1570px) {
   .grid-yayamigi .hidari {
     float: left;
-    width: 72.22222222%;
+    width: 55.55555556%;
   }
 }
 .grid-yayamigi .migi {
@@ -1437,7 +1437,7 @@ a.label:focus {
 @media (min-width: 768px) {
   .grid-yayamigi .migi {
     float: left;
-    width: 44.44444444%;
+    width: 33.33333333%;
   }
 }
 @media (min-width: 992px) {
@@ -1449,13 +1449,13 @@ a.label:focus {
 @media (min-width: 1200px) {
   .grid-yayamigi .migi {
     float: left;
-    width: 33.33333333%;
+    width: 38.88888889%;
   }
 }
 @media (min-width: 1570px) {
   .grid-yayamigi .migi {
     float: left;
-    width: 27.77777778%;
+    width: 44.44444444%;
   }
 }
 .stretch-left {
