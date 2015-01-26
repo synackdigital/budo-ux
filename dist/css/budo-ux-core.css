@@ -1958,14 +1958,17 @@ caption {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.h-feed-featurette > .p-name {
+.h-feed > .p-name.p-name-strong {
   background-color: #ffd914;
   color: #3a3b3b;
   border-bottom: none;
 }
+.h-feed .h-entry {
+  border-bottom: 1px solid #d8d9d9;
+  margin-bottom: 30px;
+}
 .h-entry .p-summary {
   font-size: 26px;
-  font-weight: normal;
   line-height: 1.34615385;
   margin-bottom: 20px;
 }
@@ -1992,19 +1995,16 @@ caption {
   display: inline-block;
   padding: 0 8px;
 }
-.h-feed .h-entry .p-name {
-  font-family: 'Nimbus Novus Sans Condensed Semi Bold', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  color: inherit;
-  margin-top: 30px;
+.h-entry .e-thumbnail {
   margin-bottom: 30px;
-  font-size: 35px;
-  line-height: 1.28571429;
+}
+.h-feed .h-entry .p-name {
+  margin-top: 0;
   margin-bottom: 10px;
 }
 .h-feed .h-entry .p-summary {
   font-size: 19px;
   line-height: 1.57894737;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=budo-ux-core.css.map */

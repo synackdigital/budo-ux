@@ -16,6 +16,12 @@
   line-height: (1.5 * @line-height-small);
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  &.p-name-strong {
+    background-color: @brand-primary;
+    color: @brand-primary-text;
+    border-bottom: none;
+  }
 }
 
 // Property: author
@@ -28,12 +34,10 @@
 // .u-photo {}
 
 
-// Brand container
+// embedded h-entry
 // -------------------------
 
-// Property: name (title)
-.h-feed-featurette > .p-name {
-  background-color: @brand-primary;
-  color: @brand-primary-text;
-  border-bottom: none;
+.h-feed .h-entry {
+  border-bottom: 1px solid @hr-border;
+  margin-bottom: @line-height-computed;
 }
