@@ -67,8 +67,8 @@
   .migi { border-left: @padding-small-horizontal solid @layout-migi-border; }
 
   // Force double gutters around center line
-  .hidari { padding-right: @grid-gutter-width !important; }
-  .migi { padding-left: @grid-gutter-width !important; }
+  .hidari { padding-right: (2.5 * @grid-gutter-width) !important; }
+  .migi { padding-left: (2.5 * @grid-gutter-width) !important; }
 
   // Extend hidari/migi bg colors to fill viewport
   body {
@@ -196,7 +196,9 @@
 
 .brand-container {
   background-color: @brand-bg;
-  max-width: 288px; // half actual graphic width
-  // margin-left: (@grid-gutter-width / -2);
-  margin-right: (@grid-gutter-width / -2);
+  max-width: (.5 * 576px); // half actual graphic width
+
+  &.stretch-left {
+    max-width: (.5 * 542px); // half actual graphic width
+  }
 }

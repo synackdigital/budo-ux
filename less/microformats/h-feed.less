@@ -8,13 +8,32 @@
 .h-feed {}
 
 // Property: name (title)
-.p-name {}
+.h-feed > .p-name {
+  border-bottom: 3px solid @hr-border;
+
+  font-size: @font-size-small;
+  font-family: @font-family-sans-serif;
+  line-height: (1.5 * @line-height-small);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
 // Property: author
-.p-author {}
+// .p-author {}
 
 // URL: url
-.u-url {}
+// .u-url {}
 
 // URL: photo
-.u-photo {}
+// .u-photo {}
+
+
+// Brand container
+// -------------------------
+
+// Property: name (title)
+.h-feed-featurette > .p-name {
+  background-color: @brand-primary;
+  color: @brand-primary-text;
+  border-bottom: none;
+}

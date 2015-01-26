@@ -1105,34 +1105,34 @@ a.label:focus {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .container {
-    width: 784px;
+    width: 748px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 1004px;
+    width: 968px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1204px;
+    width: 1168px;
   }
 }
 @media (min-width: 1570px) {
   .container {
-    width: 1464px;
+    width: 1428px;
   }
 }
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 .container-fluid-md {
   max-width: 992px;
@@ -1149,13 +1149,13 @@ a.label:focus {
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 .hidari {
-  background-color: #141414;
+  background-color: #212121;
   color: #f7f7f7;
 }
 .migi {
@@ -1164,31 +1164,31 @@ a.label:focus {
 }
 @media (min-width: 768px) {
   .hidari {
-    border-right: 8px solid #141414;
+    border-right: 8px solid #212121;
   }
   .migi {
     border-left: 8px solid #d8d9d9;
   }
   .hidari {
-    padding-right: 64px !important;
+    padding-right: 70px !important;
   }
   .migi {
-    padding-left: 64px !important;
+    padding-left: 70px !important;
   }
   body {
-    background-image: linear-gradient(to right, #141414 0%, #141414 50%, #ffffff 50%, #ffffff 100%);
+    background-image: linear-gradient(to right, #212121 0%, #212121 50%, #ffffff 50%, #ffffff 100%);
   }
 }
 .grid {
-  margin-left: -32px;
-  margin-right: -32px;
+  margin-left: -14px;
+  margin-right: -14px;
 }
 .grid-chuushin .hidari,
 .grid-chuushin .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .grid-chuushin .hidari,
@@ -1221,8 +1221,8 @@ a.label:focus {
 .grid-hidari .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .grid-hidari .hidari {
@@ -1251,8 +1251,8 @@ a.label:focus {
 .grid-hidari .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .grid-hidari .migi {
@@ -1281,8 +1281,8 @@ a.label:focus {
 .grid-yayahidari .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .grid-yayahidari .hidari {
@@ -1311,8 +1311,8 @@ a.label:focus {
 .grid-yayahidari .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .grid-yayahidari .migi {
@@ -1341,8 +1341,8 @@ a.label:focus {
 .grid-migi .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .grid-migi .hidari {
@@ -1371,8 +1371,8 @@ a.label:focus {
 .grid-migi .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .grid-migi .migi {
@@ -1401,8 +1401,8 @@ a.label:focus {
 .grid-yayamigi .hidari {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .grid-yayamigi .hidari {
@@ -1431,8 +1431,8 @@ a.label:focus {
 .grid-yayamigi .migi {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .grid-yayamigi .migi {
@@ -1483,19 +1483,21 @@ a.label:focus {
 .brand-container {
   background-color: #3a3b3b;
   max-width: 288px;
-  margin-right: -32px;
+}
+.brand-container.stretch-left {
+  max-width: 271px;
 }
 .block {
-  margin-left: -32px;
-  margin-right: -32px;
+  margin-left: -14px;
+  margin-right: -14px;
 }
 .block-section {
   float: left;
   width: 100%;
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .block-section {
@@ -1524,8 +1526,8 @@ a.label:focus {
 .block-section-sm-half {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .block-section-sm-half {
@@ -1536,8 +1538,8 @@ a.label:focus {
 .block-section-sm-third {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .block-section-sm-third {
@@ -1548,8 +1550,8 @@ a.label:focus {
 .block-section-sm-twothirds {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .block-section-sm-twothirds {
@@ -1560,8 +1562,8 @@ a.label:focus {
 .block-section-sm-sixth {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .block-section-sm-sixth {
@@ -1572,8 +1574,8 @@ a.label:focus {
 .block-section-sm-fivesixths {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 768px) {
   .block-section-sm-fivesixths {
@@ -1584,8 +1586,8 @@ a.label:focus {
 .block-section-md-half {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 992px) {
   .block-section-md-half {
@@ -1596,8 +1598,8 @@ a.label:focus {
 .block-section-md-third {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 992px) {
   .block-section-md-third {
@@ -1608,8 +1610,8 @@ a.label:focus {
 .block-section-md-twothirds {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 992px) {
   .block-section-md-twothirds {
@@ -1620,8 +1622,8 @@ a.label:focus {
 .block-section-md-sixth {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 992px) {
   .block-section-md-sixth {
@@ -1632,8 +1634,8 @@ a.label:focus {
 .block-section-md-fivesixths {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 992px) {
   .block-section-md-fivesixths {
@@ -1644,8 +1646,8 @@ a.label:focus {
 .block-section-lg-half {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 1200px) {
   .block-section-lg-half {
@@ -1656,8 +1658,8 @@ a.label:focus {
 .block-section-lg-third {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 1200px) {
   .block-section-lg-third {
@@ -1668,8 +1670,8 @@ a.label:focus {
 .block-section-lg-twothirds {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 1200px) {
   .block-section-lg-twothirds {
@@ -1680,8 +1682,8 @@ a.label:focus {
 .block-section-lg-sixth {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 1200px) {
   .block-section-lg-sixth {
@@ -1692,8 +1694,8 @@ a.label:focus {
 .block-section-lg-fivesixths {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 1200px) {
   .block-section-lg-fivesixths {
@@ -1704,8 +1706,8 @@ a.label:focus {
 .block-section-xl-half {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 1570px) {
   .block-section-xl-half {
@@ -1716,8 +1718,8 @@ a.label:focus {
 .block-section-xl-third {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 1570px) {
   .block-section-xl-third {
@@ -1728,8 +1730,8 @@ a.label:focus {
 .block-section-xl-twothirds {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 1570px) {
   .block-section-xl-twothirds {
@@ -1740,8 +1742,8 @@ a.label:focus {
 .block-section-xl-sixth {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 1570px) {
   .block-section-xl-sixth {
@@ -1752,8 +1754,8 @@ a.label:focus {
 .block-section-xl-fivesixths {
   position: relative;
   min-height: 1px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 @media (min-width: 1570px) {
   .block-section-xl-fivesixths {
@@ -1844,7 +1846,7 @@ p {
 }
 strong {
   font-weight: bold;
-  color: #141414;
+  color: #212121;
 }
 small,
 .small {
@@ -1948,6 +1950,19 @@ caption {
   -moz-font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
   font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
 }
+.h-feed > .p-name {
+  border-bottom: 3px solid #f7f7f7;
+  font-size: 14px;
+  font-family: 'Nimbus Sans Novus Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 2.14285714;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.h-feed-featurette > .p-name {
+  background-color: #ffd914;
+  color: #3a3b3b;
+  border-bottom: none;
+}
 .h-entry .p-summary {
   font-size: 26px;
   font-weight: normal;
@@ -1968,9 +1983,9 @@ caption {
   text-decoration: underline;
 }
 .h-entry .p-category {
-  display: inline-block;
   background-color: #ffd914;
   color: #3a3b3b;
+  display: inline-block;
   padding: 0 8px;
 }
 .h-feed .h-entry .p-name {
