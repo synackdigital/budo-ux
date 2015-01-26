@@ -1169,6 +1169,12 @@ a.label:focus {
   .migi {
     border-left: 8px solid #d8d9d9;
   }
+  .hidari {
+    padding-right: 64px !important;
+  }
+  .migi {
+    padding-left: 64px !important;
+  }
   body {
     background-image: linear-gradient(to right, #141414 0%, #141414 50%, #ffffff 50%, #ffffff 100%);
   }
@@ -1188,28 +1194,28 @@ a.label:focus {
   .grid-chuushin .hidari,
   .grid-chuushin .migi {
     float: left;
-    width: 100%;
+    width: 50%;
   }
 }
 @media (min-width: 992px) {
   .grid-chuushin .hidari,
   .grid-chuushin .migi {
     float: left;
-    width: 100%;
+    width: 50%;
   }
 }
 @media (min-width: 1200px) {
   .grid-chuushin .hidari,
   .grid-chuushin .migi {
     float: left;
-    width: 100%;
+    width: 50%;
   }
 }
 @media (min-width: 1570px) {
   .grid-chuushin .hidari,
   .grid-chuushin .migi {
     float: left;
-    width: 100%;
+    width: 50%;
   }
 }
 .grid-hidari .hidari {

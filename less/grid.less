@@ -62,9 +62,13 @@
 // Responsive layout
 @media (min-width: @grid-float-breakpoint) {
 
-  // Borders between containers
+  // Borders and padding between containers
   .hidari { border-right: @padding-small-horizontal solid @layout-hidari-border; }
   .migi { border-left: @padding-small-horizontal solid @layout-migi-border; }
+
+  // Force double gutters around center line
+  .hidari { padding-right: @grid-gutter-width !important; }
+  .migi { padding-left: @grid-gutter-width !important; }
 
   // Extend hidari/migi bg colors to fill viewport
   body {
@@ -93,10 +97,10 @@
 // Centered grid
 .grid-chuushin {
   .hidari, .migi {
-    .make-sm-column( 18 );
-    .make-md-column( 18 );
-    .make-lg-column( 18 );
-    .make-xl-column( 18 );
+    .make-sm-column( 9 );
+    .make-md-column( 9 );
+    .make-lg-column( 9 );
+    .make-xl-column( 9 );
   }
 }
 // Left-aligned grids
