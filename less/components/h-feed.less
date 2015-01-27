@@ -28,33 +28,29 @@
 // .u-photo {}
 
 
-// Strong h-feed
+// Strong version
 // -------------------------
 
-.h-feed.h-feed-strong {
+.h-feed-strong {
 
-  // Border along entire h-feed
+  // Stronger title
   > .p-name {
     background-color: @brand-primary;
     color: @brand-primary-text;
     border-bottom: none;
+
     padding-left: (@grid-gutter-width / 2);
     padding-right: (@grid-gutter-width / 2);
-
     &.stretch-left { padding-left: 0; }
     &.stretch-right { padding-right: 0; }
   }
 }
 
-// embedded h-entry layout
+// Embedded h-entry
 // -------------------------
 
 .h-feed .h-entry {
-  margin-bottom: @line-height-sm-computed;
-  padding-bottom: @line-height-sm-computed;
-
-  .hidari & { border-bottom: 1px solid @hidari-hr-border; }
-  .migi &   { border-bottom: 1px solid @migi-hr-border; }
+  margin-bottom: @line-height-computed;
 
   > a { display: block; }
 }

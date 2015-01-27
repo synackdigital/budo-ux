@@ -5,7 +5,10 @@
 // http://microformats.org/wiki/h-entry
 // --------------------------------------------------
 
-.h-entry {}
+.h-entry {
+  .hidari & { border-bottom: 1px solid @hidari-hr-border; }
+  .migi &   { border-bottom: 1px solid @migi-hr-border; }
+}
 
 // Property: name (title)
 .h-entry .p-name {}
@@ -48,8 +51,10 @@
 
 // Element tree: content
 .h-entry .e-content {
-  border-top: 1px solid @hr-border;
+  border-top: 1px solid;
   padding-top: @line-height-sm-computed;
+  .hidari & { border-top-color: @hidari-hr-border; }
+  .migi & { border-top-color: @migi-hr-border; }
 }
 
 // Datetime: published
@@ -75,7 +80,13 @@
 }
 
 
-// h-feed adjustment
+// Editorial version
+// -------------------------
+
+
+
+
+// Adjustments for h-feed
 // -------------------------
 
 // Property: name (title)
