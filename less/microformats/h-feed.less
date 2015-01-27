@@ -16,12 +16,6 @@
   line-height: (1.5 * @line-height-small);
   text-transform: uppercase;
   letter-spacing: 1px;
-
-  &.p-name-strong {
-    background-color: @brand-primary;
-    color: @brand-primary-text;
-    border-bottom: none;
-  }
 }
 
 // Property: author
@@ -34,10 +28,33 @@
 // .u-photo {}
 
 
-// embedded h-entry
+// Strong h-feed
+// -------------------------
+
+.h-feed.h-feed-strong {
+
+  // Border along entire h-feed
+  > .p-name {
+    background-color: @brand-primary;
+    color: @brand-primary-text;
+    border-bottom: none;
+    padding-left: (@grid-gutter-width / 2);
+    padding-right: (@grid-gutter-width / 2);
+
+    &.stretch-left { padding-left: 0; }
+    &.stretch-right { padding-right: 0; }
+  }
+}
+
+// embedded h-entry layout
 // -------------------------
 
 .h-feed .h-entry {
-  border-bottom: 1px solid @hr-border;
-  margin-bottom: @line-height-computed;
+  margin-bottom: @line-height-sm-computed;
+  padding-bottom: @line-height-sm-computed;
+
+  .hidari & { border-bottom: 1px solid @hidari-hr-border; }
+  .migi &   { border-bottom: 1px solid @migi-hr-border; }
+
+  > a { display: block; }
 }

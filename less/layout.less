@@ -18,21 +18,35 @@
   background-color: @hidari-bg;
   color: @hidari-color;
   padding: @line-height-computed (@grid-gutter-width / 2);
+
+  a {
+    h1, h2, h3, h4, h5, h6,
+    .h0, .h1, .h2, .h3, .h4, .h5, .h6 {
+      color: @hidari-color;
+    }
+  }
 }
 .migi {
   background-color: @migi-bg;
   color: @migi-color;
   padding: @line-height-computed (@grid-gutter-width / 2);
+
+  a {
+    h1, h2, h3, h4, h5, h6,
+    .h0, .h1, .h2, .h3, .h4, .h5, .h6 {
+      color: @migi-color;
+    }
+  }
 }
 @media (min-width: @screen-sm-min) {
   .hidari {
     border-right: 6px solid @hidari-migi-border;
-    padding-right: @grid-gutter-width;
+    padding-right: (@grid-gutter-width * 1.5);
   }
   .migi {
     border-left: 6px solid @hidari-migi-border;
     margin-left: -6px; // offset to overlap container borders
-    padding-left: @grid-gutter-width;
+    padding-left: (@grid-gutter-width * 1.5);
   }
 }
 
@@ -252,5 +266,5 @@
 .brand-container {
   background-color: @brand-bg;
   max-width: (.5 * 576px); // Half actual graphic width
-  margin-left: -15px; // Align image content with grid
+  margin-left: -15px; // Align image content
 }

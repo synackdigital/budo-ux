@@ -288,7 +288,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #254beb;
+  color: #6b85f1;
   text-decoration: underline;
 }
 a:focus {
@@ -330,7 +330,7 @@ hr {
   margin-top: 30px;
   margin-bottom: 30px;
   border: 0;
-  border-top: 1px solid #d8d9d9;
+  border-top: 1px solid #f7f7f7;
 }
 .sr-only {
   position: absolute;
@@ -1651,7 +1651,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #254beb;
+  color: #6b85f1;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -2310,20 +2310,50 @@ a.label:focus {
   color: #f7f7f7;
   padding: 30px 14px;
 }
+.hidari a h1,
+.hidari a h2,
+.hidari a h3,
+.hidari a h4,
+.hidari a h5,
+.hidari a h6,
+.hidari a .h0,
+.hidari a .h1,
+.hidari a .h2,
+.hidari a .h3,
+.hidari a .h4,
+.hidari a .h5,
+.hidari a .h6 {
+  color: #f7f7f7;
+}
 .migi {
   background-color: #ffffff;
   color: #3a3b3b;
   padding: 30px 14px;
 }
+.migi a h1,
+.migi a h2,
+.migi a h3,
+.migi a h4,
+.migi a h5,
+.migi a h6,
+.migi a .h0,
+.migi a .h1,
+.migi a .h2,
+.migi a .h3,
+.migi a .h4,
+.migi a .h5,
+.migi a .h6 {
+  color: #3a3b3b;
+}
 @media (min-width: 768px) {
   .hidari {
     border-right: 6px solid #d8d9d9;
-    padding-right: 28px;
+    padding-right: 42px;
   }
   .migi {
     border-left: 6px solid #d8d9d9;
     margin-left: -6px;
-    padding-left: 28px;
+    padding-left: 42px;
   }
 }
 @media (min-width: 768px) {
@@ -2753,21 +2783,38 @@ caption {
   font-feature-settings: "kern" 1, "liga" 1, "calt" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
 }
 .h-feed > .p-name {
-  border-bottom: 3px solid #d8d9d9;
+  border-bottom: 3px solid #f7f7f7;
   font-size: 14px;
   font-family: 'Nimbus Sans Novus Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 2.14285714;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.h-feed > .p-name.p-name-strong {
+.h-feed.h-feed-strong > .p-name {
   background-color: #ffd914;
   color: #3a3b3b;
   border-bottom: none;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+.h-feed.h-feed-strong > .p-name.stretch-left {
+  padding-left: 0;
+}
+.h-feed.h-feed-strong > .p-name.stretch-right {
+  padding-right: 0;
 }
 .h-feed .h-entry {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.hidari .h-feed .h-entry {
+  border-bottom: 1px solid #3a3b3b;
+}
+.migi .h-feed .h-entry {
   border-bottom: 1px solid #d8d9d9;
-  margin-bottom: 30px;
+}
+.h-feed .h-entry > a {
+  display: block;
 }
 .h-entry .p-summary {
   font-size: 26px;
@@ -2788,7 +2835,7 @@ caption {
   text-decoration: underline;
 }
 .h-entry .e-content {
-  border-top: 1px solid #d8d9d9;
+  border-top: 1px solid #f7f7f7;
   padding-top: 20px;
 }
 .h-entry .p-category {
@@ -2797,7 +2844,7 @@ caption {
   display: inline-block;
   padding: 0 8px;
 }
-.h-entry .e-thumbnail {
+.h-entry .u-featured {
   margin-bottom: 30px;
 }
 .h-feed .h-entry .p-name {
