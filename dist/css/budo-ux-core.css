@@ -2834,14 +2834,7 @@ caption {
   text-decoration: underline;
 }
 .h-entry .e-content {
-  border-top: 1px solid;
-  padding-top: 20px;
-}
-.hidari .h-entry .e-content {
-  border-top-color: #3a3b3b;
-}
-.migi .h-entry .e-content {
-  border-top-color: #d8d9d9;
+  margin-top: 20px;
 }
 .h-entry .p-category {
   background-color: #ffd914;
@@ -2859,6 +2852,5 @@ caption {
 .h-feed .h-entry .p-summary {
   font-size: 19px;
   line-height: 1.57894737;
-  margin-bottom: 10px;
 }
 /*# sourceMappingURL=budo-ux-core.css.map */
