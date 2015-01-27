@@ -65,8 +65,14 @@
 
 // Property: category
 .h-entry .p-category {
-  background-color: @brand-primary;
-  color: @brand-primary-text;
+  .hidari & {
+    background-color: @gray-dark;
+    color: @gray-light;
+  }
+  .migi & {
+    background-color: @gray-light;
+    color: @gray-dark;
+  }
   display: inline-block;
   padding: 0 @padding-small-horizontal;
 }
@@ -77,10 +83,17 @@
 }
 
 
-// Editorial version
+// Strong version
 // -------------------------
 
+.h-entry-strong {
+  background-color: @gray;
+  border-radius: @border-radius-base;
+  &, a, .p-meta, .p-meta a { color: @text-color; }
 
+  padding: @padding-base-vertical @padding-base-horizontal 0;
+  margin-bottom: @line-height-computed;
+}
 
 
 // Adjustments for h-feed

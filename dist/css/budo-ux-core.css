@@ -1665,7 +1665,7 @@ fieldset[disabled] .btn-link:focus {
 .btn-lg {
   padding: 20px 16px;
   font-size: 26px;
-  line-height: 1.34615385;
+  line-height: 1.15384615;
   border-radius: 4px;
 }
 .btn-sm {
@@ -2310,19 +2310,7 @@ a.label:focus {
   color: #f7f7f7;
   padding: 30px 14px;
 }
-.hidari a h1,
-.hidari a h2,
-.hidari a h3,
-.hidari a h4,
-.hidari a h5,
-.hidari a h6,
-.hidari a .h0,
-.hidari a .h1,
-.hidari a .h2,
-.hidari a .h3,
-.hidari a .h4,
-.hidari a .h5,
-.hidari a .h6 {
+.hidari a {
   color: #f7f7f7;
 }
 .migi {
@@ -2330,19 +2318,7 @@ a.label:focus {
   color: #3a3b3b;
   padding: 30px 14px;
 }
-.migi a h1,
-.migi a h2,
-.migi a h3,
-.migi a h4,
-.migi a h5,
-.migi a h6,
-.migi a .h0,
-.migi a .h1,
-.migi a .h2,
-.migi a .h3,
-.migi a .h4,
-.migi a .h5,
-.migi a .h6 {
+.migi a {
   color: #3a3b3b;
 }
 @media (min-width: 768px) {
@@ -2633,22 +2609,22 @@ h6,
 }
 .h0 {
   font-size: 66px;
-  line-height: 0.98484848;
+  line-height: 0.90909091;
 }
 h1,
 .h1 {
   font-size: 49px;
-  line-height: 1.02040816;
+  line-height: 0.91836735;
 }
 h2,
 .h2 {
   font-size: 35px;
-  line-height: 1.28571429;
+  line-height: 1.14285714;
 }
 h3,
 .h3 {
   font-size: 26px;
-  line-height: 1.34615385;
+  line-height: 1.15384615;
 }
 h4,
 .h4 {
@@ -3021,7 +2997,7 @@ fieldset[disabled] .btn-link:focus {
 .btn-lg {
   padding: 20px 16px;
   font-size: 26px;
-  line-height: 1.34615385;
+  line-height: 1.15384615;
   border-radius: 4px;
 }
 .btn-sm {
@@ -3069,8 +3045,9 @@ input[type="button"].btn-block {
 .h-feed-strong > .p-name.stretch-right {
   padding-right: 0;
 }
-.h-feed .h-entry {
-  margin-bottom: 30px;
+.h-feed .h-entry,
+.h-feed .h-entry .u-featured {
+  margin-bottom: 20px;
 }
 .h-feed .h-entry > a {
   display: block;
@@ -3083,7 +3060,7 @@ input[type="button"].btn-block {
 }
 .h-entry .p-summary {
   font-size: 26px;
-  line-height: 1.34615385;
+  line-height: 1.15384615;
   margin-bottom: 20px;
 }
 .h-entry .p-meta {
@@ -3103,13 +3080,31 @@ input[type="button"].btn-block {
   margin-top: 20px;
 }
 .h-entry .p-category {
-  background-color: #ffd914;
-  color: #3a3b3b;
   display: inline-block;
   padding: 0 8px;
 }
+.hidari .h-entry .p-category {
+  background-color: #3a3b3b;
+  color: #d8d9d9;
+}
+.migi .h-entry .p-category {
+  background-color: #d8d9d9;
+  color: #3a3b3b;
+}
 .h-entry .u-featured {
   margin-bottom: 30px;
+}
+.h-entry-strong {
+  background-color: #9b9c9c;
+  border-radius: 2px;
+  padding: 10px 12px 0;
+  margin-bottom: 30px;
+}
+.h-entry-strong,
+.h-entry-strong a,
+.h-entry-strong .p-meta,
+.h-entry-strong .p-meta a {
+  color: #3a3b3b;
 }
 .h-feed .h-entry .p-name {
   margin-top: 0;
