@@ -14,27 +14,14 @@
 }
 
 // Hidari/migi containers
-.hidari {
-  background-color: @hidari-bg;
-  color: @hidari-color;
-  padding: @line-height-computed (@grid-gutter-width / 2);
-
-  a { color: @hidari-color; }
-}
-.migi {
-  background-color: @migi-bg;
-  color: @migi-color;
-  padding: @line-height-computed (@grid-gutter-width / 2);
-
-  a { color: @migi-color; }
-}
+.hidari, .migi { padding: @line-height-computed (@grid-gutter-width / 2); }
 @media (min-width: @screen-sm-min) {
   .hidari {
-    border-right: 6px solid @hidari-migi-border;
+    border-right: 6px solid;
     padding-right: (@grid-gutter-width * 1.5);
   }
   .migi {
-    border-left: 6px solid @hidari-migi-border;
+    border-left: 6px solid;
     margin-left: -6px; // offset to overlap container borders
     padding-left: (@grid-gutter-width * 1.5);
   }

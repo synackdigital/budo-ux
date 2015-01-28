@@ -9,13 +9,16 @@
 
 // Property: name (title)
 .h-feed > .p-name {
-  border-bottom: 3px solid @hr-border;
+  border-bottom: 3px solid;
 
   font-size: @font-size-small;
-  font-family: @font-family-sans-serif;
+  font-family: @font-family-ui;
   line-height: (1.5 * @line-height-small);
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  padding-left: @padding-base-horizontal;
+  padding-right: @padding-base-horizontal;
 }
 
 // Property: author
@@ -31,25 +34,21 @@
 // Strong version
 // -------------------------
 
-.h-feed-strong {
+.h-feed-strong > .p-name {
+  border-bottom: none;
 
-  // Stronger title
-  > .p-name {
-    background-color: @brand-primary;
-    color: @brand-primary-text;
-    border-bottom: none;
-
-    padding-left: (@grid-gutter-width / 2);
-    padding-right: (@grid-gutter-width / 2);
-    &.stretch-left { padding-left: 0; }
-    &.stretch-right { padding-right: 0; }
-  }
+  padding-left: (@grid-gutter-width / 2);
+  padding-right: (@grid-gutter-width / 2);
+  &.stretch-left { padding-left: 0; }
+  &.stretch-right { padding-right: 0; }
 }
 
 // Embedded h-entry
 // -------------------------
 
 .h-feed .h-entry {
+  padding-left: @padding-base-horizontal;
+  padding-right: @padding-base-horizontal;
 
   &, .u-featured { margin-bottom: @line-height-sm-computed; }
 

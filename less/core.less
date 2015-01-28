@@ -6,17 +6,28 @@
 // --------------------------------------------------
 
 
-@import 'fonts';                  // Web fonts
+// Core variables and mixins
+@import "variables";
+@import "mixins";
 
-@import 'bootstrap';              // Bootstrap framework <http://getbootstrap.com/>
-@import "variables";              // Core variables
-@import "mixins";                 // Mixins
+// Reset and dependencies
+@import 'fonts';
+@import "normalize";
 
-@import "grid";                   // Grid system
-@import "layout";                 // Layout
-@import 'type';                   // Typography
+// Core CSS
+@import "scaffolding";
+@import 'type';
+@import "grid";
+@import "layout";
 
-@import "components/navigation";  // Navigation
-@import "components/buttons";     // Buttons
-@import 'components/h-feed';      // h-feed microformat2
-@import 'components/h-entry';     // h-entry microformat2
+// Components
+@import "components/component-animations";
+@import "components/navigation";
+@import "components/buttons";
+@import "components/labels";
+@import 'components/h-feed';
+@import 'components/h-entry';
+
+// Utility classes
+@import "utilities";
+@import "responsive-utilities";

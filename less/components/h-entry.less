@@ -6,8 +6,8 @@
 // --------------------------------------------------
 
 .h-entry {
-  .hidari & { border-bottom: 1px solid @hidari-hr-border; }
-  .migi &   { border-bottom: 1px solid @migi-hr-border; }
+  .hidari & { border-bottom: 1px solid; }
+  .migi & { border-bottom: 1px solid; }
 }
 
 // Property: name (title)
@@ -22,36 +22,19 @@
 
 // Property: meta
 .h-entry .p-meta {
-  font-family: @font-family-base;
+  font-family: @font-family-ui;
   font-size: @font-size-small;
   line-height: @line-height-small;
   margin-bottom: @line-height-sm-computed;
 
-  &, a {
-    color: @text-muted;
-  }
-
-  a {
-    text-decoration: underline;
-  }
-
-  // Draw a coloured box left of the text
-  // position: relative;
-  // padding-left: (@grid-gutter-width + @padding-base-horizontal);
-  // &:after {
-  //   content: '';
-  //   background-color: @brand-primary;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: @grid-gutter-width;
-  //   height: (@font-size-small* @line-height-small);
-  // }
+  a { text-decoration: underline; }
 }
 
 // Element tree: content
 .h-entry .e-content {
   margin-top: @line-height-sm-computed;
+
+  a { color: @link-color; }
 }
 
 // Datetime: published
@@ -64,34 +47,10 @@
 .h-entry .p-author {}
 
 // Property: category
-.h-entry .p-category {
-  .hidari & {
-    background-color: @gray-dark;
-    color: @gray-light;
-  }
-  .migi & {
-    background-color: @gray-light;
-    color: @gray-dark;
-  }
-  display: inline-block;
-  padding: 0 @padding-small-horizontal;
-}
+.h-entry .p-category {}
 
 // URL: featured (image)
 .h-entry .u-featured {
-  margin-bottom: @line-height-computed;
-}
-
-
-// Strong version
-// -------------------------
-
-.h-entry-strong {
-  background-color: @gray;
-  border-radius: @border-radius-base;
-  &, a, .p-meta, .p-meta a { color: @text-color; }
-
-  padding: @padding-base-vertical @padding-base-horizontal 0;
   margin-bottom: @line-height-computed;
 }
 

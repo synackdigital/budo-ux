@@ -1,3 +1,106 @@
 //
 // Theme
 // --------------------------------------------------
+
+@import "variables";              // Core variables
+@import "mixins";                 // Mixins
+
+
+// Scaffolding
+// -------------------------
+
+// Links
+a {
+
+  // Links remain uncoloured by default
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+  }
+}
+
+h1, h2, h3, h4, h5, h6,
+.h0, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: @font-family-headings;
+}
+
+// Horizontal rules
+hr {
+  .hidari & { border-color: @hidari-muted; }
+  .migi & { border-color: @migi-muted; }
+}
+
+
+
+// Layout
+// -------------------------
+
+// Hidari/migi containers
+.hidari {
+  background-color: @hidari-bg;
+  color: @hidari-color;
+}
+.migi {
+  background-color: @migi-bg;
+  color: @migi-color;
+}
+@media (min-width: @screen-sm-min) {
+  .hidari { border-right-color: @centerline-border; }
+  .migi { border-left-color: @centerline-border; }
+}
+
+
+// H-feed
+// -------------------------
+
+.h-feed > .p-name {
+  .hidari & { border-bottom-color: @hidari-muted; }
+  .migi & { border-bottom-color: @hidari-muted; }
+}
+
+.h-feed-strong > .p-name {
+  background-color: @primary-color;
+  color: white;
+}
+
+// H-entry
+// -------------------------
+
+.h-entry {
+  .hidari & { border-bottom-color: @hidari-muted; }
+  .migi & { border-bottom-color: @migi-muted; }
+}
+
+
+// Buttons
+// --------------------------------------------------
+
+.btn-default {
+  .button-variant();
+}
+.btn-primary {
+  .button-variant(@primary-color);
+}
+// Danger and error appear as red
+.btn-danger {
+  .button-variant(@danger-color);
+}
+
+
+// Labels
+// --------------------------------------------------
+
+.label-default {
+  .hidari & { .label-variant(@label-hidari-bg); }
+  .migi & { .label-variant(@label-migi-bg); }
+}
+
+.label-primary {
+  .label-variant(@primary-color);
+}
+
+.label-info {
+  .label-variant(@info-color);
+}

@@ -1,0 +1,190 @@
+a {
+  color: inherit;
+}
+a:hover,
+a:focus {
+  color: #2984e9;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h0,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Nimbus Novus Sans Condensed Semi Bold', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.hidari hr {
+  border-color: #3a3b3b;
+}
+.migi hr {
+  border-color: #d8d9d9;
+}
+.hidari {
+  background-color: #212121;
+  color: #d8d9d9;
+}
+.migi {
+  background-color: #f7f7f7;
+  color: #3a3b3b;
+}
+@media (min-width: 768px) {
+  .hidari {
+    border-right-color: #d8d9d9;
+  }
+  .migi {
+    border-left-color: #d8d9d9;
+  }
+}
+.hidari .h-feed > .p-name {
+  border-bottom-color: #3a3b3b;
+}
+.migi .h-feed > .p-name {
+  border-bottom-color: #3a3b3b;
+}
+.h-feed-strong > .p-name {
+  background-color: #ffd914;
+  color: white;
+}
+.hidari .h-entry {
+  border-bottom-color: #3a3b3b;
+}
+.migi .h-entry {
+  border-bottom-color: #d8d9d9;
+}
+.btn-default {
+  background-color: #d8d9d9;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #f7f7f7;
+  background-color: #3a3b3b;
+}
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  background-image: none;
+}
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  background-color: #d8d9d9;
+}
+.btn-primary {
+  background-color: #ffd914;
+  color: #212121;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #f7f7f7;
+  background-color: #3a3b3b;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #ffd914;
+}
+.btn-danger {
+  background-color: #ee2947;
+  color: #f7f7f7;
+}
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger.focus,
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {
+  color: #f7f7f7;
+  background-color: #3a3b3b;
+}
+.btn-danger:active,
+.btn-danger.active,
+.open > .dropdown-toggle.btn-danger {
+  background-image: none;
+}
+.btn-danger.disabled,
+.btn-danger[disabled],
+fieldset[disabled] .btn-danger,
+.btn-danger.disabled:hover,
+.btn-danger[disabled]:hover,
+fieldset[disabled] .btn-danger:hover,
+.btn-danger.disabled:focus,
+.btn-danger[disabled]:focus,
+fieldset[disabled] .btn-danger:focus,
+.btn-danger.disabled.focus,
+.btn-danger[disabled].focus,
+fieldset[disabled] .btn-danger.focus,
+.btn-danger.disabled:active,
+.btn-danger[disabled]:active,
+fieldset[disabled] .btn-danger:active,
+.btn-danger.disabled.active,
+.btn-danger[disabled].active,
+fieldset[disabled] .btn-danger.active {
+  background-color: #ee2947;
+}
+.hidari .label-default {
+  background-color: #3a3b3b;
+  color: #f7f7f7;
+}
+.migi .label-default {
+  background-color: #d8d9d9;
+  color: #212121;
+}
+.label-primary {
+  background-color: #ffd914;
+  color: #212121;
+}
+.label-info {
+  background-color: #254beb;
+  color: #f7f7f7;
+}
+/*# sourceMappingURL=budo-ux-theme.css.map */
