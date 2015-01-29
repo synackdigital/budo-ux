@@ -2159,20 +2159,27 @@ input[type="button"].btn-block {
   line-height: 1.15384615;
   margin-bottom: 20px;
 }
-.h-entry .p-meta {
+.h-entry .e-meta {
   font-family: 'Nimbus Sans Novus Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   margin-bottom: 20px;
 }
-.h-entry .p-meta a {
+.h-entry .e-meta a {
   text-decoration: underline;
-}
-.h-entry .e-content {
-  margin-top: 20px;
 }
 .h-entry .e-content a {
   color: #2984e9;
+}
+.h-entry .p-author {
+  font-family: 'Nimbus Sans Novus Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  margin-bottom: 20px;
+}
+.h-entry .p-author img {
+  border-bottom: 5px solid;
+  margin-bottom: 10px;
 }
 .h-entry .u-featured {
   margin-bottom: 30px;

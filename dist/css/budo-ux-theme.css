@@ -58,8 +58,12 @@ h6,
 .migi .h-entry {
   border-bottom-color: #d8d9d9;
 }
+.h-entry .p-author {
+  background-color: #f7f7f7;
+}
 .btn-default {
   background-color: #d8d9d9;
+  border: none;
 }
 .btn-default:hover,
 .btn-default:focus,
@@ -97,6 +101,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   background-color: #ffd914;
+  border: none;
   color: #212121;
 }
 .btn-primary:hover,
@@ -135,6 +140,7 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-danger {
   background-color: #ee2947;
+  border: none;
   color: #f7f7f7;
 }
 .btn-danger:hover,

@@ -20,8 +20,8 @@
   margin-bottom: @line-height-sm-computed;
 }
 
-// Property: meta
-.h-entry .p-meta {
+// Element tree: meta
+.h-entry .e-meta {
   font-family: @font-family-ui;
   font-size: @font-size-small;
   line-height: @line-height-small;
@@ -32,8 +32,6 @@
 
 // Element tree: content
 .h-entry .e-content {
-  margin-top: @line-height-sm-computed;
-
   a { color: @link-color; }
 }
 
@@ -44,7 +42,17 @@
 .h-entry .dt-updated {}
 
 // Property: author
-.h-entry .p-author {}
+.h-entry .p-author {
+  font-family: @font-family-ui;
+  font-size: @font-size-small;
+  line-height: @line-height-small;
+  margin-bottom: @line-height-sm-computed;
+
+  img {
+    border-bottom: @padding-small-vertical solid;
+    margin-bottom: @padding-base-vertical;
+  }
+}
 
 // Property: category
 .h-entry .p-category {}
