@@ -10,15 +10,21 @@ h1, h2, h3, h4, h5, h6,
 .h0, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: @font-family-headings;
 }
-h1, h2, h3,
-.h0, .h1, .h2, .h3 {
+h1,
+.h0 {
+  margin-top: @line-height-lg-computed;
+  margin-bottom: @line-height-lg-computed;
+}
+
+h1,
+.h1 {
   margin-top: @line-height-computed;
   margin-bottom: @line-height-computed;
 }
-h4, h5, h6,
-.h4, .h5, .h6 {
-  margin-top: (.5 * @line-height-computed);
-  margin-bottom: (.5 * @line-height-computed);
+h2, h3, h4, h5, h6,
+.h2, .h3, .h4, .h5, .h6 {
+  margin-top: @line-height-sm-computed;
+  margin-bottom: @line-height-sm-computed;
 }
 
 .h0 { font-size: @font-size-h0; line-height: @line-height-h0; letter-spacing: .01em; }
