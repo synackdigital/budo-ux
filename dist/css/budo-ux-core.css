@@ -393,43 +393,43 @@ h6,
 .h0 {
   font-size: 66px;
   line-height: .90909091;
-  letter-spacing: .01em;
+  /* letter-spacing: .01em; */
 }
 h1,
 .h1 {
   font-size: 49px;
   line-height: .91836735;
-  letter-spacing: .025em;
+  /* letter-spacing: .025em; */
 }
 h2,
 .h2 {
   font-size: 35px;
   line-height: 1.14285714;
-  letter-spacing: .035em;
+  /* letter-spacing: .035em; */
 }
 h3,
 .h3 {
   font-size: 26px;
   line-height: 1.15384615;
-  letter-spacing: .04em;
+  /* letter-spacing: .04em; */
 }
 h4,
 .h4 {
   font-size: 19px;
   line-height: 1.57894737;
-  letter-spacing: .05em;
+  /* letter-spacing: .05em; */
 }
 h5,
 .h5 {
   font-size: 19px;
   line-height: 1.57894737;
-  letter-spacing: .05em;
+  /* letter-spacing: .05em; */
 }
 h6,
 .h6 {
   font-size: 19px;
   line-height: 1.57894737;
-  letter-spacing: .05em;
+  /* letter-spacing: .05em; */
 }
 .h-section {
   font-family: 'Nimbus Sans Novus Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
