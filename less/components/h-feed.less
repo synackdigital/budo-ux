@@ -16,9 +16,6 @@
   line-height: (1.5 * @line-height-small);
   text-transform: uppercase;
   letter-spacing: 1px;
-
-  padding-left: @padding-base-horizontal;
-  padding-right: @padding-base-horizontal;
 }
 
 // Property: author
@@ -36,21 +33,25 @@
 
 .h-feed-strong > .p-name {
   border-bottom: none;
-
-  padding-left: (@grid-gutter-width / 2);
-  padding-right: (@grid-gutter-width / 2);
-  &.stretch-left { padding-left: 0; }
-  &.stretch-right { padding-right: 0; }
 }
 
 // Embedded h-entry
 // -------------------------
 
 .h-feed .h-entry {
-  padding-left: @padding-base-horizontal;
-  padding-right: @padding-base-horizontal;
 
   &, .u-featured { margin-bottom: @line-height-sm-computed; }
 
   > a { display: block; }
+
+  .p-name {
+    margin-top: 0;
+    margin-bottom: @padding-base-vertical;
+  }
+
+  .p-summary {
+    font-family: @font-family-ui;
+    font-size: @font-size-small;
+    line-height: @line-height-small;
+  }
 }

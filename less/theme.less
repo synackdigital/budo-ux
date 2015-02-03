@@ -10,20 +10,14 @@
 // -------------------------
 
 // Links
-a {
+a { .link-invisible(); }
 
-  // Links remain uncoloured by default
-  color: inherit;
-
-  &:hover,
-  &:focus {
-    color: @link-hover-color;
-  }
-}
-
+// Headlines
 h1, h2, h3, h4, h5, h6,
 .h0, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: @font-family-headings;
+
+  a { .link-invisible(); }
 }
 
 // Horizontal rules
@@ -62,8 +56,15 @@ hr {
 
 .h-feed-strong > .p-name {
   background-color: @primary-color;
-  color: white;
+  color: @gray-darker;
 }
+
+.h-entry-thumbnail .h-entry-body .p-name,
+.h-entry-thumbnail .h-entry-body .label-default, {
+  .hidari & { background-color: @gray-darker; }
+  .migi & { background-color: @gray-lighter; }
+}
+
 
 // H-entry
 // -------------------------
@@ -73,9 +74,12 @@ hr {
   .migi & { border-bottom-color: @migi-muted; }
 }
 
-.h-entry .p-author {
-  background-color: @gray-lighter;
-}
+.h-entry .p-author { background-color: @gray-lighter; }
+
+.h-entry .e-meta a { .link-underline(); }
+.h-entry .e-content a { .link-default(); }
+
+.h-entry a figure { background-color: @primary-color; }
 
 
 // Buttons

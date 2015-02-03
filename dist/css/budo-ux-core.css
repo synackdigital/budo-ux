@@ -347,57 +347,68 @@ h6,
   font-family: 'Nimbus Novus Sans Condensed Semi Bold', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h1,
-h2,
-h3,
-.h0,
-.h1,
-.h2,
-.h3 {
+.h0 {
+  margin-top: 29px;
+  margin-bottom: 29px;
+}
+h1,
+.h1 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+h2,
+h3,
 h4,
 h5,
 h6,
+.h2,
+.h3,
 .h4,
 .h5,
 .h6 {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .h0 {
   font-size: 66px;
   line-height: 0.90909091;
+  letter-spacing: .01em;
 }
 h1,
 .h1 {
   font-size: 49px;
   line-height: 0.91836735;
+  letter-spacing: .025em;
 }
 h2,
 .h2 {
   font-size: 35px;
   line-height: 1.14285714;
+  letter-spacing: .035em;
 }
 h3,
 .h3 {
   font-size: 26px;
   line-height: 1.15384615;
+  letter-spacing: .04em;
 }
 h4,
 .h4 {
   font-size: 19px;
   line-height: 1.57894737;
+  letter-spacing: .05em;
 }
 h5,
 .h5 {
   font-size: 19px;
   line-height: 1.57894737;
+  letter-spacing: .05em;
 }
 h6,
 .h6 {
   font-size: 19px;
   line-height: 1.57894737;
+  letter-spacing: .05em;
 }
 p,
 cite,
@@ -1819,45 +1830,45 @@ caption {
 }
 @media (min-width: 768px) {
   .grid-yayahidari {
-    background-image: linear-gradient(to right, #212121 0%, #212121 45%, #f7f7f7 45%, #f7f7f7 100%);
+    background-image: linear-gradient(to right, #212121 0%, #212121 40%, #f7f7f7 40%, #f7f7f7 100%);
   }
   .grid-yayahidari .hidari,
   .grid-yayahidari .migi {
-    left: 45%;
+    left: 40%;
   }
   .grid-yayahidari .hidari {
-    width: 336.6px;
-    margin-left: -336.6px;
+    width: 299.2px;
+    margin-left: -299.2px;
   }
   .grid-yayahidari .migi {
-    width: 411.4px;
+    width: 448.8px;
   }
 }
 @media (min-width: 992px) {
   .grid-yayahidari .hidari {
-    width: 435.6px;
-    margin-left: -435.6px;
+    width: 387.2px;
+    margin-left: -387.2px;
   }
   .grid-yayahidari .migi {
-    width: 532.4px;
+    width: 580.8px;
   }
 }
 @media (min-width: 1200px) {
   .grid-yayahidari .hidari {
-    width: 525.6px;
-    margin-left: -525.6px;
+    width: 467.2px;
+    margin-left: -467.2px;
   }
   .grid-yayahidari .migi {
-    width: 642.4px;
+    width: 700.8px;
   }
 }
 @media (min-width: 1570px) {
   .grid-yayahidari .hidari {
-    width: 615.6px;
-    margin-left: -615.6px;
+    width: 547.2px;
+    margin-left: -547.2px;
   }
   .grid-yayahidari .migi {
-    width: 752.4px;
+    width: 820.8px;
   }
 }
 @media (min-width: 768px) {
@@ -1905,45 +1916,45 @@ caption {
 }
 @media (min-width: 768px) {
   .grid-yayamigi {
-    background-image: linear-gradient(to right, #212121 0%, #212121 60%, #f7f7f7 60%, #f7f7f7 100%);
+    background-image: linear-gradient(to right, #212121 0%, #212121 55%, #f7f7f7 55%, #f7f7f7 100%);
   }
   .grid-yayamigi .hidari,
   .grid-yayamigi .migi {
-    left: 60%;
+    left: 55%;
   }
   .grid-yayamigi .hidari {
-    width: 448.8px;
-    margin-left: -448.8px;
+    width: 411.4px;
+    margin-left: -411.4px;
   }
   .grid-yayamigi .migi {
-    width: 299.2px;
+    width: 336.6px;
   }
 }
 @media (min-width: 992px) {
   .grid-yayamigi .hidari {
-    width: 580.8px;
-    margin-left: -580.8px;
+    width: 532.4px;
+    margin-left: -532.4px;
   }
   .grid-yayamigi .migi {
-    width: 387.2px;
+    width: 435.6px;
   }
 }
 @media (min-width: 1200px) {
   .grid-yayamigi .hidari {
-    width: 700.8px;
-    margin-left: -700.8px;
+    width: 642.4px;
+    margin-left: -642.4px;
   }
   .grid-yayamigi .migi {
-    width: 467.2px;
+    width: 525.6px;
   }
 }
 @media (min-width: 1570px) {
   .grid-yayamigi .hidari {
-    width: 820.8px;
-    margin-left: -820.8px;
+    width: 752.4px;
+    margin-left: -752.4px;
   }
   .grid-yayamigi .migi {
-    width: 547.2px;
+    width: 615.6px;
   }
 }
 .stretch-left {
@@ -2102,7 +2113,7 @@ input[type="button"].btn-block {
 .label {
   display: inline;
   padding: .2em .6em .3em;
-  font-size: 75%;
+  font-family: 'Nimbus Sans Novus Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   line-height: 1;
   text-align: center;
@@ -2123,23 +2134,9 @@ input[type="button"].btn-block {
   line-height: 2.14285714;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding-left: 12px;
-  padding-right: 12px;
 }
 .h-feed-strong > .p-name {
   border-bottom: none;
-  padding-left: 14px;
-  padding-right: 14px;
-}
-.h-feed-strong > .p-name.stretch-left {
-  padding-left: 0;
-}
-.h-feed-strong > .p-name.stretch-right {
-  padding-right: 0;
-}
-.h-feed .h-entry {
-  padding-left: 12px;
-  padding-right: 12px;
 }
 .h-feed .h-entry,
 .h-feed .h-entry .u-featured {
@@ -2148,11 +2145,20 @@ input[type="button"].btn-block {
 .h-feed .h-entry > a {
   display: block;
 }
+.h-feed .h-entry .p-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.h-feed .h-entry .p-summary {
+  font-family: 'Nimbus Sans Novus Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
 .hidari .h-entry {
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
 }
 .migi .h-entry {
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
 }
 .h-entry .p-summary {
   font-size: 26px;
@@ -2165,12 +2171,6 @@ input[type="button"].btn-block {
   line-height: 1.42857143;
   margin-bottom: 20px;
 }
-.h-entry .e-meta a {
-  text-decoration: underline;
-}
-.h-entry .e-content a {
-  color: #2984e9;
-}
 .h-entry .p-author {
   font-family: 'Nimbus Sans Novus Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -2182,15 +2182,27 @@ input[type="button"].btn-block {
   margin-bottom: 10px;
 }
 .h-entry .u-featured {
+  display: inline-block;
   margin-bottom: 30px;
 }
-.h-feed .h-entry .p-name {
-  margin-top: 0;
-  margin-bottom: 10px;
+.h-entry a:hover figure img,
+.h-entry a.focus figure img,
+.h-entry a:focus figure img,
+.h-entry a.active figure img,
+.h-entry a:active figure img {
+  opacity: .8;
 }
-.h-feed .h-entry .p-summary {
-  font-size: 19px;
-  line-height: 1.57894737;
+.h-entry-thumbnail {
+  position: relative;
+}
+.h-entry-thumbnail .h-entry-body {
+  padding: 10px 12px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+.h-entry-thumbnail .h-entry-body .p-name {
+  padding: 5px 8px;
 }
 .clearfix:before,
 .clearfix:after,
