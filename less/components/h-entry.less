@@ -97,17 +97,19 @@
 // Thumbnail version
 // -------------------------
 
-.h-entry-thumbnail {
-  position: relative;
-}
+@media (min-width: @screen-sm-min) {
+  .h-entry-thumbnail {
+    position: relative;
+  }
 
-.h-entry-thumbnail .h-entry-body {
-  padding: @padding-base-vertical @padding-base-horizontal;
-  position: absolute;
-  bottom: @padding-base-vertical;
-  left: 0;
+  .h-entry-thumbnail .h-entry-body {
+    padding: @padding-base-vertical @padding-base-horizontal;
+    position: absolute;
+    bottom: @padding-base-vertical;
+    left: 0;
 
-  .p-name {
-    padding: @padding-small-vertical @padding-small-horizontal;
+    .p-name {
+      padding: @padding-small-vertical @padding-small-horizontal;
+    }
   }
 }

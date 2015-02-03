@@ -2252,17 +2252,19 @@ input[type="button"].btn-block {
 .h-entry a:active figure img {
   opacity: .8;
 }
-.h-entry-thumbnail {
-  position: relative;
-}
-.h-entry-thumbnail .h-entry-body {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  padding: 10px 12px;
-}
-.h-entry-thumbnail .h-entry-body .p-name {
-  padding: 5px 8px;
+@media (min-width: 768px) {
+  .h-entry-thumbnail {
+    position: relative;
+  }
+  .h-entry-thumbnail .h-entry-body {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    padding: 10px 12px;
+  }
+  .h-entry-thumbnail .h-entry-body .p-name {
+    padding: 5px 8px;
+  }
 }
 .clearfix:before,
 .clearfix:after,
