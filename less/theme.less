@@ -20,6 +20,16 @@ h1, h2, h3, h4, h5, h6,
   a { .link-invisible(); }
 }
 
+.h-section {
+  .hidari & { border-bottom-color: @hidari-muted; }
+  .migi & { border-bottom-color: @migi-muted; }
+}
+.h-section-strong {
+  background-color: @primary-color;
+  color: @gray-darker;
+}
+
+
 // Horizontal rules
 hr {
   .hidari & { border-color: @hidari-muted; }
@@ -52,11 +62,6 @@ hr {
 .h-feed > .p-name {
   .hidari & { border-bottom-color: @hidari-muted; }
   .migi & { border-bottom-color: @hidari-muted; }
-}
-
-.h-feed-strong > .p-name {
-  background-color: @primary-color;
-  color: @gray-darker;
 }
 
 .h-entry-thumbnail .h-entry-body .p-name,

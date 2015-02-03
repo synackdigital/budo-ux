@@ -109,6 +109,16 @@ h6 a:active,
   color: inherit;
   text-decoration: none;
 }
+.hidari .h-section {
+  border-bottom-color: #3a3b3b;
+}
+.migi .h-section {
+  border-bottom-color: #d8d9d9;
+}
+.h-section-strong {
+  background-color: #ffd914;
+  color: #212121;
+}
 .hidari hr {
   border-color: #3a3b3b;
 }
@@ -136,10 +146,6 @@ h6 a:active,
 }
 .migi .h-feed > .p-name {
   border-bottom-color: #3a3b3b;
-}
-.h-feed-strong > .p-name {
-  background-color: #ffd914;
-  color: #212121;
 }
 .hidari .h-entry-thumbnail .h-entry-body .p-name,
 .hidari .h-entry-thumbnail .h-entry-body .label-default {

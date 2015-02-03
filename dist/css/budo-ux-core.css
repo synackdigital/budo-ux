@@ -410,6 +410,17 @@ h6,
   line-height: 1.57894737;
   letter-spacing: .05em;
 }
+.h-section {
+  border-bottom: 3px solid;
+  font-size: 14px;
+  font-family: 'Nimbus Sans Novus Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 2.14285714;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.h-section-strong {
+  border-bottom: none;
+}
 p,
 cite,
 blockquote,
@@ -2126,17 +2137,6 @@ input[type="button"].btn-block {
 .btn .label {
   position: relative;
   top: -1px;
-}
-.h-feed > .p-name {
-  border-bottom: 3px solid;
-  font-size: 14px;
-  font-family: 'Nimbus Sans Novus Medium', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 2.14285714;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.h-feed-strong > .p-name {
-  border-bottom: none;
 }
 .h-feed .h-entry,
 .h-feed .h-entry .u-featured {
