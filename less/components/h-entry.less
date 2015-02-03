@@ -35,10 +35,14 @@
 // .h-entry .e-content {}
 
 // Datetime: published
-// .h-entry .dt-published {}
+.h-entry .dt-published {
+  white-space: nowrap;
+}
 
 // Datetime: updated
-// .h-entry .dt-updated {}
+.h-entry .dt-updated {
+  white-space: nowrap;
+}
 
 // Property: author
 .h-entry .p-author {
@@ -46,6 +50,10 @@
   font-size: @font-size-small;
   line-height: @line-height-small;
   margin-bottom: @line-height-sm-computed;
+
+  a {
+    .link-underline();
+  }
 
   img {
     border-bottom: @padding-small-vertical solid;
