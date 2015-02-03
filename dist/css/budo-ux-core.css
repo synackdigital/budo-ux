@@ -2185,6 +2185,9 @@ input[type="button"].btn-block {
   display: inline-block;
   margin-bottom: 30px;
 }
+.h-entry-single {
+  margin-bottom: 60px;
+}
 .h-entry a:hover figure img,
 .h-entry a.focus figure img,
 .h-entry a:focus figure img,
