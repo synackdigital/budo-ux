@@ -9,7 +9,7 @@
 // Fill viewport height on larger screens
 @media (min-width: @screen-sm-min) {
   html, body { height: 100%; }
-  .grid { height: 100%; position: relative; overflow-y: auto; overflow-x: hidden; }
+  .main { height: 100%; position: relative; overflow-y: auto; overflow-x: hidden; }
   .hidari, .migi { position: absolute; }
 }
 
@@ -18,6 +18,7 @@
 @media (min-width: @screen-sm-min) {
   .hidari {
     border-right: 6px solid;
+    margin-right: -6px; // offset to overlap container borders
     padding-right: (@grid-gutter-width * 1.5);
   }
   .migi {
@@ -31,7 +32,7 @@
 // -------------------------
 
 // Centered grid
-.grid-chuushin {
+.main-chuushin {
 
   @media (min-width: @screen-sm-min) {
 
@@ -69,7 +70,7 @@
 }
 
 // Left-aligned grids
-.grid-hidari {
+.main-hidari {
 
   @media (min-width: @screen-sm-min) {
 
@@ -103,7 +104,7 @@
     .migi { width: (@container-xl * .7); }
   }
 }
-.grid-yayahidari {
+.main-yayahidari {
 
   @media (min-width: @screen-sm-min) {
 
@@ -139,7 +140,7 @@
 }
 
 // Right-aligned grids
-.grid-migi {
+.main-migi {
 
   @media (min-width: @screen-sm-min) {
 
@@ -173,7 +174,7 @@
     .migi { width: (@container-xl * .25); }
   }
 }
-.grid-yayamigi {
+.main-yayamigi {
 
   @media (min-width: @screen-sm-min) {
 
@@ -240,8 +241,31 @@
 // Brand container
 // -------------------------
 
-.brand-container {
+.brand {
   background-color: @brand-bg;
-  max-width: (.5 * 576px); // Half actual graphic width
-  margin-left: -15px; // Align image content
+
+  max-width: @brand-width;
+  position: absolute;
+  z-index: @brand-zindex;
+  top: @line-height-computed;
+  left: 0;
+
+  img { .img-responsive(); }
+
+  @media (min-width: @screen-sm-min) {
+    left: 50%;
+    margin-left: ((@container-sm / -2) + (@grid-gutter-width / 2));
+  }
+  @media (min-width: @screen-md-min) {
+    margin-left: ((@container-md / -2) + (@grid-gutter-width / 2));
+  }
+  @media (min-width: @screen-lg-min) {
+    margin-left: ((@container-lg / -2) + (@grid-gutter-width / 2));
+  }
+  @media (min-width: @screen-xl-min) {
+    margin-left: ((@container-xl / -2) + (@grid-gutter-width / 2));
+  }
 }
+
+// Make space for brand in hidari containers
+.hidari { padding-top: (5 * @line-height-computed); }
