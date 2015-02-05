@@ -135,7 +135,7 @@ h6 a:active,
 }
 @media (min-width: 768px) {
   .hidari {
-    border-right-color: #d8d9d9;
+    border-right-color: #3a3b3b;
   }
   .migi {
     border-left-color: #d8d9d9;

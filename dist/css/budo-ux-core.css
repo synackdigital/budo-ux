@@ -1748,12 +1748,10 @@ caption {
 @media (min-width: 768px) {
   .hidari {
     border-right: 6px solid;
-    margin-right: -6px;
     padding-right: 42px;
   }
   .migi {
     border-left: 6px solid;
-    margin-left: -6px;
     padding-left: 42px;
   }
 }
