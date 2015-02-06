@@ -15,6 +15,7 @@
 
 // Hidari/migi containers
 .hidari, .migi { padding: @line-height-computed (@grid-gutter-width / 2); }
+.hidari { padding-top: (5 * @line-height-computed); } // Make space for brand in hidari
 @media (min-width: @screen-sm-min) {
   .hidari {
     border-right: @centerline-border-width solid;
@@ -227,6 +228,3 @@
     margin-left: (@container-xl / -2);
   }
 }
-
-// Make space for brand in hidari containers
-.hidari { padding-top: (5 * @line-height-computed); }

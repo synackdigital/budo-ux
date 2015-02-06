@@ -61,13 +61,18 @@ hr {
 
 .h-feed > .p-name {
   .hidari & { border-bottom-color: @hidari-muted; }
-  .migi & { border-bottom-color: @hidari-muted; }
+  .migi & { border-bottom-color: @migi-muted; }
 }
 
 .h-entry-thumbnail .h-entry-body .p-name,
 .h-entry-thumbnail .h-entry-body .label-default, {
   .hidari & { background-color: @gray-darker; }
   .migi & { background-color: @gray-lighter; }
+}
+
+.h-feed-strong {
+  .hidari & { background-color: mix(@hidari-bg, @hidari-muted); }
+  .migi & { background-color: mix(@migi-bg, @migi-muted); }
 }
 
 
