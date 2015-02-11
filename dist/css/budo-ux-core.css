@@ -2236,6 +2236,12 @@ input[type="button"].btn-block {
 .h-entry .dateline a:active {
   color: #2984e9;
 }
+.h-entry .dateline .p-author,
+.h-entry .dateline .p-category,
+.h-entry .dateline .dt-published,
+.h-entry .dateline .dt-updated {
+  margin-right: .75em;
+}
 .h-entry .jumpline {
   overflow: hidden;
   text-overflow: ellipsis;
