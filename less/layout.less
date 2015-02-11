@@ -46,128 +46,102 @@
 
 // Centered grid
 .main-chuushin {
-
   @media (min-width: @screen-sm-min) {
-
-    // Position hidari/migi on center line
     .hidari, .migi { width: (@container-sm / 2); }
     .hidari { margin-left: (@container-sm * -.5); }
     .migi { margin-left: -@centerline-border-width; }
   }
-
   @media (min-width: @screen-md-min) {
     .hidari, .migi { width: (@container-md / 2); }
     .hidari { margin-left: (@container-md * -.5); }
   }
-
   @media (min-width: @screen-lg-min) {
     .hidari, .migi { width: (@container-lg / 2); }
     .hidari { margin-left: (@container-lg * -.5); }
   }
-
   @media (min-width: @screen-xl-min) {
     .hidari, .migi { width: (@container-xl / 2); }
     .hidari { margin-left: (@container-xl * -.5); }
   }
 }
 
-// Left-aligned grids
+// Far-left aligned grid
 .main-hidari {
-
   @media (min-width: @screen-sm-min) {
-
-    // Position hidari/migi on center line
-    .hidari { width: (@container-sm * .3); margin-left: (@container-sm * -.5); }
-    .migi { width: (@container-sm * .7); margin-left: ((@container-sm * -.2) - @centerline-border-width); }
+    .hidari { width: (@container-sm * .5); margin-left: (@container-sm * -.5); }
+    .migi { width: (@container-sm * .5); margin-left: -@centerline-border-width; }
   }
-
   @media (min-width: @screen-md-min) {
-    .hidari { width: (@container-md * .3); margin-left: (@container-md * -.5); }
-    .migi { width: (@container-md * .7); margin-left: ((@container-md * -.2) - @centerline-border-width); }
+    .hidari { width: (@container-md * .38); margin-left: (@container-md * -.5); }
+    .migi { width: (@container-md * .62); margin-left: ((@container-md * -.12) - @centerline-border-width); }
   }
-
   @media (min-width: @screen-lg-min) {
     .hidari { width: (@container-lg * .3); margin-left: (@container-lg * -.5); }
     .migi { width: (@container-lg * .7); margin-left: ((@container-lg * -.2) - @centerline-border-width); }
   }
-
   @media (min-width: @screen-xl-min) {
-    .hidari { width: (@container-xl * .3); margin-left: (@container-xl * -.5); }
-    .migi { width: (@container-xl * .7); margin-left: ((@container-xl * -.2) - @centerline-border-width); }
+    .hidari { width: (@container-xl * .25); margin-left: (@container-xl * -.5); }
+    .migi { width: (@container-xl * .75); margin-left: ((@container-xl * -.25) - @centerline-border-width); }
   }
 }
+
+// Slightly left aligned grid
 .main-yayahidari {
-
   @media (min-width: @screen-sm-min) {
-
-    // Position hidari/migi on center line
-    .hidari { width: (@container-sm * .4); margin-left: (@container-sm * -.5); }
-    .migi { width: (@container-sm * .6); margin-left: ((@container-sm * -.1) - @centerline-border-width); }
+    .hidari { width: (@container-sm * .5); margin-left: (@container-sm * -.5); }
+    .migi { width: (@container-sm * .5); margin-left: -@centerline-border-width; }
   }
-
   @media (min-width: @screen-md-min) {
-    .hidari { width: (@container-md * .4); margin-left: (@container-md * -.5); }
-    .migi { width: (@container-md * .6); margin-left: ((@container-md * -.1) - @centerline-border-width); }
+    .hidari { width: (@container-md * .43); margin-left: (@container-md * -.5); }
+    .migi { width: (@container-md * .57); margin-left: ((@container-md * -.07) - @centerline-border-width); }
   }
-
   @media (min-width: @screen-lg-min) {
-    .hidari { width: (@container-lg * .4); margin-left: (@container-lg * -.5); }
-    .migi { width: (@container-lg * .6); margin-left: ((@container-lg * -.1) - @centerline-border-width); }
+    .hidari { width: (@container-lg * .44); margin-left: (@container-lg * -.5); }
+    .migi { width: (@container-lg * .56); margin-left: ((@container-lg * -.06) - @centerline-border-width); }
   }
-
   @media (min-width: @screen-xl-min) {
-    .hidari { width: (@container-xl * .4); margin-left: (@container-xl * -.5); }
-    .migi { width: (@container-xl * .6); margin-left: ((@container-xl * -.1) - @centerline-border-width); }
+    .hidari { width: (@container-xl * .45); margin-left: (@container-xl * -.5); }
+    .migi { width: (@container-xl * .55); margin-left: ((@container-xl * -.05) - @centerline-border-width); }
   }
 }
 
-// Right-aligned grids
+// Far-right aligned grid
 .main-migi {
-
   @media (min-width: @screen-sm-min) {
-
-    // Position hidari/migi on center line
-    .hidari { width: (@container-sm * .75); margin-left: (@container-sm * -.5); }
-    .migi { width: (@container-sm * .25); margin-left: ((@container-sm * .25) - @centerline-border-width); }
+    .hidari { width: (@container-sm * .74); margin-left: (@container-sm * -.5); }
+    .migi { width: (@container-sm * .26); margin-left: ((@container-sm * .24) - @centerline-border-width); }
   }
-
   @media (min-width: @screen-md-min) {
-    .hidari { width: (@container-md * .75); margin-left: (@container-md * -.5); }
-    .migi { width: (@container-md * .25); margin-left: ((@container-md * .25) - @centerline-border-width); }
+    .hidari { width: (@container-md * .76); margin-left: (@container-md * -.5); }
+    .migi { width: (@container-md * .24); margin-left: ((@container-md * .26) - @centerline-border-width); }
   }
-
   @media (min-width: @screen-lg-min) {
-    .hidari { width: (@container-lg * .75); margin-left: (@container-lg * -.5); }
-    .migi { width: (@container-lg * .25); margin-left: ((@container-lg * .25) - @centerline-border-width); }
+    .hidari { width: (@container-lg * .78); margin-left: (@container-lg * -.5); }
+    .migi { width: (@container-lg * .22); margin-left: ((@container-lg * .28) - @centerline-border-width); }
   }
-
   @media (min-width: @screen-xl-min) {
-    .hidari { width: (@container-xl * .75); margin-left: (@container-xl * -.5); }
-    .migi { width: (@container-xl * .25); margin-left: ((@container-xl * .25) - @centerline-border-width); }
+    .hidari { width: (@container-xl * .80); margin-left: (@container-xl * -.5); }
+    .migi { width: (@container-xl * .2); margin-left: ((@container-xl * .3) - @centerline-border-width); }
   }
 }
+
+// Slightly right aligned grid
 .main-yayamigi {
-
   @media (min-width: @screen-sm-min) {
-
-    // Position hidari/migi on center line
-    .hidari { width: (@container-sm * .55); margin-left: (@container-sm * -.5); }
-    .migi { width: (@container-sm * .45); margin-left: ((@container-sm * .05) - @centerline-border-width); }
+    .hidari { width: (@container-sm * .60); margin-left: (@container-sm * -.5); }
+    .migi { width: (@container-sm * .40); margin-left: ((@container-sm * .10) - @centerline-border-width); }
   }
-
   @media (min-width: @screen-md-min) {
-    .hidari { width: (@container-md * .55); margin-left: (@container-md * -.5); }
-    .migi { width: (@container-md * .45); margin-left: ((@container-md * .05) - @centerline-border-width); }
+    .hidari { width: (@container-md * .59); margin-left: (@container-md * -.5); }
+    .migi { width: (@container-md * .41); margin-left: ((@container-md * .09) - @centerline-border-width); }
   }
-
   @media (min-width: @screen-lg-min) {
-    .hidari { width: (@container-lg * .55); margin-left: (@container-lg * -.5); }
-    .migi { width: (@container-lg * .45); margin-left: ((@container-lg * .05) - @centerline-border-width); }
+    .hidari { width: (@container-lg * .58); margin-left: (@container-lg * -.5); }
+    .migi { width: (@container-lg * .42); margin-left: ((@container-lg * .08) - @centerline-border-width); }
   }
-
   @media (min-width: @screen-xl-min) {
-    .hidari { width: (@container-xl * .55); margin-left: (@container-xl * -.5); }
-    .migi { width: (@container-xl * .45); margin-left: ((@container-xl * .05) - @centerline-border-width); }
+    .hidari { width: (@container-xl * .57); margin-left: (@container-xl * -.5); }
+    .migi { width: (@container-xl * .43); margin-left: ((@container-xl * .07) - @centerline-border-width); }
   }
 }
 

@@ -6,110 +6,144 @@
 // --------------------------------------------------
 
 .h-entry {
-  .hidari & { border-bottom: 2px solid; }
-  .migi & { border-bottom: 2px solid; }
+  .clearfix();
+  margin-bottom: @line-height-computed;
 }
 
-// Content wrapper
-// .h-entry-body {}
+.h-entry img {
+  .img-responsive();
+}
 
-// Property: name (title)
+.h-entry .dateline a {
+  .link-underline();
+}
+
+.h-entry .jumpline {
+  .text-overflow();
+}
+
+// Property: name (entry name/title)
 // .h-entry .p-name {}
 
-// Property: summary
-.h-entry .p-summary {
-  font-size: @font-size-large;
-  line-height: @line-height-large;
-  margin-bottom: @line-height-sm-computed;
+// Property: summary (short entry summary)
+// .h-entry .p-summary {}
+
+// Element tree: content (full content of the entry)
+.h-entry .e-content {
+  font-family: @font-family-paragraph;
+}
+.h-entry .e-content a {
+  .link-default();
 }
 
-// Element tree: meta
-.h-entry .e-meta {
-  font-family: @font-family-ui;
-  font-size: @font-size-small;
-  line-height: @line-height-small;
-  margin-bottom: @line-height-sm-computed;
-}
-
-// Element tree: content
-// .h-entry .e-content {}
-
-// Datetime: published
+// Datetime: published (when the entry was published)
 .h-entry .dt-published {
-  white-space: nowrap;
+  .small();
+  .text-overflow();
 }
 
-// Datetime: updated
-.h-entry .dt-updated {
-  white-space: nowrap;
-}
+// Datetime: updated (when the entry was updated)
+// .h-entry .dt-updated {}
 
-// Property: author
-.h-entry .p-author {
-  font-family: @font-family-ui;
-  font-size: @font-size-small;
-  line-height: @line-height-small;
-  margin-bottom: @line-height-sm-computed;
+// Property: author (who wrote the entry, optionally embedded h-card)
+.h-entry {
 
-  a {
-    .link-underline();
+  // When displayed as a link
+  a.p-author {
+    .small();
   }
 
-  img {
-    border-bottom: @padding-small-vertical solid;
+  // When displayed as an element tree (h-card)
+  .p-author {
+
+  }
+}
+
+// Property: category (entry categories/tags)
+// .h-entry .p-category {}
+
+// URL: url (entry permalink URL)
+// .h-entry .u-url {}
+
+// URL: UID (unique entry ID)
+// .h-entry .u-uid {}
+
+// Property: location (location the entry was posted from, optionally embed h-card, h-adr, or h-geo)
+// .h-entry .p-location {}
+
+// URL: syndication (URL(s) of syndicated copies of this post)
+// .h-entry .u-syndication {}
+
+// URL: in reply to (the URL which the h-entry is considered reply to, optionally an embedded h-cite)
+// .h-entry .u-in-reply-to {}
+
+// URL: featured (a representative photo or image for the entry, e.g. primary photo for an article)
+.h-entry .u-featured {
+
+  margin-bottom: @padding-base-vertical;
+  img { border-bottom: @padding-small-vertical solid; }
+
+  .caption {
+    .small();
+  }
+
+  &.pull-right {
+    max-width: 120px;
+    margin-left: (@grid-gutter-width / 2);
+    margin-bottom: @line-height-sm-computed;
+  }
+
+  &.pull-left {
+    max-width: 120px;
+    margin-right: (@grid-gutter-width / 2);
+    margin-bottom: @line-height-sm-computed;
+  }
+}
+
+
+
+// Teaser
+// -------------------------
+
+.h-entry.teaser {
+  border-bottom: 1px solid;
+
+  h1, h2 { &:extend(.h3); }
+  .h0, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .dateline {
+    margin-top: 0;
+    margin-bottom: @padding-base-vertical;
+  }
+
+  .p-summary,
+  .e-content {
+    font-size: @font-size-small;
+    line-height: @line-height-small;
+  }
+}
+
+
+// Lead
+// -------------------------
+
+.h-entry.lead {
+  h1 { &:extend(.h2); }
+  .h0, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .dateline {
+    margin-top: 0;
     margin-bottom: @padding-base-vertical;
   }
 }
 
-// Property: category
-// .h-entry .p-category {}
 
-// URL: featured (image)
-.h-entry .u-featured {
-  display: inline-block;
+// Article
+// -------------------------
+
+.h-entry.article .p-summary {
+  font-family: @font-family-paragraph;
+  font-size: @font-size-large;
+  line-height: @line-height-large;
+}
+
+.h-entry.article .dateline {
+  margin-top: @line-height-computed;
   margin-bottom: @line-height-computed;
-}
-
-
-// Single h-entry (single-article pages)
-// -------------------------
-
-.h-entry-single {
-  margin-bottom: (2 * @line-height-computed);
-}
-
-
-// Linked h-entry
-// -------------------------
-
-.h-entry {
-
-  // Fade linked images on interaction
-  // a figure img { .transition(~'opacity 90ms linear'); }
-  a:hover,
-  a.focus, a:focus,
-  a.active, a:active {
-    figure img { opacity: .8; }
-  }
-}
-
-
-// Thumbnail version
-// -------------------------
-
-@media (min-width: @screen-sm-min) {
-  .h-entry-thumbnail {
-    position: relative;
-  }
-
-  .h-entry-thumbnail .h-entry-body {
-    padding: @padding-base-vertical @padding-base-horizontal;
-    position: absolute;
-    bottom: @padding-base-vertical;
-    left: 0;
-
-    .p-name {
-      padding: @padding-small-vertical @padding-small-horizontal;
-    }
-  }
 }

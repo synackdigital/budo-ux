@@ -1,0 +1,54 @@
+//
+// Thumbnails
+//
+// Suggested DOM:
+// <figure class="thumbnail">
+//   <img />
+//   <span class="streamer" />
+//   <figcaption class="caption" />
+// </figure>
+// --------------------------------------------------
+
+// Mixin and adjust the regular image class
+.thumbnail {
+  display: block;
+  margin-bottom: @line-height-computed;
+  line-height: @line-height-base;
+  position: relative;
+
+  // Auto-size enclosed images
+  > img,
+  a > img {
+    &:extend(.img-responsive);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // Image captions
+  .caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 @padding-large-horizontal @padding-base-vertical;
+
+    // Gradient overlay
+    * { position: relative; }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      #gradient > .vertical( fade(black, 0%), fade(black, 80%) );
+    }
+  }
+
+  // Image streamer
+  .streamer {
+    position: absolute;
+    top: @padding-small-vertical;
+    left: 0;
+  }
+}

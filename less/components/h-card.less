@@ -1,0 +1,38 @@
+//
+// Microformat2 h-card
+//
+// Used for publishing people and organisations on the web.
+// http://microformats.org/wiki/h-card
+// --------------------------------------------------
+
+.h-card {}
+
+// The full/formatted name of the person
+.h-card .p-name {
+  &:extend(.h4);
+}
+
+// Given (often first) name
+// .h-card .p-given-name {}
+
+// Family (often last) name
+// .h-card .p-family-name {}
+
+// Email address
+.h-card .u-email {
+  .small();
+}
+
+// Home page
+.h-card .u-url {
+  .small();
+}
+
+// Description of role
+// .h-card .p-role {}
+
+// Photo
+.h-card .u-photo {
+  border-bottom: @padding-small-vertical solid;
+  max-width: 120px;
+}

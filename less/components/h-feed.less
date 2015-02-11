@@ -5,38 +5,34 @@
 // http://microformats.org/wiki/h-feed
 // --------------------------------------------------
 
-.h-feed {}
+// .h-feed {}
 
-// Property: name (title)
-// .h-feed > .p-name {}
+// Property: name (name of the feed)
+.h-feed > .p-name {
+  border-bottom: 2px solid;
 
-// Property: author
-// .p-author {}
-
-// URL: url
-// .u-url {}
-
-// URL: photo
-// .u-photo {}
-
-
-// Embedded h-entry
-// -------------------------
-
-.h-feed .h-entry {
-
-  &, .u-featured { margin-bottom: @line-height-sm-computed; }
-
-  > a { display: block; }
-
-  .p-name {
-    margin-top: 0;
-    margin-bottom: @padding-base-vertical;
-  }
-
-  .p-summary {
+  &, h1, h2, h3, h4, h5, h6 {
     font-family: @font-family-ui;
     font-size: @font-size-small;
-    line-height: @line-height-small;
+    line-height: (@line-height-small * 2);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+
+  &.strong {
+    border-bottom: none;
+    padding: 0 @padding-base-horizontal;
+
+    &.stretch-left { padding-left: 0; }
+    &.stretch-right { padding-right: 0; }
   }
 }
+
+// Property: author (author of the feed, optionally embed an h-card)
+// .p-author {}
+
+// URL: url (URL of the feed)
+// .u-url {}
+
+// URL: photo (representative photo / icon for the feed)
+// .u-photo {}
