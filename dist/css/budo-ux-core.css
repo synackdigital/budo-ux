@@ -346,6 +346,7 @@ h6,
 .h4,
 .h5,
 .h6,
+.h-feed .h-entry h1,
 .h-entry.teaser h1,
 .h-entry.teaser h2,
 .h-entry.lead h1,
@@ -355,8 +356,8 @@ h6,
 .h0 {
   font-size: 66px;
   line-height: 0.90909091;
-  margin-top: 29px;
-  margin-bottom: 29px;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 h1,
 .h1 {
@@ -367,6 +368,7 @@ h1,
 }
 h2,
 .h2,
+.h-feed .h-entry h1,
 .h-entry.lead h1 {
   font-size: 35px;
   line-height: 1.14285714;
@@ -378,7 +380,7 @@ h3,
 .h-entry.teaser h1,
 .h-entry.teaser h2 {
   font-size: 26px;
-  line-height: 1.15384615;
+  line-height: 1.34615385;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -468,15 +470,18 @@ ol ol {
   padding-right: 5px;
 }
 blockquote {
-  padding: 0;
+  padding: 0 0 0 1.2em;
   margin: 0 0 15px;
 }
-blockquote p {
-  display: inline;
-  margin-bottom: 0;
+blockquote p:first-child {
+  text-indent: -1.2em;
+}
+blockquote p:first-child:before {
+  content: '\2014\2009';
 }
 blockquote cite {
-  font-style: normal;
+  display: block;
+  font-weight: bold;
 }
 html,
 body {
@@ -516,39 +521,39 @@ caption {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 21px;
+  padding-right: 21px;
 }
 @media (min-width: 768px) {
   .container {
-    width: 608px;
+    width: 622px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 828px;
+    width: 842px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1048px;
+    width: 1062px;
   }
 }
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 21px;
+  padding-right: 21px;
 }
 .row {
-  margin-left: -14px;
-  margin-right: -14px;
+  margin-left: -21px;
+  margin-right: -21px;
 }
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .col-xs-13, .col-sm-13, .col-md-13, .col-lg-13, .col-xs-14, .col-sm-14, .col-md-14, .col-lg-14, .col-xs-15, .col-sm-15, .col-md-15, .col-lg-15, .col-xs-16, .col-sm-16, .col-md-16, .col-lg-16, .col-xs-17, .col-sm-17, .col-md-17, .col-lg-17, .col-xs-18, .col-sm-18, .col-md-18, .col-lg-18 {
   position: relative;
   min-height: 1px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: 21px;
+  padding-right: 21px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-13, .col-xs-14, .col-xs-15, .col-xs-16, .col-xs-17, .col-xs-18 {
   float: left;
@@ -1717,7 +1722,7 @@ caption {
 }
 .hidari,
 .migi {
-  padding: 30px 14px;
+  padding: 30px 21px;
 }
 .hidari {
   padding-top: 150px;
@@ -1725,11 +1730,11 @@ caption {
 @media (min-width: 768px) {
   .hidari {
     border-right: 8px solid;
-    padding-right: 42px;
+    padding-right: 63px;
   }
   .migi {
     border-left: 8px solid;
-    padding-left: 42px;
+    padding-left: 63px;
   }
 }
 @media (min-width: 768px) {
@@ -1740,10 +1745,10 @@ caption {
 @media (min-width: 768px) {
   .main-chuushin .hidari,
   .main-chuushin .migi {
-    width: 304px;
+    width: 311px;
   }
   .main-chuushin .hidari {
-    margin-left: -304px;
+    margin-left: -311px;
   }
   .main-chuushin .migi {
     margin-left: -8px;
@@ -1752,188 +1757,188 @@ caption {
 @media (min-width: 992px) {
   .main-chuushin .hidari,
   .main-chuushin .migi {
-    width: 414px;
+    width: 421px;
   }
   .main-chuushin .hidari {
-    margin-left: -414px;
+    margin-left: -421px;
   }
 }
 @media (min-width: 1200px) {
   .main-chuushin .hidari,
   .main-chuushin .migi {
-    width: 524px;
+    width: 531px;
   }
   .main-chuushin .hidari {
-    margin-left: -524px;
+    margin-left: -531px;
   }
 }
 @media (min-width: 1570px) {
   .main-chuushin .hidari,
   .main-chuushin .migi {
-    width: 704px;
+    width: 711px;
   }
   .main-chuushin .hidari {
-    margin-left: -704px;
+    margin-left: -711px;
   }
 }
 @media (min-width: 768px) {
   .main-hidari .hidari {
-    width: 304px;
-    margin-left: -304px;
+    width: 311px;
+    margin-left: -311px;
   }
   .main-hidari .migi {
-    width: 304px;
+    width: 311px;
     margin-left: -8px;
   }
 }
 @media (min-width: 992px) {
   .main-hidari .hidari {
-    width: 314.64px;
-    margin-left: -414px;
+    width: 319.96px;
+    margin-left: -421px;
   }
   .main-hidari .migi {
-    width: 513.36px;
-    margin-left: -107.36px;
+    width: 522.04px;
+    margin-left: -109.04px;
   }
 }
 @media (min-width: 1200px) {
   .main-hidari .hidari {
-    width: 314.4px;
-    margin-left: -524px;
+    width: 318.6px;
+    margin-left: -531px;
   }
   .main-hidari .migi {
-    width: 733.6px;
-    margin-left: -217.6px;
+    width: 743.4px;
+    margin-left: -220.4px;
   }
 }
 @media (min-width: 1570px) {
   .main-hidari .hidari {
-    width: 352px;
-    margin-left: -704px;
+    width: 355.5px;
+    margin-left: -711px;
   }
   .main-hidari .migi {
-    width: 1056px;
-    margin-left: -360px;
+    width: 1066.5px;
+    margin-left: -363.5px;
   }
 }
 @media (min-width: 768px) {
   .main-yayahidari .hidari {
-    width: 304px;
-    margin-left: -304px;
+    width: 311px;
+    margin-left: -311px;
   }
   .main-yayahidari .migi {
-    width: 304px;
+    width: 311px;
     margin-left: -8px;
   }
 }
 @media (min-width: 992px) {
   .main-yayahidari .hidari {
-    width: 356.04px;
-    margin-left: -414px;
+    width: 362.06px;
+    margin-left: -421px;
   }
   .main-yayahidari .migi {
-    width: 471.96px;
-    margin-left: -65.96px;
+    width: 479.94px;
+    margin-left: -66.94px;
   }
 }
 @media (min-width: 1200px) {
   .main-yayahidari .hidari {
-    width: 461.12px;
-    margin-left: -524px;
+    width: 467.28px;
+    margin-left: -531px;
   }
   .main-yayahidari .migi {
-    width: 586.88px;
-    margin-left: -70.88px;
+    width: 594.72px;
+    margin-left: -71.72px;
   }
 }
 @media (min-width: 1570px) {
   .main-yayahidari .hidari {
-    width: 633.6px;
-    margin-left: -704px;
+    width: 568.8px;
+    margin-left: -711px;
   }
   .main-yayahidari .migi {
-    width: 774.4px;
-    margin-left: -78.4px;
+    width: 853.2px;
+    margin-left: -150.2px;
   }
 }
 @media (min-width: 768px) {
   .main-migi .hidari {
-    width: 449.92px;
-    margin-left: -304px;
+    width: 460.28px;
+    margin-left: -311px;
   }
   .main-migi .migi {
-    width: 158.08px;
-    margin-left: 137.92px;
+    width: 161.72px;
+    margin-left: 141.28px;
   }
 }
 @media (min-width: 992px) {
   .main-migi .hidari {
-    width: 629.28px;
-    margin-left: -414px;
+    width: 639.92px;
+    margin-left: -421px;
   }
   .main-migi .migi {
-    width: 198.72px;
-    margin-left: 207.28px;
+    width: 202.08px;
+    margin-left: 210.92px;
   }
 }
 @media (min-width: 1200px) {
   .main-migi .hidari {
-    width: 817.44px;
-    margin-left: -524px;
+    width: 828.36px;
+    margin-left: -531px;
   }
   .main-migi .migi {
-    width: 230.56px;
-    margin-left: 285.44px;
+    width: 233.64px;
+    margin-left: 289.36px;
   }
 }
 @media (min-width: 1570px) {
   .main-migi .hidari {
-    width: 1126.4px;
-    margin-left: -704px;
+    width: 1137.6px;
+    margin-left: -711px;
   }
   .main-migi .migi {
-    width: 281.6px;
-    margin-left: 414.4px;
+    width: 284.4px;
+    margin-left: 418.6px;
   }
 }
 @media (min-width: 768px) {
   .main-yayamigi .hidari {
-    width: 364.8px;
-    margin-left: -304px;
+    width: 391.86px;
+    margin-left: -311px;
   }
   .main-yayamigi .migi {
-    width: 243.2px;
-    margin-left: 52.8px;
+    width: 230.14px;
+    margin-left: 35.54px;
   }
 }
 @media (min-width: 992px) {
   .main-yayamigi .hidari {
-    width: 488.52px;
-    margin-left: -414px;
+    width: 522.04px;
+    margin-left: -421px;
   }
   .main-yayamigi .migi {
-    width: 339.48px;
-    margin-left: 66.52px;
+    width: 319.96px;
+    margin-left: 59.36px;
   }
 }
 @media (min-width: 1200px) {
   .main-yayamigi .hidari {
-    width: 607.84px;
-    margin-left: -524px;
+    width: 647.82px;
+    margin-left: -531px;
   }
   .main-yayamigi .migi {
-    width: 440.16px;
-    margin-left: 75.84px;
+    width: 414.18px;
+    margin-left: 87.58px;
   }
 }
 @media (min-width: 1570px) {
   .main-yayamigi .hidari {
-    width: 802.56px;
-    margin-left: -704px;
+    width: 853.2px;
+    margin-left: -711px;
   }
   .main-yayamigi .migi {
-    width: 605.44px;
-    margin-left: 90.56px;
+    width: 568.8px;
+    margin-left: 134.2px;
   }
 }
 .stretch-left {
@@ -1974,22 +1979,22 @@ caption {
 @media (min-width: 768px) {
   .brand {
     left: 50%;
-    margin-left: -304px;
+    margin-left: -311px;
   }
 }
 @media (min-width: 992px) {
   .brand {
-    margin-left: -414px;
+    margin-left: -421px;
   }
 }
 @media (min-width: 1200px) {
   .brand {
-    margin-left: -524px;
+    margin-left: -531px;
   }
 }
 @media (min-width: 1570px) {
   .brand {
-    margin-left: -704px;
+    margin-left: -711px;
   }
 }
 .fade {
@@ -2029,7 +2034,7 @@ tbody.collapse.in {
 .navigation {
   position: absolute;
   top: 30px;
-  right: 28px;
+  right: 42px;
   z-index: 1000;
 }
 .navigation-toggle {
@@ -2091,7 +2096,7 @@ fieldset[disabled] .btn {
 .btn-lg {
   padding: 20px 16px;
   font-size: 26px;
-  line-height: 1.15384615;
+  line-height: 1.34615385;
   border-radius: 4px;
 }
 .btn-sm {
@@ -2137,22 +2142,20 @@ input[type="button"].btn-block {
   top: -1px;
 }
 .thumbnail {
+  background-color: black;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   line-height: 1.57894737;
   position: relative;
 }
-.thumbnail > img,
-.thumbnail a > img {
-  margin-left: auto;
-  margin-right: auto;
-}
 .thumbnail .caption {
+  color: white;
+  font-size: 14px;
   position: absolute;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 0 16px 10px;
+  padding: 10px 16px;
 }
 .thumbnail .caption * {
   position: relative;
@@ -2201,6 +2204,26 @@ input[type="button"].btn-block {
 .h-feed > .p-name.strong.stretch-right {
   padding-right: 0;
 }
+.h-feed .h-entry {
+  border-bottom: 1px solid;
+}
+.h-feed .h-entry .h0,
+.h-feed .h-entry h1,
+.h-feed .h-entry .h1,
+.h-feed .h-entry h2,
+.h-feed .h-entry .h2,
+.h-feed .h-entry h3,
+.h-feed .h-entry .h3,
+.h-feed .h-entry h4,
+.h-feed .h-entry .h4,
+.h-feed .h-entry h5,
+.h-feed .h-entry .h5,
+.h-feed .h-entry h6,
+.h-feed .h-entry .h6,
+.h-feed .h-entry .dateline {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 .h-entry {
   margin-bottom: 30px;
 }
@@ -2225,6 +2248,11 @@ input[type="button"].btn-block {
   max-width: 100%;
   height: auto;
 }
+.h-entry .dateline {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .h-entry .dateline a {
   color: inherit;
   text-decoration: underline;
@@ -2236,16 +2264,18 @@ input[type="button"].btn-block {
 .h-entry .dateline a:active {
   color: #2984e9;
 }
-.h-entry .dateline .p-author,
-.h-entry .dateline .p-category,
-.h-entry .dateline .dt-published,
-.h-entry .dateline .dt-updated {
+.h-entry .dateline > * {
+  display: inline;
   margin-right: .75em;
 }
 .h-entry .jumpline {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.h-entry .p-summary {
+  font-family: 'Stempel Garamond LT', Georgia, "Times New Roman", Times, serif;
+  clear: both;
 }
 .h-entry .e-content {
   font-family: 'Stempel Garamond LT', Georgia, "Times New Roman", Times, serif;
@@ -2268,74 +2298,24 @@ input[type="button"].btn-block {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.h-entry a.p-author {
+.h-entry .dateline .p-author {
   font-size: 14px;
 }
 .h-entry .u-featured {
-  margin-bottom: 10px;
-}
-.h-entry .u-featured img {
   border-bottom: 5px solid;
-}
-.h-entry .u-featured .caption {
-  font-size: 14px;
-}
-.h-entry .u-featured.pull-right {
-  max-width: 120px;
-  margin-left: 14px;
   margin-bottom: 20px;
 }
 .h-entry .u-featured.pull-left {
-  max-width: 120px;
-  margin-right: 14px;
-  margin-bottom: 20px;
+  margin-right: 21px;
+  max-width: 160px;
 }
-.h-entry.teaser {
-  border-bottom: 1px solid;
-}
-.h-entry.teaser .h0,
-.h-entry.teaser h1,
-.h-entry.teaser .h1,
-.h-entry.teaser h2,
-.h-entry.teaser .h2,
-.h-entry.teaser h3,
-.h-entry.teaser .h3,
-.h-entry.teaser h4,
-.h-entry.teaser .h4,
-.h-entry.teaser h5,
-.h-entry.teaser .h5,
-.h-entry.teaser h6,
-.h-entry.teaser .h6,
-.h-entry.teaser .dateline {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-.h-entry.teaser .p-summary,
-.h-entry.teaser .e-content {
-  font-size: 14px;
-  line-height: 1.42857143;
-}
-.h-entry.lead .h0,
-.h-entry.lead h1,
-.h-entry.lead .h1,
-.h-entry.lead h2,
-.h-entry.lead .h2,
-.h-entry.lead h3,
-.h-entry.lead .h3,
-.h-entry.lead h4,
-.h-entry.lead .h4,
-.h-entry.lead h5,
-.h-entry.lead .h5,
-.h-entry.lead h6,
-.h-entry.lead .h6,
-.h-entry.lead .dateline {
-  margin-top: 0;
-  margin-bottom: 10px;
+.h-entry .u-featured.pull-right {
+  margin-left: 21px;
+  max-width: 160px;
 }
 .h-entry.article .p-summary {
-  font-family: 'Stempel Garamond LT', Georgia, "Times New Roman", Times, serif;
   font-size: 26px;
-  line-height: 1.15384615;
+  line-height: 1.34615385;
 }
 .h-entry.article .dateline {
   margin-top: 30px;
@@ -2349,7 +2329,6 @@ input[type="button"].btn-block {
 }
 .h-card .u-photo {
   border-bottom: 5px solid;
-  max-width: 120px;
 }
 .clearfix:before,
 .clearfix:after,

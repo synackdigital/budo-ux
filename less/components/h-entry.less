@@ -15,9 +15,15 @@
 }
 
 .h-entry .dateline {
+  display: block;
+  margin-top: @padding-base-vertical;
+  margin-bottom: @padding-base-vertical;
+
   a { .link-underline(); }
 
-  .p-author, .p-category, .dt-published, .dt-updated {
+  // Line up enclosed items
+  > * {
+    display: inline;
     margin-right: .75em;
   }
 }
@@ -30,7 +36,12 @@
 // .h-entry .p-name {}
 
 // Property: summary (short entry summary)
-// .h-entry .p-summary {}
+.h-entry .p-summary {
+  font-family: @font-family-paragraph;
+
+  // Always clear floats before summary
+  clear: both;
+}
 
 // Element tree: content (full content of the entry)
 .h-entry .e-content {
@@ -52,8 +63,8 @@
 // Property: author (who wrote the entry, optionally embedded h-card)
 .h-entry {
 
-  // When displayed as a link
-  a.p-author {
+  // When displayed inside the dateline
+  .dateline .p-author {
     .small();
   }
 
@@ -83,24 +94,16 @@
 
 // URL: featured (a representative photo or image for the entry, e.g. primary photo for an article)
 .h-entry .u-featured {
-
-  margin-bottom: @padding-base-vertical;
-  img { border-bottom: @padding-small-vertical solid; }
-
-  .caption {
-    .small();
-  }
-
-  &.pull-right {
-    max-width: 120px;
-    margin-left: (@grid-gutter-width / 2);
-    margin-bottom: @line-height-sm-computed;
-  }
+  border-bottom: @padding-small-vertical solid;
+  margin-bottom: @line-height-sm-computed;
 
   &.pull-left {
-    max-width: 120px;
     margin-right: (@grid-gutter-width / 2);
-    margin-bottom: @line-height-sm-computed;
+    max-width: @h-entry-thumbnail-width;
+  }
+  &.pull-right {
+    margin-left: (@grid-gutter-width / 2);
+    max-width: @h-entry-thumbnail-width;
   }
 }
 
@@ -110,19 +113,7 @@
 // -------------------------
 
 .h-entry.teaser {
-  border-bottom: 1px solid;
-
   h1, h2 { &:extend(.h3); }
-  .h0, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .dateline {
-    margin-top: 0;
-    margin-bottom: @padding-base-vertical;
-  }
-
-  .p-summary,
-  .e-content {
-    font-size: @font-size-small;
-    line-height: @line-height-small;
-  }
 }
 
 
@@ -131,10 +122,6 @@
 
 .h-entry.lead {
   h1 { &:extend(.h2); }
-  .h0, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .dateline {
-    margin-top: 0;
-    margin-bottom: @padding-base-vertical;
-  }
 }
 
 
@@ -142,7 +129,6 @@
 // -------------------------
 
 .h-entry.article .p-summary {
-  font-family: @font-family-paragraph;
   font-size: @font-size-large;
   line-height: @line-height-large;
 }

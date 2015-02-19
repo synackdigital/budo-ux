@@ -123,16 +123,22 @@ ol {
 
 // Blockquotes
 blockquote {
-  padding: 0;
+  padding: 0 0 0 1.2em;
   margin: 0 0 (.5 * @line-height-computed);
 
+  // Put em space before first paragraph
   p {
-    display: inline;
-    margin-bottom: 0;
+    &:first-child {
+      text-indent: -1.2em;
+      &:before {
+        content: '\2014\2009';
+      }
+    }
   }
 
   cite {
-    font-style: normal;
+    display: block;
+    font-weight: bold;
   }
 }
 

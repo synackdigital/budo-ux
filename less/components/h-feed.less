@@ -36,3 +36,15 @@
 
 // URL: photo (representative photo / icon for the feed)
 // .u-photo {}
+
+// Enclosed h-entry
+.h-feed .h-entry {
+  border-bottom: 1px solid;
+
+  // Tweak headings
+  h1 { &:extend(.h2); }
+  .h0, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .dateline {
+    margin-top: 0;
+    margin-bottom: @padding-base-vertical;
+  }
+}

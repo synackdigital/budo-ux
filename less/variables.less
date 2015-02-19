@@ -77,7 +77,7 @@
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-small:         unit((20 / @font-size-small));
 @line-height-base:          unit((30 / @font-size-base));
-@line-height-large:         unit((30 / @font-size-large));
+@line-height-large:         unit((35 / @font-size-large));
 @line-height-xlarge:        unit((40 / @font-size-xlarge));
 @line-height-xxlarge:       unit((45 / @font-size-xxlarge));
 @line-height-xxxlarge:      unit((60 / @font-size-xxxlarge));
@@ -136,6 +136,13 @@
 @btn-active-color:           @gray-lighter;
 
 
+//== H-entry
+//
+//## Parameters for the various h-entry components
+
+//** Teaser h-entry thumbnail size
+@h-entry-thumbnail-width:    160px;
+
 //== Media queries breakpoints
 //
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
@@ -161,7 +168,7 @@
 //** 18 can be evenly divided by 2, 3, 6 and 9
 @grid-columns:                18;
 //** Padding between columns. Gets divided in half for the left and right.
-@grid-gutter-width:           28px;
+@grid-gutter-width:           42px;
 //** Point at which the navbar becomes uncollapsed.
 @grid-float-breakpoint:       @screen-sm-min;
 //** Point at which the navbar begins collapsing.

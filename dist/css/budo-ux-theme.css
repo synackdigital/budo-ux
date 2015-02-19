@@ -147,18 +147,18 @@ h6 a:active,
   background-color: #ffd914;
   color: #212121;
 }
-.hidari .h-entry .u-featured img,
+.hidari .h-entry .u-featured,
 .hidari .h-entry .p-author .u-photo {
   border-bottom-color: #3a3b3b;
 }
-.migi .h-entry .u-featured img,
+.migi .h-entry .u-featured,
 .migi .h-entry .p-author .u-photo {
   border-bottom-color: #d8d9d9;
 }
-.hidari .h-entry.teaser {
+.hidari .h-feed .h-entry {
   border-bottom-color: #3a3b3b;
 }
-.migi .h-entry.teaser {
+.migi .h-feed .h-entry {
   border-bottom-color: #d8d9d9;
 }
 .btn-default {

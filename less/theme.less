@@ -72,23 +72,28 @@ hr {
 
 .h-entry {
   .hidari & {
-    .u-featured img,
+    .u-featured,
     .p-author .u-photo {
       border-bottom-color: @hidari-muted;
     }
   }
   .migi & {
-    .u-featured img,
+    .u-featured,
     .p-author .u-photo {
       border-bottom-color: @migi-muted;
     }
   }
 }
 
-.h-entry.teaser {
+
+// H-feed
+// -------------------------
+
+.h-feed .h-entry {
   .hidari & { border-bottom-color: @hidari-muted; }
   .migi & { border-bottom-color: @migi-muted; }
 }
+
 
 // Buttons
 // --------------------------------------------------
