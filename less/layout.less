@@ -65,6 +65,12 @@
 .main-chuushin {
   .hidari { .make-md-column(9); }
   .migi { .make-md-column(9); }
+
+  // Offset when reversed dom
+  .main-reverse-dom& {
+    .hidari { .make-md-column-pull(9); }
+    .migi { .make-md-column-push(9); }
+  }
 }
 
 // Far-left aligned
@@ -77,6 +83,18 @@
 
   .hidari { .make-xl-column(5); }
   .migi { .make-xl-column(13); }
+
+  // Offset when reversed dom
+  .main-reverse-dom& {
+    .hidari { .make-md-column-pull(11); }
+    .migi { .make-md-column-push(7); }
+
+    .hidari { .make-lg-column-pull(12); }
+    .migi { .make-lg-column-push(6); }
+
+    .hidari { .make-xl-column-pull(13); }
+    .migi { .make-xl-column-push(5); }
+  }
 }
 
 // Slightly left aligned
@@ -89,6 +107,18 @@
 
   .hidari { .make-xl-column(7); }
   .migi { .make-xl-column(11); }
+
+  // Offset when reversed dom
+  .main-reverse-dom& {
+    .hidari { .make-md-column-pull(9); }
+    .migi { .make-md-column-push(9); }
+
+    .hidari { .make-lg-column-pull(10); }
+    .migi { .make-lg-column-push(8); }
+
+    .hidari { .make-xl-column-pull(11); }
+    .migi { .make-xl-column-push(7); }
+  }
 }
 
 // Far-right aligned
@@ -101,12 +131,30 @@
 
   .hidari { .make-xl-column(15); }
   .migi { .make-xl-column(3); }
+
+  // Offset when reversed dom
+  .main-reverse-dom& {
+    .hidari { .make-md-column-pull(5); }
+    .migi { .make-md-column-push(13); }
+
+    .hidari { .make-lg-column-pull(4); }
+    .migi { .make-lg-column-push(14); }
+
+    .hidari { .make-xl-column-pull(3); }
+    .migi { .make-xl-column-push(15); }
+  }
 }
 
 // Slightly right aligned
 .main-yayamigi {
   .hidari { .make-md-column(10); }
   .migi { .make-md-column(8); }
+
+  // Offset when reversed dom
+  .main-reverse-dom& {
+    .hidari { .make-md-column-pull(8); }
+    .migi { .make-md-column-push(10); }
+  }
 }
 
 

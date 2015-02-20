@@ -1,12 +1,3 @@
-/*!
- * Budo UX v0.0.2 (http://budokampsport.se)
- * Copyright 2014-2015 Svenska Budo- och Kampsportsförbundet
- * 
- * Built with Bootstrap (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
 a {
   color: inherit;
   text-decoration: none;
@@ -131,12 +122,12 @@ h6 a:active,
   border-color: #d8d9d9;
 }
 .hidari {
-  color: #f7f7f7;
   background-color: #212121;
+  color: #f7f7f7;
 }
 .migi {
-  color: #3a3b3b;
   background-color: #f7f7f7;
+  color: #3a3b3b;
 }
 @media (min-width: 768px) {
   .hidari {
@@ -153,8 +144,8 @@ h6 a:active,
   border-bottom-color: #d8d9d9;
 }
 .h-feed > .p-name.strong {
-  color: #212121;
   background-color: #ffd914;
+  color: #212121;
 }
 .hidari .h-entry .u-featured,
 .hidari .h-entry .p-author .u-photo {
@@ -209,9 +200,9 @@ fieldset[disabled] .btn-default.active {
   background-color: #d8d9d9;
 }
 .btn-primary {
-  color: #212121;
   background-color: #ffd914;
   border: none;
+  color: #212121;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -248,9 +239,9 @@ fieldset[disabled] .btn-primary.active {
   background-color: #ffd914;
 }
 .btn-danger {
-  color: #f7f7f7;
   background-color: #ee2947;
   border: none;
+  color: #f7f7f7;
 }
 .btn-danger:hover,
 .btn-danger:focus,
@@ -287,19 +278,19 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ee2947;
 }
 .hidari .label-default {
-  color: #f7f7f7;
   background-color: #3a3b3b;
+  color: #f7f7f7;
 }
 .migi .label-default {
-  color: #212121;
   background-color: #d8d9d9;
+  color: #212121;
 }
 .label-primary {
-  color: #212121;
   background-color: #ffd914;
+  color: #212121;
 }
 .label-info {
-  color: #f7f7f7;
   background-color: #254beb;
+  color: #f7f7f7;
 }
 /*# sourceMappingURL=budo-ux-theme.css.map */
