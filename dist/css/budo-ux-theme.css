@@ -140,10 +140,10 @@ h6 a:active,
 }
 @media (min-width: 768px) {
   .hidari {
-    border-right-color: #d8d9d9;
+    border-right-color: #7c7d7d;
   }
   .migi {
-    border-left-color: #d8d9d9;
+    border-left-color: #e8e8e8;
   }
 }
 .hidari .h-feed > .p-name {

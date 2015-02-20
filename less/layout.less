@@ -3,33 +3,14 @@
 // --------------------------------------------------
 
 
-// Layout base
-// -------------------------
-
 // Fill viewport height on larger screens
-@media (min-width: @screen-sm-min) {
-  html, body { height: 100%; }
-  .main { height: 100%; position: relative; overflow-y: auto; overflow-x: hidden; }
-  .hidari, .migi { position: absolute; left: 50%; }
-}
+@media (min-width: @grid-float-breakpoint) {
+  html { height: 100%; }
+  body {
+    min-height: 100%;
 
-// Hidari/migi containers
-.hidari, .migi { padding: @line-height-computed (@grid-gutter-width / 2); }
-.hidari { padding-top: (5 * @line-height-computed); } // Make space for brand in hidari
-@media (min-width: @screen-sm-min) {
-  .hidari {
-    border-right: @centerline-border-width solid;
-    padding-right: (@grid-gutter-width * 1.5);
-  }
-  .migi {
-    border-left: @centerline-border-width solid;
-    padding-left: (@grid-gutter-width * 1.5);
-  }
-}
-
-// Extend hidari/migi bg colors to fill viewport
-@media (min-width: @screen-sm-min) {
-  .main {
+    // Extend hidari/migi bg colors to fill viewport
+    background-color: @migi-bg;
     background-image: linear-gradient(
       to right,
       @hidari-bg 0%,
@@ -41,158 +22,125 @@
 }
 
 
+// Main container
+//
+// Extend grid container without needing to enclose a row
+
+.main {
+  &:extend(.container);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+// Hidari/migi containers
+//
+// Left/right content containers behave like grid columns
+
+.hidari { .make-xs-column(18); }
+.migi { .make-xs-column(18); }
+
+@media (min-width: @grid-float-breakpoint) {
+
+  // Centerline and padding
+  .hidari {
+    border-right: floor((@centerline-border-width / 2)) solid;
+    padding-right: @grid-gutter-width;
+    padding-top: (@line-height-computed * 5); // Make space for brand
+  }
+  .migi {
+    border-left: ceil((@centerline-border-width / 2)) solid;
+    padding-left: @grid-gutter-width;
+    padding-top: (@line-height-computed * 2); // Make space for navigation
+  }
+}
+
+
 // Layout variations
-// -------------------------
+//
+// Modify main container to move centerline
 
-// Centered grid
+
+// Centered
 .main-chuushin {
-  @media (min-width: @screen-sm-min) {
-    .hidari, .migi { width: (@container-sm / 2); }
-    .hidari { margin-left: (@container-sm * -.5); }
-    .migi { margin-left: -@centerline-border-width; }
-  }
-  @media (min-width: @screen-md-min) {
-    .hidari, .migi { width: (@container-md / 2); }
-    .hidari { margin-left: (@container-md * -.5); }
-  }
-  @media (min-width: @screen-lg-min) {
-    .hidari, .migi { width: (@container-lg / 2); }
-    .hidari { margin-left: (@container-lg * -.5); }
-  }
-  @media (min-width: @screen-xl-min) {
-    .hidari, .migi { width: (@container-xl / 2); }
-    .hidari { margin-left: (@container-xl * -.5); }
-  }
+  .hidari { .make-md-column(9); }
+  .migi { .make-md-column(9); }
 }
 
-// Far-left aligned grid
+// Far-left aligned
 .main-hidari {
-  @media (min-width: @screen-sm-min) {
-    .hidari { width: (@container-sm * .5); margin-left: (@container-sm * -.5); }
-    .migi { width: (@container-sm * .5); margin-left: -@centerline-border-width; }
-  }
-  @media (min-width: @screen-md-min) {
-    .hidari { width: (@container-md * .38); margin-left: (@container-md * -.5); }
-    .migi { width: (@container-md * .62); margin-left: ((@container-md * -.12) - @centerline-border-width); }
-  }
-  @media (min-width: @screen-lg-min) {
-    .hidari { width: (@container-lg * .3); margin-left: (@container-lg * -.5); }
-    .migi { width: (@container-lg * .7); margin-left: ((@container-lg * -.2) - @centerline-border-width); }
-  }
-  @media (min-width: @screen-xl-min) {
-    .hidari { width: (@container-xl * .25); margin-left: (@container-xl * -.5); }
-    .migi { width: (@container-xl * .75); margin-left: ((@container-xl * -.25) - @centerline-border-width); }
-  }
+  .hidari { .make-md-column(7); }
+  .migi { .make-md-column(11); }
+
+  .hidari { .make-lg-column(6); }
+  .migi { .make-lg-column(12); }
+
+  .hidari { .make-xl-column(5); }
+  .migi { .make-xl-column(13); }
 }
 
-// Slightly left aligned grid
+// Slightly left aligned
 .main-yayahidari {
-  @media (min-width: @screen-sm-min) {
-    .hidari { width: (@container-sm * .5); margin-left: (@container-sm * -.5); }
-    .migi { width: (@container-sm * .5); margin-left: -@centerline-border-width; }
-  }
-  @media (min-width: @screen-md-min) {
-    .hidari { width: (@container-md * .43); margin-left: (@container-md * -.5); }
-    .migi { width: (@container-md * .57); margin-left: ((@container-md * -.07) - @centerline-border-width); }
-  }
-  @media (min-width: @screen-lg-min) {
-    .hidari { width: (@container-lg * .44); margin-left: (@container-lg * -.5); }
-    .migi { width: (@container-lg * .56); margin-left: ((@container-lg * -.06) - @centerline-border-width); }
-  }
-  @media (min-width: @screen-xl-min) {
-    .hidari { width: (@container-xl * .40); margin-left: (@container-xl * -.5); }
-    .migi { width: (@container-xl * .6); margin-left: ((@container-xl * -.1) - @centerline-border-width); }
-  }
+  .hidari { .make-md-column(9); }
+  .migi { .make-md-column(9); }
+
+  .hidari { .make-lg-column(8); }
+  .migi { .make-lg-column(10); }
+
+  .hidari { .make-xl-column(7); }
+  .migi { .make-xl-column(11); }
 }
 
-// Far-right aligned grid
+// Far-right aligned
 .main-migi {
-  @media (min-width: @screen-sm-min) {
-    .hidari { width: (@container-sm * .74); margin-left: (@container-sm * -.5); }
-    .migi { width: (@container-sm * .26); margin-left: ((@container-sm * .24) - @centerline-border-width); }
-  }
-  @media (min-width: @screen-md-min) {
-    .hidari { width: (@container-md * .76); margin-left: (@container-md * -.5); }
-    .migi { width: (@container-md * .24); margin-left: ((@container-md * .26) - @centerline-border-width); }
-  }
-  @media (min-width: @screen-lg-min) {
-    .hidari { width: (@container-lg * .78); margin-left: (@container-lg * -.5); }
-    .migi { width: (@container-lg * .22); margin-left: ((@container-lg * .28) - @centerline-border-width); }
-  }
-  @media (min-width: @screen-xl-min) {
-    .hidari { width: (@container-xl * .80); margin-left: (@container-xl * -.5); }
-    .migi { width: (@container-xl * .2); margin-left: ((@container-xl * .3) - @centerline-border-width); }
-  }
+  .hidari { .make-md-column(13); }
+  .migi { .make-md-column(5); }
+
+  .hidari { .make-lg-column(14); }
+  .migi { .make-lg-column(4); }
+
+  .hidari { .make-xl-column(15); }
+  .migi { .make-xl-column(3); }
 }
 
-// Slightly right aligned grid
+// Slightly right aligned
 .main-yayamigi {
-  @media (min-width: @screen-sm-min) {
-    .hidari { width: (@container-sm * .6); margin-left: (@container-sm * -.5); }
-    .migi { width: (@container-sm * .4); margin-left: ((@container-sm * .1) - @centerline-border-width); }
-  }
-  @media (min-width: @screen-md-min) {
-    .hidari { width: (@container-md * .58); margin-left: (@container-md * -.5); }
-    .migi { width: (@container-md * .42); margin-left: ((@container-md * .08) - @centerline-border-width); }
-  }
-  @media (min-width: @screen-lg-min) {
-    .hidari { width: (@container-lg * .56); margin-left: (@container-lg * -.5); }
-    .migi { width: (@container-lg * .44); margin-left: ((@container-lg * .06) - @centerline-border-width); }
-  }
-  @media (min-width: @screen-xl-min) {
-    .hidari { width: (@container-xl * .54); margin-left: (@container-xl * -.5); }
-    .migi { width: (@container-xl * .46); margin-left: ((@container-xl * .04) - @centerline-border-width); }
-  }
+  .hidari { .make-md-column(10); }
+  .migi { .make-md-column(8); }
 }
 
 
-// Stretching components
-// -------------------------
+// Header container
+//
+// Stick to top
 
-.stretch-left {
-  position: relative;
+.header {
+  position: fixed;
+  z-index: 800;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-.stretch-left:before {
-  content: '';
-  background-color: inherit;
-  position: absolute;
-  height: 100%;
-  width: 999px;
-  left: -999px;
-}
-
-.stretch-right {
-  position: relative;
-}
-.stretch-right:before {
-  content: '';
-  background-color: inherit;
-  position: absolute;
-  height: 100%;
-  width: 999px;
-  right: -999px;
-}
-
 
 // Brand container
-// -------------------------
+//
+// Position at left edge of main container
 
 .brand {
   background-color: @brand-bg;
 
-  max-width: @brand-width;
   position: absolute;
   z-index: @brand-zindex;
   top: @line-height-computed;
   left: 0;
 
+  display: inline-block;
+  max-width: @brand-width;
+
   img { .img-responsive(); }
 
-  @media (min-width: @screen-sm-min) {
-    left: 50%;
-    margin-left: (@container-sm / -2);
-  }
   @media (min-width: @screen-md-min) {
+    left: 50%;
     margin-left: (@container-md / -2);
   }
   @media (min-width: @screen-lg-min) {

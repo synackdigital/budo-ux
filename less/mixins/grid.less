@@ -39,11 +39,6 @@
 
 // Generate the small columns
 .make-sm-column(@columns; @gutter: @grid-gutter-width) {
-  position: relative;
-  min-height: 1px;
-  padding-left:  (@gutter / 2);
-  padding-right: (@gutter / 2);
-
   @media (min-width: @screen-sm-min) {
     float: left;
     width: percentage((@columns / @grid-columns));
@@ -67,11 +62,6 @@
 
 // Generate the medium columns
 .make-md-column(@columns; @gutter: @grid-gutter-width) {
-  position: relative;
-  min-height: 1px;
-  padding-left:  (@gutter / 2);
-  padding-right: (@gutter / 2);
-
   @media (min-width: @screen-md-min) {
     float: left;
     width: percentage((@columns / @grid-columns));
@@ -95,11 +85,6 @@
 
 // Generate the large columns
 .make-lg-column(@columns; @gutter: @grid-gutter-width) {
-  position: relative;
-  min-height: 1px;
-  padding-left:  (@gutter / 2);
-  padding-right: (@gutter / 2);
-
   @media (min-width: @screen-lg-min) {
     float: left;
     width: percentage((@columns / @grid-columns));
@@ -123,11 +108,6 @@
 
 // Generate the extra large columns
 .make-xl-column(@columns; @gutter: @grid-gutter-width) {
-  position: relative;
-  min-height: 1px;
-  padding-left:  (@gutter / 2);
-  padding-right: (@gutter / 2);
-
   @media (min-width: @screen-xl-min) {
     float: left;
     width: percentage((@columns / @grid-columns));

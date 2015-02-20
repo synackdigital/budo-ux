@@ -57,3 +57,33 @@
 .affix {
   position: fixed;
 }
+
+
+// Stretching components (background) outside viewport
+// -------------------------
+
+.stretch-left {
+  position: relative;
+}
+.stretch-left:before {
+  content: '';
+  background: inherit;
+  position: absolute;
+  height: 100%;
+  width: 999px;
+  left: -999px;
+}
+
+.stretch-right {
+  position: relative;
+}
+.stretch-right:before {
+  content: '';
+  background: inherit;
+  position: absolute;
+  height: 100%;
+  width: 999px;
+  right: -999px;
+}
+
+

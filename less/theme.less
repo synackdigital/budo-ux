@@ -47,8 +47,8 @@ hr {
   color: @migi-color;
 }
 @media (min-width: @screen-sm-min) {
-  .hidari { border-right-color: @centerline-border-color; }
-  .migi { border-left-color: @centerline-border-color; }
+  .hidari { border-right-color: mix(@centerline-border-color, @hidari-bg); }
+  .migi { border-left-color: mix(@centerline-border-color, @migi-bg); }
 }
 
 
