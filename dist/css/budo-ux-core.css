@@ -2335,11 +2335,11 @@ input[type="button"].btn-block {
   border-bottom: 5px solid;
 }
 .h-entry .u-featured.pull-left {
-  max-width: 160px;
+  max-width: 180px;
   margin-right: 21px;
 }
 .h-entry .u-featured.pull-right {
-  max-width: 160px;
+  max-width: 180px;
   margin-left: 21px;
 }
 .h-entry.article .p-summary {
