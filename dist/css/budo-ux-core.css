@@ -1992,19 +1992,22 @@ caption {
   }
 }
 .header {
-  position: fixed;
-  z-index: 800;
-  top: 0;
-  left: 0;
-  right: 0;
+  background-color: #3a3b3b;
+}
+@media (min-width: 992px) {
+  .header {
+    background-color: transparent;
+    position: absolute;
+    z-index: 800;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 }
 .brand {
   background-color: #3a3b3b;
-  position: absolute;
-  z-index: 998;
-  top: 30px;
-  left: 0;
   display: inline-block;
+  width: 60%;
   max-width: 288px;
 }
 .brand img {
@@ -2014,7 +2017,15 @@ caption {
 }
 @media (min-width: 992px) {
   .brand {
+    width: auto;
+    position: absolute;
+    z-index: 998;
+    top: 30px;
     left: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .brand {
     margin-left: -418px;
   }
 }
@@ -2352,14 +2363,25 @@ input[type="button"].btn-block {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.h-card {
+  margin-bottom: 30px;
+}
+.h-card .p-name {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
 .h-card .u-email {
   font-size: 14px;
+  display: block;
 }
 .h-card .u-url {
   font-size: 14px;
+  display: block;
 }
 .h-card .u-photo {
   border-bottom: 5px solid;
+  margin-bottom: 10px;
 }
 .clearfix:before,
 .clearfix:after,

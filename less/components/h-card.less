@@ -5,11 +5,16 @@
 // http://microformats.org/wiki/h-card
 // --------------------------------------------------
 
-.h-card {}
+.h-card {
+  margin-bottom: @line-height-computed;
+}
 
 // The full/formatted name of the person
 .h-card .p-name {
   &:extend(.h4);
+  display: block;
+  margin-top: 0;
+  margin-bottom: @padding-small-vertical;
 }
 
 // Given (often first) name
@@ -21,11 +26,13 @@
 // Email address
 .h-card .u-email {
   .small();
+  display: block;
 }
 
 // Home page
 .h-card .u-url {
   .small();
+  display: block;
 }
 
 // Description of role
@@ -34,4 +41,5 @@
 // Photo
 .h-card .u-photo {
   border-bottom: @padding-small-vertical solid;
+  margin-bottom: @padding-base-vertical;
 }

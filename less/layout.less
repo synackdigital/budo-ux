@@ -158,37 +158,42 @@
 }
 
 
-// Header container
+// Header
 //
-// Stick to top
+// Brand and navigation
 
 .header {
-  position: fixed;
-  z-index: 800;
-  top: 0;
-  left: 0;
-  right: 0;
+  background-color: @brand-bg;
+
+  @media (min-width: @grid-float-breakpoint) {
+    background-color: transparent;
+    position: absolute;
+    z-index: 800;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 }
 
-// Brand container
-//
-// Position at left edge of main container
-
+// Brand image
 .brand {
   background-color: @brand-bg;
 
-  position: absolute;
-  z-index: @brand-zindex;
-  top: @line-height-computed;
-  left: 0;
-
   display: inline-block;
+  width: 60%;
   max-width: @brand-width;
 
   img { .img-responsive(); }
 
-  @media (min-width: @screen-md-min) {
+  @media (min-width: @grid-float-breakpoint) {
+    width: auto;
+    position: absolute;
+    z-index: @brand-zindex;
+    top: @line-height-computed;
     left: 50%;
+  }
+
+  @media (min-width: @screen-md-min) {
     margin-left: (@container-md / -2);
   }
   @media (min-width: @screen-lg-min) {
