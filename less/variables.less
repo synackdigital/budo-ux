@@ -168,7 +168,7 @@
 //** 18 can be evenly divided by 2, 3, 6 and 9
 @grid-columns:                18;
 //** Padding between columns. Gets divided in half for the left and right.
-@grid-gutter-width:           36px;
+@grid-gutter-width:           32px;
 //** Point at which the navbar becomes uncollapsed.
 @grid-float-breakpoint:       @screen-md-min;
 //** Point at which the navbar begins collapsing.
@@ -179,10 +179,10 @@
 //
 //## Define the maximum width of `.container` for different screen sizes.
 
-@container-sm: (580px + @grid-gutter-width);  // Small screen / tablet
-@container-md: (800px + @grid-gutter-width);  // Medium screen / desktop
-@container-lg: (1020px + @grid-gutter-width); // Large screen / wide desktop
-@container-xl: (1380px + @grid-gutter-width); // Extra large screen / HD screen
+@container-sm: (688px + @grid-gutter-width);  // Small container (fits 768 px)
+@container-md: (904px + @grid-gutter-width);  // Medium container (fits 1024 px)
+@container-lg: (1156px + @grid-gutter-width); // Large container (fits 1280 px)
+@container-xl: (1336px + @grid-gutter-width); // Extra large container (fits 1440 px)
 
 
 //== Labels

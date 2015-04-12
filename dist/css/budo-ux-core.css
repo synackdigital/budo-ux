@@ -522,42 +522,42 @@ caption {
 .main {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 @media (min-width: 992px) {
   .container,
   .main {
-    width: 836px;
+    width: 936px;
   }
 }
 @media (min-width: 1200px) {
   .container,
   .main {
-    width: 1056px;
+    width: 1188px;
   }
 }
 @media (min-width: 1570px) {
   .container,
   .main {
-    width: 1416px;
+    width: 1368px;
   }
 }
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .row {
-  margin-left: -18px;
-  margin-right: -18px;
+  margin-left: -16px;
+  margin-right: -16px;
 }
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .col-xs-13, .col-sm-13, .col-md-13, .col-lg-13, .col-xs-14, .col-sm-14, .col-md-14, .col-lg-14, .col-xs-15, .col-sm-15, .col-md-15, .col-lg-15, .col-xs-16, .col-sm-16, .col-md-16, .col-lg-16, .col-xs-17, .col-sm-17, .col-md-17, .col-lg-17, .col-xs-18, .col-sm-18, .col-md-18, .col-lg-18 {
   position: relative;
   min-height: 1px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-13, .col-xs-14, .col-xs-15, .col-xs-16, .col-xs-17, .col-xs-18 {
   float: left;
@@ -1726,26 +1726,26 @@ caption {
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .migi {
   position: relative;
   float: left;
   width: 100%;
   min-height: 1px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 @media (min-width: 992px) {
   .hidari {
     border-right: 4px solid;
-    padding-right: 36px;
+    padding-right: 32px;
     padding-top: 150px;
   }
   .migi {
     border-left: 4px solid;
-    padding-left: 36px;
+    padding-left: 32px;
     padding-top: 60px;
   }
 }
@@ -2026,17 +2026,17 @@ caption {
 }
 @media (min-width: 992px) {
   .brand {
-    margin-left: -418px;
+    margin-left: -468px;
   }
 }
 @media (min-width: 1200px) {
   .brand {
-    margin-left: -528px;
+    margin-left: -594px;
   }
 }
 @media (min-width: 1570px) {
   .brand {
-    margin-left: -708px;
+    margin-left: -684px;
   }
 }
 .fade {
@@ -2076,7 +2076,7 @@ tbody.collapse.in {
 .navigation {
   position: absolute;
   top: 30px;
-  right: 36px;
+  right: 32px;
   z-index: 1000;
 }
 .navigation-toggle {
@@ -2348,11 +2348,11 @@ input[type="button"].btn-block {
   margin-bottom: 20px;
 }
 .h-entry .u-featured.pull-left {
-  margin-right: 18px;
+  margin-right: 16px;
   max-width: 180px;
 }
 .h-entry .u-featured.pull-right {
-  margin-left: 18px;
+  margin-left: 16px;
   max-width: 180px;
 }
 .h-entry.article .p-summary {
