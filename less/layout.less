@@ -40,20 +40,63 @@
 .hidari { .make-xs-column(18); }
 .migi { .make-xs-column(18); }
 
+// Centerline and padding
 @media (min-width: @grid-float-breakpoint) {
-
-  // Centerline and padding
   .hidari {
     border-right: floor((@centerline-border-width / 2)) solid;
-    padding-right: @grid-gutter-width;
     padding-top: (@line-height-computed * 5); // Make space for brand
   }
   .migi {
     border-left: ceil((@centerline-border-width / 2)) solid;
-    padding-left: @grid-gutter-width;
     padding-top: (@line-height-computed * 2); // Make space for navigation
   }
 }
+
+
+// Spacing
+//
+// Padding simulates an extra grid column
+
+@media (min-width: @screen-sm-min) {
+  .hidari { padding-right: 35px; }
+  .migi { padding-left: 35px; }
+
+  .main-reverse-dom {
+    .hidari { padding-left: 35px; padding-right: 0; }
+    .migi { padding-right: 35px; padding-left: 0; }
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  .hidari { padding-right: 48px; }
+  .migi { padding-left: 48px; }
+
+  .main-reverse-dom {
+    .hidari { padding-left: 48px; padding-right: 0; }
+    .migi { padding-right: 48px; padding-left: 0; }
+  }
+}
+
+@media (min-width: @screen-lg-min) {
+  .hidari { padding-right: 32px; }
+  .migi { padding-left: 32px; }
+
+  .main-reverse-dom {
+    .hidari { padding-left: 32px; padding-right: 0; }
+    .migi { padding-right: 32px; padding-left: 0; }
+  }
+}
+
+@media (min-width: @screen-xl-min) {
+  .hidari { padding-right: 36px; }
+  .migi { padding-left: 36px; }
+
+  .main-reverse-dom {
+    .hidari { padding-left: 36px; padding-right: 0; }
+    .migi { padding-right: 36px; padding-left: 0; }
+  }
+}
+
 
 
 // Layout variations
