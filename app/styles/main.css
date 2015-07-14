@@ -1,0 +1,6 @@
+@import "shared/variables.css";
+
+body {
+  background-color: #f003;
+  color: var(--foo);
+}
