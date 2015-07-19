@@ -1,26 +1,28 @@
 :root {
 
-  --color-red:        #ee2947;
-  --color-orange:     #fbb315;
-  --color-yellow:     #ffd914;
-  --color-turquoise:  #35dbb7;
-  --color-azure:      #2984e9;
-  --color-blue:       #254beb;
+  --color-red:          #ee2947;
+  --color-orange:       #fbb315;
+  --color-yellow:       #ffd914;
+  --color-turquoise:    #35dbb7;
+  --color-azure:        #2984e9;
+  --color-blue:         #254beb;
 
-  --color-hidari-bg:  color(black lightness(20%));
-  --color-hidari:     white;
-  --color-migi-bg:    color(black lightness(97%));
-  --color-migi:       color(black lightness(20%));
+  --color-hidari-bg:    color(black lightness(20%));
+  --color-hidari:       white;
+  --color-migi-bg:      color(black lightness(97%));
+  --color-migi:         color(black lightness(20%));
 
-  --color-highlight:  var(--color-yellow);
+  --color-highlight:    var(--color-yellow);
 
-  --font-ui: sans-serif;
-  --font-text: serif;
-  --font-h: sans-serif;
+  --font-ui:      sans-serif;
+  --font-text:    serif;
+  --font-h:       sans-serif;
 
-  --grid-units: 13;
-  --grid-unit-width: calc(100% / var(--grid-units));
-  --grid-gutter: 32px;
+  --grid-units:         13;
+  --grid-width:         94%;
+  --grid-max-width:     1120px;
+  --grid-gutter:        32px;
+  --grid-unit-width:    calc(100% / var(--grid-units));
 
-  --transition-duration-default: .3s;
+  --transition-duration-default:    .3s;
 }

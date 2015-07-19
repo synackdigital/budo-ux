@@ -10,13 +10,16 @@
  */
 
 body {
-  background: linear-gradient(to right, var(--color-hidari-bg) 0%, var(--color-hidari-bg) 50%, var(--color-migi-bg) 50%, var(--color-migi-bg) 100%);
+  background: linear-gradient(to right,
+    var(--color-hidari-bg) 0%,
+    var(--color-hidari-bg) 50%,
+    var(--color-migi-bg) 50%,
+    var(--color-migi-bg) 100%); /* Fill viewport horizontally with split-bg */
 }
 
 .grid {
-  background-color: gray;
-  width: 94%;
-  max-width: 1120px;
+  width: var(--grid-width);
+  max-width: var(--grid-max-width);
   margin-right: auto;
   margin-left: auto;
 }
@@ -24,24 +27,22 @@ body {
 .grid__hidari,
 .grid__migi {
   float: left;
-  min-height: 100vh;
+  min-height: 100vh; /* Fill viewport vertically with split-bg */
 }
 
 .grid__hidari {
   background-color: var(--color-hidari-bg);
   color: var(--color-hidari);
-  padding-right: calc(var(--grid-unit-width) / 2);
+  padding-right: calc(var(--grid-unit-width) / 2); /* Half a grid unit distance to migi */
 }
 
 .grid__migi {
   background-color: var(--color-migi-bg);
   color: var(--color-migi);
-  padding-left: calc(var(--grid-unit-width) / 2);
+  padding-left: calc(var(--grid-unit-width) / 2); /* Half a grid unit distance to hidari */
 }
 
 [class^='grid__unit'] {
-  background-color: color(black a(5%));
-  border: 1px solid color(black a(15%));
   float: left;
   padding-left: calc(var(--grid-gutter) / 2);
   padding-right: calc(var(--grid-gutter) / 2);
