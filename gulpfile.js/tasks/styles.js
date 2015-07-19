@@ -7,8 +7,10 @@ var cssnext   = require("cssnext");
 gulp.task('styles', function () {
   return gulp.src(config.app + '/styles/*.css')
     .pipe(postcss([
+      plugins.import(),
+      plugins.mixins(),
       plugins.cssnext({
-        // compress: true
+        import: false
       })
     ]))
     .pipe(gulp.dest(config.build + '/styles'));

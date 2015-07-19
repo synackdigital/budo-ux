@@ -1,0 +1,25 @@
+
+@define-mixin grid-variation $p1, $p2 {
+  .grid--$(p1)-$(p2) .grid__hidari {
+    width: calc(calc(var(--grid-unit-width) * $p1) + calc(var(--grid-unit-width) / 2));
+    @mixin-content;
+  }
+  .grid--$(p1)-$(p2) .grid__migi {
+    width: calc(calc(var(--grid-unit-width) * $p2) + calc(var(--grid-unit-width) / 2));
+    @mixin-content;
+  }
+}
+
+@define-mixin hidari-grid-unit $p1, $p2, $span {
+  .grid--$(p1)-$(p2) .grid__hidari .grid__unit--$(span) {
+    width: calc(calc($span / $p1) * 100)%;
+    @mixin-content;
+  }
+}
+
+@define-mixin migi-grid-unit $p1, $p2, $span {
+  .grid--$(p1)-$(p2) .grid__migi .grid__unit--$(span) {
+    width: calc(calc($span / $p2) * 100)%;
+    @mixin-content;
+  }
+}

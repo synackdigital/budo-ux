@@ -1,4 +1,6 @@
+@import "mixins/grid.css";
+
 @import "common/root.css";
-@import "common/utilities.css";
 @import "common/foundation.css";
 @import "common/grid.css";
+@import "common/utilities.css";
