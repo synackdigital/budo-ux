@@ -1,5 +1,173 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*
+ * FOUNDATION
+ * http://jaydenseric.com/blog/forget-normalize-or-resets-lay-your-own-css-foundation
+ */
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: gold;
+}
+
 body {
-  background-color: #FF0000;
-  background-color: rgba(255, 0, 0, 0.2);
-  color: bar;
+  margin: 0;
+  font: 16px/1 sans-serif;
+}
+
+iframe {
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, p, ul, ol, blockquote, figure, button {
+  margin: 0;
+  padding: 0;
+}
+
+main,
+li {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+}
+
+strong {
+  font-weight: bold;
+}
+
+
+a, button {
+  color: inherit;
+  -webkit-transition: .3s;
+          transition: .3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  overflow: visible;
+  border: 0;
+  font: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+  -webkit-font-smoothing: inherit;
+}
+button:focus {
+  outline: 0;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+/*
+ * Main grid components
+ *
+ * Example:
+ *    .grid.grid--8-2
+ *      .grid__hidari
+ *        .grid__column--N
+ *      .grid__migi
+ *        .grid__column--N
+ */
+
+body {
+  background: -webkit-linear-gradient(left, yellow 0%, yellow 50%, coral 50%, coral 100%);
+  background: linear-gradient(to right, yellow 0%, yellow 50%, coral 50%, coral 100%);
+}
+
+.grid {
+  background-color: gray;
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.grid__hidari,
+.grid__migi {
+  float: left;
+  min-height: 100vh;
+}
+
+.grid__hidari {
+  background-color: gold;
+  padding-right: 3.84616%;
+}
+
+.grid__migi {
+  background-color: salmon;
+  padding-left: 3.84616%;
+}
+
+div[class^='grid__column'] {
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid #000000;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+/*
+ * 5+1+5
+ */
+
+.grid--5-5 .grid__hidari {
+  width: calc(0.4615386 + calc( / 2));
+  width: 53.84617%;
+}
+
+.grid--5-5 .grid__migi {
+  width: calc(0.4615386 + calc( / 2));
+  width: 53.84617%;
+}
+
+
+/*
+ * 2+1+10
+ */
+
+.grid--2-10 .grid__hidari {
+  width: calc(0.15384620000000002 + calc( / 2));
+  width: 23.07693%;
+}
+
+.grid--2-10 .grid__migi {
+  width: calc(0.7692310000000001 + calc( / 2));
+  width: 84.61541%;
+}
+
+
+/*
+ * 10+1+2
+ */
+
+.grid--10-2 .grid__hidari {
+  width: 80.76926%;
+}
+
+.grid--10-2 .grid__migi {
+  width: 19.23078%;
 }

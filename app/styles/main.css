@@ -1,6 +1,4 @@
-@import "shared/variables.css";
-
-body {
-  background-color: #f003;
-  color: var(--foo);
-}
+@import "common/root.css";
+@import "common/utilities.css";
+@import "common/foundation.css";
+@import "common/grid.css";

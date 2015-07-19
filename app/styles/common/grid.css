@@ -1,0 +1,83 @@
+/*
+ * Main grid components
+ *
+ * Example:
+ *    .grid.grid--8-2
+ *      .grid__hidari
+ *        .grid__column--N
+ *      .grid__migi
+ *        .grid__column--N
+ */
+
+body {
+  background: linear-gradient(to right, yellow 0%, yellow 50%, coral 50%, coral 100%);
+}
+
+.grid {
+  background-color: gray;
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.grid__hidari,
+.grid__migi {
+  float: left;
+  min-height: 100vh;
+}
+
+.grid__hidari {
+  background-color: gold;
+  padding-right: calc(var(--grid-unit-width) / 2);
+}
+
+.grid__migi {
+  background-color: salmon;
+  padding-left: calc(var(--grid-unit-width) / 2);
+}
+
+div[class^='grid__column'] {
+  background-color: color(black a(5%));
+  border: 1px solid color(black a(15%));
+  padding-left: calc(var(--grid-gutter) / 2);
+  padding-right: calc(var(--grid-gutter) / 2);
+}
+
+
+/*
+ * 5+1+5
+ */
+
+.grid--5-5 .grid__hidari {
+  width: calc(calc(var(--grid-unit-width) * 6) + var(--grid-unit-half-width));
+}
+
+.grid--5-5 .grid__migi {
+  width: calc(calc(var(--grid-unit-width) * 6) + var(--grid-unit-half-width));
+}
+
+
+/*
+ * 2+1+10
+ */
+
+.grid--2-10 .grid__hidari {
+  width: calc(calc(var(--grid-unit-width) * 2) + var(--grid-unit-half-width));
+}
+
+.grid--2-10 .grid__migi {
+  width: calc(calc(var(--grid-unit-width) * 10) + var(--grid-unit-half-width));
+}
+
+
+/*
+ * 10+1+2
+ */
+
+.grid--10-2 .grid__hidari {
+  width: calc(calc(var(--grid-unit-width) * 10) + var(--grid-unit-half-width));
+}
+
+.grid--10-2 .grid__migi {
+  width: calc(calc(var(--grid-unit-width) * 2) + var(--grid-unit-half-width));
+}

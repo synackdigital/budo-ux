@@ -1,0 +1,15 @@
+:root {
+
+  --color-highlight: gold;
+
+  --font-ui: sans-serif;
+  --font-text: serif;
+  --font-h: sans-serif;
+
+  --grid-columns: 13;
+  --grid-unit-width: calc(100% / var(--grid-columns));
+  --grid-unit-half-width: calc(var(--grid-unit-width / 2));
+  --grid-gutter: 32px;
+
+  --transition-duration-default: .3s;
+}
