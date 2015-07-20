@@ -23,11 +23,22 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .grid__hidari,
 .grid__migi {
   float: left;
   min-height: 100vh; /* Fill viewport vertically with split-bg */
+}
+.grid__hidari:after,
+.grid__migi:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .grid__hidari {
@@ -46,10 +57,6 @@ body {
   float: left;
   padding-left: calc(var(--grid-gutter) / 2);
   padding-right: calc(var(--grid-gutter) / 2);
-}
-
-.grid__unit--clear {
-  clear: left;
 }
 
 

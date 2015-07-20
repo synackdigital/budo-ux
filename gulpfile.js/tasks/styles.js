@@ -10,7 +10,8 @@ gulp.task('styles', function () {
       plugins.import(),
       plugins.mixins(),
       plugins.cssnext({
-        import: false
+        import: false,
+        url: false
       })
     ]))
     .pipe(gulp.dest(config.build + '/styles'));

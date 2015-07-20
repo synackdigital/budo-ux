@@ -14,9 +14,9 @@
 
   --color-highlight:    var(--color-yellow);
 
-  --font-ui:      sans-serif;
-  --font-text:    serif;
-  --font-h:       sans-serif;
+  --font-ui:      'Nimbus Novus Sans Medium', monospace;
+  --font-text:    'Stempel Garamond LT', monospace;
+  --font-h:       'Nimbus Novus Sans Condensed Semi Bold', monospace;
 
   --grid-units:         13;
   --grid-width:         94%;
