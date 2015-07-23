@@ -201,12 +201,12 @@ img {
  */
 
 body {
-  background: -webkit-linear-gradient(left, rgb(51, 51, 51) 0%, rgb(51, 51, 51) 50%, rgb(247, 247, 247) 50%, rgb(247, 247, 247) 100%);
+  background: -webkit-linear-gradient(left, #383B3F 0%, #383B3F 50%, #F5F6F7 50%, #F5F6F7 100%);
   background: linear-gradient(to right,
-    rgb(51, 51, 51) 0%,
-    rgb(51, 51, 51) 50%,
-    rgb(247, 247, 247) 50%,
-    rgb(247, 247, 247) 100%); /* Fill viewport horizontally with split-bg */
+    #383B3F 0%,
+    #383B3F 50%,
+    #F5F6F7 50%,
+    #F5F6F7 100%); /* Fill viewport horizontally with split-bg */
 }
 
 .grid {
@@ -234,14 +234,14 @@ body {
 }
 
 .grid__hidari {
-  background-color: rgb(51, 51, 51);
-  color: white;
+  background-color: #383B3F;
+  color: #F5F6F7;
   padding-right: 3.84616%; /* Half a grid unit distance to migi */
 }
 
 .grid__migi {
-  background-color: rgb(247, 247, 247);
-  color: rgb(51, 51, 51);
+  background-color: #F5F6F7;
+  color: #383B3F;
   padding-left: 3.84616%; /* Half a grid unit distance to hidari */
 }
 
@@ -679,4 +679,27 @@ body {
   line-height: 1.6842105263;
   margin-top: 32px;
   margin-bottom: 16px;
+}
+
+.article__lead a,
+.article__body a {
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 11%, rgba(0, 0, 0, 0.32) 11%, rgba(0, 0, 0, 0.32) 16%, rgba(0, 0, 0, 0) 16%);
+  background-image: linear-gradient(to top,
+    rgba(0, 0, 0, 0) 11%,
+    rgba(0, 0, 0, 0.32) 11%,
+    rgba(0, 0, 0, 0.32) 16%,
+    rgba(0, 0, 0, 0) 16%
+  );
+}
+
+.article__lead a:hover,
+.article__body a:hover {
+  color: #2984e9;
+  background-image: -webkit-linear-gradient(bottom, rgba(41, 132, 233, 0) 11%, rgba(41, 132, 233, 0.32) 11%, rgba(41, 132, 233, 0.32) 16%, rgba(41, 132, 233, 0) 16%);
+  background-image: linear-gradient(to top,
+    rgba(41, 132, 233, 0) 11%,
+    rgba(41, 132, 233, 0.32) 11%,
+    rgba(41, 132, 233, 0.32) 16%,
+    rgba(41, 132, 233, 0) 16%
+  );
 }

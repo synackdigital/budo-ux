@@ -1,5 +1,12 @@
 :root {
 
+  --color-gray-1:   #383B3F;
+  --color-gray-2:   #5D6166;
+  --color-gray-3:   #82878C;
+  --color-gray-4:   #AAADB3;
+  --color-gray-5:   #D2D5D9;
+  --color-gray-6:   #F5F6F7;
+
   --color-red:        #ee2947;
   --color-orange:     #fbb315;
   --color-yellow:     #ffd914;
@@ -7,12 +14,13 @@
   --color-azure:      #2984e9;
   --color-blue:       #254beb;
 
-  --color-hidari-bg:  color(black lightness(20%));
-  --color-hidari:     white;
-  --color-migi-bg:    color(black lightness(97%));
-  --color-migi:       color(black lightness(20%));
+  --color-hidari-bg:  var(--color-gray-1);
+  --color-hidari:     var(--color-gray-6);
+  --color-migi-bg:    var(--color-gray-6);
+  --color-migi:       var(--color-gray-1);
 
-  --color-highlight:  var(--color-yellow);
+  --color-highlight:    var(--color-yellow);
+  --color-hover:        var(--color-azure);
 
   --font-ui:  'Nimbus Novus Sans Medium', monospace;
   --font-p:   'Stempel Garamond LT', monospace;

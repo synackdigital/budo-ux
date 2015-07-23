@@ -73,3 +73,24 @@
   margin-top: calc(var(--line-height-p) * var(--font-size-p));
   margin-bottom: calc(var(--line-height-p) * var(--font-size-p) / 2);
 }
+
+.article__lead a,
+.article__body a {
+  background-image: linear-gradient(to top,
+    color(black a(0%)) 11%,
+    color(black a(32%)) 11%,
+    color(black a(32%)) 16%,
+    color(black a(0%)) 16%
+  );
+}
+
+.article__lead a:hover,
+.article__body a:hover {
+  color: var(--color-hover);
+  background-image: linear-gradient(to top,
+    color(var(--color-hover) a(0%)) 11%,
+    color(var(--color-hover) a(32%)) 11%,
+    color(var(--color-hover) a(32%)) 16%,
+    color(var(--color-hover) a(0%)) 16%
+  );
+}
