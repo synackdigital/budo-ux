@@ -5,19 +5,19 @@
 
 @font-face {
   font-family: 'Nimbus Novus Sans Medium';
-  src: url("../../app/fonts/n023014tWeb.eot");
+  src: url("../fonts/n023014tWeb.eot");
 }
 @font-face {
   font-family: 'Nimbus Novus Sans Medium';
-  src: url("../../app/fonts/n023014tWeb.woff") format("woff");
+  src: url("../fonts/n023014tWeb.woff") format("woff");
 }
 @font-face {
   font-family: 'Nimbus Novus Sans Condensed Semi Bold';
-  src: url("../../app/fonts/n023055tWeb.eot");
+  src: url("../fonts/n023055tWeb.eot");
 }
 @font-face {
   font-family: 'Nimbus Novus Sans Condensed Semi Bold';
-  src: url("../../app/fonts/n023055tWeb.woff") format("woff");
+  src: url("../fonts/n023055tWeb.woff") format("woff");
 }
 
 
@@ -61,43 +61,43 @@
   font-family: 'Stempel Garamond LT';
   font-weight: normal;
   font-style: normal;
-  src: url('../../app/fonts/2D086C_0_0.eot');
+  src: url('../fonts/2D086C_0_0.eot');
   src:
-    url('../../app/fonts/2D086C_0_0.eot?#iefix') format('embedded-opentype'),
-    url('../../app/fonts/2D086C_0_0.woff2') format('woff2'),
-    url('../../app/fonts/2D086C_0_0.woff') format('woff'),
-    url('../../app/fonts/2D086C_0_0.ttf') format('truetype');
+    url('../fonts/2D086C_0_0.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/2D086C_0_0.woff2') format('woff2'),
+    url('../fonts/2D086C_0_0.woff') format('woff'),
+    url('../fonts/2D086C_0_0.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Stempel Garamond LT';
   font-weight: normal;
   font-style: italic;
-  src: url('../../app/fonts/2D086C_1_0.eot');
+  src: url('../fonts/2D086C_1_0.eot');
   src:
-    url('../../app/fonts/2D086C_1_0.eot?#iefix') format('embedded-opentype'),
-    url('../../app/fonts/2D086C_1_0.woff2') format('woff2'),
-    url('../../app/fonts/2D086C_1_0.woff') format('woff'),
-    url('../../app/fonts/2D086C_1_0.ttf') format('truetype');
+    url('../fonts/2D086C_1_0.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/2D086C_1_0.woff2') format('woff2'),
+    url('../fonts/2D086C_1_0.woff') format('woff'),
+    url('../fonts/2D086C_1_0.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Stempel Garamond LT';
   font-weight: bold;
   font-style: normal;
-  src: url('../../app/fonts/2D086C_2_0.eot');
+  src: url('../fonts/2D086C_2_0.eot');
   src:
-    url('../../app/fonts/2D086C_2_0.eot?#iefix') format('embedded-opentype'),
-    url('../../app/fonts/2D086C_2_0.woff2') format('woff2'),
-    url('../../app/fonts/2D086C_2_0.woff') format('woff'),
-    url('../../app/fonts/2D086C_2_0.ttf') format('truetype');
+    url('../fonts/2D086C_2_0.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/2D086C_2_0.woff2') format('woff2'),
+    url('../fonts/2D086C_2_0.woff') format('woff'),
+    url('../fonts/2D086C_2_0.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Stempel Garamond LT';
   font-weight: bold;
   font-style: italic;
-  src: url('../../app/fonts/2D086C_3_0.eot');
+  src: url('../fonts/2D086C_3_0.eot');
   src:
-    url('../../app/fonts/2D086C_3_0.eot?#iefix') format('embedded-opentype'),
-    url('../../app/fonts/2D086C_3_0.woff2') format('woff2'),
-    url('../../app/fonts/2D086C_3_0.woff') format('woff'),
-    url('../../app/fonts/2D086C_3_0.ttf') format('truetype');
+    url('../fonts/2D086C_3_0.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/2D086C_3_0.woff2') format('woff2'),
+    url('../fonts/2D086C_3_0.woff') format('woff'),
+    url('../fonts/2D086C_3_0.ttf') format('truetype');
 }

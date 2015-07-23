@@ -1,0 +1,75 @@
+/*
+ * Article components
+ *
+ * Example:
+ *    .article
+ *      .article__heading
+ *      .article__lead
+ *        P
+ *      .article__body
+ *        P
+ */
+
+.article {
+
+}
+
+/*
+ * Headings
+ */
+
+.article__heading {
+  font-family: var(--font-h);
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-2xl);
+  margin-top: calc(var(--line-height-2xl) * var(--font-size-2xl));
+  margin-bottom: calc(var(--line-height-2xl) * var(--font-size-2xl) / 2);
+}
+
+/*
+ * Lead and body text
+ */
+
+.article__lead p {
+  font-family: var(--font-p);
+  font-size: var(--font-size-p);
+  font-weight: bold;
+  line-height: var(--line-height-p);
+  margin-top: calc(var(--line-height-p) * var(--font-size-p) / 2);
+  margin-bottom: calc(var(--line-height-p) * var(--font-size-p) / 2);
+}
+
+.article__body p {
+  font-family: var(--font-p);
+  font-size: var(--font-size-p);
+  line-height: var(--line-height-p);
+  margin-top: calc(var(--line-height-p) * var(--font-size-p) / 2);
+  margin-bottom: calc(var(--line-height-p) * var(--font-size-p) / 2);
+}
+
+.article__body h2 {
+  font-family: var(--font-h);
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+  margin-top: calc(var(--line-height-xl) * var(--font-size-xl));
+  margin-bottom: calc(var(--line-height-xl) * var(--font-size-xl) / 2);
+}
+
+.article__body h3 {
+  font-family: var(--font-h);
+  font-size: var(--font-size-l);
+  line-height: var(--line-height-l);
+  margin-top: calc(var(--line-height-l) * var(--font-size-l));
+  margin-bottom: calc(var(--line-height-l) * var(--font-size-l) / 2);
+}
+
+.article__body h4,
+.article__body h5,
+.article__body h6 {
+  font-family: var(--font-h);
+  font-size: var(--font-size-p);
+  font-weight: bold;
+  line-height: var(--line-height-p);
+  margin-top: calc(var(--line-height-p) * var(--font-size-p));
+  margin-bottom: calc(var(--line-height-p) * var(--font-size-p) / 2);
+}

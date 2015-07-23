@@ -1,28 +1,44 @@
 :root {
 
-  --color-red:          #ee2947;
-  --color-orange:       #fbb315;
-  --color-yellow:       #ffd914;
-  --color-turquoise:    #35dbb7;
-  --color-azure:        #2984e9;
-  --color-blue:         #254beb;
+  --color-red:        #ee2947;
+  --color-orange:     #fbb315;
+  --color-yellow:     #ffd914;
+  --color-turquoise:  #35dbb7;
+  --color-azure:      #2984e9;
+  --color-blue:       #254beb;
 
-  --color-hidari-bg:    color(black lightness(20%));
-  --color-hidari:       white;
-  --color-migi-bg:      color(black lightness(97%));
-  --color-migi:         color(black lightness(20%));
+  --color-hidari-bg:  color(black lightness(20%));
+  --color-hidari:     white;
+  --color-migi-bg:    color(black lightness(97%));
+  --color-migi:       color(black lightness(20%));
 
-  --color-highlight:    var(--color-yellow);
+  --color-highlight:  var(--color-yellow);
 
-  --font-ui:      'Nimbus Novus Sans Medium', monospace;
-  --font-text:    'Stempel Garamond LT', monospace;
-  --font-h:       'Nimbus Novus Sans Condensed Semi Bold', monospace;
+  --font-ui:  'Nimbus Novus Sans Medium', monospace;
+  --font-p:   'Stempel Garamond LT', monospace;
+  --font-h:   'Nimbus Novus Sans Condensed Semi Bold', monospace;
 
-  --grid-units:         13;
-  --grid-width:         94%;
-  --grid-max-width:     1120px;
-  --grid-gutter:        32px;
-  --grid-unit-width:    calc(100% / var(--grid-units));
+  --font-size-sm:   14px;
+  --font-size-p:    19px;
+  --font-size-l:    26px;
+  --font-size-xl:   36px;
+  --font-size-2xl:  49px;
+  --font-size-3xl:  68px;
+  --font-size-4xl:  92px;
 
-  --transition-duration-default:    .3s;
+  --line-height-sm:   1.1428571429; /* ~16px */
+  --line-height-p:    1.6842105263; /* ~32px; */
+  --line-height-l:    1.2307692308; /* ~32px */
+  --line-height-xl:   1.1111111111; /* ~40px */
+  --line-height-2xl:  1.1428571429; /* ~56px */
+  --line-height-3xl:  1.0588235294; /* ~72px */
+  --line-height-4xl:  1.1304347826; /* ~104px */
+
+  --grid-units:       13;
+  --grid-width:       94%;
+  --grid-max-width:   1120px;
+  --grid-gutter:      32px;
+  --grid-unit-width:  calc(100% / var(--grid-units));
+
+  --transition-duration-default:  .3s;
 }

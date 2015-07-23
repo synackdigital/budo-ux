@@ -6,46 +6,46 @@
   min-height: 32px;
 }
 
-.grid__hidari [class*='grid__unit'] {
+.debug--showgrid .grid__hidari [class*='grid__unit'] {
   border: 1px solid color(white a(32%));
 }
 
-.grid__migi [class*='grid__unit'] {
+.debug--showgrid .grid__migi [class*='grid__unit'] {
   border: 1px solid color(black a(32%));
 }
 
-.grid__unit--2 {
-  background-color: color(#BDF71B a(32%));
+.debug--showgrid .grid__unit--2 {
+  background-color: color(#BDF71B a(16%));
 }
 
-.grid__unit--3 {
-  background-color: color(#F8E71C a(32%));
+.debug--showgrid .grid__unit--3 {
+  background-color: color(#F8E71C a(16%));
 }
 
-.grid__unit--4 {
-  background-color: color(#F7561B a(32%));
+.debug--showgrid .grid__unit--4 {
+  background-color: color(#F7561B a(16%));
 }
 
-.grid__unit--5 {
-  background-color: color(#F71B4F a(32%));
+.debug--showgrid .grid__unit--5 {
+  background-color: color(#F71B4F a(16%));
 }
 
-.grid__unit--6 {
-  background-color: color(#E91BF7 a(32%));
+.debug--showgrid .grid__unit--6 {
+  background-color: color(#E91BF7 a(16%));
 }
 
-.grid__unit--7 {
-  background-color: color(#561BF7 a(32%));
+.debug--showgrid .grid__unit--7 {
+  background-color: color(#561BF7 a(16%));
 }
 
-.grid__unit--8 {
-  background-color: color(#1B73F7 a(32%));
+.debug--showgrid .grid__unit--8 {
+  background-color: color(#1B73F7 a(16%));
 }
 
-.grid__unit--9 {
-  background-color: color(#1BF7E9 a(32%));
+.debug--showgrid .grid__unit--9 {
+  background-color: color(#1BF7E9 a(16%));
 }
 
-.grid__unit--10 {
-  background-color: color(#1BF756 a(32%));
+.debug--showgrid .grid__unit--10 {
+  background-color: color(#1BF756 a(16%));
 }
