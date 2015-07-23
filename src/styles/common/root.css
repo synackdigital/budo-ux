@@ -34,13 +34,13 @@
   --font-size-3xl:  68px;
   --font-size-4xl:  92px;
 
-  --line-height-sm:   1.1428571429; /* ~16px */
-  --line-height-p:    1.6842105263; /* ~32px; */
-  --line-height-l:    1.2307692308; /* ~32px */
-  --line-height-xl:   1.1111111111; /* ~40px */
-  --line-height-2xl:  1.1428571429; /* ~56px */
-  --line-height-3xl:  1.0588235294; /* ~72px */
-  --line-height-4xl:  1.1304347826; /* ~104px */
+  --line-height-sm:   1.5;          /* 21px */
+  --line-height-p:    1.4736842105; /* 28px; */
+  --line-height-l:    1.0769230769; /* 28px */
+  --line-height-xl:   1.1666666667; /* 42px */
+  --line-height-2xl:  1.1428571429; /* 56px */
+  --line-height-3xl:  1.0294117647; /* 70px */
+  --line-height-4xl:  1.0652173913; /* 98px */
 
   --grid-units:       13;
   --grid-width:       94%;

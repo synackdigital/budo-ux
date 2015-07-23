@@ -65,8 +65,8 @@
   float: right;
   margin-left: var(--grid-gutter);
   padding-left: calc(var(--grid-gutter) / 2);
-  margin-top: calc(var(--line-height-sm) * var(--font-size-sm));
-  margin-bottom: calc(var(--line-height-sm) * var(--font-size-sm));
+  margin-top: calc(var(--line-height-sm) * var(--font-size-sm) * .25);
+  margin-bottom: calc(var(--line-height-sm) * var(--font-size-sm) * .75);
 }
 
 .article__byline a:hover {
