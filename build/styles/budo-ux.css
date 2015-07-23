@@ -241,8 +241,19 @@ body {
   padding-left: 3.84616%; /* Half a grid unit distance to hidari */
 }
 
-[class^='grid__unit'] {
+.grid__row {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.grid__row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='grid__unit'] {
   float: left;
+  min-height: 1px;
   padding-left: 16px;
   padding-right: 16px;
 }

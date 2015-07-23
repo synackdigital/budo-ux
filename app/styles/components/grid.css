@@ -53,8 +53,19 @@ body {
   padding-left: calc(var(--grid-unit-width) / 2); /* Half a grid unit distance to hidari */
 }
 
-[class^='grid__unit'] {
+.grid__row {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.grid__row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='grid__unit'] {
   float: left;
+  min-height: 1px;
   padding-left: calc(var(--grid-gutter) / 2);
   padding-right: calc(var(--grid-gutter) / 2);
 }
