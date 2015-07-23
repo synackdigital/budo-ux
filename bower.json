@@ -1,0 +1,23 @@
+{
+  "name": "budo-ux",
+  "version": "0.1.0",
+  "homepage": "https://github.com/synackdigital/budo-ux#readme",
+  "authors": [
+    "Synack AB <hello@synack.se>"
+  ],
+  "description": "Web UX library for Svenska budo- och Kampsportsförbundet",
+  "main": "src/scripts/budo-ux.js",
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "jquery-horunge": "~0.0.7"
+  }
+}
