@@ -1,3 +1,5 @@
+var config = require('./')
+
 module.exports = {
-  watch: ['docs/**/*']
+  watch: [config.docs + '/**/*']
 }

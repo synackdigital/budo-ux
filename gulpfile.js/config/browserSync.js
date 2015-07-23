@@ -2,7 +2,7 @@ var config = require('./')
 
 module.exports = {
   server: {
-    baseDir: './',
+    baseDir: config.base,
     directory: true
   }
 }
