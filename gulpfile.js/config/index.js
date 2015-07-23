@@ -1,6 +1,6 @@
 var config = {}
 
-config.app = "./app";
-config.build = "./build";
+config.src = "./src";
+config.dest = "./dest";
 
 module.exports = config;
