@@ -634,6 +634,69 @@ body {
 }
 
 /*
+ * Meta
+ */
+
+.article__meta {
+  font-size: 14px;
+  line-height: 1.1428571429;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.article__meta .article__topic,
+.article__meta .article__pubdate {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.article__meta .article__topic {
+  background-color: #ffd914;
+  border-radius: 4px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.article__meta .article__pubdate {
+  border-bottom: 1px dotted #D2D5D9;
+}
+
+/*
+ * Byline
+ */
+
+.article__byline {
+  border-left: 1px solid #D2D5D9;
+  font-size: 14px;
+  line-height: 1.6842105263;
+  float: right;
+  margin-left: 32px;
+  padding-left: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.article__byline a:hover {
+  color: #2984e9;
+}
+
+.article__byline-photo,
+.article__byline-author,
+.article__byline-email,
+.article__byline-weblink {
+  display: block;
+}
+
+.article__byline-photo {
+  max-width: 128px;
+  margin-bottom: 8px;
+}
+
+.article__byline-author {
+  font-weight: bold;
+}
+
+/*
  * Lead and body text
  */
 

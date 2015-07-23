@@ -49,4 +49,6 @@
   --grid-unit-width:  calc(100% / var(--grid-units));
 
   --transition-duration-default:  .3s;
+
+  --border-radius-base:   4px;
 }
