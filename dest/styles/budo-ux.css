@@ -2,7 +2,7 @@
 
 @import url("http://hello.myfonts.net/count/2d086c");
 
-:root {          /* 21px */ /* 28px; */ /* 28px */ /* 42px */ /* 56px */ /* 70px */ /* 98px */
+:root {          /* 21px */ /* 28px; */ /* 35px */ /* 42px */ /* 56px */ /* 70px */ /* 98px */
 }
 /*
  * URW Nimbus Novus Sans
@@ -728,9 +728,9 @@ body {
 .article__body h3 {
   font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
   font-size: 26px;
-  line-height: 1.0769230769;
-  margin-top: 28px;
-  margin-bottom: 14px;
+  line-height: 1.3461538462;
+  margin-top: 35px;
+  margin-bottom: 17.5px;
 }
 
 .article__body h4,
