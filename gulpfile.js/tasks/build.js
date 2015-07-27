@@ -3,5 +3,5 @@ var gulpSequence  = require('gulp-sequence');
 var config        = require('../config');
 
 gulp.task('build', ['clean'], function(cb) {
-  gulpSequence('scripts', 'styles', 'fonts', cb);
+  gulpSequence('scripts', 'styles', 'images', 'fonts', cb);
 });

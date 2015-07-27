@@ -190,6 +190,26 @@ img {
 }
 
 /*
+ * Brand component
+ */
+
+.brand {
+  background-color: #5D6166;
+  position: relative;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  max-width: 288px;
+}
+
+.brand:before {
+  content: '';
+  background: inherit;
+  position: absolute;
+  height: 100%;
+  width: 999px;
+  left: -999px;
+}
+/*
  * Main grid components
  *
  * Example:
