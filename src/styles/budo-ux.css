@@ -1,4 +1,5 @@
 @import "mixins/grid";
+@import "mixins/utilities";
 
 @import "common/root";
 @import "common/fonts";

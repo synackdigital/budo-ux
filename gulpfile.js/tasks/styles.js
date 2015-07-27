@@ -10,6 +10,7 @@ gulp.task('styles', function () {
     .pipe(postcss([
       plugins.import(),
       plugins.mixins(),
+      plugins.nested(),
       plugins.cssnext({
         import: false,
         url: false

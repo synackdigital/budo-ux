@@ -22,23 +22,14 @@ body {
   max-width: var(--grid-max-width);
   margin-right: auto;
   margin-left: auto;
-}
-.grid:after {
-  content: "";
-  display: table;
-  clear: both;
+  @mixin clearfix {};
 }
 
 .grid__hidari,
 .grid__migi {
   float: left;
   min-height: 100vh; /* Fill viewport vertically with split-bg */
-}
-.grid__hidari:after,
-.grid__migi:after {
-  content: "";
-  display: table;
-  clear: both;
+  @mixin clearfix {};
 }
 
 .grid__hidari {
@@ -56,11 +47,7 @@ body {
 .grid__row {
   margin-top: 16px;
   margin-bottom: 16px;
-}
-.grid__row:after {
-  content: "";
-  display: table;
-  clear: both;
+  @mixin clearfix {};
 }
 
 [class*='grid__unit'] {
