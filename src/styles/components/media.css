@@ -1,0 +1,31 @@
+/*
+ * Media components
+ *
+ * Example:
+ *    .media
+ *      .media__image
+ *      .media__caption
+ */
+
+.media {
+  background-color: var(--color-gray-5);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-sm);
+  position: relative;
+  margin-top: calc(var(--line-height-sm) * var(--font-size-sm));
+  margin-bottom: calc(var(--line-height-sm) * var(--font-size-sm));
+}
+
+.media__image {
+  vertical-align: middle;
+}
+
+.media__caption {
+  background-color: color(var(--color-gray-1) a(64%));
+  color: var(--color-gray-5);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}

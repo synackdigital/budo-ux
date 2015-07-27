@@ -37,8 +37,8 @@
 .article__meta {
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
-  margin-top: calc(var(--line-height-sm) * var(--font-size-sm) / 4);
-  margin-bottom: calc(var(--line-height-sm) * var(--font-size-sm) / 4);
+  margin-top: calc(var(--line-height-sm) * var(--font-size-sm));
+  margin-bottom: calc(var(--line-height-sm) * var(--font-size-sm));
 }
 
 .article__meta a {

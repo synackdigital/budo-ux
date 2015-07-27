@@ -646,8 +646,8 @@ body {
 .article__meta {
   font-size: 14px;
   line-height: 1.5;
-  margin-top: 5.25px;
-  margin-bottom: 5.25px;
+  margin-top: 21px;
+  margin-bottom: 21px;
 }
 
 .article__meta a {
@@ -784,4 +784,36 @@ body {
     rgba(41, 132, 233, 0.3) 12%,
     rgba(41, 132, 233, 0) 12%
   )
+}
+/*
+ * Media components
+ *
+ * Example:
+ *    .media
+ *      .media__image
+ *      .media__caption
+ */
+
+.media {
+  background-color: #D2D5D9;
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+  margin-top: 21px;
+  margin-bottom: 21px;
+}
+
+.media__image {
+  vertical-align: middle;
+}
+
+.media__caption {
+  background-color: #383B3F;
+  background-color: rgba(56, 59, 63, 0.64);
+  color: #D2D5D9;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 1em;
+  padding-right: 1em;
 }
