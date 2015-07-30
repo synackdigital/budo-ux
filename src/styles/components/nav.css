@@ -9,7 +9,7 @@
   right: 0;
   bottom: 100%;
   left: 0;
-  transition: var(--transition-duration-default);
+  transition: var(--transition-duration--fast);
 }
 
 .nav--expanded {
@@ -18,18 +18,34 @@
   overflow-y: scroll;
 }
 
+
+/*
+ * Panel
+ */
+
 .nav__panel {
   border-top: 1px solid transparent;
   position: relative;
+  top: -999px;
   width: var(--grid-width);
   max-width: var(--grid-max-width);
   margin-right: auto;
   margin-left: auto;
   padding-bottom: var(--padding-vertical--l);
-  padding-right: 100px;
+  padding-right: 120px;
   padding-left: calc(var(--grid-gutter) / 2);
+  transition: var(--transition-duration);
   @mixin clearfix {}
 }
+
+.nav--expanded .nav__panel {
+  top: 0;
+}
+
+
+/*
+ * Home link
+ */
 
 .nav__home {
   font-family: var(--font-h);
@@ -43,6 +59,7 @@
 .nav--expanded .nav__home {
   opacity: 1;
 }
+
 
 /*
  * Navbars

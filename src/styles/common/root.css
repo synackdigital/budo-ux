@@ -44,11 +44,14 @@
 
   --grid-units:       13;
   --grid-width:       90%;
-  --grid-max-width:   1120px;
+  --grid-max-width:   1380px;
   --grid-gutter:      32px;
+  --grid-bleed:       64px;
   --grid-unit-width:  calc(100% / var(--grid-units));
 
-  --transition-duration-default:  .3s;
+  --transition-duration:        .45s;
+  --transition-duration--fast:  .25s;
+  --transition-duration--slow:  .8s;
 
   --border-radius:      2px;
   --border-radius--s:   calc(var(--border-radius) / 2);

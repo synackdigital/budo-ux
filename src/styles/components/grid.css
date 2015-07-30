@@ -23,6 +23,8 @@ body {
   max-width: var(--grid-max-width);
   margin-right: auto;
   margin-left: auto;
+  padding-right: var(--grid-bleed);
+  padding-left: var(--grid-bleed);
   @mixin clearfix {};
 }
 
@@ -43,12 +45,11 @@ body {
   background-color: var(--color-migi-bg);
   color: var(--color-migi);
   padding-left: calc(var(--grid-unit-width) / 2); /* Half a grid unit distance to hidari */
-  padding-top: 70px; /* Make space for nav__toggle */
 }
 
 .grid__row {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: var(--padding-vertical--l);
+  margin-bottom: var(--padding-vertical--l);
   @mixin clearfix {};
 }
 

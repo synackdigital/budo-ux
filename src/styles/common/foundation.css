@@ -46,7 +46,7 @@ strong {
 
 a, button {
   color: inherit;
-  transition: var(--transition-duration-default);
+  transition: var(--transition-duration--fast);
 }
 
 a {
