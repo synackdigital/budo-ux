@@ -1,1 +1,1 @@
-$(function(){$("h1, h2, h3, h4, h5, h6, p",".article").horunge()});
+$(function(){$("h1, h2, h3, h4, h5, h6, p",".article").horunge(),$(".nav__toggle").on("click",function(n){$(".nav").toggleClass("nav--expanded"),$("body").toggleClass("--no-scroll")})});

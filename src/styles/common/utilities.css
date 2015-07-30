@@ -1,7 +1,11 @@
-.clearfix {
+.--clearfix {
   @mixin clearfix {}
 }
 
-.magic-underline {
+.--magic-underline {
   @mixin magic-underline {}
+}
+
+.--no-scroll {
+  overflow: hidden;
 }

@@ -9,6 +9,7 @@
 
 @import "components/brand";
 @import "components/grid";
+@import "components/nav";
 @import "components/article";
 @import "components/media";
 @import "components/list";

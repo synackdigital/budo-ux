@@ -26,38 +26,39 @@
   --font-p:   'Stempel Garamond LT', monospace;
   --font-h:   'Nimbus Novus Sans Condensed Semi Bold', monospace;
 
-  --font-size-sm:   14px;
-  --font-size-p:    19px;
-  --font-size-l:    26px;
-  --font-size-xl:   36px;
-  --font-size-2xl:  49px;
-  --font-size-3xl:  68px;
-  --font-size-4xl:  92px;
+  --font-size--s:    14px;
+  --font-size--p:    19px;
+  --font-size--l:    26px;
+  --font-size--xl:   36px;
+  --font-size--2xl:  49px;
+  --font-size--3xl:  68px;
+  --font-size--4xl:  92px;
 
-  --line-height-sm:   1.5;          /* 21px */
-  --line-height-p:    1.4736842105; /* 28px; */
-  --line-height-l:    1.3461538462; /* 35px */
-  --line-height-xl:   1.1666666667; /* 42px */
-  --line-height-2xl:  1.1428571429; /* 56px */
-  --line-height-3xl:  1.0294117647; /* 70px */
-  --line-height-4xl:  1.0652173913; /* 98px */
+  --line-height--s:    1.5;          /* 21px */
+  --line-height--p:    1.4736842105; /* 28px; */
+  --line-height--l:    1.3461538462; /* 35px */
+  --line-height--xl:   1.1666666667; /* 42px */
+  --line-height--2xl:  1.1428571429; /* 56px */
+  --line-height--3xl:  1.0294117647; /* 70px */
+  --line-height--4xl:  1.0652173913; /* 98px */
 
   --grid-units:       13;
-  --grid-width:       94%;
+  --grid-width:       90%;
   --grid-max-width:   1120px;
   --grid-gutter:      32px;
   --grid-unit-width:  calc(100% / var(--grid-units));
 
   --transition-duration-default:  .3s;
 
-  --border-radius-sm:     2px;
-  --border-radius-base:   4px;
+  --border-radius:      2px;
+  --border-radius--s:   calc(var(--border-radius) / 2);
+  --border-radius--l:   calc(var(--border-radius) * 2);
 
-  --padding-vertical:       calc(var(--font-size-p) * var(--line-height-p) / 2);
-  --padding-vertical--sm:   calc(var(--padding-vertical) / 2);
+  --padding-vertical:       calc(var(--font-size--p) * var(--line-height--p) / 2);
+  --padding-vertical--s:    calc(var(--padding-vertical) / 2);
   --padding-vertical--l:    calc(var(--padding-vertical) * 2);
 
   --padding-horizontal:       calc(var(--grid-gutter) / 4);
-  --padding-horizontal--sm:   calc(var(--padding-horizontal) / 2);
+  --padding-horizontal--s:    calc(var(--padding-horizontal) / 2);
   --padding-horizontal--l:    calc(var(--padding-horizontal) * 2);
 }

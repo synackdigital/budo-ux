@@ -43,6 +43,7 @@ body {
   background-color: var(--color-migi-bg);
   color: var(--color-migi);
   padding-left: calc(var(--grid-unit-width) / 2); /* Half a grid unit distance to hidari */
+  padding-top: 70px; /* Make space for nav__toggle */
 }
 
 .grid__row {

@@ -18,8 +18,8 @@
  */
 
 .list__title {
-  font-size: var(--font-size-sm);
-  line-height: calc(var(--line-height-sm) * 2);
+  font-size: var(--font-size--s);
+  line-height: calc(var(--line-height--s) * 2);
   letter-spacing: 1px;
   text-transform: uppercase;
   position: relative;

@@ -24,24 +24,24 @@
 
 .article__heading {
   font-family: var(--font-h);
-  font-size: var(--font-size-2xl);
-  line-height: var(--line-height-2xl);
-  margin-top: calc(var(--line-height-2xl) * var(--font-size-2xl));
-  margin-bottom: calc(var(--line-height-2xl) * var(--font-size-2xl) / 2);
+  font-size: var(--font-size--2xl);
+  line-height: var(--line-height--2xl);
+  margin-top: calc(var(--line-height--2xl) * var(--font-size--2xl));
+  margin-bottom: calc(var(--line-height--2xl) * var(--font-size--2xl) / 2);
 }
 
 .article__heading--s {
-  font-size: var(--font-size-xl);
-  line-height: var(--line-height-xl);
-  margin-top: calc(var(--line-height-xl) * var(--font-size-xl));
-  margin-bottom: calc(var(--line-height-xl) * var(--font-size-xl) / 2);
+  font-size: var(--font-size--xl);
+  line-height: var(--line-height--xl);
+  margin-top: calc(var(--line-height--xl) * var(--font-size--xl));
+  margin-bottom: calc(var(--line-height--xl) * var(--font-size--xl) / 2);
 }
 
 .article__heading--xs {
-  font-size: var(--font-size-l);
-  line-height: var(--line-height-l);
-  margin-top: calc(var(--line-height-l) * var(--font-size-l));
-  margin-bottom: calc(var(--line-height-l) * var(--font-size-l) / 2);
+  font-size: var(--font-size--l);
+  line-height: var(--line-height--l);
+  margin-top: calc(var(--line-height--l) * var(--font-size--l));
+  margin-bottom: calc(var(--line-height--l) * var(--font-size--l) / 2);
 }
 
 
@@ -60,8 +60,8 @@
 
 .article__meta {
   color: var(--color-gray-4);
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-sm);
+  font-size: var(--font-size--s);
+  line-height: var(--line-height--s);
   margin-top: var(--padding-vertical);
   margin-bottom: var(--padding-vertical);
 }
@@ -93,7 +93,7 @@
 .article__topic {
   background-color: var(--color-highlight);
   color: color(black a(60%));
-  border-radius: var(--border-radius-base);
+  border-radius: var(--border-radius);
   padding-right: var(--padding-horizontal);
   padding-left: var(--padding-horizontal);
 }
@@ -104,11 +104,11 @@
 
 .article__byline {
   border-left: 1px solid var(--color-gray-5);
-  font-size: var(--font-size-sm);
-  line-height: var(--line-height-p);
+  font-size: var(--font-size--s);
+  line-height: var(--line-height--p);
   float: right;
-  margin-top: calc(var(--line-height-sm) * var(--font-size-sm) * .25);
-  margin-bottom: calc(var(--line-height-sm) * var(--font-size-sm) * .75);
+  margin-top: calc(var(--line-height--s) * var(--font-size--s) * .25);
+  margin-bottom: calc(var(--line-height--s) * var(--font-size--s) * .75);
   margin-left: var(--grid-gutter);
   padding-left: calc(var(--grid-gutter) / 2);
 }
@@ -121,9 +121,9 @@
 }
 
 .article__byline-photo {
-  border-radius: var(--border-radius-sm);
+  border-radius: var(--border-radius--s);
   max-width: calc(var(--grid-gutter) * 4);
-  margin-bottom: calc(var(--line-height-sm) * var(--font-size-sm) / 2);
+  margin-bottom: calc(var(--line-height--s) * var(--font-size--s) / 2);
 }
 
 .article__byline-author {
@@ -139,10 +139,10 @@
 
 .article__lead p {
   font-family: var(--font-p);
-  font-size: var(--font-size-p);
+  font-size: var(--font-size--p);
   font-weight: bold;
-  line-height: var(--line-height-p);
-  margin-bottom: calc(var(--line-height-p) * var(--font-size-p) / 2);
+  line-height: var(--line-height--p);
+  margin-bottom: calc(var(--line-height--p) * var(--font-size--p) / 2);
 }
 
 .article__meta--inline + .article__lead p {
@@ -157,43 +157,43 @@
 
 .article__body p {
   font-family: var(--font-p);
-  font-size: var(--font-size-p);
-  line-height: var(--line-height-p);
-  margin-bottom: calc(var(--line-height-p) * var(--font-size-p) / 2);
+  font-size: var(--font-size--p);
+  line-height: var(--line-height--p);
+  margin-bottom: calc(var(--line-height--p) * var(--font-size--p) / 2);
 }
 
 .article__body h1 {
   font-family: var(--font-h);
-  font-size: var(--font-size-2xl);
-  line-height: var(--line-height-2xl);
-  margin-bottom: calc(var(--line-height-p) * var(--font-size-p));
-  margin-top: calc(var(--line-height-p) * var(--font-size-p) * 1.5);
+  font-size: var(--font-size--2xl);
+  line-height: var(--line-height--2xl);
+  margin-bottom: calc(var(--line-height--p) * var(--font-size--p));
+  margin-top: calc(var(--line-height--p) * var(--font-size--p) * 1.5);
 }
 
 .article__body h2 {
   font-family: var(--font-h);
-  font-size: var(--font-size-xl);
-  line-height: var(--line-height-xl);
-  margin-bottom: calc(var(--line-height-p) * var(--font-size-p) / 2);
-  margin-top: calc(var(--line-height-p) * var(--font-size-p) * 1.5);
+  font-size: var(--font-size--xl);
+  line-height: var(--line-height--xl);
+  margin-bottom: calc(var(--line-height--p) * var(--font-size--p) / 2);
+  margin-top: calc(var(--line-height--p) * var(--font-size--p) * 1.5);
 }
 
 .article__body h3 {
   font-family: var(--font-h);
-  font-size: var(--font-size-l);
-  line-height: var(--line-height-l);
-  margin-bottom: calc(var(--line-height-p) * var(--font-size-p) / 2);
-  margin-top: calc(var(--line-height-p) * var(--font-size-p));
+  font-size: var(--font-size--l);
+  line-height: var(--line-height--l);
+  margin-bottom: calc(var(--line-height--p) * var(--font-size--p) / 2);
+  margin-top: calc(var(--line-height--p) * var(--font-size--p));
 }
 
 .article__body h4,
 .article__body h5,
 .article__body h6 {
   font-family: var(--font-h);
-  font-size: var(--font-size-p);
-  line-height: var(--line-height-p);
+  font-size: var(--font-size--p);
+  line-height: var(--line-height--p);
   margin-bottom: 0;
-  margin-top: calc(var(--line-height-p) * var(--font-size-p) / 2);
+  margin-top: calc(var(--line-height--p) * var(--font-size--p) / 2);
 }
 
 .article__body a {

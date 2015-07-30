@@ -1,0 +1,113 @@
+/*
+ * Nav component
+ */
+
+.nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  transition: var(--transition-duration-default);
+}
+
+.nav--expanded {
+  background-color: var(--color-highlight);
+  bottom: 0;
+  overflow-y: scroll;
+}
+
+.nav__panel {
+  border-top: 1px solid transparent;
+  position: relative;
+  width: var(--grid-width);
+  max-width: var(--grid-max-width);
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: var(--padding-vertical--l);
+  padding-right: 100px;
+  padding-left: calc(var(--grid-gutter) / 2);
+  @mixin clearfix {}
+}
+
+.nav__home {
+  font-family: var(--font-h);
+  font-size: var(--font-size--xl);
+  line-height: var(--line-height--xl);
+  opacity: 0;
+  margin-top: var(--padding-vertical--l);
+  margin-bottom: var(--padding-vertical--s);
+}
+
+.nav--expanded .nav__home {
+  opacity: 1;
+}
+
+/*
+ * Navbars
+ */
+
+.nav__navbar {
+  border-top: 1px solid color(black a(60%));
+  font-family: var(--font-h);
+  font-size: var(--font-size--p);
+  line-height: var(--line-height--p);
+  opacity: 0;
+  float: left;
+  width: 21%;
+  max-width: 300px;
+  min-width: 180px;
+  margin-top: var(--padding-vertical--l);
+  margin-right: var(--grid-gutter);
+}
+
+.nav--expanded .nav__navbar {
+  opacity: 1;
+}
+
+.nav__navbar__title {
+  font-size: var(--font-size--l);
+  line-height: var(--line-height--l);
+}
+
+.nav__navbar__item {
+  display: block;
+}
+.nav__navbar__item:hover {
+  background-color: color(black a(10%));
+  padding-left: 7px;
+}
+
+
+/*
+ * Toggle button
+ */
+
+.nav__toggle {
+  border-radius: var(--border-radius--l);
+  background-color: var(--color-highlight);
+  color: color(black a(60%));
+  font-size: var(--font-size--s);
+  line-height: var(--line-height--s);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  z-index: 999;
+  top: var(--padding-vertical--l);
+  right: calc(var(--grid-gutter) / 2);
+  padding: var(--padding-vertical) var(--padding-horizontal--l);
+}
+.nav--expanded .nav__toggle {
+  background-color: var(--color-gray-1);
+  color: var(--color-gray-6);
+}
+
+
+.nav__toggle__message--collapse,
+.nav--expanded .nav__toggle__message--expand {
+  display: none;
+}
+.nav--expanded .nav__toggle__message--collapse {
+  display: inline;
+}
