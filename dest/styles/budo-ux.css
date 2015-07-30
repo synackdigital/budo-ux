@@ -742,6 +742,7 @@ body {
   color: #000000;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
+  font-weight: bold;
   line-height: 1.5;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -825,17 +826,23 @@ body {
  */
 
 .article__meta {
-  color: #AAADB3;
   font-size: 14px;
   line-height: 1.5;
   margin-top: 14px;
   margin-bottom: 14px;
 }
 
-.article__meta.article__meta--inline {
-  float: left;
-  margin-top: 3px; /* Line up with default line-height */
-  margin-bottom: 0;
+.grid__hidari .article__meta {
+  color: #AAADB3;
+}
+
+.grid__migi .article__meta {
+  color: #82878C;
+}
+
+.article__meta > * {
+  display: inline-block;
+  margin-right: .75em;
 }
 
 .article__meta a {
@@ -859,9 +866,16 @@ body {
   )
 }
 
-.article__meta > * {
-  display: inline-block;
-  margin-right: .75em;
+/* Inline variation */
+.article__meta.article__meta--inline {
+  vertical-align: bottom;
+  line-height: 22px;
+  float: left;
+  margin-top: 4px; /* Line up with default line-height */
+  margin-bottom: 0;
+}
+.article__meta.article__meta--inline .article__pubdate {
+  text-transform: uppercase;
 }
 
 /*
@@ -1028,12 +1042,29 @@ body {
   padding-left: 1em;
   padding-right: 1em;
 }
+
+/*
+ * Thumbnail variation
+ */
+
+.media.media--thumbnail-left {
+  float: left;
+  max-width: 30%;
+  margin-right: 16px;
+}
+
+.media.media--thumbnail-right {
+  float: right;
+  max-width: 30%;
+  margin-left: 16px;
+}
 /*
  * List component
  * Serves as a container for other components
  *
  * Example:
  *    .list
+ *      .list__title
  *      .list__item
  *      .list__item
  *      ...
@@ -1049,6 +1080,7 @@ body {
 
 .list__title {
   font-size: 14px;
+  font-weight: bold;
   line-height: 3;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1068,6 +1100,14 @@ body {
   padding-left: 8px;
 }
 
+/* Highlight variation */
+.list__title.list__title--highlight {
+  background-color: #ffd914;
+  color: #000000;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* Stretch variation */
 .list__title.list__title--stretch:before {
   content: '';
   background: inherit;

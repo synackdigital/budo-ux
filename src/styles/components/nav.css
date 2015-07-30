@@ -89,6 +89,7 @@
   background-color: var(--color-highlight);
   color: color(black a(60%));
   font-size: var(--font-size--s);
+  font-weight: bold;
   line-height: var(--line-height--s);
   text-transform: uppercase;
   letter-spacing: 1px;

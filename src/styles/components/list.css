@@ -4,6 +4,7 @@
  *
  * Example:
  *    .list
+ *      .list__title
  *      .list__item
  *      .list__item
  *      ...
@@ -19,6 +20,7 @@
 
 .list__title {
   font-size: var(--font-size--s);
+  font-weight: bold;
   line-height: calc(var(--line-height--s) * 2);
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -38,6 +40,13 @@
   padding-left: var(--padding-horizontal);
 }
 
+/* Highlight variation */
+.list__title.list__title--highlight {
+  background-color: var(--color-highlight);
+  color: color(black a(60%));
+}
+
+/* Stretch variation */
 .list__title.list__title--stretch::before {
   content: '';
   background: inherit;

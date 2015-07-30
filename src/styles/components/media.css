@@ -30,3 +30,19 @@
   padding-left: 1em;
   padding-right: 1em;
 }
+
+/*
+ * Thumbnail variation
+ */
+
+.media.media--thumbnail-left {
+  float: left;
+  max-width: 30%;
+  margin-right: var(--padding-horizontal--l);
+}
+
+.media.media--thumbnail-right {
+  float: right;
+  max-width: 30%;
+  margin-left: var(--padding-horizontal--l);
+}
