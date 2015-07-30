@@ -12,6 +12,7 @@
   font-size: var(--font-size-sm);
   line-height: var(--line-height-sm);
   position: relative;
+  min-height: calc(var(--line-height-sm) * var(--font-size-sm) * 2);
   margin-top: calc(var(--line-height-sm) * var(--font-size-sm));
   margin-bottom: calc(var(--line-height-sm) * var(--font-size-sm));
 }

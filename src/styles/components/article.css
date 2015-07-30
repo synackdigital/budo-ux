@@ -113,20 +113,28 @@
   margin-bottom: calc(var(--line-height-p) * var(--font-size-p) / 2);
 }
 
+.article__body h1 {
+  font-family: var(--font-h);
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-2xl);
+  margin-bottom: calc(var(--line-height-p) * var(--font-size-p));
+  margin-top: calc(var(--line-height-p) * var(--font-size-p) * 1.5);
+}
+
 .article__body h2 {
   font-family: var(--font-h);
   font-size: var(--font-size-xl);
   line-height: var(--line-height-xl);
-  margin-top: calc(var(--line-height-xl) * var(--font-size-xl));
-  margin-bottom: calc(var(--line-height-xl) * var(--font-size-xl) / 2);
+  margin-bottom: calc(var(--line-height-p) * var(--font-size-p) / 2);
+  margin-top: calc(var(--line-height-p) * var(--font-size-p) * 1.5);
 }
 
 .article__body h3 {
   font-family: var(--font-h);
   font-size: var(--font-size-l);
   line-height: var(--line-height-l);
-  margin-top: calc(var(--line-height-l) * var(--font-size-l));
-  margin-bottom: calc(var(--line-height-l) * var(--font-size-l) / 2);
+  margin-bottom: calc(var(--line-height-p) * var(--font-size-p) / 2);
+  margin-top: calc(var(--line-height-p) * var(--font-size-p));
 }
 
 .article__body h4,
@@ -135,8 +143,8 @@
   font-family: var(--font-h);
   font-size: var(--font-size-p);
   line-height: var(--line-height-p);
-  margin-top: calc(var(--line-height-p) * var(--font-size-p) / 2);
   margin-bottom: 0;
+  margin-top: calc(var(--line-height-p) * var(--font-size-p) / 2);
 }
 
 .article__lead a,

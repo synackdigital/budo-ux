@@ -754,20 +754,28 @@ body {
   margin-bottom: 14px;
 }
 
+.article__body h1 {
+  font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
+  font-size: 49px;
+  line-height: 1.1428571429;
+  margin-bottom: 28px;
+  margin-top: 42px;
+}
+
 .article__body h2 {
   font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
   font-size: 36px;
   line-height: 1.1666666667;
+  margin-bottom: 14px;
   margin-top: 42px;
-  margin-bottom: 21px;
 }
 
 .article__body h3 {
   font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
   font-size: 26px;
   line-height: 1.3461538462;
-  margin-top: 35px;
-  margin-bottom: 17.5px;
+  margin-bottom: 14px;
+  margin-top: 28px;
 }
 
 .article__body h4,
@@ -776,8 +784,8 @@ body {
   font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
   font-size: 19px;
   line-height: 1.4736842105;
-  margin-top: 14px;
   margin-bottom: 0;
+  margin-top: 14px;
 }
 
 .article__lead a,
@@ -816,6 +824,7 @@ body {
   font-size: 14px;
   line-height: 1.5;
   position: relative;
+  min-height: 42px;
   margin-top: 21px;
   margin-bottom: 21px;
 }
