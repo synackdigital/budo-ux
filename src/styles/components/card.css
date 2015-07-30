@@ -1,0 +1,84 @@
+/*
+ * Card component
+ *
+ * Example:
+ *    .card
+ *      .article__image
+ *      .article__heading
+ *      .article__subhead
+ *      .article__body
+ *        P
+ */
+
+.card {
+  display: table;
+  border-radius: var(--border-radius--l);
+  background-color: var(--color-gray-0);
+}
+
+.card__content {
+  display: table-row;
+}
+
+a .card,
+a.card {
+  transition: var(--transition-duration--fast);
+}
+
+a:hover .card,
+a:focus .card,
+a:hover.card,
+a:focus.card {
+  background-color: var(--color-highlight);
+  color: color(black a(80%));
+}
+
+
+/*
+ * Image
+ */
+
+.card__image {
+  display: table-cell;
+  vertical-align: middle;
+  width: 25%;
+  background-color: var(--color-gray-2);
+}
+
+.card__image,
+.card__image img {
+  border-top-right-radius: var(--border-radius--l);
+  border-bottom-right-radius: var(--border-radius--l);
+}
+
+.card__image img {
+  vertical-align: middle;
+}
+
+
+/*
+ * Body
+ */
+
+.card__body {
+  display: table-cell;
+  vertical-align: middle;
+  padding: var(--padding-vertical--s) var(--padding-horizontal--l);
+}
+
+
+/*
+ * Labels
+ */
+
+.card__label {
+  font-family: var(--font-h);
+  font-size: var(--font-size--p);
+  line-height: var(--line-height--p);
+}
+
+.card__label--s {
+  font-family: var(--font-ui);
+  font-size: var(--font-size--s);
+  line-height: var(--line-height--s);
+}

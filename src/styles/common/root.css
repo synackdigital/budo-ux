@@ -1,5 +1,6 @@
 :root {
 
+  --color-gray-0:   #25272a;
   --color-gray-1:   #383B3F;
   --color-gray-2:   #5D6166;
   --color-gray-3:   #82878C;
@@ -26,21 +27,21 @@
   --font-p:   'Stempel Garamond LT', monospace;
   --font-h:   'Nimbus Novus Sans Condensed Semi Bold', monospace;
 
-  --font-size--s:    14px;
-  --font-size--p:    19px;
-  --font-size--l:    26px;
-  --font-size--xl:   36px;
-  --font-size--2xl:  49px;
-  --font-size--3xl:  68px;
-  --font-size--4xl:  92px;
+  --font-size--s:     14px;
+  --font-size--p:     19px;
+  --font-size--l:     26px;
+  --font-size--xl:    36px;
+  --font-size--2xl:   49px;
+  --font-size--3xl:   68px;
+  --font-size--4xl:   92px;
 
-  --line-height--s:    1.5;          /* 21px */
-  --line-height--p:    1.4736842105; /* 28px; */
-  --line-height--l:    1.3461538462; /* 35px */
-  --line-height--xl:   1.1666666667; /* 42px */
-  --line-height--2xl:  1.1428571429; /* 56px */
-  --line-height--3xl:  1.0294117647; /* 70px */
-  --line-height--4xl:  1.0652173913; /* 98px */
+  --line-height--s:     1.5;          /* 21px */
+  --line-height--p:     1.4736842105; /* 28px; */
+  --line-height--l:     1.3461538462; /* 35px */
+  --line-height--xl:    1.1666666667; /* 42px */
+  --line-height--2xl:   1.1428571429; /* 56px */
+  --line-height--3xl:   1.0294117647; /* 70px */
+  --line-height--4xl:   1.0652173913; /* 98px */
 
   --grid-units:       13;
   --grid-width:       90%;

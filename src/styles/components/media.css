@@ -12,7 +12,7 @@
   font-size: var(--font-size--s);
   line-height: var(--line-height--s);
   position: relative;
-  min-height: calc(var(--line-height--s) * var(--font-size--s) * 2);
+  min-height: var(--padding-vertical--l);
 }
 
 .media__image {

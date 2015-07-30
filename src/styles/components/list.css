@@ -21,7 +21,7 @@
 .list__title {
   font-size: var(--font-size--s);
   font-weight: bold;
-  line-height: calc(var(--line-height--s) * 2);
+  line-height: calc(var(--line-height--s) * 1.5);
   letter-spacing: 1px;
   text-transform: uppercase;
   position: relative;
@@ -46,12 +46,15 @@
 
 /* Stretch variation */
 .grid__hidari .list__title.list__title--stretch {
-  background-color: var(--color-gray-2);
+  background-color: var(--color-gray-0);
   color: var(--color-gray-5);
+  padding-left: 0;
+  border-left: none;
 }
 .grid__migi .list__title.list__title--stretch {
   background-color: var(--color-gray-5);
   color: var(--color-gray-2);
+  border-left: none;
 }
 
 .list__title.list__title--stretch::before {
@@ -73,9 +76,6 @@
   background-color: var(--color-highlight);
   color: color(black a(60%));
 }
-.grid__hidari .list__title.list__title--stretch.list__title--highlight {
-  padding-left: 0;
-}
 
 
 /*
@@ -95,7 +95,23 @@
 .grid__hidari .list--bordered .list__item {
   border-color: var(--color-gray-2);
 }
+.grid__hidari .list--bordered .list__item:last-child {
+  border-color: transparent;
+}
 
 .grid__migi .list--bordered .list__item {
   border-color: var(--color-gray-5);
+}
+.grid__migi .list--bordered .list__item:last-child {
+  border-color: transparent;
+}
+
+
+/*
+ * Spaced variant
+ */
+
+.list--spaced .list__item {
+  margin-bottom: var(--padding-vertical--s);
+  margin-top: var(--padding-vertical--s);
 }
