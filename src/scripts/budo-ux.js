@@ -25,16 +25,6 @@ var budoUx = {
   },
 
   resize: function() {
-    var hidariHeight = budoUx.$gridHidari.outerHeight();
-    var migiHeight = budoUx.$gridMigi.outerHeight();
 
-    if ( hidariHeight > migiHeight ) {
-      budoUx.$gridHidari.css('height', 'auto');
-      budoUx.$gridMigi.css('height', hidariHeight);
-    }
-    else {
-      budoUx.$gridHidari.css('height', migiHeight);
-      budoUx.$gridMigi.css('height', 'auto');
-    }
   }
 };
