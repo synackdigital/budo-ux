@@ -1,5 +1,6 @@
 @import "mixins/grid";
-@import "mixins/utilities";
+@import "mixins/clearfix";
+@import "mixins/magic-underline";
 
 @import "common/root";
 @import "common/fonts";
@@ -10,3 +11,4 @@
 @import "components/grid";
 @import "components/article";
 @import "components/media";
+@import "components/list";

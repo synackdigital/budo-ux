@@ -1,5 +1,7 @@
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+.clearfix {
+  @mixin clearfix {}
+}
+
+.magic-underline {
+  @mixin magic-underline {}
 }

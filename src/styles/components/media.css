@@ -13,15 +13,15 @@
   line-height: var(--line-height-sm);
   position: relative;
   min-height: calc(var(--line-height-sm) * var(--font-size-sm) * 2);
-  margin-top: calc(var(--line-height-sm) * var(--font-size-sm));
-  margin-bottom: calc(var(--line-height-sm) * var(--font-size-sm));
 }
 
 .media__image {
   vertical-align: middle;
+  border-radius: var(--border-radius-sm);
 }
 
 .media__caption {
+  border-bottom-right-radius: var(--border-radius-sm);
   background-color: color(var(--color-gray-1) a(64%));
   color: var(--color-gray-5);
   position: absolute;

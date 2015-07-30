@@ -50,8 +50,14 @@
 
   --transition-duration-default:  .3s;
 
+  --border-radius-sm:     2px;
   --border-radius-base:   4px;
 
-  --padding-vertical:     calc(var(--font-size-p) * var(--line-height-p));
-  --padding-vertical--l:  calc(var(--padding-vertical) * 2);
+  --padding-vertical:       calc(var(--font-size-p) * var(--line-height-p) / 2);
+  --padding-vertical--sm:   calc(var(--padding-vertical) / 2);
+  --padding-vertical--l:    calc(var(--padding-vertical) * 2);
+
+  --padding-horizontal:       calc(var(--grid-gutter) / 4);
+  --padding-horizontal--sm:   calc(var(--padding-horizontal) / 2);
+  --padding-horizontal--l:    calc(var(--padding-horizontal) * 2);
 }

@@ -1,0 +1,75 @@
+/*
+ * List component
+ * Serves as a container for other components
+ *
+ * Example:
+ *    .list
+ *      .list__item
+ *      .list__item
+ *      ...
+ */
+
+.list {
+}
+
+
+/*
+ * Title
+ */
+
+.list__title {
+  font-size: var(--font-size-sm);
+  line-height: calc(var(--line-height-sm) * 2);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: var(--padding-vertical--l);
+  margin-bottom: var(--padding-vertical);
+}
+
+.grid__hidari .list__title {
+  background-color: var(--color-gray-2);
+  color: var(--color-gray-5);
+}
+
+.grid__migi .list__title {
+  background-color: var(--color-gray-5);
+  color: var(--color-gray-2);
+  padding-left: var(--padding-horizontal);
+}
+
+.list__title.list__title--stretch::before {
+  content: '';
+  background: inherit;
+  position: absolute;
+  height: 100%;
+  width: 999px;
+}
+.grid__hidari .list__title.list__title--stretch::before {
+  left: -999px;
+}
+.grid__migi .list__title.list__title--stretch::before {
+  right: -999px;
+}
+
+/*
+ * Item
+ */
+
+.list__item {
+  border-bottom: 1px solid transparent;
+  display: block;
+}
+
+
+/*
+ * Bordered variant
+ */
+
+.grid__hidari .list--bordered .list__item {
+  border-color: var(--color-gray-2);
+}
+
+.grid__migi .list--bordered .list__item {
+  border-color: var(--color-gray-5);
+}
