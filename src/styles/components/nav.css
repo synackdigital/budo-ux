@@ -72,11 +72,12 @@
 }
 
 .nav__navbar__item {
+  border-left: 0 solid;
   display: block;
 }
 .nav__navbar__item:hover {
-  background-color: color(black a(10%));
-  padding-left: 7px;
+  border-left-width: 7px;
+  padding-left: 4px;
 }
 
 

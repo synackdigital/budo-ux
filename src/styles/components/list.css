@@ -30,23 +30,30 @@
 }
 
 .grid__hidari .list__title {
-  background-color: var(--color-gray-2);
-  color: var(--color-gray-5);
+  border-left: 7px solid var(--color-gray-2);
+  padding-left: var(--padding-horizontal);
 }
 
 .grid__migi .list__title {
-  background-color: var(--color-gray-5);
-  color: var(--color-gray-2);
+  border-left: 7px solid var(--color-gray-5);
   padding-left: var(--padding-horizontal);
 }
 
 /* Highlight variation */
 .list__title.list__title--highlight {
-  background-color: var(--color-highlight);
-  color: color(black a(60%));
+  border-color: var(--color-highlight);
 }
 
 /* Stretch variation */
+.grid__hidari .list__title.list__title--stretch {
+  background-color: var(--color-gray-2);
+  color: var(--color-gray-5);
+}
+.grid__migi .list__title.list__title--stretch {
+  background-color: var(--color-gray-5);
+  color: var(--color-gray-2);
+}
+
 .list__title.list__title--stretch::before {
   content: '';
   background: inherit;
@@ -60,6 +67,16 @@
 .grid__migi .list__title.list__title--stretch::before {
   right: -999px;
 }
+
+/* Highlight + stretch variation */
+.list__title.list__title--stretch.list__title--highlight {
+  background-color: var(--color-highlight);
+  color: color(black a(60%));
+}
+.grid__hidari .list__title.list__title--stretch.list__title--highlight {
+  padding-left: 0;
+}
+
 
 /*
  * Item

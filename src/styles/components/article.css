@@ -95,9 +95,6 @@
   margin-top: 4px; /* Line up with default line-height */
   margin-bottom: 0;
 }
-.article__meta.article__meta--inline .article__pubdate {
-  text-transform: uppercase;
-}
 
 /*
  * Topic
