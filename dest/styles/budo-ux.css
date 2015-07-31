@@ -1053,7 +1053,7 @@ body {
   display: table;
   width: 100%;
   border-radius: 4px;
-  background-color: #25272a;
+  background-color: #232629;
 }
 
 .card__content {
@@ -1222,7 +1222,7 @@ a:focus.card {
 
 /* Stretch variation */
 .grid__hidari .list__title.list__title--stretch {
-  background-color: #25272a;
+  background-color: #232629;
   color: #D2D5D9;
   padding-left: 0;
   border-left: none;
