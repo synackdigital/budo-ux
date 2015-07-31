@@ -53,7 +53,7 @@
   line-height: var(--line-height--xl);
   opacity: 0;
   margin-top: var(--padding-vertical--l);
-  margin-bottom: var(--padding-vertical--s);
+  margin-left: -1.3em; /* Shift arrow symbol */
 }
 
 .nav--expanded .nav__home {
@@ -86,11 +86,14 @@
 .nav__navbar__title {
   font-size: var(--font-size--l);
   line-height: var(--line-height--l);
+  margin-bottom: var(--padding-vertical--s);
+  margin-top: var(--padding-vertical--s);
 }
 
 .nav__navbar__item {
   border-left: 0 solid;
   display: block;
+  margin-bottom: var(--padding-vertical--xs);
 }
 .nav__navbar__item:hover {
   border-left-width: 7px;

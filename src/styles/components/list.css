@@ -11,6 +11,7 @@
  */
 
 .list {
+  margin-bottom: var(--padding-vertical--l);
 }
 
 

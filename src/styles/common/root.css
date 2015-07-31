@@ -59,10 +59,14 @@
   --border-radius--l:   calc(var(--border-radius) * 2);
 
   --padding-vertical:       calc(var(--font-size--p) * var(--line-height--p) / 2);
+  --padding-vertical--xs:   calc(var(--padding-vertical--s) / 2);
   --padding-vertical--s:    calc(var(--padding-vertical) / 2);
   --padding-vertical--l:    calc(var(--padding-vertical) * 2);
+  --padding-vertical--xl:   calc(var(--padding-vertical--l) * 2);
 
   --padding-horizontal:       calc(var(--grid-gutter) / 4);
+  --padding-horizontal--xs:   calc(var(--padding-horizontal--s) / 2);
   --padding-horizontal--s:    calc(var(--padding-horizontal) / 2);
   --padding-horizontal--l:    calc(var(--padding-horizontal) * 2);
+  --padding-horizontal--xl:   calc(var(--padding-horizontal--l) * 2);
 }

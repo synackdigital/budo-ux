@@ -30,6 +30,13 @@
   margin-bottom: var(--padding-vertical);
 }
 
+.article__heading--xs {
+  font-size: var(--font-size--p);
+  line-height: var(--line-height--p);
+  margin-top: var(--padding-vertical--s);
+  margin-bottom: var(--padding-vertical--s);
+}
+
 .article__heading--s {
   font-size: var(--font-size--l);
   line-height: var(--line-height--l);

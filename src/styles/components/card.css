@@ -12,6 +12,7 @@
 
 .card {
   display: table;
+  width: 100%;
   border-radius: var(--border-radius--l);
   background-color: var(--color-gray-0);
 }

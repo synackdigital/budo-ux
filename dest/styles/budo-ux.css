@@ -203,6 +203,18 @@ img {
   overflow: hidden;
 }
 
+.--font-ui {
+  font-family: 'Nimbus Novus Sans Medium', monospace;
+}
+
+.--font-h {
+  font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
+}
+
+.--font-p {
+  font-family: 'Stempel Garamond LT', monospace;
+}
+
 /*
  * Brand component
  */
@@ -706,7 +718,7 @@ body {
   line-height: 1.1666666667;
   opacity: 0;
   margin-top: 28px;
-  margin-bottom: 7px;
+  margin-left: -1.3em; /* Shift arrow symbol */
 }
 
 .nav--expanded .nav__home {
@@ -739,11 +751,14 @@ body {
 .nav__navbar__title {
   font-size: 26px;
   line-height: 1.3461538462;
+  margin-bottom: 7px;
+  margin-top: 7px;
 }
 
 .nav__navbar__item {
   border-left: 0 solid;
   display: block;
+  margin-bottom: 3.5px;
 }
 .nav__navbar__item:hover {
   border-left-width: 7px;
@@ -814,6 +829,13 @@ body {
   line-height: 1.1666666667;
   margin-top: 28px;
   margin-bottom: 14px;
+}
+
+.article__heading--xs {
+  font-size: 19px;
+  line-height: 1.4736842105;
+  margin-top: 7px;
+  margin-bottom: 7px;
 }
 
 .article__heading--s {
@@ -1029,6 +1051,7 @@ body {
 
 .card {
   display: table;
+  width: 100%;
   border-radius: 4px;
   background-color: #25272a;
 }
@@ -1163,6 +1186,7 @@ a:focus.card {
  */
 
 .list {
+  margin-bottom: 28px;
 }
 
 
