@@ -183,13 +183,13 @@ img {
   height: auto;
   border: 0;
 }
-.--clearfix:after{
+.clearfix:after{
           content: "";
           display: table;
           clear: both;
 }
 
-.--magic-underline {
+.magic-underline {
   background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0) 7%, rgba(0, 0, 0, 0.3) 7%, rgba(0, 0, 0, 0.3) 12%, rgba(0, 0, 0, 0) 12%);
   background-image: linear-gradient(to top,
     rgba(0, 0, 0, 0) 7%,
@@ -199,19 +199,19 @@ img {
   )
 }
 
-.--no-scroll {
+.no-scroll {
   overflow: hidden;
 }
 
-.--font-ui {
+.font-ui {
   font-family: 'Nimbus Novus Sans Medium', monospace;
 }
 
-.--font-h {
+.font-h {
   font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
 }
 
-.--font-p {
+.font-p {
   font-family: 'Stempel Garamond LT', monospace;
 }
 
