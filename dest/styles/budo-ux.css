@@ -248,12 +248,12 @@ img {
 
 body {
   overflow-x: hidden;
-  background: -webkit-linear-gradient(left, #383B3F 0%, #383B3F 50%, #F5F6F7 50%, #F5F6F7 100%);
+  background: -webkit-linear-gradient(left, #383B3F 0%, #383B3F 50%, #FCFCFC 50%, #FCFCFC 100%);
   background: linear-gradient(to right,
     #383B3F 0%,
     #383B3F 50%,
-    #F5F6F7 50%,
-    #F5F6F7 100%); /* Fill viewport horizontally with split-bg */
+    #FCFCFC 50%,
+    #FCFCFC 100%); /* Fill viewport horizontally with split-bg */
 }
 
 .grid {
@@ -285,12 +285,12 @@ body {
 
 .grid__hidari {
   background-color: #383B3F;
-  color: #F5F6F7;
+  color: #FCFCFC;
   padding-right: 3.84616%; /* Half a grid unit distance to migi */
 }
 
 .grid__migi {
-  background-color: #F5F6F7;
+  background-color: #FCFCFC;
   color: #383B3F;
   padding-left: 3.84616%; /* Half a grid unit distance to hidari */
 }
@@ -788,7 +788,7 @@ body {
 }
 .nav--expanded .nav__toggle {
   background-color: #383B3F;
-  color: #F5F6F7;
+  color: #FCFCFC;
 }
 
 
