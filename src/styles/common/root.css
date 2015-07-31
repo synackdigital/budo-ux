@@ -11,7 +11,7 @@
 
   --color-red:        #EE2947;
   --color-orange:     #FBB315;
-  --color-yellow:     #FFD914;
+  --color-gold:       #FFD914;
   --color-turquoise:  #35DBB7;
   --color-azure:      #2984E9;
   --color-blue:       #4848E8;
@@ -21,8 +21,13 @@
   --color-migi-bg:    var(--color-gray-6);
   --color-migi:       var(--color-gray-1);
 
-  --color-highlight:    var(--color-yellow);
-  --color-hover:        var(--color-azure);
+  --color-highlight:  var(--color-gold);
+  --color-contrast:   var(--color-blue);
+
+  --color-contrast-1:   var(--color-red);
+  --color-contrast-2:   var(--color-orange);
+  --color-contrast-3:   var(--color-turquoise);
+  --color-contrast-4:   var(--color-azure);
 
   --font-ui:  'Nimbus Novus Sans Medium', monospace;
   --font-p:   'Stempel Garamond LT', monospace;

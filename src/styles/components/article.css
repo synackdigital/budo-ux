@@ -15,7 +15,7 @@
 }
 
 .article a:hover {
-  color: var(--color-hover);
+  color: var(--color-contrast);
 }
 
 /*
@@ -89,7 +89,7 @@
 
 .article__meta a:hover,
 .article__meta a:focus {
-  @mixin magic-underline var(--color-hover) {}
+  @mixin magic-underline var(--color-contrast) {}
 }
 
 /* Inline variation */
@@ -208,6 +208,6 @@
 }
 
 .article__body a:hover {
-  color: var(--color-hover);
-  @mixin magic-underline var(--color-hover) {}
+  color: var(--color-contrast);
+  @mixin magic-underline var(--color-contrast) {}
 }

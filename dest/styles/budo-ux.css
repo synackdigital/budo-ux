@@ -816,7 +816,7 @@ body {
 }
 
 .article a:hover {
-  color: #2984E9;
+  color: #4848E8;
 }
 
 /*
@@ -896,12 +896,12 @@ body {
 
 .article__meta a:hover,
 .article__meta a:focus {
-  background-image: -webkit-linear-gradient(bottom, rgba(41, 132, 233, 0) 7%, rgba(41, 132, 233, 0.3) 7%, rgba(41, 132, 233, 0.3) 12%, rgba(41, 132, 233, 0) 12%);
+  background-image: -webkit-linear-gradient(bottom, rgba(72, 72, 232, 0) 7%, rgba(72, 72, 232, 0.3) 7%, rgba(72, 72, 232, 0.3) 12%, rgba(72, 72, 232, 0) 12%);
   background-image: linear-gradient(to top,
-    rgba(41, 132, 233, 0) 7%,
-    rgba(41, 132, 233, 0.3) 7%,
-    rgba(41, 132, 233, 0.3) 12%,
-    rgba(41, 132, 233, 0) 12%
+    rgba(72, 72, 232, 0) 7%,
+    rgba(72, 72, 232, 0.3) 7%,
+    rgba(72, 72, 232, 0.3) 12%,
+    rgba(72, 72, 232, 0) 12%
   )
 }
 
@@ -1028,13 +1028,13 @@ body {
 }
 
 .article__body a:hover {
-  color: #2984E9;
-  background-image: -webkit-linear-gradient(bottom, rgba(41, 132, 233, 0) 7%, rgba(41, 132, 233, 0.3) 7%, rgba(41, 132, 233, 0.3) 12%, rgba(41, 132, 233, 0) 12%);
+  color: #4848E8;
+  background-image: -webkit-linear-gradient(bottom, rgba(72, 72, 232, 0) 7%, rgba(72, 72, 232, 0.3) 7%, rgba(72, 72, 232, 0.3) 12%, rgba(72, 72, 232, 0) 12%);
   background-image: linear-gradient(to top,
-    rgba(41, 132, 233, 0) 7%,
-    rgba(41, 132, 233, 0.3) 7%,
-    rgba(41, 132, 233, 0.3) 12%,
-    rgba(41, 132, 233, 0) 12%
+    rgba(72, 72, 232, 0) 7%,
+    rgba(72, 72, 232, 0.3) 7%,
+    rgba(72, 72, 232, 0.3) 12%,
+    rgba(72, 72, 232, 0) 12%
   )
 }
 /*
