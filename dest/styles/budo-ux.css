@@ -118,7 +118,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: #ffd914;
+  -webkit-tap-highlight-color: #FFD914;
 }
 
 body {
@@ -672,7 +672,7 @@ body {
 }
 
 .nav--expanded {
-  background-color: #ffd914;
+  background-color: #FFD914;
   bottom: 0;
   overflow-y: scroll;
 }
@@ -772,7 +772,7 @@ body {
 
 .nav__toggle {
   border-radius: 4px;
-  background-color: #ffd914;
+  background-color: #FFD914;
   color: #000000;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
@@ -816,7 +816,7 @@ body {
 }
 
 .article a:hover {
-  color: #2984e9;
+  color: #2984E9;
 }
 
 /*
@@ -919,7 +919,7 @@ body {
  */
 
 .article__topic {
-  background-color: #ffd914;
+  background-color: #FFD914;
   color: #000000;
   color: rgba(0, 0, 0, 0.6);
   border-radius: 2px;
@@ -1028,7 +1028,7 @@ body {
 }
 
 .article__body a:hover {
-  color: #2984e9;
+  color: #2984E9;
   background-image: -webkit-linear-gradient(bottom, rgba(41, 132, 233, 0) 7%, rgba(41, 132, 233, 0.3) 7%, rgba(41, 132, 233, 0.3) 12%, rgba(41, 132, 233, 0) 12%);
   background-image: linear-gradient(to top,
     rgba(41, 132, 233, 0) 7%,
@@ -1070,7 +1070,7 @@ a:hover .card,
 a:focus .card,
 a:hover.card,
 a:focus.card {
-  background-color: #ffd914;
+  background-color: #FFD914;
   color: #000000;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -1217,7 +1217,7 @@ a:focus.card {
 
 /* Highlight variation */
 .list__title.list__title--highlight {
-  border-color: #ffd914;
+  border-color: #FFD914;
 }
 
 /* Stretch variation */
@@ -1249,7 +1249,7 @@ a:focus.card {
 
 /* Highlight + stretch variation */
 .list__title.list__title--stretch.list__title--highlight {
-  background-color: #ffd914;
+  background-color: #FFD914;
   color: #000000;
   color: rgba(0, 0, 0, 0.6);
 }

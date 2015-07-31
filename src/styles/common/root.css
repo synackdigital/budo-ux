@@ -9,12 +9,12 @@
   --color-gray-6:   #F5F6F7;
   --color-gray-6:   #FCFCFC;
 
-  --color-red:        #ee2947;
-  --color-orange:     #fbb315;
-  --color-yellow:     #ffd914;
-  --color-turquoise:  #35dbb7;
-  --color-azure:      #2984e9;
-  --color-blue:       #254beb;
+  --color-red:        #EE2947;
+  --color-orange:     #FBB315;
+  --color-yellow:     #FFD914;
+  --color-turquoise:  #35DBB7;
+  --color-azure:      #2984E9;
+  --color-blue:       #4848E8;
 
   --color-hidari-bg:  var(--color-gray-1);
   --color-hidari:     var(--color-gray-6);
