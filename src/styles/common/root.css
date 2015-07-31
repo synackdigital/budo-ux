@@ -7,7 +7,7 @@
   --color-gray-4:   #AAADB3;
   --color-gray-5:   #D2D5D9;
   --color-gray-6:   #F5F6F7;
-  --color-gray-6:   #FCFCFC;
+  --color-gray-7:   #FCFCFC;
 
   --color-red:        #EE2947;
   --color-orange:     #FBB315;
@@ -18,7 +18,7 @@
 
   --color-hidari-bg:  var(--color-gray-1);
   --color-hidari:     var(--color-gray-6);
-  --color-migi-bg:    var(--color-gray-6);
+  --color-migi-bg:    var(--color-gray-7);
   --color-migi:       var(--color-gray-1);
 
   --color-highlight:  var(--color-gold);
