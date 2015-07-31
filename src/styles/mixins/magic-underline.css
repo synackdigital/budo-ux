@@ -1,8 +1,8 @@
 @define-mixin magic-underline $color: black, $a: 30% {
   background-image: linear-gradient(to top,
-    color($color a(0%)) 7%,
-    color($color a($a)) 7%,
-    color($color a($a)) 12%,
-    color($color a(0%)) 12%
+    color($color a(0%)) 6%,
+    color($color a($a)) 6%,
+    color($color a($a)) 9%,
+    color($color a(0%)) 9%
   );
 }
