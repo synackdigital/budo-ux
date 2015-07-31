@@ -1,23 +1,23 @@
-.--clearfix {
+.clearfix {
   @mixin clearfix {}
 }
 
-.--magic-underline {
+.magic-underline {
   @mixin magic-underline {}
 }
 
-.--no-scroll {
+.no-scroll {
   overflow: hidden;
 }
 
-.--font-ui {
+.font-ui {
   font-family: var(--font-ui);
 }
 
-.--font-h {
+.font-h {
   font-family: var(--font-h);
 }
 
-.--font-p {
+.font-p {
   font-family: var(--font-p);
 }
