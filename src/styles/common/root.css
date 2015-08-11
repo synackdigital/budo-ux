@@ -49,12 +49,14 @@
   --line-height--3xl:   1.0294117647; /* 70px */
   --line-height--4xl:   1.0652173913; /* 98px */
 
-  --grid-units:       13;
-  --grid-width:       90%;
-  --grid-max-width:   1380px;
-  --grid-gutter:      32px;
-  --grid-bleed:       64px;
-  --grid-unit-width:  calc(100% / var(--grid-units));
+  --viewport-s-max:   768px;
+  --viewport-m-max:   1024px;
+  --viewport-l-max:   1280px;
+
+  --grid-gutter:        64px;
+  --grid-container-s:   calc(940px + var(--grid-gutter));
+  --grid-container-m:   calc(1120px + var(--grid-gutter));
+  --grid-container-l:   calc(1460px + var(--grid-gutter));
 
   --transition-duration:        .45s;
   --transition-duration--fast:  .25s;

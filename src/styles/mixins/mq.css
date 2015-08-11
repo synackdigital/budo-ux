@@ -1,0 +1,3 @@
+@custom-media --viewport-s (max-width: var(--viewport-s-max));
+@custom-media --viewport-m (max-width: var(--viewport-m-max));
+@custom-media --viewport-l (max-width: var(--viewport-l-max));

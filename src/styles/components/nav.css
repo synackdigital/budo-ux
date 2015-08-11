@@ -27,13 +27,11 @@
   border-top: 1px solid transparent;
   position: relative;
   top: -999px;
-  width: var(--grid-width);
-  max-width: var(--grid-max-width);
   margin-right: auto;
   margin-left: auto;
   padding-bottom: var(--padding-vertical--l);
   padding-right: 120px;
-  padding-left: calc(var(--grid-gutter) / 2);
+  padding-left: var(--grid-gutter);
   transition: var(--transition-duration);
   @mixin clearfix {}
 }

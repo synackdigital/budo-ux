@@ -1,4 +1,4 @@
-@import "mixins/grid";
+@import "mixins/mq";
 @import "mixins/clearfix";
 @import "mixins/magic-underline";
 

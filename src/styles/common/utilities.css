@@ -1,9 +1,20 @@
-.clearfix {
-  @mixin clearfix {}
+/* Clear floated child elements */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
 }
 
 .magic-underline {
-  @mixin magic-underline {}
+  background-image: linear-gradient(to top,
+    transparent 6%,
+    rgba(0,0,0,.3) 6%,
+    rgba(0,0,0,.3) 9%,
+    transparent 9%
+  );
 }
 
 .no-scroll {
