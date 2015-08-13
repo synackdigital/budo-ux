@@ -4,9 +4,10 @@
 
 .brand {
   background-color: var(--brand-bg);
-  display: inline-block;
+  display: block;
   position: relative;
-  max-width: 288px;
+  width: 288px;
+  max-width: 100%;
   margin-top: var(--padding-vertical--l);
 }
 
@@ -17,4 +18,10 @@
   height: 100%;
   width: 999px;
   left: -999px;
+}
+
+@media (--viewport-s-min) {
+  .brand {
+    display: inline-block;
+  }
 }

@@ -25,13 +25,13 @@ body {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1060px) {
   body {
     border-color: orange;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1360px) {
   body {
     border-color: lime;
   }
