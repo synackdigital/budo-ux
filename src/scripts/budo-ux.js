@@ -1,14 +1,14 @@
 $(function() {
-  budoUx.init();
+  budo.init();
 });
 
-var budoUx = {
+var budo = {
 
   init: function() {
 
     /* Store references to DOM elements */
-    budoUx.$gridHidari = $('.grid__hidari');
-    budoUx.$gridMigi = $('.grid__migi');
+    this.$hidari = $('.hidari');
+    this.$migi = $('.migi');
 
 
     /* Enable $.Horunge */
@@ -21,10 +21,18 @@ var budoUx = {
     });
 
     /* Set up window listener */
-    $(window).on('resize', budoUx.resize());
+    $(window).on('resize', this.resize());
   },
 
   resize: function() {
+    var hidariHeight = this.$hidari.outerHeight();
+    var migiHeight = this.$migi.outerHeight();
 
+    if ( hidariHeight < migiHeight ) {
+      this.$hidari.css('height', migiHeight);
+    }
+    else {
+      this.$migi.css('height', hidariHeight);
+    }
   }
 };
