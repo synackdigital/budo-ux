@@ -8,11 +8,12 @@
  */
 
 .media {
-  background-color: var(--color-gray-5);
+  background-color: var(--color-gray-1);
   font-size: var(--font-size--s);
   line-height: var(--line-height--s);
   position: relative;
   min-height: var(--padding-vertical--l);
+  padding: 2px;
 }
 
 .media__image {
@@ -22,7 +23,7 @@
 
 .media__caption {
   border-bottom-right-radius: var(--border-radius--s);
-  background-color: color(var(--color-gray-1) a(64%));
+  background-color: var(--color-gray-1);
   color: var(--color-gray-5);
   position: absolute;
   bottom: 0;

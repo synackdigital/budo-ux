@@ -598,8 +598,8 @@ img {
  */
 
 .article__media {
-  margin-top: 14px;
-  margin-bottom: 14px;
+  margin-top: 28px;
+  margin-bottom: 28px;
 }
 
 /*
@@ -678,10 +678,17 @@ img {
   font-size: 14px;
   line-height: 1.5;
   float: right;
+  width: 170px;
   margin-top: 7px;
   margin-bottom: 7px;
   margin-left: 32px;
   padding-left: 16px;
+}
+
+@media (min-width: 1060px) {
+  .article__byline {
+    margin-right: -202px;
+  }
 }
 
 .article__byline-photo,
@@ -693,7 +700,6 @@ img {
 
 .article__byline-photo {
   border-radius: 1px;
-  max-width: 256px;
   margin-bottom: 14px;
 }
 
@@ -876,11 +882,12 @@ a:focus.card {
  */
 
 .media {
-  background-color: #C1C6C8;
+  background-color: #333F48;
   font-size: 14px;
   line-height: 1.5;
   position: relative;
   min-height: 28px;
+  padding: 2px;
 }
 
 .media__image {
@@ -891,7 +898,6 @@ a:focus.card {
 .media__caption {
   border-bottom-right-radius: 1px;
   background-color: #333F48;
-  background-color: rgba(51, 63, 72, 0.64);
   color: #C1C6C8;
   position: absolute;
   bottom: 0;
