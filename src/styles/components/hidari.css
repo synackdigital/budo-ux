@@ -1,0 +1,17 @@
+.hidari {
+  background-color: var(--hidari-bg);
+  color: var(--hidari-color);
+  padding: calc((var(--padding-vertical--l) * 2) + 123px) calc(var(--grid-gutter) / 2) var(--padding-vertical--l) 0;
+}
+
+@media (--viewport-s-min) {
+  .hidari {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    width: calc(var(--brand-width) + (var(--grid-gutter) / 2));
+    min-height: 100vh;
+  }
+}
+

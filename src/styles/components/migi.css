@@ -1,0 +1,16 @@
+.migi {
+  background-color: var(--migi-bg);
+  color: var(--migi-color);
+  padding: var(--padding-vertical--l) calc(var(--grid-gutter) / 2);
+}
+
+@media (--viewport-s-min) {
+  .migi {
+    position: absolute;
+    z-index: -20;
+    top: 0;
+    right: 0;
+    left: calc(var(--brand-width) + (var(--grid-gutter) / 2));
+    min-height: 100vh;
+  }
+}

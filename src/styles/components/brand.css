@@ -3,11 +3,11 @@
  */
 
 .brand {
-  background-color: var(--color-gray-2);
+  background-color: var(--brand-bg);
+  display: inline-block;
   position: relative;
-  margin-top: var(--padding-vertical--l);
-  margin-bottom: var(--padding-vertical--l);
   max-width: 288px;
+  margin-top: var(--padding-vertical--l);
 }
 
 .brand::before {

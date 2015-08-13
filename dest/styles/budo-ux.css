@@ -1,9 +1,6 @@
-
-
-@import url("http://hello.myfonts.net/count/2d086c");
-
 :root {          /* 21px */ /* 28px; */ /* 35px */ /* 42px */ /* 56px */ /* 70px */ /* 98px */
 }
+
 /*
  * URW Nimbus Novus Sans
  */
@@ -59,6 +56,8 @@
  *
  * © 2015 MyFonts Inc
 */
+
+/* @import url("http://hello.myfonts.net/count/2d086c"); */
 
 @font-face {
   font-family: 'Stempel Garamond LT';
@@ -118,10 +117,12 @@ html {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: #FFD914;
+  -webkit-tap-highlight-color: #FFCD00;
 }
 
 body {
+  background-color: #eff4f5;
+  color: #333F48;
   margin: 0;
   font: 16px/1 'Nimbus Novus Sans Medium', monospace;
 }
@@ -219,16 +220,48 @@ img {
   font-family: 'Stempel Garamond LT', monospace;
 }
 
+.hidari {
+  background-color: #FFCD00;
+  color: #333F48;
+  padding: 179px 32px 28px 0;
+}
+
+@media (min-width: 768px) {
+  .hidari {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    width: 320px;
+    min-height: 100vh;
+  }
+}
+.migi {
+  background-color: #eff4f5;
+  color: #333F48;
+  padding: 28px 32px;
+}
+
+@media (min-width: 768px) {
+  .migi {
+    position: absolute;
+    z-index: -20;
+    top: 0;
+    right: 0;
+    left: 320px;
+    min-height: 100vh;
+  }
+}
 /*
  * Brand component
  */
 
 .brand {
-  background-color: #5D6166;
+  background-color: #333F48;
+  display: inline-block;
   position: relative;
-  margin-top: 28px;
-  margin-bottom: 28px;
   max-width: 288px;
+  margin-top: 28px;
 }
 
 .brand:before {
@@ -241,16 +274,13 @@ img {
 }
 /*
  * Grid system
- * Modified version of the Bootstrap grid system, using 6 grid units
- * See Bootstrap docs for usage: http://getbootstrap.com/css/#grid
  */
 
 /* Grid container */
 .grid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 32px;
-  padding-right: 32px;
+  max-width: 1140px;
 }
 .grid:before,
 .grid:after {
@@ -259,21 +289,6 @@ img {
 }
 .grid:after {
   clear: both;
-}
-@media (max-width: var(--viewport-s-max)) {
-  .grid { width: 1004px; }
-}
-@media (viewport-m) {
-  .grid { width: 1184px; }
-}
-@media (viewport-l) {
-  .grid { width: 1524px; }
-}
-
-/* Grid rows */
-.grid__row {
-  margin-left: -32px;
-  margin-right: -32px;
 }
 
 /* Grid unit basics */
@@ -284,14 +299,14 @@ img {
   padding-right: 32px;
 }
 
-@media (max-width: var(--viewport-s-max)) {
+@media (min-width: 768px) {
   .grid__unit {
     float: left;
   }
 }
 
 /* Small-screen grid units */
-@media (max-width: var(--viewport-s-max)) {
+@media (min-width: 768px) {
   .grid__unit--s-2 { width: 100%; }
   .grid__unit--s-1 { width: 50%; }
 
@@ -304,9 +319,12 @@ img {
   .grid__unit--s-offset-1 { margin-left: 50%; }
   .grid__unit--s-offset-0 { margin-left: 0%; }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .grid__unit--s-clear { clear: left; }
+}
 
 /* Medium-screen grid units */
-@media (viewport-m) {
+@media (min-width: 992px) {
   .grid__unit--m-4 { width: 100%; }
   .grid__unit--m-3 { width: 75%; }
   .grid__unit--m-2 { width: 50%; }
@@ -330,9 +348,12 @@ img {
   .grid__unit--m-offset-1 { margin-left: 25%; }
   .grid__unit--m-offset-0 { margin-left: 0%; }
 }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .grid__unit--m-clear { clear: left; }
+}
 
 /* Large-screen grid units */
-@media (viewport-l) {
+@media (min-width: 1200px) {
   .grid__unit--l-6 { width: 100%; }
   .grid__unit--l-5 { width: 83.33333333%; }
   .grid__unit--l-4 { width: 66.66666667%; }
@@ -363,6 +384,8 @@ img {
   .grid__unit--l-offset-2 { margin-left: 33.33333333%; }
   .grid__unit--l-offset-1 { margin-left: 16.66666667%; }
   .grid__unit--l-offset-0 { margin-left: 0%; }
+
+  .grid__unit--l-clear { clear: left; }
 }
 /*
  * Nav component
@@ -380,7 +403,7 @@ img {
 }
 
 .nav--expanded {
-  background-color: #FFD914;
+  background-color: #FFCD00;
   bottom: 0;
   overflow-y: scroll;
 }
@@ -403,7 +426,7 @@ img {
           transition: .45s;
 }
 
-.nav__panel:after{
+.nav__panel:after {
           content: "";
           display: table;
           clear: both;
@@ -478,7 +501,7 @@ img {
 
 .nav__toggle {
   border-radius: 4px;
-  background-color: #FFD914;
+  background-color: #FFCD00;
   color: #000000;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
@@ -493,8 +516,8 @@ img {
   padding: 14px 32px;
 }
 .nav--expanded .nav__toggle {
-  background-color: #383B3F;
-  color: #F5F6F7;
+  background-color: #333F48;
+  color: #D0D3D4;
 }
 
 
@@ -522,7 +545,7 @@ img {
 }
 
 .article a:hover {
-  color: #4848E8;
+  color: #4848e8;
 }
 
 /*
@@ -578,11 +601,11 @@ img {
 }
 
 .grid__hidari .article__meta {
-  color: #AAADB3;
+  color: #A2AAAD;
 }
 
 .grid__migi .article__meta {
-  color: #82878C;
+  color: #7C878E;
 }
 
 .article__meta > * {
@@ -591,12 +614,12 @@ img {
 }
 
 .article__meta a {
-  background-image: -webkit-linear-gradient(bottom, rgba(170, 173, 179, 0) 6%, rgba(170, 173, 179, 0.3) 6%, rgba(170, 173, 179, 0.3) 9%, rgba(170, 173, 179, 0) 9%);
+  background-image: -webkit-linear-gradient(bottom, rgba(162, 170, 173, 0) 6%, rgba(162, 170, 173, 0.3) 6%, rgba(162, 170, 173, 0.3) 9%, rgba(162, 170, 173, 0) 9%);
   background-image: linear-gradient(to top,
-    rgba(170, 173, 179, 0) 6%,
-    rgba(170, 173, 179, 0.3) 6%,
-    rgba(170, 173, 179, 0.3) 9%,
-    rgba(170, 173, 179, 0) 9%
+    rgba(162, 170, 173, 0) 6%,
+    rgba(162, 170, 173, 0.3) 6%,
+    rgba(162, 170, 173, 0.3) 9%,
+    rgba(162, 170, 173, 0) 9%
   )
 }
 
@@ -625,7 +648,7 @@ img {
  */
 
 .article__topic {
-  background-color: #FFD914;
+  background-color: #FFCD00;
   color: #000000;
   color: rgba(0, 0, 0, 0.6);
   border-radius: 2px;
@@ -638,7 +661,7 @@ img {
  */
 
 .article__byline {
-  border-left: 1px solid #D2D5D9;
+  border-left: 1px solid #C1C6C8;
   font-size: 14px;
   line-height: 1.5;
   float: right;
@@ -734,7 +757,7 @@ img {
 }
 
 .article__body a:hover {
-  color: #4848E8;
+  color: #4848e8;
   background-image: -webkit-linear-gradient(bottom, rgba(72, 72, 232, 0) 6%, rgba(72, 72, 232, 0.3) 6%, rgba(72, 72, 232, 0.3) 9%, rgba(72, 72, 232, 0) 9%);
   background-image: linear-gradient(to top,
     rgba(72, 72, 232, 0) 6%,
@@ -759,7 +782,7 @@ img {
   display: table;
   width: 100%;
   border-radius: 4px;
-  background-color: #232629;
+  background-color: #1D252D;
 }
 
 .card__content {
@@ -776,7 +799,7 @@ a:hover .card,
 a:focus .card,
 a:hover.card,
 a:focus.card {
-  background-color: #FFD914;
+  background-color: #FFCD00;
   color: #000000;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -790,7 +813,7 @@ a:focus.card {
   display: table-cell;
   vertical-align: middle;
   width: 25%;
-  background-color: #5D6166;
+  background-color: #5B6770;
 }
 
 .card__image,
@@ -840,7 +863,7 @@ a:focus.card {
  */
 
 .media {
-  background-color: #D2D5D9;
+  background-color: #C1C6C8;
   font-size: 14px;
   line-height: 1.5;
   position: relative;
@@ -854,9 +877,9 @@ a:focus.card {
 
 .media__caption {
   border-bottom-right-radius: 1px;
-  background-color: #383B3F;
-  background-color: rgba(56, 59, 63, 0.64);
-  color: #D2D5D9;
+  background-color: #333F48;
+  background-color: rgba(51, 63, 72, 0.64);
+  color: #C1C6C8;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -912,30 +935,30 @@ a:focus.card {
 }
 
 .grid__hidari .list__title {
-  border-left: 7px solid #5D6166;
+  border-left: 7px solid #5B6770;
   padding-left: 16px;
 }
 
 .grid__migi .list__title {
-  border-left: 7px solid #D2D5D9;
+  border-left: 7px solid #C1C6C8;
   padding-left: 16px;
 }
 
 /* Highlight variation */
 .list__title.list__title--highlight {
-  border-color: #FFD914;
+  border-color: #FFCD00;
 }
 
 /* Stretch variation */
 .grid__hidari .list__title.list__title--stretch {
-  background-color: #232629;
-  color: #D2D5D9;
+  background-color: #1D252D;
+  color: #C1C6C8;
   padding-left: 0;
   border-left: none;
 }
 .grid__migi .list__title.list__title--stretch {
-  background-color: #D2D5D9;
-  color: #5D6166;
+  background-color: #C1C6C8;
+  color: #5B6770;
   border-left: none;
 }
 
@@ -955,7 +978,7 @@ a:focus.card {
 
 /* Highlight + stretch variation */
 .list__title.list__title--stretch.list__title--highlight {
-  background-color: #FFD914;
+  background-color: #FFCD00;
   color: #000000;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -976,14 +999,14 @@ a:focus.card {
  */
 
 .grid__hidari .list--bordered .list__item {
-  border-color: #5D6166;
+  border-color: #5B6770;
 }
 .grid__hidari .list--bordered .list__item:last-child {
   border-color: transparent;
 }
 
 .grid__migi .list--bordered .list__item {
-  border-color: #D2D5D9;
+  border-color: #C1C6C8;
 }
 .grid__migi .list--bordered .list__item:last-child {
   border-color: transparent;

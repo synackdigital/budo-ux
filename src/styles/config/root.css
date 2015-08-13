@@ -1,25 +1,34 @@
 :root {
 
-  --color-gray-0:   #232629;
-  --color-gray-1:   #383B3F;
-  --color-gray-2:   #5D6166;
-  --color-gray-3:   #82878C;
-  --color-gray-4:   #AAADB3;
-  --color-gray-5:   #D2D5D9;
-  --color-gray-6:   #F5F6F7;
-  --color-gray-7:   #FCFCFC;
+  --grid-gutter:    64px;
+  --grid-maxwidth:  1140px;
 
-  --color-red:        #EE2947;
-  --color-orange:     #FBB315;
-  --color-gold:       #FFD914;
-  --color-turquoise:  #35DBB7;
-  --color-azure:      #2984E9;
-  --color-blue:       #4848E8;
+  --brand-width:  288px;
 
-  --color-hidari-bg:  var(--color-gray-1);
-  --color-hidari:     var(--color-gray-6);
-  --color-migi-bg:    var(--color-gray-7);
-  --color-migi:       var(--color-gray-1);
+  --color-gray-0:   #1D252D;
+  --color-gray-1:   #333F48;
+  --color-gray-2:   #5B6770;
+  --color-gray-3:   #7C878E;
+  --color-gray-4:   #A2AAAD;
+  --color-gray-5:   #C1C6C8;
+  --color-gray-6:   #D0D3D4;
+  --color-gray-7:   #eff4f5;
+
+  --color-red:        #ee2947;
+  --color-orange:     #fbb315;
+  --color-gold:       #FFCD00;
+  --color-turquoise:  #35dbb7;
+  --color-azure:      #2984e9;
+  --color-blue:       #4848e8;
+
+  --brand-bg:   var(--color-gray-1);
+
+  --body-bg:        var(--color-gray-7);
+  --body-color:     var(--color-gray-1);
+  --hidari-bg:      var(--color-gold);
+  --hidari-color:   var(--color-gray-1);
+  --migi-bg:        var(--body-bg);
+  --migi-color:     var(--body-color);
 
   --color-highlight:  var(--color-gold);
   --color-contrast:   var(--color-blue);
@@ -48,15 +57,6 @@
   --line-height--2xl:   1.1428571429; /* 56px */
   --line-height--3xl:   1.0294117647; /* 70px */
   --line-height--4xl:   1.0652173913; /* 98px */
-
-  --viewport-s-max:   768px;
-  --viewport-m-max:   1024px;
-  --viewport-l-max:   1280px;
-
-  --grid-gutter:        64px;
-  --grid-container-s:   calc(940px + var(--grid-gutter));
-  --grid-container-m:   calc(1120px + var(--grid-gutter));
-  --grid-container-l:   calc(1460px + var(--grid-gutter));
 
   --transition-duration:        .45s;
   --transition-duration--fast:  .25s;

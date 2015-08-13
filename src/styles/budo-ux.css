@@ -1,12 +1,15 @@
-@import "mixins/mq";
+@import "config/media-queries";
+@import "config/root";
+
 @import "mixins/clearfix";
 @import "mixins/magic-underline";
 
-@import "common/root";
 @import "common/fonts";
 @import "common/foundation";
 @import "common/utilities";
 
+@import "components/hidari";
+@import "components/migi";
 @import "components/brand";
 @import "components/grid";
 @import "components/nav";

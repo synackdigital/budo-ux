@@ -16,6 +16,8 @@ html {
 }
 
 body {
+  background-color: var(--body-bg);
+  color: var(--body-color);
   margin: 0;
   font: 16px/1 var(--font-ui);
 }
