@@ -1,4 +1,6 @@
-:root {          /* 21px */ /* 28px; */ /* 35px */ /* 42px */ /* 56px */ /* 70px */ /* 98px */
+:root {
+
+  /* Modular scale: http://www.modularscale.com/?19&px&1.25&web&text */
 }
 
 /*
@@ -125,7 +127,7 @@ body {
   background-color: #eff4f5;
   color: #333F48;
   margin: 0;
-  padding-top: 28px;
+  padding-top: 27.55px;
   font: 16px/1 'Nimbus Novus Sans Medium', monospace;
 }
 
@@ -225,8 +227,8 @@ img {
 .hidari {
   background-color: rgb(255, 211, 36);
   color: #333F48;
-  padding-top: 179px;
-  padding-bottom: 28px;
+  padding-top: 178.1px;
+  padding-bottom: 27.55px;
 }
 
 @media (min-width: 770px) {
@@ -256,8 +258,8 @@ img {
 .migi {
   background-color: #eff4f5;
   color: #333F48;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 27.55px;
+  padding-bottom: 27.55px;
 }
 
 @media (min-width: 770px) {
@@ -470,7 +472,7 @@ img {
   top: -999px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 28px;
+  padding-bottom: 27.55px;
   padding-right: 120px;
   padding-left: 64px;
   -webkit-transition: .45s;
@@ -478,9 +480,9 @@ img {
 }
 
 .nav__panel:after {
-          content: "";
-          display: table;
-          clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .nav--expanded .nav__panel {
@@ -494,10 +496,10 @@ img {
 
 .nav__home {
   font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 30px;
+  line-height: 1.1;
   opacity: 0;
-  margin-top: 28px;
+  margin-top: 27.55px;
   margin-left: -1.3em; /* Shift arrow symbol */
 }
 
@@ -514,13 +516,13 @@ img {
   border-top: 1px solid rgba(0, 0, 0, 0.6);
   font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
   font-size: 19px;
-  line-height: 1.4736842105;
+  line-height: 1.45;
   opacity: 0;
   float: left;
   width: 21%;
   max-width: 300px;
   min-width: 180px;
-  margin-top: 28px;
+  margin-top: 27.55px;
   margin-right: 64px;
 }
 
@@ -529,16 +531,16 @@ img {
 }
 
 .nav__navbar__title {
-  font-size: 26px;
-  line-height: 1.3461538462;
-  margin-bottom: 7px;
-  margin-top: 7px;
+  font-size: 24px;
+  line-height: 1.15;
+  margin-bottom: 6.8875px;
+  margin-top: 6.8875px;
 }
 
 .nav__navbar__item {
   border-left: 0 solid;
   display: block;
-  margin-bottom: 3.5px;
+  margin-bottom: 3.44375px;
 }
 .nav__navbar__item:hover {
   border-left-width: 7px;
@@ -555,16 +557,16 @@ img {
   background-color: rgb(255, 211, 36);
   color: #000000;
   color: rgba(0, 0, 0, 0.6);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.35;
   text-transform: uppercase;
   letter-spacing: 1px;
   position: absolute;
   z-index: 999;
-  top: 28px;
+  top: 27.55px;
   right: 32px;
-  padding: 14px 32px;
+  padding: 13.775px 32px;
 }
 .nav--expanded .nav__toggle {
   background-color: #333F48;
@@ -603,29 +605,29 @@ img {
 
 .article__heading {
   font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
-  font-size: 36px;
-  line-height: 1.1666666667;
-  margin-top: 28px;
-  margin-bottom: 14px;
+  font-size: 37px;
+  line-height: 1.1;
+  margin-top: 27.55px;
+  margin-bottom: 13.775px;
 }
 
 .article__heading--xs {
-  font-size: 19px;
-  line-height: 1.4736842105;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  font-size: 24px;
+  line-height: 1.15;
+  margin-top: 6.8875px;
+  margin-bottom: 6.8875px;
 }
 
 .article__heading--s {
-  font-size: 26px;
-  line-height: 1.3461538462;
-  margin-top: 14px;
-  margin-bottom: 7px;
+  font-size: 30px;
+  line-height: 1.1;
+  margin-top: 13.775px;
+  margin-bottom: 6.8875px;
 }
 
 .article__heading--l {
-  font-size: 49px;
-  line-height: 1.1428571429;
+  font-size: 46px;
+  line-height: 1.05;
 }
 
 
@@ -634,7 +636,7 @@ img {
  */
 
 .article__media {
-  margin: 28px -32px 28px -48px;
+  margin: 27.55px -32px 27.55px -48px;
 }
 .article__media .media {
   padding-right: 0;
@@ -657,10 +659,10 @@ img {
  */
 
 .article__meta {
-  font-size: 14px;
-  line-height: 1.5;
-  margin-top: 14px;
-  margin-bottom: 14px;
+  font-size: 15px;
+  line-height: 1.35;
+  margin-top: 27.55px;
+  margin-bottom: 13.775px;
 }
 
 .grid__hidari .article__meta {
@@ -700,9 +702,7 @@ img {
 /* Inline variation */
 .article__meta.article__meta--inline {
   vertical-align: bottom;
-  line-height: 22px;
   float: left;
-  margin-top: 4px; /* Line up with default line-height */
   margin-bottom: 0;
 }
 
@@ -715,24 +715,37 @@ img {
   color: #000000;
   color: rgba(0, 0, 0, 0.6);
   border-radius: 2px;
-  padding-right: 16px;
-  padding-left: 16px;
+  margin-top: -2px;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-left: 8px;
 }
 
 /*
  * Byline
  */
 
-.article__byline {
-  border-left: 1px solid #C1C6C8;
-  font-size: 14px;
-  line-height: 1.5;
-  float: right;
-  width: 170px;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  margin-left: 32px;
-  padding-left: 16px;
+.article__byline-photo {
+  max-width: 50px;
+  float: left;
+}
+
+@media (min-width: 770px) {
+  .article__byline {
+    border-left: 1px solid #C1C6C8;
+    font-size: 15px;
+    line-height: 1.35;
+    float: right;
+    width: 170px;
+    margin-top: 6.8875px;
+    margin-bottom: 6.8875px;
+    margin-left: 32px;
+    padding-left: 16px;
+  }
+  .article__byline-photo {
+    float: none;
+    max-width: 100%;
+  }
 }
 
 @media (min-width: 1140px) {
@@ -750,7 +763,7 @@ img {
 
 .article__byline-photo {
   border-radius: 1px;
-  margin-bottom: 14px;
+  margin-bottom: 13.775px;
 }
 
 .article__byline-author {
@@ -768,8 +781,9 @@ img {
   font-family: 'Stempel Garamond LT', monospace;
   font-size: 19px;
   font-weight: bold;
-  line-height: 1.4736842105;
-  margin-bottom: 14px;
+  letter-spacing: -.02em;
+  line-height: 1.45;
+  margin-bottom: 13.775px;
 }
 
 .article__meta--inline + .article__lead p {
@@ -785,24 +799,24 @@ img {
 .article__body p {
   font-family: 'Stempel Garamond LT', monospace;
   font-size: 19px;
-  line-height: 1.4736842105;
-  margin-bottom: 14px;
+  line-height: 1.45;
+  margin-bottom: 13.775px;
 }
 
 .article__body h2 {
   font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
-  font-size: 26px;
-  line-height: 1.3461538462;
-  margin-top: 28px;
-  margin-bottom: 14px;
+  font-size: 30px;
+  line-height: 1.1;
+  margin-top: 27.55px;
+  margin-bottom: 13.775px;
 }
 
 .article__body h3 {
   font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
-  font-size: 26px;
-  line-height: 1.3461538462;
-  margin-top: 14px;
-  margin-bottom: 7px;
+  font-size: 24px;
+  line-height: 1.15;
+  margin-top: 27.55px;
+  margin-bottom: 3.44375px;
 }
 
 .article__body h4,
@@ -810,9 +824,9 @@ img {
 .article__body h6 {
   font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
   font-size: 19px;
-  line-height: 1.4736842105;
-  margin-top: 14px;
-  margin-bottom: 7px;
+  line-height: 1.45;
+  margin-top: 13.775px;
+  margin-bottom: 0;
 }
 
 .article__body a {
@@ -903,7 +917,7 @@ a:focus.card {
 .card__body {
   display: table-cell;
   vertical-align: middle;
-  padding: 7px 32px;
+  padding: 6.8875px 32px;
 }
 
 
@@ -914,13 +928,13 @@ a:focus.card {
 .card__label {
   font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
   font-size: 19px;
-  line-height: 1.4736842105;
+  line-height: 1.45;
 }
 
 .card__label--s {
   font-family: 'Nimbus Novus Sans Medium', monospace;
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.35;
 }
 /*
  * Media components
@@ -932,10 +946,10 @@ a:focus.card {
  */
 
 .media {
-  font-size: 14px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.35;
   position: relative;
-  min-height: 28px;
+  min-height: 27.55px;
   padding: 2px;
 }
 
@@ -986,7 +1000,7 @@ a:focus.card {
  */
 
 .list {
-  margin-bottom: 28px;
+  margin-bottom: 27.55px;
 }
 
 
@@ -995,14 +1009,14 @@ a:focus.card {
  */
 
 .list__title {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
-  line-height: 2.25;
+  line-height: 2.025;
   letter-spacing: 1px;
   text-transform: uppercase;
   position: relative;
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 13.775px;
 }
 
 .grid__hidari .list__title {
@@ -1089,6 +1103,6 @@ a:focus.card {
  */
 
 .list--spaced .list__item {
-  margin-bottom: 7px;
-  margin-top: 7px;
+  margin-bottom: 6.8875px;
+  margin-top: 6.8875px;
 }

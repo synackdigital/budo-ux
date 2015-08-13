@@ -1,7 +1,9 @@
 /*
  * Grid debug styles
  */
-:root {          /* 21px */ /* 28px; */ /* 35px */ /* 42px */ /* 56px */ /* 70px */ /* 98px */
+:root {
+
+  /* Modular scale: http://www.modularscale.com/?19&px&1.25&web&text */
 }
 
 .grid {
