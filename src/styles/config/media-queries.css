@@ -1,6 +1,6 @@
-@custom-media --viewport-s-min (min-width: 768px);
-@custom-media --viewport-m-min (min-width: 1060px);
+@custom-media --viewport-s-min (min-width: 770px);
+@custom-media --viewport-m-min (min-width: 1140px);
 @custom-media --viewport-l-min (min-width: 1360px);
 
-@custom-media --viewport-s-max (max-width: 1060px);
+@custom-media --viewport-s-max (max-width: 1140px);
 @custom-media --viewport-m-max (max-width: 1360px);

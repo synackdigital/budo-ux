@@ -6,11 +6,29 @@
   background-color: var(--brand-bg);
   display: block;
   position: relative;
-  width: 288px;
+  width: var(--brand-width--s);
   max-width: 100%;
-  margin-top: var(--padding-vertical--l);
 }
 
+@media (--viewport-s-min) {
+  .brand {
+    display: inline-block;
+  }
+}
+
+@media (--viewport-m-min) {
+  .brand {
+    width: var(--brand-width--m);
+  }
+}
+
+@media (--viewport-l-min) {
+  .brand {
+    width: var(--brand-width--l);
+  }
+}
+
+/* Stretch left */
 .brand::before {
   content: '';
   background: inherit;
@@ -18,10 +36,4 @@
   height: 100%;
   width: 999px;
   left: -999px;
-}
-
-@media (--viewport-s-min) {
-  .brand {
-    display: inline-block;
-  }
 }

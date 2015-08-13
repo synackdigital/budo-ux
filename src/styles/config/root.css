@@ -3,7 +3,12 @@
   --grid-gutter:    64px;
   --grid-maxwidth:  1140px;
 
-  --brand-width:  288px;
+  --brand-width--s:   260px;
+  --brand-width--m:   285px;
+  --brand-width--l:   310px;
+  --hidari-width--s:  calc(var(--brand-width--s) + (var(--grid-gutter) / 2));
+  --hidari-width--m:  calc(var(--brand-width--m) + (var(--grid-gutter) / 2));
+  --hidari-width--l:  calc(var(--brand-width--l) + (var(--grid-gutter) / 2));
 
   --color-gray-0:   #1D252D;
   --color-gray-1:   #333F48;
@@ -16,17 +21,21 @@
 
   --color-red:        #ee2947;
   --color-orange:     #fbb315;
-  --color-gold:       #FFCD00;
+  --color-gold:       color(#FFCD00 l(57%));
   --color-turquoise:  #35dbb7;
   --color-azure:      #2984e9;
   --color-blue:       #4848e8;
 
   --brand-bg:   var(--color-gray-1);
 
-  --body-bg:        var(--color-gray-7);
-  --body-color:     var(--color-gray-1);
+  --body-bg:            var(--color-gray-7);
+  --body-color:         var(--color-gray-1);
+  --body-border-color:  var(--color-gold);
+  --body-border-width:  var(--padding-horizontal);
+
   --hidari-bg:      var(--color-gold);
   --hidari-color:   var(--color-gray-1);
+
   --migi-bg:        var(--body-bg);
   --migi-color:     var(--body-color);
 

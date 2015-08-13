@@ -8,13 +8,15 @@
  */
 
 .media {
-  background-color: var(--color-gray-1);
   font-size: var(--font-size--s);
   line-height: var(--line-height--s);
   position: relative;
   min-height: var(--padding-vertical--l);
   padding: 2px;
 }
+
+.hidari .media { background-color: var(--hidari-color); }
+.migi .media { background-color: var(--migi-color); }
 
 .media__image {
   vertical-align: middle;

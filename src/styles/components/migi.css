@@ -11,9 +11,21 @@
     z-index: -20;
     top: 0;
     right: 0;
-    left: calc(var(--brand-width) + (var(--grid-gutter) / 2));
+    left: var(--hidari-width--s);
     min-height: 100vh;
     padding-right: calc(var(--grid-gutter) / 2);
     padding-left: calc(var(--grid-gutter) / 2);
+  }
+}
+
+@media (--viewport-m-min) {
+  .migi {
+    left: var(--hidari-width--m);
+  }
+}
+
+@media (--viewport-l-min) {
+  .migi {
+    left: var(--hidari-width--l);
   }
 }

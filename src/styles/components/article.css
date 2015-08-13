@@ -10,9 +10,7 @@
  *        P
  */
 
-.article {
-
-}
+.article { }
 
 .article a:hover {
   color: var(--color-contrast);
@@ -55,8 +53,22 @@
  */
 
 .article__media {
-  margin-top: var(--padding-vertical--l);
-  margin-bottom: var(--padding-vertical--l);
+  margin: var(--padding-vertical--l) calc(var(--grid-gutter) * -.5) var(--padding-vertical--l) calc((var(--grid-gutter) * -.5) - var(--body-border-width));
+}
+.article__media .media {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media (--viewport-s-min) {
+  .article__media {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .article__media .media {
+    padding-right: 2px;
+    padding-left: 2px;
+  }
 }
 
 /*

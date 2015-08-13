@@ -19,13 +19,13 @@ body {
   border-top: 3px solid teal;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   body {
     border-color: salmon;
   }
 }
 
-@media (min-width: 1060px) {
+@media (min-width: 1140px) {
   body {
     border-color: orange;
   }
