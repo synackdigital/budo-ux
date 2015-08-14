@@ -74,8 +74,8 @@ a:focus.card {
 
 .card__label {
   font-family: var(--font-h);
-  font-size: var(--font-size--p);
-  line-height: var(--line-height--p);
+  font-size: var(--font-size--m);
+  line-height: var(--line-height--m);
 }
 
 .card__label--s {

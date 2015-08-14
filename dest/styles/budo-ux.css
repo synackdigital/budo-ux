@@ -1,6 +1,4 @@
-:root {
-
-  /* Modular scale: http://www.modularscale.com/?19&px&1.25&web&text */
+:root {   /* 19px */         /* 23px */            /* 28px; */            /* 30px */   /* 35px */   /* 42px */   /* 51px */
 }
 
 /*
@@ -8,102 +6,169 @@
  */
 
 @font-face {
-  font-family: 'Nimbus Novus Sans Medium';
+  font-family: 'Nimbus Novus Sans';
+  font-weight: normal;
+  font-style: normal;
   src: url("../fonts/n023014tWeb.eot");
 }
 @font-face {
-  font-family: 'Nimbus Novus Sans Medium';
+  font-family: 'Nimbus Novus Sans';
+  font-weight: normal;
+  font-style: normal;
   src: url("../fonts/n023014tWeb.woff") format("woff");
 }
+
 @font-face {
-  font-family: 'Nimbus Novus Sans Condensed Semi Bold';
+  font-family: 'Nimbus Novus Sans';
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/n023014tWeb.eot");
+}
+@font-face {
+  font-family: 'Nimbus Novus Sans';
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/n023014tWeb.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Nimbus Novus Sans';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/n023014tWeb.eot");
+}
+@font-face {
+  font-family: 'Nimbus Novus Sans';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/n023014tWeb.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Nimbus Novus Sans';
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/n023014tWeb.eot");
+}
+@font-face {
+  font-family: 'Nimbus Novus Sans';
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/n023014tWeb.woff") format("woff");
+}
+
+
+/*
+ * URW Nimbus Novus Sans Condensed
+ */
+
+@font-face {
+  font-family: 'Nimbus Novus Sans Condensed';
+  font-weight: normal;
+  font-style: normal;
   src: url("../fonts/n023055tWeb.eot");
 }
 @font-face {
-  font-family: 'Nimbus Novus Sans Condensed Semi Bold';
+  font-family: 'Nimbus Novus Sans Condensed';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/n023055tWeb.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Nimbus Novus Sans Condensed';
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/n023055tWeb.eot");
+}
+@font-face {
+  font-family: 'Nimbus Novus Sans Condensed';
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/n023055tWeb.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Nimbus Novus Sans Condensed';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/n023055tWeb.eot");
+}
+@font-face {
+  font-family: 'Nimbus Novus Sans Condensed';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/n023055tWeb.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Nimbus Novus Sans Condensed';
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/n023055tWeb.eot");
+}
+@font-face {
+  font-family: 'Nimbus Novus Sans Condensed';
+  font-weight: bold;
+  font-style: italic;
   src: url("../fonts/n023055tWeb.woff") format("woff");
 }
 
 
 /*
- * Stempel Garamont LT Std
+ * URW Garamond
  */
 
-/*!
- * @license
- * MyFonts Webfont Build ID 2951276, 2015-01-12T09:03:17-0500
- *
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are
- * explicitly restricted from using the Licensed Webfonts(s).
- *
- * You may obtain a valid license at the URLs below.
- *
- * Webfont: StempelGaramondLTPro-Roman by Linotype
- * URL: http://www.myfonts.com/fonts/linotype/stempel-garamond/roman/
- *
- * Webfont: StempelGaramondLTCom-Italic by Linotype
- * URL: http://www.myfonts.com/fonts/linotype/stempel-garamond/italic/
- *
- * Webfont: StempelGaramondLTCom-Bold by Linotype
- * URL: http://www.myfonts.com/fonts/linotype/stempel-garamond/bold/
- *
- * Webfont: StempelGaramondLTCom-BoldIt by Linotype
- * URL: http://www.myfonts.com/fonts/linotype/stempel-garamond/bold-italic/
- *
- *
- * License: http://www.myfonts.com/viewlicense?type=web&buildid=2951276
- * Licensed pageviews: 250,000
- * Webfonts copyright: Copyright &#x00A9; 1981 - 2011 Linotype GmbH, www.linotype.com. All rights reserved. This font software may not be reproduced, modified, disclosed or transferred without the express written approval of Linotype GmbH. Stempel Garamond is a trademark of Lin
- *
- * © 2015 MyFonts Inc
-*/
-
-/* @import url("http://hello.myfonts.net/count/2d086c"); */
-
 @font-face {
-  font-family: 'Stempel Garamond LT';
+  font-family: 'URW Garamond';
   font-weight: normal;
   font-style: normal;
-  src: url('../fonts/2D086C_0_0.eot');
-  src:
-    url('../fonts/2D086C_0_0.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/2D086C_0_0.woff2') format('woff2'),
-    url('../fonts/2D086C_0_0.woff') format('woff'),
-    url('../fonts/2D086C_0_0.ttf') format('truetype');
+  src: url("../fonts/g003013tWeb.eot");
 }
 @font-face {
-  font-family: 'Stempel Garamond LT';
+  font-family: 'URW Garamond';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/g003013tWeb.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'URW Garamond';
   font-weight: normal;
   font-style: italic;
-  src: url('../fonts/2D086C_1_0.eot');
-  src:
-    url('../fonts/2D086C_1_0.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/2D086C_1_0.woff2') format('woff2'),
-    url('../fonts/2D086C_1_0.woff') format('woff'),
-    url('../fonts/2D086C_1_0.ttf') format('truetype');
+  src: url("../fonts/g003033tWeb.eot");
 }
 @font-face {
-  font-family: 'Stempel Garamond LT';
+  font-family: 'URW Garamond';
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/g003033tWeb.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'URW Garamond';
   font-weight: bold;
   font-style: normal;
-  src: url('../fonts/2D086C_2_0.eot');
-  src:
-    url('../fonts/2D086C_2_0.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/2D086C_2_0.woff2') format('woff2'),
-    url('../fonts/2D086C_2_0.woff') format('woff'),
-    url('../fonts/2D086C_2_0.ttf') format('truetype');
+  src: url("../fonts/g003015tWeb.eot");
 }
 @font-face {
-  font-family: 'Stempel Garamond LT';
+  font-family: 'URW Garamond';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/g003015tWeb.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'URW Garamond';
   font-weight: bold;
   font-style: italic;
-  src: url('../fonts/2D086C_3_0.eot');
-  src:
-    url('../fonts/2D086C_3_0.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/2D086C_3_0.woff2') format('woff2'),
-    url('../fonts/2D086C_3_0.woff') format('woff'),
-    url('../fonts/2D086C_3_0.ttf') format('truetype');
+  src: url("../fonts/g003035tWeb.eot");
+}
+@font-face {
+  font-family: 'URW Garamond';
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/g003035tWeb.woff") format("woff");
 }
 /*
  * FOUNDATION
@@ -127,8 +192,8 @@ body {
   background-color: #eff4f5;
   color: #333F48;
   margin: 0;
-  padding-top: 27.55px;
-  font: 16px/1 'Nimbus Novus Sans Medium', monospace;
+  padding-top: 28px;
+  font: 16px/1 'Nimbus Novus Sans', monospace;
 }
 
 iframe {
@@ -213,22 +278,22 @@ img {
 }
 
 .font-ui {
-  font-family: 'Nimbus Novus Sans Medium', monospace;
+  font-family: 'Nimbus Novus Sans', monospace;
 }
 
 .font-h {
-  font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
+  font-family: 'Nimbus Novus Sans Condensed', monospace;
 }
 
 .font-p {
-  font-family: 'Stempel Garamond LT', monospace;
+  font-family: 'URW Garamond', monospace;
 }
 
 .hidari {
   background-color: rgb(255, 211, 36);
   color: #333F48;
-  padding-top: 178.1px;
-  padding-bottom: 27.55px;
+  padding-top: 179px;
+  padding-bottom: 28px;
 }
 
 @media (min-width: 770px) {
@@ -258,8 +323,8 @@ img {
 .migi {
   background-color: #eff4f5;
   color: #333F48;
-  padding-top: 27.55px;
-  padding-bottom: 27.55px;
+  padding-top: 28px;
+  padding-bottom: 28px;
 }
 
 @media (min-width: 770px) {
@@ -472,17 +537,17 @@ img {
   top: -999px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 27.55px;
+  padding-bottom: 28px;
   padding-right: 120px;
   padding-left: 64px;
-  -webkit-transition: .45s;
-          transition: .45s;
+  -webkit-transition: .55s;
+          transition: .55s;
 }
 
 .nav__panel:after {
-  content: "";
-  display: table;
-  clear: both;
+   content: "";
+   display: table;
+   clear: both;
 }
 
 .nav--expanded .nav__panel {
@@ -495,11 +560,11 @@ img {
  */
 
 .nav__home {
-  font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
-  font-size: 30px;
-  line-height: 1.1;
+  font-family: 'Nimbus Novus Sans Condensed', monospace;
+  font-size: 31px;
+  line-height: 1.1290322581;
   opacity: 0;
-  margin-top: 27.55px;
+  margin-top: 28px;
   margin-left: -1.3em; /* Shift arrow symbol */
 }
 
@@ -514,15 +579,15 @@ img {
 
 .nav__navbar {
   border-top: 1px solid rgba(0, 0, 0, 0.6);
-  font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
-  font-size: 19px;
-  line-height: 1.45;
+  font-family: 'Nimbus Novus Sans Condensed', monospace;
+  font-size: 20px;
+  line-height: 1.4;
   opacity: 0;
   float: left;
   width: 21%;
   max-width: 300px;
   min-width: 180px;
-  margin-top: 27.55px;
+  margin-top: 28px;
   margin-right: 64px;
 }
 
@@ -531,16 +596,16 @@ img {
 }
 
 .nav__navbar__title {
-  font-size: 24px;
-  line-height: 1.15;
-  margin-bottom: 6.8875px;
-  margin-top: 6.8875px;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-bottom: 7px;
+  margin-top: 7px;
 }
 
 .nav__navbar__item {
   border-left: 0 solid;
   display: block;
-  margin-bottom: 3.44375px;
+  margin-bottom: 3.5px;
 }
 .nav__navbar__item:hover {
   border-left-width: 7px;
@@ -557,16 +622,16 @@ img {
   background-color: rgb(255, 211, 36);
   color: #000000;
   color: rgba(0, 0, 0, 0.6);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
-  line-height: 1.35;
+  line-height: 1.4375;
   text-transform: uppercase;
   letter-spacing: 1px;
   position: absolute;
   z-index: 999;
-  top: 27.55px;
+  top: 28px;
   right: 32px;
-  padding: 13.775px 32px;
+  padding: 14px 32px;
 }
 .nav--expanded .nav__toggle {
   background-color: #333F48;
@@ -604,39 +669,53 @@ img {
  */
 
 .article__heading {
-  font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
-  font-size: 37px;
-  line-height: 1.1;
-  margin-top: 27.55px;
-  margin-bottom: 13.775px;
-}
-
-.article__heading--xs {
-  font-size: 24px;
-  line-height: 1.15;
-  margin-top: 6.8875px;
-  margin-bottom: 6.8875px;
+  font-family: 'Nimbus Novus Sans Condensed', monospace;
+  font-size: 31px;
+  line-height: 1.1290322581;
+  margin-top: 28px;
+  margin-bottom: 14px;
 }
 
 .article__heading--s {
-  font-size: 30px;
-  line-height: 1.1;
-  margin-top: 13.775px;
-  margin-bottom: 6.8875px;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-top: 14px;
+  margin-bottom: 7px;
 }
 
 .article__heading--l {
-  font-size: 46px;
-  line-height: 1.05;
+  font-size: 39px;
+  line-height: 1.0769230769;
 }
 
+@media (min-width: 770px) {
+  .article__heading {
+    font-family: 'Nimbus Novus Sans Condensed', monospace;
+    font-size: 39px;
+    line-height: 1.0769230769;
+    margin-top: 28px;
+    margin-bottom: 14px;
+  }
+
+  .article__heading--s {
+    font-size: 31px;
+    line-height: 1.1290322581;
+    margin-top: 14px;
+    margin-bottom: 7px;
+  }
+
+  .article__heading--l {
+    font-size: 49px;
+    line-height: 1.0408163265;
+  }
+}
 
 /*
  * Media
  */
 
 .article__media {
-  margin: 27.55px -32px 27.55px -48px;
+  margin: 28px -32px 28px -48px;
 }
 .article__media .media {
   padding-right: 0;
@@ -659,10 +738,10 @@ img {
  */
 
 .article__meta {
-  font-size: 15px;
-  line-height: 1.35;
-  margin-top: 27.55px;
-  margin-bottom: 13.775px;
+  font-size: 16px;
+  line-height: 1.4375;
+  margin-top: 28px;
+  margin-bottom: 14px;
 }
 
 .grid__hidari .article__meta {
@@ -725,20 +804,30 @@ img {
  * Byline
  */
 
+.article__byline {
+  font-size: 16px;
+  line-height: 1.4375;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.article__byline:after {
+   content: "";
+   display: table;
+   clear: both;
+}
+
 .article__byline-photo {
-  max-width: 50px;
+  max-width: 68px; /* ~width of topic-label */
   float: left;
+  margin-right: 16px;
 }
 
 @media (min-width: 770px) {
   .article__byline {
     border-left: 1px solid #C1C6C8;
-    font-size: 15px;
-    line-height: 1.35;
     float: right;
     width: 170px;
-    margin-top: 6.8875px;
-    margin-bottom: 6.8875px;
     margin-left: 32px;
     padding-left: 16px;
   }
@@ -763,7 +852,7 @@ img {
 
 .article__byline-photo {
   border-radius: 1px;
-  margin-bottom: 13.775px;
+  margin-bottom: 14px;
 }
 
 .article__byline-author {
@@ -778,16 +867,16 @@ img {
 .article__lead { }
 
 .article__lead p {
-  font-family: 'Stempel Garamond LT', monospace;
-  font-size: 19px;
+  font-family: 'URW Garamond', monospace;
+  font-size: 20px;
   font-weight: bold;
   letter-spacing: -.02em;
-  line-height: 1.45;
-  margin-bottom: 13.775px;
+  line-height: 1.4;
+  margin-bottom: 14px;
 }
 
 .article__meta--inline + .article__lead p {
-  font-family: 'Nimbus Novus Sans Medium', monospace;
+  font-family: 'Nimbus Novus Sans', monospace;
   font-weight: normal;
 }
 
@@ -797,35 +886,35 @@ img {
  */
 
 .article__body p {
-  font-family: 'Stempel Garamond LT', monospace;
-  font-size: 19px;
-  line-height: 1.45;
-  margin-bottom: 13.775px;
+  font-family: 'URW Garamond', monospace;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 14px;
 }
 
 .article__body h2 {
-  font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
-  font-size: 30px;
-  line-height: 1.1;
-  margin-top: 27.55px;
-  margin-bottom: 13.775px;
+  font-family: 'Nimbus Novus Sans Condensed', monospace;
+  font-size: 31px;
+  line-height: 1.1290322581;
+  margin-top: 28px;
+  margin-bottom: 14px;
 }
 
 .article__body h3 {
-  font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
-  font-size: 24px;
-  line-height: 1.15;
-  margin-top: 27.55px;
-  margin-bottom: 3.44375px;
+  font-family: 'Nimbus Novus Sans Condensed', monospace;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-top: 28px;
+  margin-bottom: 3.5px;
 }
 
 .article__body h4,
 .article__body h5,
 .article__body h6 {
-  font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
-  font-size: 19px;
-  line-height: 1.45;
-  margin-top: 13.775px;
+  font-family: 'Nimbus Novus Sans Condensed', monospace;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-top: 14px;
   margin-bottom: 0;
 }
 
@@ -917,7 +1006,7 @@ a:focus.card {
 .card__body {
   display: table-cell;
   vertical-align: middle;
-  padding: 6.8875px 32px;
+  padding: 7px 32px;
 }
 
 
@@ -926,15 +1015,15 @@ a:focus.card {
  */
 
 .card__label {
-  font-family: 'Nimbus Novus Sans Condensed Semi Bold', monospace;
-  font-size: 19px;
-  line-height: 1.45;
+  font-family: 'Nimbus Novus Sans Condensed', monospace;
+  font-size: 20px;
+  line-height: 1.4;
 }
 
 .card__label--s {
-  font-family: 'Nimbus Novus Sans Medium', monospace;
-  font-size: 15px;
-  line-height: 1.35;
+  font-family: 'Nimbus Novus Sans', monospace;
+  font-size: 16px;
+  line-height: 1.4375;
 }
 /*
  * Media components
@@ -946,10 +1035,10 @@ a:focus.card {
  */
 
 .media {
-  font-size: 15px;
-  line-height: 1.35;
+  font-size: 16px;
+  line-height: 1.4375;
   position: relative;
-  min-height: 27.55px;
+  min-height: 28px;
   padding: 2px;
 }
 
@@ -1000,7 +1089,7 @@ a:focus.card {
  */
 
 .list {
-  margin-bottom: 27.55px;
+  margin-bottom: 28px;
 }
 
 
@@ -1009,14 +1098,14 @@ a:focus.card {
  */
 
 .list__title {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
-  line-height: 2.025;
+  line-height: 2.15625;
   letter-spacing: 1px;
   text-transform: uppercase;
   position: relative;
   margin-top: 0;
-  margin-bottom: 13.775px;
+  margin-bottom: 14px;
 }
 
 .grid__hidari .list__title {
@@ -1103,6 +1192,6 @@ a:focus.card {
  */
 
 .list--spaced .list__item {
-  margin-bottom: 6.8875px;
-  margin-top: 6.8875px;
+  margin-bottom: 7px;
+  margin-top: 7px;
 }

@@ -47,36 +47,35 @@
   --color-contrast-3:   var(--color-turquoise);
   --color-contrast-4:   var(--color-azure);
 
-  --font-ui:  'Nimbus Novus Sans Medium', monospace;
-  --font-p:   'Stempel Garamond LT', monospace;
-  --font-h:   'Nimbus Novus Sans Condensed Semi Bold', monospace;
+  --font-ui:  'Nimbus Novus Sans', monospace;
+  --font-p:   'URW Garamond', monospace;
+  --font-h:   'Nimbus Novus Sans Condensed', monospace;
 
-  /* Modular scale: http://www.modularscale.com/?19&px&1.25&web&text */
-  --font-size--s:     15px;
-  --font-size--p:     19px;
-  --font-size--l:     24px;
-  --font-size--xl:    30px;
-  --font-size--2xl:   37px;
-  --font-size--3xl:   46px;
-  --font-size--4xl:   58px;
+  --font-size--xs:    13px;
+  --font-size--s:     16px;
+  --font-size--m:     20px;
+  --font-size--l:     25px;
+  --font-size--xl:    31px;
+  --font-size--2xl:   39px;
+  --font-size--3xl:   49px;
 
-  --line-height--s:     1.35;
-  --line-height--p:     1.45;
-  --line-height--l:     1.15;
-  --line-height--xl:    1.1;
-  --line-height--2xl:   1.1;
-  --line-height--3xl:   1.05;
-  --line-height--4xl:   1.05;
+  --line-height--xs:    1.4615384615;   /* 19px */
+  --line-height--s:     1.4375;         /* 23px */
+  --line-height--m:     1.4;            /* 28px; */
+  --line-height--l:     1.2;            /* 30px */
+  --line-height--xl:    1.1290322581;   /* 35px */
+  --line-height--2xl:   1.0769230769;   /* 42px */
+  --line-height--3xl:   1.0408163265;   /* 51px */
 
-  --transition-duration:        .45s;
+  --transition-duration:        .55s;
   --transition-duration--fast:  .25s;
-  --transition-duration--slow:  .8s;
+  --transition-duration--slow:  1.2s;
 
   --border-radius:      2px;
   --border-radius--s:   calc(var(--border-radius) / 2);
   --border-radius--l:   calc(var(--border-radius) * 2);
 
-  --padding-vertical:       calc(var(--font-size--p) * var(--line-height--p) / 2);
+  --padding-vertical:       calc(var(--font-size--m) * var(--line-height--m) / 2);
   --padding-vertical--xs:   calc(var(--padding-vertical--s) / 2);
   --padding-vertical--s:    calc(var(--padding-vertical) / 2);
   --padding-vertical--l:    calc(var(--padding-vertical) * 2);

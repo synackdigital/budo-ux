@@ -66,8 +66,8 @@
 .nav__navbar {
   border-top: 1px solid color(black a(60%));
   font-family: var(--font-h);
-  font-size: var(--font-size--p);
-  line-height: var(--line-height--p);
+  font-size: var(--font-size--m);
+  line-height: var(--line-height--m);
   opacity: 0;
   float: left;
   width: 21%;
