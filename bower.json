@@ -18,6 +18,7 @@
   ],
   "dependencies": {
     "jquery": "~2.1.4",
-    "jquery-horunge": "~0.0.7"
+    "jquery-horunge": "~0.0.7",
+    "jquery.equalheights": "~1.5.2"
   }
 }

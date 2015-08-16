@@ -1,37 +1,25 @@
-$(function() {
-  budo.init();
-});
+$(document).ready(function() {
 
-var budo = {
-
-  init: function() {
-
-    /* Store references to DOM elements */
-    this.$hidari = $('.hidari');
-    this.$migi = $('.migi');
-
-    /* Enable $.Horunge on articles */
-    $('h1, h2, h3, h4, h5, h6, p', '.article').horunge();
-
-    /* Enable .nav__toggle */
-    $('.nav__toggle').on('click', function(e){
-      $('.nav').toggleClass('nav--expanded');
-      $('body').toggleClass('--no-scroll');
-    });
-
-    /* Set up window listener */
-    $(window).on('resize', this.resize());
-  },
-
-  resize: function() {
-    var hidariHeight = this.$hidari.outerHeight();
-    var migiHeight = this.$migi.outerHeight();
-
-    if ( hidariHeight < migiHeight ) {
-      this.$hidari.css('height', migiHeight);
-    }
-    else {
-      this.$migi.css('height', hidariHeight);
+  /* Enable jQuery.horunge on articles */
+  if($.fn.horunge) {
+    if(aboveBreakpoint()) {
+      $('h1, h2, h3, h4, h5, h6, p', '.article').horunge();
     }
   }
-};
+});
+
+$(window).load(function() {
+
+  /* Enable jQuery.equalHeights on hidari/migi when absolutely positioned */
+  if($.fn.equalHeights) {
+    if(aboveBreakpoint()) {
+      setTimeout(function() {
+        $('.hidari, .migi').equalHeights();
+      }, 200);
+    }
+  }
+});
+
+var aboveBreakpoint = function() {
+  return $('.hidari, .migi').css('position') === 'absolute';
+}
