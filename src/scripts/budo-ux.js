@@ -10,8 +10,7 @@ var budo = {
     this.$hidari = $('.hidari');
     this.$migi = $('.migi');
 
-
-    /* Enable $.Horunge */
+    /* Enable $.Horunge on articles */
     $('h1, h2, h3, h4, h5, h6, p', '.article').horunge();
 
     /* Enable .nav__toggle */
