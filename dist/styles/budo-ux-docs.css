@@ -1,0 +1,49 @@
+/*
+ * Grid debug styles
+ */
+:root {
+
+  /* Grid system */
+
+
+  /* Colors */
+
+
+  /* Typography */   /* 17px */   /* 22px */           /* 25px; */            /* 30px */   /* 35px */   /* 42px */   /* 51px */ /* 28px @ 20px */
+
+
+  /* Defaults */
+}
+
+.grid {
+  border: 1px solid #640064 !important;
+  border: 1px solid rgba(100,0,100,.1) !important;
+}
+
+.grid__unit {
+  min-height: 64px !important;
+  border: 1px solid #646400 !important;
+  border: 1px solid rgba(100,100,0,.1) !important;
+}
+
+body {
+  border-top: 3px solid teal;
+}
+
+@media (min-width: 770px) {
+  body {
+    border-color: salmon;
+  }
+}
+
+@media (min-width: 1140px) {
+  body {
+    border-color: orange;
+  }
+}
+
+@media (min-width: 1360px) {
+  body {
+    border-color: lime;
+  }
+}

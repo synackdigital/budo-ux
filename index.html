@@ -3,67 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>SB&amp;K Docs</title>
+  <title>Artikel&thinsp;&lsaquo;&thinsp;SB&amp;K Docs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="dest/styles/budo-ux.css">
-  <link rel="stylesheet" href="dest/styles/budo-ux-docs.css">
+  <link rel="stylesheet" href="dist/styles/budo-ux.css">
+  <!-- <link rel="stylesheet" href="dist/styles/budo-ux-docs.css"> -->
 
-  <script src="dest/scripts/jquery.js"></script>
-  <script src="dest/scripts/jquery.horunge.js"></script>
-  <script src="dest/scripts/budo-ux.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/jquery-horunge/dist/jquery.horunge.min.js"></script>
+  <script src="bower_components/jquery.equalHeights/jquery.equalHeights.min.js"></script>
 
 </head>
 <body>
 
-  <main class="grid grid--3-9">
-    <div class="grid__hidari">
+  <div class="brand">
+    <img class="brand__logo" src="dist/images/sbok-brand-light-alpha.png" alt="Svenska Budo&ndash; &amp; Kampsportsförbundet">
+  </div>
 
-      <div class="brand">
-        <img class="brand__logo" src="dest/images/sbok-brand-light-alpha.png" alt="Svenska Budo- &amp; Kampsportsförbundet">
-      </div>
-
-      <div class="grid__row">
-        <div class="grid__unit--3">
-
-          <div class="list list--spaced">
-            <h1 class="list__title list__title--stretch">Typografi</h1>
-            <a class="list__item" href="docs/type/typesheet.html">Provblad</a>
-          </div>
-
-          <div class="list list--spaced">
-            <h1 class="list__title list__title--stretch">Mallar</h1>
-            <a class="list__item" href="docs/templates/start.html">Startsida</a>
-            <a class="list__item" href="docs/templates/article.html">Artikel</a>
-            <a class="list__item" href="docs/templates/column.html">Krönika</a>
-          </div>
-
-          <div class="list list--spaced">
-            <h1 class="list__title list__title--stretch">Grid</h1>
-            <a class="list__item" href="docs/grid/grid--2-10.html">Grid 2:10</a>
-            <a class="list__item" href="docs/grid/grid--3-9.html">Grid 3:9</a>
-            <a class="list__item" href="docs/grid/grid--4-8.html">Grid 4:8</a>
-            <a class="list__item" href="docs/grid/grid--5-7.html">Grid 5:7</a>
-            <a class="list__item" href="docs/grid/grid--6-6.html">Grid 6:6</a>
-            <a class="list__item" href="docs/grid/grid--7-5.html">Grid 7:5</a>
-            <a class="list__item" href="docs/grid/grid--8-4.html">Grid 8:4</a>
-            <a class="list__item" href="docs/grid/grid--9-3.html">Grid 9:3</a>
-            <a class="list__item" href="docs/grid/grid--10-2.html">Grid 10:2</a>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-    <div class="grid__migi" style="position:relative;">
-      <div style="position:absolute;top:40%;left:50%;width:240px;margin-left:-120px;">
-        <a class="font-h" style="display:block;padding:.5em 1em;background-color:#ffd914;color:#222;text-align:center;" href="Budo-UX.pdf" alt="Ladda ner Budo-UX digital profil">
-          <span class="article__heading--s" style="display:block;">Ladda ner</span>
-          <small class="article__heading--xs" style="display:block;">Budo-UX digital profil</small>
-        </a>
-      </div>
-    </div>
-  </main>
+  <div style="margin-top:100px;text-align:center;">
+    <a style="box-sizing:border-box;display:inline-block;width:300px;background-color:rgb(254,221,61);color:rgb(51,63,72);padding:10px 20px;margin:5px 10px;" href="docs/front-page.html">Framsida</a>
+    <a style="box-sizing:border-box;display:inline-block;width:300px;background-color:rgb(254,221,61);color:rgb(51,63,72);padding:10px 20px;margin:5px 10px;" href="docs/article.html">Artikel</a>
+    <a style="box-sizing:border-box;display:inline-block;width:300px;background-color:rgb(254,221,61);color:rgb(51,63,72);padding:10px 20px;margin:5px 10px;" href="docs/column.html">Krönika</a>
+  </div>
 
 </body>
-</html>
+</head>

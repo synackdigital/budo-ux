@@ -1,0 +1,1 @@
+$(document).ready(function(){$.fn.horunge&&aboveBreakpoint()&&$("h1, h2, h3, h4, h5, h6, p",".article").horunge()}),$(window).load(function(){$.fn.equalHeights&&aboveBreakpoint()&&setTimeout(function(){$(".hidari, .migi").equalHeights()},200)});var aboveBreakpoint=function(){return"absolute"===$(".hidari, .migi").css("position")};
