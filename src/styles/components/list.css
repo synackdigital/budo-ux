@@ -20,7 +20,7 @@
  */
 
 .list__title {
-  font-family: var(--font-h);
+  font-weight: bold;
   font-size: var(--font-size--s);
   line-height: calc(var(--line-height--s) * 1.5);
   letter-spacing: .02em;
@@ -88,10 +88,16 @@
   display: block;
 }
 
-.list__item-title {
-  font-family: var(--font-h);
-  font-size: var(--font-size--m);
-  line-height: var(--line-height--l);
+
+/*
+ * More link
+ */
+
+.list__morelink {
+  display: block;
+  font-weight: bold;
+  padding-top: var(--padding-vertical--s);
+  padding-bottom: var(--padding-vertical--s);
 }
 
 

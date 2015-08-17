@@ -21,7 +21,7 @@ body {
   color: var(--body-color);
   margin: 0;
   padding-top: var(--padding-vertical--l);
-  font: 16px/1 var(--font-ui);
+  font: 16px/1 var(--font-sans);
 }
 
 @media (--viewport-s-min) {

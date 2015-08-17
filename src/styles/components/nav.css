@@ -46,7 +46,6 @@
  */
 
 .nav__home {
-  font-family: var(--font-h);
   font-size: var(--font-size--xl);
   line-height: var(--line-height--xl);
   opacity: 0;
@@ -65,7 +64,6 @@
 
 .nav__navbar {
   border-top: 1px solid color(black a(60%));
-  font-family: var(--font-h);
   font-size: var(--font-size--m);
   line-height: var(--line-height--m);
   opacity: 0;

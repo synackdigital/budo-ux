@@ -20,15 +20,3 @@
 .no-scroll {
   overflow: hidden;
 }
-
-.font-ui {
-  font-family: var(--font-ui);
-}
-
-.font-h {
-  font-family: var(--font-h);
-}
-
-.font-p {
-  font-family: var(--font-p);
-}

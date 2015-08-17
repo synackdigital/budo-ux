@@ -1,62 +1,5 @@
 
 /*
- * URW Nimbus Novus Sans
- */
-
-@font-face {
-  font-family: 'Nimbus Novus Sans';
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/n023014tWeb.eot");
-}
-@font-face {
-  font-family: 'Nimbus Novus Sans';
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/n023014tWeb.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Nimbus Novus Sans';
-  font-weight: normal;
-  font-style: italic;
-  src: url("../fonts/n023014tWeb.eot");
-}
-@font-face {
-  font-family: 'Nimbus Novus Sans';
-  font-weight: normal;
-  font-style: italic;
-  src: url("../fonts/n023014tWeb.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Nimbus Novus Sans';
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/n023014tWeb.eot");
-}
-@font-face {
-  font-family: 'Nimbus Novus Sans';
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/n023014tWeb.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Nimbus Novus Sans';
-  font-weight: bold;
-  font-style: italic;
-  src: url("../fonts/n023014tWeb.eot");
-}
-@font-face {
-  font-family: 'Nimbus Novus Sans';
-  font-weight: bold;
-  font-style: italic;
-  src: url("../fonts/n023014tWeb.woff") format("woff");
-}
-
-
-/*
  * URW Nimbus Novus Sans Condensed
  */
 
@@ -64,26 +7,26 @@
   font-family: 'Nimbus Novus Sans Condensed';
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/n023055tWeb.eot");
+  src: url("../fonts/n023053tWeb.eot");
 }
 @font-face {
   font-family: 'Nimbus Novus Sans Condensed';
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/n023055tWeb.woff") format("woff");
+  src: url("../fonts/n023053tWeb.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Nimbus Novus Sans Condensed';
   font-weight: normal;
   font-style: italic;
-  src: url("../fonts/n023055tWeb.eot");
+  src: url("../fonts/n023053tWeb.eot");
 }
 @font-face {
   font-family: 'Nimbus Novus Sans Condensed';
   font-weight: normal;
   font-style: italic;
-  src: url("../fonts/n023055tWeb.woff") format("woff");
+  src: url("../fonts/n023053tWeb.woff") format("woff");
 }
 
 @font-face {

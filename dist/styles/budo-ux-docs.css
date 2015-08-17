@@ -1,7 +1,18 @@
 /*
  * Grid debug styles
  */
-:root {   /* 19px */         /* 23px */            /* 28px; */            /* 30px */   /* 35px */   /* 42px */   /* 51px */
+:root {
+
+  /* Grid system */
+
+
+  /* Colors */
+
+
+  /* Typography */   /* 17px */           /* 20px */           /* 25px; */            /* 30px */   /* 35px */   /* 42px */   /* 51px */ /* 28px @ 20px */
+
+
+  /* Defaults */
 }
 
 .grid {

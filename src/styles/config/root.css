@@ -1,5 +1,7 @@
 :root {
 
+  /* Grid system */
+
   --grid-gutter:    64px;
   --grid-maxwidth:  1140px;
 
@@ -9,6 +11,9 @@
   --hidari-width--s:  calc(var(--brand-width--s) + var(--grid-gutter));
   --hidari-width--m:  calc(var(--brand-width--m) + var(--grid-gutter));
   --hidari-width--l:  calc(var(--brand-width--l) + var(--grid-gutter));
+
+
+  /* Colors */
 
   --color-gray-0:   #1D252D;
   --color-gray-1:   #333F48;
@@ -47,9 +52,11 @@
   --color-contrast-3:   var(--color-turquoise);
   --color-contrast-4:   var(--color-azure);
 
-  --font-ui:  'Nimbus Novus Sans', monospace;
-  --font-p:   'URW Garamond', monospace;
-  --font-h:   'Nimbus Novus Sans Condensed', monospace;
+
+  /* Typography */
+
+  --font-sans:    'Nimbus Novus Sans Condensed', monospace;
+  --font-serif:   'URW Garamond', monospace;
 
   --font-size--xs:    13px;
   --font-size--s:     16px;
@@ -59,13 +66,19 @@
   --font-size--2xl:   39px;
   --font-size--3xl:   49px;
 
-  --line-height--xs:    1.4615384615;   /* 19px */
-  --line-height--s:     1.4375;         /* 23px */
-  --line-height--m:     1.4;            /* 28px; */
+  --line-height--xs:    1.3076923077;   /* 17px */
+  --line-height--s:     1.25;           /* 20px */
+  --line-height--m:     1.25;           /* 25px; */
   --line-height--l:     1.2;            /* 30px */
   --line-height--xl:    1.1290322581;   /* 35px */
   --line-height--2xl:   1.0769230769;   /* 42px */
   --line-height--3xl:   1.0408163265;   /* 51px */
+
+  --font-size--p:     var(--font-size--m);
+  --line-height--p:   1.4; /* 28px @ 20px */
+
+
+  /* Defaults */
 
   --transition-duration:        .55s;
   --transition-duration--fast:  .25s;
@@ -81,9 +94,9 @@
   --padding-vertical--l:    calc(var(--padding-vertical) * 2);
   --padding-vertical--xl:   calc(var(--padding-vertical--l) * 2);
 
-  --padding-horizontal:       calc(var(--grid-gutter) / 4);
-  --padding-horizontal--xs:   calc(var(--padding-horizontal--s) / 2);
-  --padding-horizontal--s:    calc(var(--padding-horizontal) / 2);
+  --padding-horizontal:       calc(var(--grid-gutter) / 5);
+  --padding-horizontal--xs:   calc(var(--padding-horizontal--s) / 3);
+  --padding-horizontal--s:    calc(var(--padding-horizontal) / 3);
   --padding-horizontal--l:    calc(var(--padding-horizontal) * 2);
   --padding-horizontal--xl:   calc(var(--padding-horizontal--l) * 2);
 }
