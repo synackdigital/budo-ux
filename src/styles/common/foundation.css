@@ -88,3 +88,7 @@ img {
   border: 0;
 }
 
+hr {
+  margin-top: var(--padding-vertical--xl);
+  margin-bottom: var(--padding-vertical--xl);
+}

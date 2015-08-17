@@ -214,6 +214,11 @@ img {
   height: auto;
   border: 0;
 }
+
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 /* Clear floated child elements */
 .clearfix:before,
 .clearfix:after {
