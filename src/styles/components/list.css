@@ -84,10 +84,59 @@
  */
 
 .list__item {
-  border-bottom: 1px solid transparent;
   display: block;
+  padding-top: var(--padding-vertical--s);
+  padding-bottom: var(--padding-vertical--s);
+
+  @mixin clearfix {}
 }
 
+
+/*
+ * Item thumbnail
+ */
+
+.list__item-thumbnail {
+  border: 2px solid;
+  float: right;
+  width: 90px;
+  margin-left: var(--padding-horizontal);
+}
+
+
+/*
+ * Item heading
+ */
+
+.list__item-heading {
+  display: block;
+  font-weight: bold;
+  font-size: var(--font-size--m);
+  line-height: var(--line-height--m);
+  letter-spacing: .02em;
+  margin-bottom: var(--padding-vertical--xs);
+}
+
+a.list__item:hover .list__item-heading,
+a.list__item:focus .list__item-heading {
+  text-decoration: underline;
+}
+
+/*
+ * Item meta
+ */
+
+.list__item-meta {
+  font-size: var(--font-size--s);
+  line-height: var(--line-height--s);
+  display: block;
+  margin-bottom: var(--padding-vertical--xs);
+}
+
+.list__item-meta * {
+  display: inline-block;
+  margin-right: var(--padding-horizontal--s);
+}
 
 /*
  * More link
@@ -96,8 +145,8 @@
 .list__morelink {
   display: block;
   font-weight: bold;
-  padding-top: var(--padding-vertical--s);
-  padding-bottom: var(--padding-vertical--s);
+  padding-top: var(--padding-vertical);
+  padding-bottom: var(--padding-vertical);
 }
 
 
@@ -106,7 +155,7 @@
  */
 
 .list--bordered .list__item {
-  border-color: color(black a(20%));
+  border-bottom: 1px solid color(black a(20%));
 }
 .hidari .list--bordered .list__item:last-child {
   border-color: transparent;
@@ -118,6 +167,6 @@
  */
 
 .list--spaced .list__item {
-  margin-bottom: var(--padding-vertical--s);
-  margin-top: var(--padding-vertical--s);
+  padding-bottom: var(--padding-vertical--s);
+  padding-top: var(--padding-vertical--s);
 }

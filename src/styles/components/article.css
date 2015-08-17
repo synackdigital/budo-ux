@@ -28,16 +28,6 @@
   margin-bottom: var(--padding-vertical);
 }
 
-.article__heading.article__heading--s {
-  font-weight: bold;
-  font-size: var(--font-size--m);
-  line-height: var(--line-height--m);
-  letter-spacing: .02em;
-  margin-top: var(--padding-vertical);
-  margin-bottom: var(--padding-vertical--s);
-}
-
-
 @media (--viewport-s-min) {
   .article__heading {
     font-size: var(--font-size--3xl);

@@ -59,7 +59,7 @@
   --font-serif:   'URW Garamond', monospace;
 
   --font-size--xs:    13px;
-  --font-size--s:     16px;
+  --font-size--s:     17px;
   --font-size--m:     20px;
   --font-size--l:     25px;
   --font-size--xl:    31px;
@@ -67,7 +67,7 @@
   --font-size--3xl:   49px;
 
   --line-height--xs:    1.3076923077;   /* 17px */
-  --line-height--s:     1.25;           /* 20px */
+  --line-height--s:     1.2941176471;   /* 22px */
   --line-height--m:     1.25;           /* 25px; */
   --line-height--l:     1.2;            /* 30px */
   --line-height--xl:    1.1290322581;   /* 35px */
