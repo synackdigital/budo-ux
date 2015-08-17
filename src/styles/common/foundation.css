@@ -22,6 +22,7 @@ body {
   margin: 0;
   padding-top: var(--padding-vertical--l);
   font: 16px/1 var(--font-sans);
+  min-height: 100vh;
 }
 
 @media (--viewport-s-min) {
