@@ -20,22 +20,22 @@
  */
 
 .list__title {
+  font-family: var(--font-h);
   font-size: var(--font-size--s);
-  font-weight: bold;
   line-height: calc(var(--line-height--s) * 1.5);
-  letter-spacing: 1px;
+  letter-spacing: .02em;
   text-transform: uppercase;
   position: relative;
   margin-top: 0;
   margin-bottom: var(--padding-vertical);
 }
 
-.grid__hidari .list__title {
-  border-left: 7px solid var(--color-gray-2);
+.hidari .list__title {
+  border-left: 7px solid var(--brand-bg);
   padding-left: var(--padding-horizontal);
 }
 
-.grid__migi .list__title {
+.migi .list__title {
   border-left: 7px solid var(--color-gray-5);
   padding-left: var(--padding-horizontal);
 }
@@ -46,13 +46,13 @@
 }
 
 /* Stretch variation */
-.grid__hidari .list__title.list__title--stretch {
-  background-color: var(--color-gray-0);
+.hidari .list__title.list__title--stretch {
+  background-color: var(--brand-bg);
   color: var(--color-gray-5);
   padding-left: 0;
   border-left: none;
 }
-.grid__migi .list__title.list__title--stretch {
+.migi .list__title.list__title--stretch {
   background-color: var(--color-gray-5);
   color: var(--color-gray-2);
   border-left: none;
@@ -65,10 +65,10 @@
   height: 100%;
   width: 999px;
 }
-.grid__hidari .list__title.list__title--stretch::before {
+.hidari .list__title.list__title--stretch::before {
   left: -999px;
 }
-.grid__migi .list__title.list__title--stretch::before {
+.migi .list__title.list__title--stretch::before {
   right: -999px;
 }
 
@@ -88,22 +88,21 @@
   display: block;
 }
 
+.list__item-title {
+  font-family: var(--font-h);
+  font-size: var(--font-size--m);
+  line-height: var(--line-height--l);
+}
+
 
 /*
  * Bordered variant
  */
 
-.grid__hidari .list--bordered .list__item {
-  border-color: var(--color-gray-2);
+.list--bordered .list__item {
+  border-color: color(black a(20%));
 }
-.grid__hidari .list--bordered .list__item:last-child {
-  border-color: transparent;
-}
-
-.grid__migi .list--bordered .list__item {
-  border-color: var(--color-gray-5);
-}
-.grid__migi .list--bordered .list__item:last-child {
+.hidari .list--bordered .list__item:last-child {
   border-color: transparent;
 }
 

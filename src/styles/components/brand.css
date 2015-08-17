@@ -8,6 +8,7 @@
   position: relative;
   width: var(--brand-width--s);
   max-width: 100%;
+  padding-left: calc(var(--grid-gutter) / 4);
 }
 
 @media (--viewport-s-min) {

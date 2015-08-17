@@ -6,9 +6,9 @@
   --brand-width--s:   260px;
   --brand-width--m:   285px;
   --brand-width--l:   310px;
-  --hidari-width--s:  calc(var(--brand-width--s) + (var(--grid-gutter) / 2));
-  --hidari-width--m:  calc(var(--brand-width--m) + (var(--grid-gutter) / 2));
-  --hidari-width--l:  calc(var(--brand-width--l) + (var(--grid-gutter) / 2));
+  --hidari-width--s:  calc(var(--brand-width--s) + var(--grid-gutter));
+  --hidari-width--m:  calc(var(--brand-width--m) + var(--grid-gutter));
+  --hidari-width--l:  calc(var(--brand-width--l) + var(--grid-gutter));
 
   --color-gray-0:   #1D252D;
   --color-gray-1:   #333F48;

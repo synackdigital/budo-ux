@@ -1,7 +1,7 @@
 .hidari {
   background-color: var(--hidari-bg);
   color: var(--hidari-color);
-  padding-top: calc((var(--padding-vertical--l) * 2) + 123px);
+  padding-top: var(--padding-vertical--l);
   padding-bottom: var(--padding-vertical--l);
 }
 
@@ -13,6 +13,7 @@
     left: 0;
     width: var(--hidari-width--s);
     min-height: 100vh;
+    padding-top: calc((var(--padding-vertical--l) * 2) + 123px);
     padding-right: calc(var(--grid-gutter) / 2);
     padding-left: 0;
   }
