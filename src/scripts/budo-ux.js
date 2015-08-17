@@ -22,4 +22,4 @@ $(window).load(function() {
 
 var aboveBreakpoint = function() {
   return $('.hidari, .migi').css('position') === 'absolute';
-}
+};
