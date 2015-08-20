@@ -143,8 +143,8 @@ html {
 
 body {
   border-left: 12.8px solid #fedd3d;
-  background-color: #eff4f5;
-  color: #333F48;
+  background-color: #f9fbfc;
+  color: #1D252D;
   margin: 0;
   padding-top: 25px;
   font: 16px/1 'Nimbus Novus Sans Condensed', monospace;
@@ -245,7 +245,7 @@ hr {
 
 .hidari {
   background-color: #fedd3d;
-  color: #333F48;
+  color: #1D252D;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -276,8 +276,8 @@ hr {
   }
 }
 .migi {
-  background-color: #eff4f5;
-  color: #333F48;
+  background-color: #f9fbfc;
+  color: #1D252D;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -898,8 +898,8 @@ hr {
   padding: 2px;
 }
 
-.hidari .media { background-color: #333F48; }
-.migi .media { background-color: #333F48; }
+.hidari .media { background-color: #1D252D; }
+.migi .media { background-color: #1D252D; }
 
 .media__image {
   vertical-align: middle;
