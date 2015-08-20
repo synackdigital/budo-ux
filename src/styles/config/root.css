@@ -23,6 +23,7 @@
   --color-gray-5:   #C1C6C8;
   --color-gray-6:   #D0D3D4;
   --color-gray-7:   #eff4f5;
+  --color-gray-8:   #f9fbfc;
 
   --color-red:        #ee2947;
   --color-orange:     #fbb315;
@@ -33,13 +34,13 @@
 
   --brand-bg:   var(--color-gray-1);
 
-  --body-bg:            var(--color-gray-7);
-  --body-color:         var(--color-gray-1);
+  --body-bg:            var(--color-gray-8);
+  --body-color:         var(--color-gray-0);
   --body-border-color:  var(--color-gold);
   --body-border-width:  var(--padding-horizontal);
 
   --hidari-bg:      var(--color-gold);
-  --hidari-color:   var(--color-gray-1);
+  --hidari-color:   var(--color-gray-0);
 
   --migi-bg:        var(--body-bg);
   --migi-color:     var(--body-color);
