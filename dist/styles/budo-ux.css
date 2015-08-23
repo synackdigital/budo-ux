@@ -495,9 +495,7 @@ hr {
   top: -999px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 25px;
-  padding-right: 120px;
-  padding-left: 64px;
+  padding: 25px 64px;
   -webkit-transition: .55s;
           transition: .55s;
 }
@@ -540,9 +538,6 @@ hr {
   line-height: 1.25;
   opacity: 0;
   float: left;
-  width: 21%;
-  max-width: 300px;
-  min-width: 180px;
   margin-top: 25px;
   margin-right: 64px;
 }
