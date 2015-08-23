@@ -97,7 +97,7 @@
  */
 
 .list__item-thumbnail {
-  border: 2px solid;
+  border: 1px solid;
   float: right;
   width: 90px;
   margin-left: var(--padding-horizontal);
@@ -120,6 +120,16 @@
 a.list__item:hover .list__item-heading,
 a.list__item:focus .list__item-heading {
   text-decoration: underline;
+}
+
+.list__item-heading--l {
+  font-size: var(--font-size--l);
+  line-height: var(--line-height--l);
+}
+
+.list__item-heading--xl {
+  font-size: var(--font-size--xl);
+  line-height: var(--line-height--xl);
 }
 
 /*
@@ -167,6 +177,48 @@ a.list__item:focus .list__item-heading {
  */
 
 .list--spaced .list__item {
-  padding-bottom: var(--padding-vertical--s);
-  padding-top: var(--padding-vertical--s);
+  padding-bottom: var(--padding-vertical--l);
+  padding-top: var(--padding-vertical--l);
+}
+
+
+/*
+ * Adjustments for articles inside lists
+ */
+
+.list .article .article__meta {
+  vertical-align: bottom;
+  float: left;
+  margin-bottom: 0;
+  margin-top: .2em;
+}
+
+.article__meta > * {
+  margin-right: .25em;
+}
+
+.article__meta {
+  margin-right: .5em;
+}
+
+.list .article .article__media {
+  margin-top: var(--padding-vertical);
+  margin-bottom: var(--padding-vertical);
+}
+
+.list .article .article__lead {
+  font-weight: normal;
+}
+
+.list .article .article__heading {
+  font-size: var(--font-size--xl);
+  line-height: var(--line-height--xl);
+}
+
+@media (--viewport-s-min) {
+  .list .article .article__heading {
+    font-size: var(--font-size--2xl);
+    line-height: var(--line-height--2xl);
+    margin-top: var(--padding-vertical--l);
+  }
 }

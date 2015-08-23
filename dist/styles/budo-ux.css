@@ -145,6 +145,8 @@ body {
   border-left: 12.8px solid #fedd3d;
   background-color: #f9fbfc;
   color: #1D252D;
+  position: relative;
+  z-index: -1;
   margin: 0;
   padding-top: 25px;
   font: 16px/1 'Nimbus Novus Sans Condensed', monospace;
@@ -162,7 +164,6 @@ iframe {
 }
 
 h1, h2, h3, h4, h5, p, ul, ol, blockquote, figure, button {
-  font-weight: normal;
   margin: 0;
   padding: 0;
 }
@@ -376,6 +377,7 @@ hr {
 @media (min-width: 770px) {
   .grid__unit {
     float: left;
+    width: 100%;
   }
 }
 
@@ -645,19 +647,11 @@ hr {
 .article__media {
   margin: 25px -32px 25px -44.8px;
 }
-.article__media .media {
-  padding-right: 0;
-  padding-left: 0;
-}
 
 @media (min-width: 770px) {
   .article__media {
     margin-right: 0;
     margin-left: 0;
-  }
-  .article__media .media {
-    padding-right: 2px;
-    padding-left: 2px;
   }
 }
 
@@ -713,12 +707,6 @@ hr {
   )
 }
 
-/* Inline variation */
-.article__meta.article__meta--inline {
-  vertical-align: bottom;
-  float: left;
-  margin-bottom: 0;
-}
 
 /*
  * Topic
@@ -726,14 +714,14 @@ hr {
 
 .article__topic {
   background-color: #fedd3d;
-  color: #000000;
-  color: rgba(0, 0, 0, 0.6);
+  color: #1D252D;
   border-radius: 2px;
   margin-top: -2px;
   padding-top: 2px;
   padding-right: 12.8px;
   padding-left: 12.8px;
 }
+
 
 /*
  * Byline
@@ -802,19 +790,22 @@ hr {
  * Lead
  */
 
-@media (min-width: 770px) {
-  .article__lead {
-    margin-bottom: 25px;
-  }
-}
-
-.article__lead p {
+.article__lead {
   font-family: 'URW Garamond', monospace;
   font-size: 20px;
   line-height: 1.4;
   font-weight: bold;
   letter-spacing: -.02em;
+}
+
+.article__lead p {
   margin-bottom: 12.5px;
+}
+
+@media (min-width: 770px) {
+  .article__lead {
+    margin-bottom: 25px;
+  }
 }
 
 
@@ -895,11 +886,15 @@ hr {
   line-height: 1.2941176471;
   position: relative;
   min-height: 25px;
-  padding: 2px;
 }
 
-.hidari .media { background-color: #1D252D; }
-.migi .media { background-color: #1D252D; }
+.media img {
+  vertical-align: middle;
+  border: 1px solid;
+}
+
+.hidari .media img { border-color: #1D252D; }
+.migi .media img { border-color: #1D252D; }
 
 .media__image {
   vertical-align: middle;
@@ -907,14 +902,21 @@ hr {
 }
 
 .media__caption {
-  border-bottom-right-radius: 1px;
-  background-color: #333F48;
-  color: #C1C6C8;
+  border-top-left-radius: 2px;
   position: absolute;
   bottom: 0;
   right: 0;
   padding-left: 1em;
   padding-right: 1em;
+}
+
+.hidari .media__caption {
+  background-color: #1D252D;
+  color: #fedd3d;
+}
+.migi .media__caption {
+  background-color: #1D252D;
+  color: #f9fbfc;
 }
 
 /*
@@ -1036,7 +1038,7 @@ hr {
  */
 
 .list__item-thumbnail {
-  border: 2px solid;
+  border: 1px solid;
   float: right;
   width: 90px;
   margin-left: 12.8px;
@@ -1059,6 +1061,16 @@ hr {
 a.list__item:hover .list__item-heading,
 a.list__item:focus .list__item-heading {
   text-decoration: underline;
+}
+
+.list__item-heading--l {
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.list__item-heading--xl {
+  font-size: 31px;
+  line-height: 1.1290322581;
 }
 
 /*
@@ -1106,6 +1118,48 @@ a.list__item:focus .list__item-heading {
  */
 
 .list--spaced .list__item {
-  padding-bottom: 6.25px;
-  padding-top: 6.25px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+
+/*
+ * Adjustments for articles inside lists
+ */
+
+.list .article .article__meta {
+  vertical-align: bottom;
+  float: left;
+  margin-bottom: 0;
+  margin-top: .2em;
+}
+
+.article__meta > * {
+  margin-right: .25em;
+}
+
+.article__meta {
+  margin-right: .5em;
+}
+
+.list .article .article__media {
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+}
+
+.list .article .article__lead {
+  font-weight: normal;
+}
+
+.list .article .article__heading {
+  font-size: 31px;
+  line-height: 1.1290322581;
+}
+
+@media (min-width: 770px) {
+  .list .article .article__heading {
+    font-size: 39px;
+    line-height: 1.0769230769;
+    margin-top: 25px;
+  }
 }

@@ -12,11 +12,15 @@
   line-height: var(--line-height--s);
   position: relative;
   min-height: var(--padding-vertical--l);
-  padding: 2px;
 }
 
-.hidari .media { background-color: var(--hidari-color); }
-.migi .media { background-color: var(--migi-color); }
+.media img {
+  vertical-align: middle;
+  border: 1px solid;
+}
+
+.hidari .media img { border-color: var(--hidari-color); }
+.migi .media img { border-color: var(--migi-color); }
 
 .media__image {
   vertical-align: middle;
@@ -24,14 +28,21 @@
 }
 
 .media__caption {
-  border-bottom-right-radius: var(--border-radius--s);
-  background-color: var(--color-gray-1);
-  color: var(--color-gray-5);
+  border-top-left-radius: var(--border-radius);
   position: absolute;
   bottom: 0;
   right: 0;
   padding-left: 1em;
   padding-right: 1em;
+}
+
+.hidari .media__caption {
+  background-color: var(--hidari-color);
+  color: var(--hidari-bg);
+}
+.migi .media__caption {
+  background-color: var(--migi-color);
+  color: var(--migi-bg);
 }
 
 /*

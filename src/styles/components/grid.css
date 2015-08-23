@@ -28,6 +28,7 @@
 @media (--viewport-s-min) {
   .grid__unit {
     float: left;
+    width: 100%;
   }
 }
 
