@@ -7,10 +7,14 @@ $(document).ready(function() {
     }
   }
 
-  /* Enable .nav__toggle */
-  $('.nav__toggle').on('click', function(e){
-    $('.nav').toggleClass('nav--expanded');
-    $('body').toggleClass('no-scroll');
+  /* Enable nav toggle */
+  $('.nav__open-button').on('click', function(e){
+    $('.nav').addClass('nav--expanded');
+    $('body').addClass('no-scroll');
+  });
+  $('.nav__close-button').on('click', function(e){
+    $('.nav').removeClass('nav--expanded');
+    $('body').removeClass('no-scroll');
   });
 
 });

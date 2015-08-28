@@ -1,0 +1,21 @@
+.header {
+}
+
+
+@media (--viewport-s-min) {
+  .header {
+    width: var(--hidari-width--s);
+  }
+}
+
+@media (--viewport-m-min) {
+  .header {
+    width: var(--hidari-width--m);
+  }
+}
+
+@media (--viewport-l-min) {
+  .header {
+    width: var(--hidari-width--l);
+  }
+}

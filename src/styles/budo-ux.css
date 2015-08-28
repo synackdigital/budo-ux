@@ -8,11 +8,12 @@
 @import "common/foundation";
 @import "common/utilities";
 
+@import "components/grid";
+@import "components/header";
+@import "components/brand";
+@import "components/nav";
 @import "components/hidari";
 @import "components/migi";
-@import "components/brand";
-@import "components/grid";
-@import "components/nav";
 @import "components/article";
 @import "components/media";
 @import "components/list";

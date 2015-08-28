@@ -4,16 +4,10 @@
 
 .brand {
   background-color: var(--brand-bg);
-  display: inline-block;
+  display: block;
   width: var(--brand-width--s);
   max-width: 100%;
   padding-left: calc(var(--grid-gutter) / 4);
-}
-
-@media (--viewport-s-min) {
-  .brand {
-    display: inline-block;
-  }
 }
 
 @media (--viewport-m-min) {

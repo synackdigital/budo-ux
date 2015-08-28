@@ -13,7 +13,7 @@
     left: 0;
     width: var(--hidari-width--s);
     min-height: 100vh;
-    padding-top: calc((var(--padding-vertical--l) * 2) + 103px);
+    padding-top: calc((var(--padding-vertical--l) * 2) + 151px);
     padding-right: calc(var(--grid-gutter) / 2);
     padding-left: 0;
   }
@@ -22,11 +22,13 @@
 @media (--viewport-m-min) {
   .hidari {
     width: var(--hidari-width--m);
+    padding-top: calc((var(--padding-vertical--l) * 2) + 167px);
   }
 }
 
 @media (--viewport-l-min) {
   .hidari {
     width: var(--hidari-width--l);
+    padding-top: calc((var(--padding-vertical--l) * 2) + 184px);
   }
 }
