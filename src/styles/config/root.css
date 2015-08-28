@@ -5,9 +5,9 @@
   --grid-gutter:    64px;
   --grid-maxwidth:  1140px;
 
-  --brand-width--s:   260px;
-  --brand-width--m:   285px;
-  --brand-width--l:   310px;
+  --brand-width--s:   280px;
+  --brand-width--m:   320px;
+  --brand-width--l:   360px;
   --hidari-width--s:  calc(var(--brand-width--s) + var(--grid-gutter));
   --hidari-width--m:  calc(var(--brand-width--m) + var(--grid-gutter));
   --hidari-width--l:  calc(var(--brand-width--l) + var(--grid-gutter));
@@ -36,11 +36,11 @@
 
   --body-bg:            var(--color-gray-8);
   --body-color:         var(--color-gray-0);
-  --body-border-color:  var(--color-gold);
-  --body-border-width:  var(--padding-horizontal);
+  --body-border-color:  var(--color-highlight);
+  --body-border-width:  var(--padding-horizontal--s);
 
-  --hidari-bg:      var(--color-gold);
-  --hidari-color:   var(--color-gray-0);
+  --hidari-bg:      var(--color-gray-1);
+  --hidari-color:   var(--color-gray-8);
 
   --migi-bg:        var(--body-bg);
   --migi-color:     var(--body-color);
@@ -95,9 +95,9 @@
   --padding-vertical--l:    calc(var(--padding-vertical) * 2);
   --padding-vertical--xl:   calc(var(--padding-vertical--l) * 2);
 
-  --padding-horizontal:       calc(var(--grid-gutter) / 5);
-  --padding-horizontal--xs:   calc(var(--padding-horizontal--s) / 3);
-  --padding-horizontal--s:    calc(var(--padding-horizontal) / 3);
+  --padding-horizontal:       calc(var(--grid-gutter) / 4);
+  --padding-horizontal--xs:   calc(var(--padding-horizontal) / 3);
+  --padding-horizontal--s:    calc(var(--padding-horizontal) / 2);
   --padding-horizontal--l:    calc(var(--padding-horizontal) * 2);
-  --padding-horizontal--xl:   calc(var(--padding-horizontal--l) * 2);
+  --padding-horizontal--xl:   calc(var(--padding-horizontal) * 3);
 }

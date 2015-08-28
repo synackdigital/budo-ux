@@ -21,7 +21,7 @@ $(window).load(function() {
   if($.fn.equalHeights) {
     if(aboveBreakpoint()) {
       setTimeout(function() {
-        $('.hidari, .migi').equalHeights();
+        $('body, .hidari, .migi').equalHeights();
       }, 200);
     }
   }

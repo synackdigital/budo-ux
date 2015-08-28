@@ -27,12 +27,6 @@ body {
   min-height: 100vh;
 }
 
-@media (--viewport-s-min) {
-  body {
-    border-left: none;
-  }
-}
-
 iframe {
   border: 0;
 }

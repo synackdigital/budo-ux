@@ -4,8 +4,7 @@
 
 .brand {
   background-color: var(--brand-bg);
-  display: block;
-  position: relative;
+  display: inline-block;
   width: var(--brand-width--s);
   max-width: 100%;
   padding-left: calc(var(--grid-gutter) / 4);
@@ -27,14 +26,4 @@
   .brand {
     width: var(--brand-width--l);
   }
-}
-
-/* Stretch left */
-.brand::before {
-  content: '';
-  background: inherit;
-  position: absolute;
-  height: 100%;
-  width: 999px;
-  left: -999px;
 }

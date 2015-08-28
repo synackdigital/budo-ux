@@ -20,62 +20,20 @@
  */
 
 .list__title {
+  border-bottom: 1px solid var(--color-gray-6);
   font-weight: bold;
   font-size: var(--font-size--s);
   line-height: calc(var(--line-height--s) * 1.5);
   letter-spacing: .02em;
   text-transform: uppercase;
   position: relative;
-  margin-top: 0;
+  margin-top: var(--padding-vertical--l);
   margin-bottom: var(--padding-vertical);
 }
 
 .hidari .list__title {
-  border-left: 7px solid var(--brand-bg);
-  padding-left: var(--padding-horizontal);
-}
-
-.migi .list__title {
-  border-left: 7px solid var(--color-gray-5);
-  padding-left: var(--padding-horizontal);
-}
-
-/* Highlight variation */
-.list__title.list__title--highlight {
   border-color: var(--color-highlight);
-}
-
-/* Stretch variation */
-.hidari .list__title.list__title--stretch {
-  background-color: var(--brand-bg);
-  color: var(--color-gray-5);
-  padding-left: 0;
-  border-left: none;
-}
-.migi .list__title.list__title--stretch {
-  background-color: var(--color-gray-5);
-  color: var(--color-gray-2);
-  border-left: none;
-}
-
-.list__title.list__title--stretch::before {
-  content: '';
-  background: inherit;
-  position: absolute;
-  height: 100%;
-  width: 999px;
-}
-.hidari .list__title.list__title--stretch::before {
-  left: -999px;
-}
-.migi .list__title.list__title--stretch::before {
-  right: -999px;
-}
-
-/* Highlight + stretch variation */
-.list__title.list__title--stretch.list__title--highlight {
-  background-color: var(--color-highlight);
-  color: color(black a(60%));
+  color: var(--color-highlight);
 }
 
 

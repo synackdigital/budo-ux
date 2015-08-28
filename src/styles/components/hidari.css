@@ -13,7 +13,7 @@
     left: 0;
     width: var(--hidari-width--s);
     min-height: 100vh;
-    padding-top: calc((var(--padding-vertical--l) * 2) + 123px);
+    padding-top: calc((var(--padding-vertical--l) * 2) + 103px);
     padding-right: calc(var(--grid-gutter) / 2);
     padding-left: 0;
   }
