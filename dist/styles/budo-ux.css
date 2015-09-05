@@ -476,7 +476,7 @@ hr {
   float: right;
   border-radius: 4px;
   background-color: #333F48;
-  color: #eff4f5;
+  color: #f9fbfc;
   font-size: 20px;
   font-weight: bold;
   padding: 6.25px 8px;
@@ -563,7 +563,7 @@ hr {
 .article { }
 
 .article a:hover {
-  color: #4848e8;
+  color: #4878E8;
 }
 
 /*
@@ -644,12 +644,12 @@ hr {
 
 .article__meta a:hover,
 .article__meta a:focus {
-  background-image: -webkit-linear-gradient(bottom, rgba(72, 72, 232, 0) 6%, rgba(72, 72, 232, 0.3) 6%, rgba(72, 72, 232, 0.3) 9%, rgba(72, 72, 232, 0) 9%);
+  background-image: -webkit-linear-gradient(bottom, rgba(72, 120, 232, 0) 6%, rgba(72, 120, 232, 0.3) 6%, rgba(72, 120, 232, 0.3) 9%, rgba(72, 120, 232, 0) 9%);
   background-image: linear-gradient(to top,
-    rgba(72, 72, 232, 0) 6%,
-    rgba(72, 72, 232, 0.3) 6%,
-    rgba(72, 72, 232, 0.3) 9%,
-    rgba(72, 72, 232, 0) 9%
+    rgba(72, 120, 232, 0) 6%,
+    rgba(72, 120, 232, 0.3) 6%,
+    rgba(72, 120, 232, 0.3) 9%,
+    rgba(72, 120, 232, 0) 9%
   )
 }
 
@@ -695,7 +695,7 @@ hr {
 
 @media (min-width: 770px) {
   .article__byline {
-    border-left: 1px solid #C1C6C8;
+    border-left: 1px solid #D0D3D4;
     float: right;
     width: 170px;
     margin-left: 32px;
@@ -809,13 +809,13 @@ hr {
 }
 
 .article__body a:hover {
-  color: #4848e8;
-  background-image: -webkit-linear-gradient(bottom, rgba(72, 72, 232, 0) 6%, rgba(72, 72, 232, 0.3) 6%, rgba(72, 72, 232, 0.3) 9%, rgba(72, 72, 232, 0) 9%);
+  color: #4878E8;
+  background-image: -webkit-linear-gradient(bottom, rgba(72, 120, 232, 0) 6%, rgba(72, 120, 232, 0.3) 6%, rgba(72, 120, 232, 0.3) 9%, rgba(72, 120, 232, 0) 9%);
   background-image: linear-gradient(to top,
-    rgba(72, 72, 232, 0) 6%,
-    rgba(72, 72, 232, 0.3) 6%,
-    rgba(72, 72, 232, 0.3) 9%,
-    rgba(72, 72, 232, 0) 9%
+    rgba(72, 120, 232, 0) 6%,
+    rgba(72, 120, 232, 0.3) 6%,
+    rgba(72, 120, 232, 0.3) 9%,
+    rgba(72, 120, 232, 0) 9%
   )
 }
 /*
