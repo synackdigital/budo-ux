@@ -4,18 +4,18 @@
 
 @media (--viewport-s-min) {
   .header {
-    width: var(--hidari-width--s);
+    width: var(--hidari__width-s);
   }
 }
 
 @media (--viewport-m-min) {
   .header {
-    width: var(--hidari-width--m);
+    width: var(--hidari__width-m);
   }
 }
 
 @media (--viewport-l-min) {
   .header {
-    width: var(--hidari-width--l);
+    width: var(--hidari__width-l);
   }
 }

@@ -11,7 +11,8 @@
  */
 
 .list {
-  margin-bottom: var(--padding-vertical--l);
+  margin-top: var(--margin__v-s);
+  margin-bottom: var(--margin__v-m);
 }
 
 
@@ -21,19 +22,14 @@
 
 .list__title {
   border-bottom: 1px solid color(black a(40%));
-  font-weight: bold;
-  font-size: var(--font-size--s);
-  line-height: calc(var(--line-height--s) * 1.5);
-  letter-spacing: .05em;
-  text-transform: uppercase;
   position: relative;
-  margin-top: var(--padding-vertical--l);
-  margin-bottom: var(--padding-vertical);
+  margin-top: var(--margin__v-l);
+  margin-bottom: calc(var(--margin__v-m) - 1px);
 }
 
 .hidari .list__title {
-  border-color: var(--color-highlight);
-  color: var(--color-highlight);
+  border-color: var(--color__highlight);
+  color: var(--color__highlight);
 }
 
 
@@ -43,8 +39,8 @@
 
 .list__item {
   display: block;
-  padding-top: var(--padding-vertical--s);
-  padding-bottom: var(--padding-vertical--s);
+  padding-top: var(--margin__v-s);
+  padding-bottom: var(--margin__v-s);
 
   @mixin clearfix {}
 }
@@ -58,7 +54,7 @@
   border: 1px solid;
   float: right;
   width: 90px;
-  margin-left: var(--padding-horizontal);
+  margin-left: var(--margin__h-m);
 }
 
 
@@ -66,28 +62,9 @@
  * Item heading
  */
 
-.list__item-heading {
-  display: block;
-  font-weight: bold;
-  font-size: var(--font-size--m);
-  line-height: var(--line-height--m);
-  letter-spacing: .02em;
-  margin-bottom: var(--padding-vertical--xs);
-}
-
 a.list__item:hover .list__item-heading,
 a.list__item:focus .list__item-heading {
   text-decoration: underline;
-}
-
-.list__item-heading--l {
-  font-size: var(--font-size--l);
-  line-height: var(--line-height--l);
-}
-
-.list__item-heading--xl {
-  font-size: var(--font-size--xl);
-  line-height: var(--line-height--xl);
 }
 
 /*
@@ -95,15 +72,12 @@ a.list__item:focus .list__item-heading {
  */
 
 .list__item-meta {
-  font-size: var(--font-size--s);
-  line-height: var(--line-height--s);
   display: block;
-  margin-bottom: var(--padding-vertical--xs);
 }
 
 .list__item-meta * {
   display: inline-block;
-  margin-right: var(--padding-horizontal--s);
+  margin-right: var(--margin__h-s);
 }
 
 /*
@@ -113,8 +87,8 @@ a.list__item:focus .list__item-heading {
 .list__morelink {
   display: block;
   font-weight: bold;
-  padding-top: var(--padding-vertical);
-  padding-bottom: var(--padding-vertical);
+  padding-top: var(--margin__v-m);
+  padding-bottom: var(--margin__v-m);
 }
 
 
@@ -135,48 +109,6 @@ a.list__item:focus .list__item-heading {
  */
 
 .list--spaced .list__item {
-  padding-bottom: var(--padding-vertical--l);
-  padding-top: var(--padding-vertical--l);
-}
-
-
-/*
- * Adjustments for articles inside lists
- */
-
-.list .article .article__meta {
-  vertical-align: bottom;
-  float: left;
-  margin-bottom: 0;
-  margin-top: .2em;
-}
-
-.article__meta > * {
-  margin-right: .25em;
-}
-
-.article__meta {
-  margin-right: .5em;
-}
-
-.list .article .article__media {
-  margin-top: var(--padding-vertical);
-  margin-bottom: var(--padding-vertical);
-}
-
-.list .article .article__lead {
-  font-weight: normal;
-}
-
-.list .article .article__heading {
-  font-size: var(--font-size--xl);
-  line-height: var(--line-height--xl);
-}
-
-@media (--viewport-s-min) {
-  .list .article .article__heading {
-    font-size: var(--font-size--2xl);
-    line-height: var(--line-height--2xl);
-    margin-top: var(--padding-vertical--l);
-  }
+  padding-bottom: var(--margin__v-l);
+  padding-top: var(--margin__v-l);
 }

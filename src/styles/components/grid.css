@@ -6,7 +6,7 @@
 .grid {
   margin-right: auto;
   margin-left: auto;
-  max-width: var(--grid-maxwidth);
+  max-width: var(--grid__maxwidth);
 }
 .grid:before,
 .grid:after {
@@ -21,8 +21,8 @@
 .grid__unit {
   position: relative;
   min-height: 1px;
-  padding-left: calc(var(--grid-gutter) * .5);
-  padding-right: calc(var(--grid-gutter) * .5);
+  padding-left: calc(var(--grid__gutter) * .5);
+  padding-right: calc(var(--grid__gutter) * .5);
 }
 
 @media (--viewport-s-min) {

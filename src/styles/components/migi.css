@@ -1,8 +1,8 @@
 .migi {
-  background-color: var(--migi-bg);
-  color: var(--migi-color);
-  padding-top: var(--padding-vertical--l);
-  padding-bottom: var(--padding-vertical--l);
+  background-color: var(--migi__bg-color);
+  color: var(--migi__color);
+  padding-top: var(--margin__v-l);
+  padding-bottom: var(--margin__v-l);
 }
 
 @media (--viewport-s-min) {
@@ -11,21 +11,21 @@
     z-index: -20;
     top: 0;
     right: 0;
-    left: var(--hidari-width--s);
+    left: var(--hidari__width-s);
     min-height: 100vh;
-    padding-right: calc(var(--grid-gutter) / 2);
-    padding-left: calc(var(--grid-gutter) / 2);
+    padding-right: calc(var(--grid__gutter) / 2);
+    padding-left: calc(var(--grid__gutter) / 2);
   }
 }
 
 @media (--viewport-m-min) {
   .migi {
-    left: var(--hidari-width--m);
+    left: var(--hidari__width-m);
   }
 }
 
 @media (--viewport-l-min) {
   .migi {
-    left: var(--hidari-width--l);
+    left: var(--hidari__width-l);
   }
 }

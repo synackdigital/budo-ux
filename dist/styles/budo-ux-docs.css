@@ -3,16 +3,44 @@
  */
 :root {
 
-  /* Grid system */
 
 
-  /* Colors */
+  /* GRID SYSTEM
+   */
 
 
-  /* Typography */   /* 17px */   /* 22px */           /* 25px; */            /* 30px */   /* 35px */   /* 42px */   /* 51px */ /* 28px @ 20px */
+
+  /* COLORS
+   */
+
+  /* Grayscale */
+
+  /* Named colors */
+
+  /* Designated color roles */
 
 
-  /* Defaults */
+  /* TYPOGRAPHY
+   * Most parameters assume font-sans is used
+   */
+
+  /* Font stacks */
+
+  /* Typographic constants */
+
+  /* Modular scale 4:5 based on 20px */
+  /* http://www.modularscale.com/?20&px&1.25&web&text */  /* 13px */       /* 16px */    /* 20px */  /* 25px */       /* 32px */  /* 39px */  /* 49px */  /* 61px */    /* 76px */
+
+  /* Line heighs based on multiples of 6 */   /* 14px */         /* 21px */            /* 28px; */           /* 28px */        /* 35px */   /* 42px */              /* 49px */   /* 56px */   /* 63px */
+
+  /* Letter spacing for each type setting (best for sans-serif) */
+
+
+
+  /* MISC DEFAULTS
+   */
+
+  /* Misc */            /* 7px */  /* 14px */  /* 21px */  /* 28px */  /* 35px */  /* 42px */  /* 49px */     /* 4px */     /* 8px */     /* 16px */   /* 24px */     /* 32px */   /* 56px */     /* 64px */
 }
 
 .grid {

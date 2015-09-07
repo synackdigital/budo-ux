@@ -1,0 +1,21 @@
+/*
+ * Badge component
+ */
+
+.badge {
+  background-color: var(--color__highlight);
+  color: var(--color__gray-0);
+  border-radius: var(--border-radius-m);
+  padding-left: var(--margin__v-s);
+  padding-right: var(--margin__v-s);
+
+  font-weight: bold;
+  font-family: var(--font__sans);
+  font-size: var(--type__size-s);
+  letter-spacing: var(--type__ls-s);
+  line-height: var(--type__lh-s);
+
+  /* Optical vertical align */
+  padding-top: 1px;
+  margin-top: -1px;
+}

@@ -6,6 +6,7 @@
 
 @import "common/fonts";
 @import "common/foundation";
+@import "common/type";
 @import "common/utilities";
 
 @import "components/grid";
@@ -17,3 +18,4 @@
 @import "components/article";
 @import "components/media";
 @import "components/list";
+@import "components/badge";
