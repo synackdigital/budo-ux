@@ -75,7 +75,7 @@
   /* Line heighs based on multiples of 6 */
   --type__lh-xs:    1.0769230769;   /* 14px */
   --type__lh-s:     1.3125;         /* 21px */
-  --type__lh-m:     1.4;            /* 28px; */
+  --type__lh-m:     1.05;           /* 21px; */
   --type__lh-l:     1.12;           /* 28px */
   --type__lh-xl:    1.09375;        /* 35px */
   --type__lh-2xl:   1.0769230769;   /* 42px */
@@ -93,6 +93,12 @@
   --type__ls-3xl:   -.5px;
   --type__ls-4xl:   -.75px;
   --type__ls-5xl:   -1px;
+
+  /* Typearea-specific typesetting */
+  --type__size-typearea:      1.25rem;  /* 20px */
+  --type__lh-typearea:        1.4;      /* 28px */
+  --type__ls-typearea:        0;
+  --type__ls-typearea--lead:  -.25px;
 
 
 
@@ -119,6 +125,8 @@
   --border-radius-m:  3px;
   --border-radius-l:  5px;
 
+  --list__media-width:  calc(var(--type__baseline) * 11);  /* 77px */
+
   --margin__v-xs:   var(--type__baseline);            /* 7px */
   --margin__v-s:    calc(var(--type__baseline) * 2);  /* 14px */
   --margin__v-m:    calc(var(--type__baseline) * 3);  /* 21px */
@@ -129,7 +137,7 @@
 
   --margin__h-xs:   calc(var(--margin__h-m) / 4);     /* 4px */
   --margin__h-s:    calc(var(--margin__h-m) / 2);     /* 8px */
-  --margin__h-m:    calc(var(--grid__gutter) / 4);     /* 16px */
+  --margin__h-m:    calc(var(--grid__gutter) / 4);    /* 16px */
   --margin__h-l:    calc(var(--margin__h-m) * 1.5);   /* 24px */
   --margin__h-xl:   calc(var(--margin__h-m) * 2);     /* 32px */
   --margin__h-2xl:  calc(var(--margin__h-m) * 3.5);   /* 56px */

@@ -16,15 +16,16 @@
 }
 
 
+
 /*
- * Title
+ * List title
  */
 
 .list__title {
-  border-bottom: 1px solid color(black a(40%));
-  position: relative;
-  margin-top: var(--margin__v-l);
+  border-bottom: 1px solid var(--color__gray-2);
+  margin-top: var(--margin__v-xl);
   margin-bottom: calc(var(--margin__v-m) - 1px);
+  padding-bottom: var(--margin__v-xs);
 }
 
 .hidari .list__title {
@@ -33,82 +34,145 @@
 }
 
 
+
 /*
- * Item
+ * List item
  */
 
 .list__item {
   display: block;
-  padding-top: var(--margin__v-s);
-  padding-bottom: var(--margin__v-s);
+  margin-top: var(--margin__v-s);
+  margin-bottom: var(--margin__v-m);
 
   @mixin clearfix {}
 }
 
-
-/*
- * Item thumbnail
- */
-
-.list__item-thumbnail {
-  border: 1px solid;
-  float: right;
-  width: 90px;
-  margin-left: var(--margin__h-m);
+/* Left/right media containers */
+.list__item-right,
+.list__item-left {
+  display: table-cell;
+  vertical-align: top;
+  width: var(--list__media-width);
+}
+.list__item-right {
+  padding-left: var(--margin__h-m);
+}
+.list__item-left {
+  padding-right: var(--margin__h-m);
 }
 
-
-/*
- * Item heading
- */
-
-a.list__item:hover .list__item-heading,
-a.list__item:focus .list__item-heading {
-  text-decoration: underline;
+/* Left/right media */
+.list__item-right img,
+.list__item-left img {
+  width: var(--list__media-width);
+  max-width: var(--list__media-width);
+  min-width: var(--list__media-width);
 }
 
-/*
- * Item meta
- */
+/* Item body */
+.list__item-body {
+  display: table-cell;
+  vertical-align: top;
+  width: 9999px; /* Force body to take up all available space */
+}
 
-.list__item-meta {
+/* Item title */
+.list__item-title {
+  font-weight: bold;
+  font-size: var(--type__size-l);
+  letter-spacing: var(--type__ls-l);
+  line-height: var(--type__lh-l);
+  margin-bottom: var(--margin__v-xs);
+}
+.list__item-title--s {
+  font-size: var(--type__size-m);
+  letter-spacing: var(--type__ls-m);
+  line-height: var(--type__lh-m);
+}
+.list__item-title--l {
+  font-size: var(--type__size-xl);
+  letter-spacing: var(--type__ls-xl);
+  line-height: var(--type__lh-xl);
+}
+
+/* Item byline */
+.list__item-byline {
+  font-weight: bold;
+  font-size: var(--type__size-s);
+  letter-spacing: var(--type__ls-s);
+  line-height: var(--type__lh-s);
+  position: relative;
   display: block;
+  margin-top: var(--margin__v-xs);
+  margin-bottom: var(--margin__v-xs);
+  padding-left: var(--margin__h-m);
+}
+.list__item-byline:after {
+  content: '';
+  background-color: var(--color__highlight);
+  position: absolute;
+  top: .35em;
+  left: 0;
+  display: block;
+  width: .5em;
+  height: .5em;
+  border-radius: .25em;
 }
 
-.list__item-meta * {
+/* Item meta */
+.list__item-meta {
+  margin-bottom: var(--margin__v-xs);
+}
+.list__item-meta > * {
+  font-size: var(--type__size-s);
+  letter-spacing: var(--type__ls-s);
+  line-height: var(--type__lh-s);
   display: inline-block;
   margin-right: var(--margin__h-s);
 }
+.list__item-meta > *:last-child {
+  margin-right: 0;
+}
+
+/* Item media */
+.list__item-media {
+  margin-bottom: var(--margin__v-m);
+}
+
 
 /*
  * More link
  */
 
 .list__morelink {
-  display: block;
-  font-weight: bold;
-  padding-top: var(--margin__v-m);
-  padding-bottom: var(--margin__v-m);
 }
+
 
 
 /*
- * Bordered variant
+ * List variations
  */
 
-.list--bordered .list__item {
-  border-bottom: 1px solid color(black a(20%));
+/* Extra space between items */
+.list.list--spaced .list__item {
+  margin-top: var(--margin__v-l);
+  margin-bottom: var(--margin__v-xl);
 }
-.hidari .list--bordered .list__item:last-child {
-  border-color: transparent;
+
+/* Borders below items */
+.list.list--bordered .list__item {
+  border-bottom: 1px solid var(--color__gray-5);
+  padding-bottom: var(--margin__v-s);
+}
+.list.list--bordered .list__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
-
-/*
- * Spaced variant
- */
-
-.list--spaced .list__item {
+/* Combined space and borders */
+.list.list--bordered.list--spaced .list__item {
   padding-bottom: var(--margin__v-l);
-  padding-top: var(--margin__v-l);
+}
+.list.list--bordered.list--spaced .list__item:last-child {
+  padding-bottom: 0;
 }

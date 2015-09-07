@@ -11,6 +11,7 @@
 .type__h1, .type__h2, .type__h3, .type__h4, .type__h5, .type__h6,
 .type__typearea h1, .type__typearea h2, .type__typearea h3, .type__typearea h4, .type__typearea h5, .type__typearea h6 {
   font-family: var(--font__sans);
+  display: block;
 }
 
 .type__h0 {
@@ -73,6 +74,7 @@
 
 .type__h6,
 .type__typearea h5 {
+  text-transform: uppercase;
   font-weight: bold;
   font-size: var(--type__size-m);
   letter-spacing: var(--type__ls-m);
@@ -90,9 +92,9 @@
 
 .type__typearea {
   font-family: var(--font__serif);
-  font-size: var(--type__size-m);
-  letter-spacing: var(--type__ls-m);
-  line-height: var(--type__lh-m);
+  font-size: var(--type__size-typearea);
+  letter-spacing: var(--type__ls-typearea);
+  line-height: var(--type__lh-typearea);
 }
 
 .type__typearea p,
@@ -100,6 +102,12 @@
 .type__typearea ol {
   margin-top: var(--margin__v-s);
   margin-bottom: var(--margin__v-m);
+}
+
+.type__typearea p:last-child,
+.type__typearea ul:last-child,
+.type__typearea ol:last-child {
+  margin-bottom: 0;
 }
 
 .type__typearea li {
@@ -121,7 +129,7 @@
  */
 .type__typearea--lead {
   font-weight: bold;
-  letter-spacing: -.25px;
+  letter-spacing: var(--type__ls-typearea--lead);;
 }
 
 /* Lists */

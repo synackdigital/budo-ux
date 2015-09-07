@@ -28,16 +28,18 @@
   /* Modular scale 4:5 based on 20px */
   /* http://www.modularscale.com/?20&px&1.25&web&text */  /* 13px */       /* 16px */    /* 20px */  /* 25px */       /* 32px */  /* 39px */  /* 49px */  /* 61px */    /* 76px */
 
-  /* Line heighs based on multiples of 6 */   /* 14px */         /* 21px */            /* 28px; */           /* 28px */        /* 35px */   /* 42px */              /* 49px */   /* 56px */   /* 63px */
+  /* Line heighs based on multiples of 6 */   /* 14px */         /* 21px */           /* 21px; */           /* 28px */        /* 35px */   /* 42px */              /* 49px */   /* 56px */   /* 63px */
 
   /* Letter spacing for each type setting (best for sans-serif) */
+
+  /* Typearea-specific typesetting */  /* 20px */      /* 28px */
 
 
 
   /* MISC DEFAULTS
    */
 
-  /* Misc */            /* 7px */  /* 14px */  /* 21px */  /* 28px */  /* 35px */  /* 42px */  /* 49px */     /* 4px */     /* 8px */     /* 16px */   /* 24px */     /* 32px */   /* 56px */     /* 64px */
+  /* Misc */  /* 77px */            /* 7px */  /* 14px */  /* 21px */  /* 28px */  /* 35px */  /* 42px */  /* 49px */     /* 4px */     /* 8px */    /* 16px */   /* 24px */     /* 32px */   /* 56px */     /* 64px */
 }
 
 /*
@@ -265,6 +267,7 @@ hr {
 .type__h1, .type__h2, .type__h3, .type__h4, .type__h5, .type__h6,
 .type__typearea h1, .type__typearea h2, .type__typearea h3, .type__typearea h4, .type__typearea h5, .type__typearea h6 {
   font-family: 'Nimbus Novus Sans Condensed', 'Arial Narrow', 'Arial', sans-serif;
+  display: block;
 }
 
 .type__h0 {
@@ -333,11 +336,12 @@ hr {
 
 .type__h6,
 .type__typearea h5 {
+  text-transform: uppercase;
   font-weight: bold;
   font-size: 20px;
   font-size: 1.25rem;
   letter-spacing: 0;
-  line-height: 1.4;
+  line-height: 1.05;
   margin-top: 14px;
   margin-bottom: 7px;
 }
@@ -362,6 +366,12 @@ hr {
 .type__typearea ol {
   margin-top: 14px;
   margin-bottom: 21px;
+}
+
+.type__typearea p:last-child,
+.type__typearea ul:last-child,
+.type__typearea ol:last-child {
+  margin-bottom: 0;
 }
 
 .type__typearea li {
@@ -395,7 +405,7 @@ hr {
  */
 .type__typearea--lead {
   font-weight: bold;
-  letter-spacing: -.25px;
+  letter-spacing: -.25px;;
 }
 
 /* Lists */
@@ -979,15 +989,16 @@ hr {
 }
 
 
+
 /*
- * Title
+ * List title
  */
 
 .list__title {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-  position: relative;
-  margin-top: 28px;
+  border-bottom: 1px solid #5B6770;
+  margin-top: 35px;
   margin-bottom: 20px;
+  padding-bottom: 7px;
 }
 
 .hidari .list__title {
@@ -996,14 +1007,15 @@ hr {
 }
 
 
+
 /*
- * Item
+ * List item
  */
 
 .list__item {
   display: block;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  margin-top: 14px;
+  margin-bottom: 21px;
 }
 
 .list__item:after {
@@ -1012,72 +1024,139 @@ hr {
   clear: both;
 }
 
-
-/*
- * Item thumbnail
- */
-
-.list__item-thumbnail {
-  border: 1px solid;
-  float: right;
-  width: 90px;
-  margin-left: 16px;
+/* Left/right media containers */
+.list__item-right,
+.list__item-left {
+  display: table-cell;
+  vertical-align: top;
+  width: 77px;
+}
+.list__item-right {
+  padding-left: 16px;
+}
+.list__item-left {
+  padding-right: 16px;
 }
 
-
-/*
- * Item heading
- */
-
-a.list__item:hover .list__item-heading,
-a.list__item:focus .list__item-heading {
-  text-decoration: underline;
+/* Left/right media */
+.list__item-right img,
+.list__item-left img {
+  width: 77px;
+  max-width: 77px;
+  min-width: 77px;
 }
 
-/*
- * Item meta
- */
+/* Item body */
+.list__item-body {
+  display: table-cell;
+  vertical-align: top;
+  width: 9999px; /* Force body to take up all available space */
+}
 
-.list__item-meta {
+/* Item title */
+.list__item-title {
+  font-weight: bold;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  letter-spacing: 0;
+  line-height: 1.12;
+  margin-bottom: 7px;
+}
+.list__item-title--s {
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  line-height: 1.05;
+}
+.list__item-title--l {
+  font-size: 32px;
+  font-size: 2rem;
+  letter-spacing: 0;
+  line-height: 1.09375;
+}
+
+/* Item byline */
+.list__item-byline {
+  font-weight: bold;
+  font-size: 16px;
+  font-size: 1rem;
+  letter-spacing: .25px;
+  line-height: 1.3125;
+  position: relative;
   display: block;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  padding-left: 16px;
+}
+.list__item-byline:after {
+  content: '';
+  background-color: #fedd3d;
+  position: absolute;
+  top: .35em;
+  left: 0;
+  display: block;
+  width: .5em;
+  height: .5em;
+  border-radius: .25em;
 }
 
-.list__item-meta * {
+/* Item meta */
+.list__item-meta {
+  margin-bottom: 7px;
+}
+.list__item-meta > * {
+  font-size: 16px;
+  font-size: 1rem;
+  letter-spacing: .25px;
+  line-height: 1.3125;
   display: inline-block;
   margin-right: 8px;
 }
+.list__item-meta > *:last-child {
+  margin-right: 0;
+}
+
+/* Item media */
+.list__item-media {
+  margin-bottom: 21px;
+}
+
 
 /*
  * More link
  */
 
 .list__morelink {
-  display: block;
-  font-weight: bold;
-  padding-top: 21px;
-  padding-bottom: 21px;
 }
+
 
 
 /*
- * Bordered variant
+ * List variations
  */
 
-.list--bordered .list__item {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+/* Extra space between items */
+.list.list--spaced .list__item {
+  margin-top: 28px;
+  margin-bottom: 35px;
 }
-.hidari .list--bordered .list__item:last-child {
-  border-color: transparent;
+
+/* Borders below items */
+.list.list--bordered .list__item {
+  border-bottom: 1px solid #D0D3D4;
+  padding-bottom: 14px;
+}
+.list.list--bordered .list__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
-
-/*
- * Spaced variant
- */
-
-.list--spaced .list__item {
+/* Combined space and borders */
+.list.list--bordered.list--spaced .list__item {
   padding-bottom: 28px;
-  padding-top: 28px;
+}
+.list.list--bordered.list--spaced .list__item:last-child {
+  padding-bottom: 0;
 }
 /*
  * Badge component
@@ -1100,4 +1179,12 @@ a.list__item:focus .list__item-heading {
   /* Optical vertical align */
   padding-top: 1px;
   margin-top: -1px;
+}
+
+/* Lighter variation */
+.badge.badge--light {
+  background-color: transparent;
+  color: #fedd3d;
+  padding-left: 0;
+  padding-right: 0;
 }
