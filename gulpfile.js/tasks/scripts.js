@@ -1,11 +1,21 @@
-var config        = require('../config/scripts');
-var gulp          = require('gulp');
-var uglify        = require('gulp-uglify');
-var browserSync   = require('browser-sync');
+const gulp = require('gulp');
+const changed = require('gulp-changed');
+const eslint = require('gulp-eslint');
+const babel = require('gulp-babel');
+const bs = require('browser-sync').get('bs');
+const config = require('../config/scripts');
 
-gulp.task('scripts', function () {
+gulp.task('scripts', ['scripts:lint'], function () {
   return gulp.src(config.src)
-    .pipe(uglify())
+    .pipe(changed(config.dest))
+    .pipe(babel())
     .pipe(gulp.dest(config.dest))
-    .pipe(browserSync.reload({stream: true}));
+    .pipe(bs.stream());
+});
+
+gulp.task('scripts:lint', function() {
+  return gulp.src(config.watch)
+    .pipe(eslint())
+    .pipe(eslint.format())
+    .pipe(eslint.failAfterError());
 });

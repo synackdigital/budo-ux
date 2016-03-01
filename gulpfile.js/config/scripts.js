@@ -1,11 +1,7 @@
-var config = require('./');
+const config = require('./');
 
 module.exports = {
-  watch: [
-    config.src + '/scripts/**/*.js'
-  ],
-  src: [
-    config.src + '/scripts/*.js'
-  ],
+  src: config.src + '/scripts/**/*.js',
+  watch: config.src + '/scripts/**/*.js',
   dest: config.dest + '/scripts'
 };

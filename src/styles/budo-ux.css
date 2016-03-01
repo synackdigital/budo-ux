@@ -1,9 +1,6 @@
 @import "config/media-queries";
 @import "config/root";
 
-@import "mixins/clearfix";
-@import "mixins/magic-underline";
-
 @import "common/fonts";
 @import "common/foundation";
 @import "common/type";

@@ -1,23 +1,9 @@
-var gulp      = require('gulp');
-var del       = require('del');
-var config    = require('../config');
-var styles    = require('../config/styles');
-var fonts     = require('../config/fonts');
+const gulp = require('gulp');
+const del = require('del');
+const config = require('../config');
 
-gulp.task('clean', function (cb) {
-  del([
-    config.dest,
-  ], cb);
-});
-
-gulp.task('clean:styles', function (cb) {
-  del([
-    styles.dest,
-  ], cb);
-});
-
-gulp.task('clean:fonts', function (cb) {
-  del([
-    fonts.dest,
-  ], cb);
+gulp.task('clean', function () {
+  return del([
+    config.dest
+  ]);
 });

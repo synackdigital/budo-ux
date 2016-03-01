@@ -1,7 +1,12 @@
-var gulp          = require('gulp');
-var gulpSequence  = require('gulp-sequence');
-var config        = require('../config');
+const gulp = require('gulp');
+const sequence = require('gulp-sequence');
 
-gulp.task('build', ['clean'], function(cb) {
-  gulpSequence('scripts', 'styles', 'images', 'fonts', cb);
+gulp.task('build', function(cb) {
+  sequence(
+    'scripts',
+    'styles',
+    'fonts',
+    'images',
+    cb
+  );
 });

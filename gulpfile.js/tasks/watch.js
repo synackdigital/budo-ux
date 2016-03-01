@@ -1,14 +1,12 @@
-var gulp     = require('gulp');
-var watch    = require('gulp-watch');
-var config   = require('../config');
-var scripts  = require('../config/scripts');
-var styles   = require('../config/styles');
-var fonts    = require('../config/fonts');
-var docs     = require('../config/docs');
+const gulp = require('gulp');
+const scripts = require('../config/scripts');
+const styles = require('../config/styles');
+const fonts = require('../config/fonts');
+const images = require('../config/images');
 
-gulp.task('watch', ['build', 'browserSync'], function() {
-  watch(scripts.watch, function() { gulp.start('scripts'); });
-  watch(styles.watch, function() { gulp.start('styles'); });
-  watch(fonts.watch, function() { gulp.start('fonts'); });
-  watch(docs.watch, function() { gulp.start('docs'); });
+gulp.task('watch', ['build', 'bs'], function() {
+  gulp.watch(scripts.watch, ['scripts']);
+  gulp.watch(styles.watch, ['styles']);
+  gulp.watch(fonts.watch, ['fonts']);
+  gulp.watch(images.watch, ['images']);
 });

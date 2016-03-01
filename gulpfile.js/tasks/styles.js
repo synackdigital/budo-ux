@@ -1,21 +1,21 @@
-var config        = require('../config/styles');
-var gulp          = require('gulp');
-var postcss       = require('gulp-postcss');
-var plugins       = require('postcss-load-plugins')();
-var cssnext       = require("cssnext");
-var browserSync   = require('browser-sync');
+const config = require('../config/styles');
+const gulp = require('gulp');
+const changed = require('gulp-changed');
+const bs = require('browser-sync').get('bs');
+const postcss = require('gulp-postcss');
+const nano = require('gulp-cssnano');
 
 gulp.task('styles', function () {
   return gulp.src(config.src)
+    .pipe(changed(config.dest))
     .pipe(postcss([
-      plugins.import(),
-      plugins.mixins(),
-      plugins.nested(),
-      plugins.cssnext({
-        import: false,
-        url: false
-      })
+      require('postcss-import'),
+      require('postcss-custom-properties'),
+      require('postcss-calc'),
+      require('postcss-custom-media'),
+      require('autoprefixer')
     ]))
+    .pipe(nano())
     .pipe(gulp.dest(config.dest))
-    .pipe(browserSync.reload({stream: true}));
+    .pipe(bs.stream());
 });

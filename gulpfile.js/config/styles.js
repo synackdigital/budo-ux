@@ -1,7 +1,7 @@
-var config = require('./')
+const config = require('./');
 
 module.exports = {
-  watch: [config.src + '/styles/**/*.css'],
   src: config.src + '/styles/*.css',
+  watch: config.src + '/styles/**/*.css',
   dest: config.dest + '/styles'
-}
+};

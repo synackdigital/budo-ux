@@ -1,5 +1,3 @@
-var gulp = require('gulp');
+const gulp = require('gulp');
 
-gulp.task('default', function(cb){
-  gulp.run('watch');
-});
+gulp.task('default', ['build']);
