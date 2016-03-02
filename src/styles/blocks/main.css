@@ -1,8 +1,18 @@
 /** @define Main */
 
 .main {
-  background-color: rgba(100,0,140,.2);
+  background-color: coral;
   width: var(--main__w--xs);
+}
+
+.main__hidari {
+  background-color: var(--hidari__bg-color);
+  color: var(--hidari__color);
+}
+
+.main__migi {
+  background-color: var(--migi__bg-color);
+  color: var(--migi__color);
 }
 
 @media (--viewport-s) {
@@ -15,10 +25,31 @@
   .main {
     width: var(--main__w--m);
   }
+
+  .main__section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main__hidari {
+    width: var(--main__w--xs);
+  }
+
+  .main__migi {
+    width: calc(var(--main__w--m) - var(--main__w--xs));
+  }
+
+  .main--shift-up .main__migi {
+    margin-top: calc(-1 * var(--brand__height));
+  }
 }
 
 @media (--viewport-l) {
   .main {
     width: var(--main__w--l);
+  }
+
+  .main__migi {
+    width: calc(var(--main__w--l) - var(--main__w--xs));
   }
 }

@@ -9,8 +9,6 @@
 
 @import "blocks/header";
 @import "blocks/main";
-@import "blocks/hidari";
-@import "blocks/migi";
 
 @import "components/brand";
 /* @import "components/nav"; */

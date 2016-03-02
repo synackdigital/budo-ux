@@ -7,32 +7,3 @@
 .clearfix:after {
   clear: both;
 }
-
-.magic-underline {
-  background-image: linear-gradient(to top,
-    transparent 6%,
-    rgba(0,0,0,.3) 6%,
-    rgba(0,0,0,.3) 9%,
-    transparent 9%
-  );
-}
-
-.no-scroll {
-  overflow: hidden;
-}
-
-.float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-}
-
-.clear-left {
-  clear: left;
-}
-
-.clear-right {
-  clear: right;
-}
