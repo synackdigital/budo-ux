@@ -1,18 +1,17 @@
-@import "config/media-queries";
 @import "config/root";
+@import "config/media-queries";
+@import "config/fonts";
 
-@import "common/fonts";
 @import "common/foundation";
-@import "common/type";
-@import "common/utilities";
+/* @import "common/type"; */
+/* @import "common/grid"; */
+/* @import "common/utilities"; */
 
-@import "components/grid";
-@import "components/header";
+@import "blocks/header";
+
 @import "components/brand";
-@import "components/nav";
-@import "components/hidari";
-@import "components/migi";
-@import "components/article";
-@import "components/media";
-@import "components/list";
-@import "components/badge";
+/* @import "components/nav"; */
+/* @import "components/article"; */
+/* @import "components/media"; */
+/* @import "components/list"; */
+/* @import "components/badge"; */

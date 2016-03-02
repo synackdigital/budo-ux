@@ -19,10 +19,7 @@ body {
   border-left: var(--body__border-width) solid var(--body__border-color);
   background-color: var(--body__bg-color);
   color: var(--body__color);
-  position: relative;
-  z-index: -1;
   margin: 0;
-  padding-top: var(--margin__v-l);
   font: var(--type__rembase)/1 var(--font__sans);
   min-height: 100vh;
 }

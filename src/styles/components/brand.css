@@ -5,19 +5,14 @@
 .brand {
   background-color: var(--color__gray-1);
   display: block;
-  width: var(--brand__width-s);
-  max-width: 100%;
-  padding-left: calc(var(--grid__gutter) / 4);
+  width: var(--brand__width);
+  height: var(--brand__height);
+  padding: var(--margin__v-xs) calc(var(--grid__gutter) / 2);
 }
 
-@media (--viewport-m-min) {
-  .brand {
-    width: var(--brand__width-m);
-  }
-}
-
-@media (--viewport-l-min) {
-  .brand {
-    width: var(--brand__width-l);
-  }
+.brand__image {
+  display: block;
+  max-height: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }

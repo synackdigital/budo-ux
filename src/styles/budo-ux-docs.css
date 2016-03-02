@@ -15,23 +15,23 @@
 }
 
 body {
-  border-top: 3px solid teal;
+  border-color: var(--color__turquoise);
 }
 
-@media (--viewport-s-min) {
+@media (--viewport-s) {
   body {
-    border-color: salmon;
+    border-color: var(--color__azure);
   }
 }
 
-@media (--viewport-m-min) {
+@media (--viewport-m) {
   body {
-    border-color: orange;
+    border-color: var(--color__blue);
   }
 }
 
-@media (--viewport-l-min) {
+@media (--viewport-l) {
   body {
-    border-color: lime;
+    border-color: var(--color__red);
   }
 }

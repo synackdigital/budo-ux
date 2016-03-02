@@ -7,7 +7,7 @@ const nano = require('gulp-cssnano');
 
 gulp.task('styles', function () {
   return gulp.src(config.src)
-    .pipe(changed(config.dest))
+    // .pipe(changed(config.dest))
     .pipe(postcss([
       require('postcss-import'),
       require('postcss-custom-properties'),

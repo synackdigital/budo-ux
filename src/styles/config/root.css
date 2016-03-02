@@ -5,16 +5,10 @@
   /* GRID SYSTEM
    */
 
-  --grid__gutter:     64px;
-  --grid__maxwidth:   1140px;
+  --grid__gutter: 30px;
+  --grid__max-width: 1122px;
 
-  --brand__width-s:   280px;
-  --brand__width-m:   320px;
-  --brand__width-l:   360px;
-
-  --hidari__width-s:  calc(var(--brand__width-s) + var(--grid__gutter));
-  --hidari__width-m:  calc(var(--brand__width-m) + var(--grid__gutter));
-  --hidari__width-l:  calc(var(--brand__width-l) + var(--grid__gutter));
+  --sidebar__width: calc(320px - var(--body__border-width));
 
 
 
@@ -109,13 +103,13 @@
   --body__bg-color:       var(--color__gray-7);
   --body__color:          var(--color__gray-0);
   --body__border-color:   var(--color__highlight);
-  --body__border-width:   var(--margin__h-s);
+  --body__border-width:   6px;
 
-  --hidari__bg-color:   var(--color__gray-1);
-  --hidari__color:      var(--color__gray-7);
+  --brand__width: var(--sidebar__width);
+  --brand__height: 133px;
 
-  --migi__bg-color:   var(--body__bg-color);
-  --migi__color:      var(--body__color);
+  --sidebar__bg-color:   var(--color__gray-1);
+  --sidebar__color:      var(--color__gray-7);
 
   --transition-default:   .55s ease-in-out;
   --transition-fast:      .25s ease-in-out;

@@ -1,0 +1,11 @@
+.header {
+  background-color: var(--sidebar__bg-color);
+  color: var(--sidebar__color);
+}
+
+@media (--viewport-m) {
+  .header {
+    background-color: transparent;
+    color: inherit;
+  }
+}
