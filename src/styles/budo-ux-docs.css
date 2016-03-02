@@ -5,28 +5,32 @@
 @import "config/media-queries";
 @import "config/root";
 
-.grid__unit {
-  border: 1px solid var(--color__gray-3) !important;
-}
-
 body {
-  border-color: var(--color__turquoise);
+  border-left-color: var(--color__turquoise);
 }
 
 @media (--viewport-s) {
   body {
-    border-color: var(--color__azure);
+    border-left-color: var(--color__azure);
   }
 }
 
 @media (--viewport-m) {
   body {
-    border-color: var(--color__blue);
+    border-left-color: var(--color__blue);
   }
 }
 
 @media (--viewport-l) {
   body {
-    border-color: var(--color__red);
+    border-left-color: var(--color__red);
   }
+}
+
+.grid__unit {
+  border: 1px solid var(--color__azure) !important;
+}
+
+.main {
+  border: 1px solid var(--color__orange) !important;
 }

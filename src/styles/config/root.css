@@ -141,4 +141,13 @@
   --margin__h-xl:   calc(var(--margin__h-m) * 2);     /* 32px */
   --margin__h-2xl:  calc(var(--margin__h-m) * 3.5);   /* 56px */
   --margin__h-3xl:  calc(var(--margin__h-m) * 4);     /* 64px */
+
+
+
+  /* COMPONENTS
+   */
+
+  /* Navbar */
+  --nav__bg-color: var(--color__highlight);
+  --nav__color: var(--color__gray-0);
 }

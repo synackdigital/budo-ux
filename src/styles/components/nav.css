@@ -2,67 +2,12 @@
  * Nav component
  */
 
-.nav {
-  background-color: var(--color__highlight);
-  font-size: var(--type__size-m);
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 100%;
-  bottom: 0;
-  left: 0;
-  transition: var(--transition-fast);
-  overflow: hidden;
+.nav__group {
+  background-color: var(--nav__bg-color);
+  color: var(--nav__color);
+  padding: var(--margin__v-xs) calc(var(--grid__gutter) * .5);
 }
 
-.nav--expanded {
-  right: 0;
-  overflow-y: scroll;
-}
-
-
-/*
- * Buttons
- */
-
-.nav__home-link {
-  float: left;
-  font-size: var(--type__size-m);
-  font-weight: bold;
-  padding: var(--margin__v-s) 0;
-  margin-top: var(--margin__v-xl);
-  margin-bottom: var(--margin__v-m);
-  margin-left: -1em;
-}
-
-.nav__open-button {
-  display: inline-block;
-  background-color: var(--color__highlight);
-  color: var(--color__gray-1);
-  font-size: var(--type__size-m);
-  font-weight: bold;
-  line-height: 2;
-  position: relative;
-  padding-right: var(--margin__h-s);
-  margin: var(--margin__v-l) calc(var(--grid__gutter) / 2);
-}
-.nav__open-button:before {
-  content: '';
-  background: inherit;
-  position: absolute;
-  height: 100%;
-  width: 999px;
-  left: -999px;
-}
-
-.nav__close-button {
-  float: right;
-  border-radius: var(--border-radius-l);
-  background-color: var(--color__gray-1);
-  color: var(--color__gray-7);
-  font-size: var(--type__size-m);
-  font-weight: bold;
-  padding: var(--margin__v-s) var(--margin__h-s);
-  margin-top: var(--margin__v-xl);
-  margin-bottom: var(--margin__v-m);
+.nav__item {
+  padding: var(--margin__v-xs) calc(var(--grid__gutter) * .5);
 }
