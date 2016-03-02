@@ -4,7 +4,7 @@
 
 @import "common/foundation";
 /* @import "common/type"; */
-/* @import "common/grid"; */
+@import "common/grid";
 /* @import "common/utilities"; */
 
 @import "blocks/header";

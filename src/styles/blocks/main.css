@@ -1,7 +1,6 @@
 /** @define Main */
 
 .main {
-  background-color: coral;
   width: var(--main__w--xs);
 }
 
