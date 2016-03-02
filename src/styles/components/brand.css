@@ -1,6 +1,4 @@
-/*
- * Brand component
- */
+/** @define Brand */
 
 .brand {
   background-color: var(--color__gray-1);

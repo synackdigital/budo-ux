@@ -1,0 +1,13 @@
+/** @define Hidari */
+
+.hidari {
+  background-color: var(--hidari__bg-color);
+  color: var(--hidari__color);
+}
+
+@media (--viewport-m) {
+  .hidari {
+    width: var(--main__w--xs);
+    float: left;
+  }
+}

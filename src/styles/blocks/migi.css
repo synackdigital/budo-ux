@@ -1,0 +1,19 @@
+/** @define Migi */
+
+.migi {
+  background-color: var(--migi__bg-color);
+  color: var(--migi__color);
+}
+
+@media (--viewport-m) {
+  .migi {
+    width: calc(var(--main__w--m) - var(--main__w--xs));
+    float: left;
+  }
+}
+
+@media (--viewport-l) {
+  .migi {
+    width: calc(var(--main__w--l) - var(--main__w--xs));
+  }
+}
