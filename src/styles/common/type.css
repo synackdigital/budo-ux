@@ -1,20 +1,33 @@
 /*
- * TYPE
- * Utility classes for typesetting
+ * Type classes
  */
 
-.type {}
+
+
+/* Type Area */
+
+.typearea {
+  font-family: var(--font__serif);
+  font-size: var(--typearea__size);
+  line-height: var(--typearea__lh);
+}
+
+/* Paragraphs */
+
+.typearea p {
+  margin-bottom: var(--typearea__mb);
+}
 
 
 /* Headline styles */
 
-.type__h1, .type__h2, .type__h3, .type__h4, .type__h5, .type__h6,
-.type__typearea h1, .type__typearea h2, .type__typearea h3, .type__typearea h4, .type__typearea h5, .type__typearea h6 {
+.type-h0, .type-h1, .type-h2, .type-h3, .type-h4, .type-h5, .type-h6,
+.typearea h1, .typearea h2, .typearea h3, .typearea h4, .typearea h5, .typearea h6 {
   font-family: var(--font__sans);
   display: block;
 }
 
-.type__h0 {
+.type-h0 {
   font-weight: bold;
   font-size: var(--type__size-5xl);
   letter-spacing: var(--type__ls-5xl);
@@ -23,7 +36,8 @@
   margin-bottom: var(--margin__v-xl);
 }
 
-.type__h1 {
+.type-h1,
+.typearea h1 {
   font-weight: bold;
   font-size: var(--type__size-4xl);
   letter-spacing: var(--type__ls-4xl);
@@ -32,8 +46,8 @@
   margin-bottom: var(--margin__v-l);
 }
 
-.type__h2,
-.type__typearea h1 {
+.type-h2,
+.typearea h2 {
   font-weight: bold;
   font-size: var(--type__size-3xl);
   letter-spacing: var(--type__ls-3xl);
@@ -42,8 +56,8 @@
   margin-bottom: var(--margin__v-m);
 }
 
-.type__h3,
-.type__typearea h2 {
+.type-h3,
+.typearea h3 {
   font-weight: bold;
   font-size: var(--type__size-2xl);
   letter-spacing: var(--type__ls-2xl);
@@ -52,8 +66,8 @@
   margin-bottom: var(--margin__v-s);
 }
 
-.type__h4,
-.type__typearea h3 {
+.type-h4,
+.typearea h4 {
   font-weight: bold;
   font-size: var(--type__size-xl);
   letter-spacing: var(--type__ls-xl);
@@ -62,8 +76,8 @@
   margin-bottom: var(--margin__v-s);
 }
 
-.type__h5,
-.type__typearea h4 {
+.type-h5,
+.typearea h5 {
   font-weight: bold;
   font-size: var(--type__size-l);
   letter-spacing: var(--type__ls-l);
@@ -72,8 +86,8 @@
   margin-bottom: var(--margin__v-s);
 }
 
-.type__h6,
-.type__typearea h5 {
+.type-h6,
+.typearea h6 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: var(--type__size-m);
@@ -81,68 +95,4 @@
   line-height: var(--type__lh-m);
   margin-top: var(--margin__v-s);
   margin-bottom: var(--margin__v-xs);
-}
-
-
-
-/* Text block
- * A container for html text from e.g. a content management system
- * Contained headlines are defined above
- */
-
-.type__typearea {
-  font-family: var(--font__serif);
-  font-size: var(--type__size-typearea);
-  letter-spacing: var(--type__ls-typearea);
-  line-height: var(--type__lh-typearea);
-}
-
-.type__typearea p,
-.type__typearea ul,
-.type__typearea ol {
-  margin-top: var(--margin__v-s);
-  margin-bottom: var(--margin__v-m);
-}
-
-.type__typearea p:last-child,
-.type__typearea ul:last-child,
-.type__typearea ol:last-child {
-  margin-bottom: 0;
-}
-
-.type__typearea li {
-  margin-bottom: var(--margin__v-xs);
-}
-
-.type__typearea a {
-  @mixin magic-underline {};
-}
-
-.type__typearea a:hover {
-  color: var(--color__contrast);
-  @mixin magic-underline var(--color__contrast) {}
-}
-
-/* Lead text
- * Use with type__typearea
- * e.g. "type__typearea > type__typearea--lead" or "type__typearea.type__typearea--lead"
- */
-.type__typearea--lead {
-  font-weight: bold;
-  letter-spacing: var(--type__ls-typearea--lead);;
-}
-
-/* Lists */
-.type__typearea li {
-  display: list-item;
-}
-
-
-
-/* Smallprint */
-
-.type__smallprint {
-  font-size: var(--type__size-s);
-  letter-spacing: var(--type__ls-s);
-  line-height: var(--type__lh-s);
 }

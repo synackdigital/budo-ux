@@ -4,14 +4,19 @@
   width: var(--main__w--xs);
 }
 
+.main__section {
+}
+
 .main__hidari {
   background-color: var(--hidari__bg-color);
   color: var(--hidari__color);
+  padding-bottom: var(--margin__v-l);
 }
 
 .main__migi {
   background-color: var(--migi__bg-color);
   color: var(--migi__color);
+  padding-bottom: var(--margin__v-l);
 }
 
 @media (--viewport-s) {
@@ -30,16 +35,16 @@
     flex-direction: row;
   }
 
+  .main__section--shift-up .main__migi {
+    margin-top: calc(-1 * var(--brand__height));
+  }
+
   .main__hidari {
     width: var(--main__w--xs);
   }
 
   .main__migi {
     width: calc(var(--main__w--m) - var(--main__w--xs));
-  }
-
-  .main--shift-up .main__migi {
-    margin-top: calc(-1 * var(--brand__height));
   }
 }
 

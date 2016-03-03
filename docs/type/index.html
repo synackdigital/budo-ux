@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Type - Budo-UX</title>
+  <meta name="description" content="Web UX framework for Svenska Budo och Kampsportsförbundet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <link rel="stylesheet" href="/styles/budo-ux.css">
+  <link rel="stylesheet" href="/styles/budo-ux-docs.css">
+</head>
+<body class="docs">
+
+  <header class="header">
+    <div class="brand">
+      <a href="#" title="Gå till startsidan">
+        <img class="brand__image" src="/images/sbok-brand-light-alpha.png" alt="Svenska Budo & Kampsportsförbundet">
+      </a>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="main__section">
+
+      <div class="main__hidari">
+        <nav class="nav">
+          <ul class="nav__group">
+            <li class="nav__item"><a href="/" title="Overview">Overview</a></li>
+            <li class="nav__item nav__item--active"><a href="/type" title="Typography">Typography</a></li>
+            <li class="nav__item"><a href="/blocks" title="Page Blocks">Page Blocks</a></li>
+            <li class="nav__item"><a href="/grid" title="Grid System">Grid System</a></li>
+            <li class="nav__item"><a href="/components" title="Components">Components</a></li>
+            <li class="nav__item"><a href="/utils" title="Utilities">Utilities</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="main__migi">
+        <div class="grid">
+          <div class="grid__unit">
+
+            <h1 class="type-h1">Typography</h1>
+            <div class="typearea">
+              <p>Budo-UX sets all type in <strong>Nimbus Novus Sans Condensed</strong> by default. This font is used for headlines and UI text of all sorts.</p>
+              <p>Body text for pages and news articles is typeset in <strong>URW Garamond</strong>.</p>
+              <p>Font files are included in <code>dist/fonts</code> and are linked to utility classes for easy access.</p>
+            </div>
+            <hr>
+            <h2 class="type-h2">Headlines and titles</h2>
+            <div class="typearea">
+              <p>Use one of the following type classes to create a headline or title:</p>
+            </div>
+            <div class="docs__demo">
+              <pre>&lt;span class=&quot;type-h0&quot;&gt;Head 0&lt;/span&gt;
+&lt;span class=&quot;type-h1&quot;&gt;Head 1&lt;/span&gt;
+&lt;span class=&quot;type-h2&quot;&gt;Head 2&lt;/span&gt;
+&lt;span class=&quot;type-h3&quot;&gt;Head 3&lt;/span&gt;
+&lt;span class=&quot;type-h4&quot;&gt;Head 4&lt;/span&gt;
+&lt;span class=&quot;type-h5&quot;&gt;Head 5&lt;/span&gt;
+&lt;span class=&quot;type-h6&quot;&gt;Head 6&lt;/span&gt;</pre>
+              <span class="type-h0">Head 0</span>
+              <span class="type-h1">Head 1</span>
+              <span class="type-h2">Head 2</span>
+              <span class="type-h3">Head 3</span>
+              <span class="type-h4">Head 4</span>
+              <span class="type-h5">Head 5</span>
+              <span class="type-h6">Head 6</span>
+            </div>
+
+            <hr>
+
+            <h2 class="type-h2">Type areas</h2>
+            <div class="typearea">
+              <p>To format text from e.g. a wysiwyg editor, wrap the whole content inside a container with <code>.typearea</code>. This will set all contained text to URW Garamond, except for some html-tags like headlines and lists that are styled as if they had type classes set on them.</p>
+            </div>
+            <div class="docs__demo typearea">
+              <pre>&lt;div class=&quot;typearea&quot;&gt;
+  &lt;h4&gt;Headline&lt;/h4&gt;
+  &lt;p&gt;This paragraph should display in URW Garamond.&lt;/p&gt;
+&lt;/div&gt;</pre>
+              <div class="typearea">
+                <h4>Headline</h4>
+                <p>This paragraph should display in URW Garamond.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="/scripts/budo-ux.js"></script>
+</body>
+</html>

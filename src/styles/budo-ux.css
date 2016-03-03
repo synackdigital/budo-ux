@@ -3,7 +3,7 @@
 @import "config/fonts";
 
 @import "common/foundation";
-/* @import "common/type"; */
+@import "common/type";
 @import "common/grid";
 /* @import "common/utilities"; */
 

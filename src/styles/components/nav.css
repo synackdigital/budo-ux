@@ -3,11 +3,15 @@
  */
 
 .nav__group {
-  background-color: var(--nav__bg-color);
-  color: var(--nav__color);
-  padding: var(--margin__v-xs) calc(var(--grid__gutter) * .5);
 }
 
 .nav__item {
-  padding: var(--margin__v-xs) calc(var(--grid__gutter) * .5);
+  background-color: var(--nav__bg-color);
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  color: var(--nav__color);
+  padding: var(--margin__v-xs) var(--grid__gutter);
+}
+
+.nav__item a {
+  display: block;
 }

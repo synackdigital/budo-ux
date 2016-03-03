@@ -1,0 +1,48 @@
+/*
+ * Budo UX debug styles
+ */
+
+@import "config/media-queries";
+@import "config/root";
+
+body {
+  border-left-color: var(--color__turquoise) !important;
+}
+
+@media (--viewport-s) {
+  body {
+    border-left-color: var(--color__azure) !important;
+  }
+}
+
+@media (--viewport-m) {
+  body {
+    border-left-color: var(--color__blue) !important;
+  }
+}
+
+@media (--viewport-l) {
+  body {
+    border-left-color: var(--color__red) !important;
+  }
+}
+
+.grid__unit {
+  border: 1px solid var(--color__azure) !important;
+}
+
+.main {
+  border: 1px solid var(--color__orange) !important;
+}
+
+.main__section {
+  border: 1px solid var(--color__gold) !important;
+}
+
+.main__hidari {
+  border: 1px solid var(--color__azure) !important;
+}
+
+.main__migi {
+  border: 1px solid var(--color__turquoise) !important;
+}

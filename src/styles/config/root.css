@@ -53,7 +53,7 @@
   --font__serif:  'URW Garamond', 'Garamond', 'Baskerville', 'Times New Roman', serif;
 
   /* Typographic constants */
-  --type__rembase:    18px;
+  --type__rembase:    16px;
   --type__baseline:   7px;
 
   /* Modular scale 4:5 based on 20px */
@@ -91,10 +91,9 @@
   --type__ls-5xl:   -1px;
 
   /* Typearea-specific typesetting */
-  --type__size-typearea:      1.25rem;  /* 20px */
-  --type__lh-typearea:        1.4;      /* 28px */
-  --type__ls-typearea:        0;
-  --type__ls-typearea--lead:  -.25px;
+  --typearea__size:   1.25rem;  /* 20px */
+  --typearea__lh:     1.4;      /* 28px */
+  --typearea__mb:     var(--margin__v-s); /* 14px */
 
 
 

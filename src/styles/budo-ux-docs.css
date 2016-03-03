@@ -1,36 +1,41 @@
 /*
- * Grid debug styles
+ * Budo UX documentation styles
  */
 
 @import "config/media-queries";
 @import "config/root";
 
-body {
-  border-left-color: var(--color__turquoise);
+
+
+/* Demo container */
+
+.docs__demo {
+  border: 1px solid var(--color__gray-5);
+  padding: 0 var(--margin__h-l);
 }
 
-@media (--viewport-s) {
-  body {
-    border-left-color: var(--color__azure);
-  }
+/* Inline code */
+
+.docs code {
+  font-size: var(--type__size-xs);
+  border: 1px solid var(--color__gray-5);
+  background-color: var(--color__gray-6);
+  padding-right: var(--margin__h-s);
+  padding-left: var(--margin__h-s);
 }
 
-@media (--viewport-m) {
-  body {
-    border-left-color: var(--color__blue);
-  }
-}
+/* Code blocks */
 
-@media (--viewport-l) {
-  body {
-    border-left-color: var(--color__red);
-  }
+.docs pre {
+  font-size: var(--type__size-xs);
+  border: 1px solid var(--color__gray-5);
+  background-color: var(--color__gray-6);
+  margin: 0;
+  padding: var(--margin__v-m) var(--margin__h-l);
+  overflow: auto;
 }
-
-.grid__unit {
-  border: 1px solid var(--color__azure) !important;
-}
-
-.main {
-  border: 1px solid var(--color__orange) !important;
+.docs__demo pre {
+  margin-right: calc(var(--margin__h-l) * -1);
+  margin-left: calc(var(--margin__h-l) * -1);
+  border-width: 0 0 1px 0;
 }

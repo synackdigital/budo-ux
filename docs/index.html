@@ -3,32 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Budo-UX</title>
+  <title>Overview - Budo-UX</title>
   <meta name="description" content="Web UX framework for Svenska Budo och Kampsportsförbundet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="styles/budo-ux.css">
-  <link rel="stylesheet" href="styles/budo-ux-docs.css">
+  <link rel="stylesheet" href="/styles/budo-ux.css">
+  <link rel="stylesheet" href="/styles/budo-ux-docs.css">
+  <link rel="stylesheet" href="/styles/budo-ux-debug.css">
 </head>
-<body>
+<body class="docs">
 
   <header class="header">
     <div class="brand">
       <a href="#" title="Gå till startsidan">
-        <img class="brand__image" src="images/sbok-brand-light-alpha.png" alt="Svenska Budo & Kampsportsförbundet">
+        <img class="brand__image" src="/images/sbok-brand-light-alpha.png" alt="Svenska Budo & Kampsportsförbundet">
       </a>
     </div>
   </header>
 
-  <main class="main main--shift-up">
+  <main class="main">
 
-    <section class="main__section">
+    <section class="main__section main__section--shift-up">
       <div class="main__hidari">
 
         <nav class="nav">
           <ul class="nav__group">
             <li class="nav__item"><a href="/" title="Overview">Overview</a></li>
-            <li class="nav__item"><a href="/type" title="Type Sheet">Type Sheet</a></li>
+            <li class="nav__item"><a href="/type" title="Typography">Typography</a></li>
             <li class="nav__item"><a href="/blocks" title="Page Blocks">Page Blocks</a></li>
             <li class="nav__item"><a href="/grid" title="Grid System">Grid System</a></li>
             <li class="nav__item"><a href="/components" title="Components">Components</a></li>
@@ -37,7 +38,10 @@
         </nav>
 
         <div class="grid">
-          <div class="grid__unit grid__unit--s-1 grid__unit--m-4">hidari</div>
+          <div class="grid__unit grid__unit--s-1 grid__unit--m-4">
+            hidari
+          </div>
+
           <div class="grid__unit grid__unit--s-1 grid__unit--m-4">hidari</div>
         </div>
       </div>
@@ -53,8 +57,17 @@
       </div>
     </section>
 
+    <section class="main__section">
+      <div class="main__hidari">
+        hidari
+      </div>
+      <div class="main__migi">
+        migi
+      </div>
+    </section>
+
   </main>
 
-  <script src="scripts/budo-ux.js"></script>
+  <script src="/scripts/budo-ux.js"></script>
 </body>
 </html>
